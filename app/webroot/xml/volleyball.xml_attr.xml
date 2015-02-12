@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:52">
+	<sport name="Volleyball" sportid="15450">
+		<group name="Italy - Campionato A1" groupid="26485">
+			<event name="Macerata v Verona" eventid="14197839" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197839" etid="30">
+					<bet outcome_name="Macerata" id="70822594" odd="1.30" status="Open"/>
+					<bet outcome_name="Verona" id="70822595" odd="3.10" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [1st Set Winner]" eventid="14197840" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197840" etid="705">
+					<bet outcome_name="Macerata" id="70822596" odd="1.45" status="Open"/>
+					<bet outcome_name="Verona" id="70822597" odd="2.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [Double Result]" eventid="14197843" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197843" etid="968">
+					<bet outcome_name="Macerata/Macerata" id="70822607" odd="1.60" status="Open"/>
+					<bet outcome_name="Macerata/Verona" id="70822608" odd="8.50" status="Open"/>
+					<bet outcome_name="Verona/Macerata" id="70822609" odd="3.75" status="Open"/>
+					<bet outcome_name="Verona/Verona" id="70822610" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [Exact Score]" eventid="14197841" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197841" etid="706">
+					<bet outcome_name="3:0" id="70822598" odd="2.75" status="Open"/>
+					<bet outcome_name="3:1" id="70822599" odd="3.00" status="Open"/>
+					<bet outcome_name="3:2" id="70822600" odd="4.25" status="Open"/>
+					<bet outcome_name="0:3" id="70822601" odd="14.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822602" odd="9.50" status="Open"/>
+					<bet outcome_name="2:3" id="70822603" odd="7.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [Highest Scoring Set]" eventid="14197842" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197842" etid="967">
+					<bet outcome_name="1st Set" id="70822604" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822605" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822606" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [Result After 2nd Set]" eventid="14197844" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197844" etid="1025">
+					<bet outcome_name="Macerata" id="70822611" odd="2.00" status="Open"/>
+					<bet outcome_name="Draw" id="70822612" odd="1.99" status="Open"/>
+					<bet outcome_name="Verona" id="70822613" odd="6.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Macerata v Verona [Tie-Break in the Match]" eventid="14197845" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197845" etid="1033">
+					<bet outcome_name="Yes" id="70822614" odd="3.20" status="Open"/>
+					<bet outcome_name="No" id="70822615" odd="1.30" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo" eventid="14197846" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197846" etid="30">
+					<bet outcome_name="Modena" id="70822616" odd="1.80" status="Open"/>
+					<bet outcome_name="Cuneo" id="70822617" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [1st Set Winner]" eventid="14197847" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197847" etid="705">
+					<bet outcome_name="Modena" id="70822618" odd="1.85" status="Open"/>
+					<bet outcome_name="Cuneo" id="70822619" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [At Least One Set]" eventid="14197851" closetime="01/04/2012 18:00">
+				<bettype name="At Least One Set" eventid="14197851" etid="980">
+					<bet outcome_name="Modena" id="70822633" odd="1.14" status="Open"/>
+					<bet outcome_name="Cuneo" id="70822634" odd="1.14" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Double Chance After 2nd Set]" eventid="14197853" closetime="01/04/2012 18:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14197853" etid="1032">
+					<bet outcome_name="1 or X" id="70822638" odd="1.16" status="Open"/>
+					<bet outcome_name="X or 2" id="70822639" odd="1.16" status="Open"/>
+					<bet outcome_name="1 or 2" id="70822640" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Double Result]" eventid="14197850" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197850" etid="968">
+					<bet outcome_name="Modena/Modena" id="70822629" odd="2.80" status="Open"/>
+					<bet outcome_name="Modena/Cuneo" id="70822630" odd="4.50" status="Open"/>
+					<bet outcome_name="Cuneo/Modena" id="70822631" odd="4.50" status="Open"/>
+					<bet outcome_name="Cuneo/Cuneo" id="70822632" odd="2.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Exact Score]" eventid="14197848" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197848" etid="706">
+					<bet outcome_name="3:0" id="70822620" odd="5.00" status="Open"/>
+					<bet outcome_name="3:1" id="70822621" odd="4.50" status="Open"/>
+					<bet outcome_name="3:2" id="70822622" odd="4.50" status="Open"/>
+					<bet outcome_name="0:3" id="70822623" odd="5.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822624" odd="4.50" status="Open"/>
+					<bet outcome_name="2:3" id="70822625" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Highest Scoring Set]" eventid="14197849" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197849" etid="967">
+					<bet outcome_name="1st Set" id="70822626" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822627" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822628" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Result After 2nd Set]" eventid="14197852" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197852" etid="1025">
+					<bet outcome_name="Modena" id="70822635" odd="3.20" status="Open"/>
+					<bet outcome_name="Draw" id="70822636" odd="1.83" status="Open"/>
+					<bet outcome_name="Cuneo" id="70822637" odd="3.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Modena v Cuneo [Tie-Break in the Match]" eventid="14197854" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197854" etid="1033">
+					<bet outcome_name="Yes" id="70822641" odd="2.60" status="Open"/>
+					<bet outcome_name="No" id="70822642" odd="1.45" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia" eventid="14197855" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197855" etid="30">
+					<bet outcome_name="Monza" id="70822643" odd="1.60" status="Open"/>
+					<bet outcome_name="Vibo Valentia" id="70822644" odd="2.15" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [1st Set Winner]" eventid="14197856" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197856" etid="705">
+					<bet outcome_name="Monza" id="70822645" odd="1.70" status="Open"/>
+					<bet outcome_name="Vibo Valentia" id="70822646" odd="2.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [At Least One Set]" eventid="14197860" closetime="01/04/2012 18:00">
+				<bettype name="At Least One Set" eventid="14197860" etid="980">
+					<bet outcome_name="Monza" id="70822660" odd="1.07" status="Open"/>
+					<bet outcome_name="Vibo Valentia" id="70822661" odd="1.19" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Double Chance After 2nd Set]" eventid="14197862" closetime="01/04/2012 18:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14197862" etid="1032">
+					<bet outcome_name="1 or X" id="70822665" odd="1.09" status="Open"/>
+					<bet outcome_name="X or 2" id="70822666" odd="1.22" status="Open"/>
+					<bet outcome_name="1 or 2" id="70822667" odd="1.56" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Double Result]" eventid="14197859" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197859" etid="968">
+					<bet outcome_name="Monza/Monza" id="70822656" odd="2.40" status="Open"/>
+					<bet outcome_name="Monza/Vibo Valentia" id="70822657" odd="5.50" status="Open"/>
+					<bet outcome_name="Vibo Valentia/Monza" id="70822658" odd="4.00" status="Open"/>
+					<bet outcome_name="Vibo Valentia/Vibo Valentia" id="70822659" odd="3.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Exact Score]" eventid="14197857" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197857" etid="706">
+					<bet outcome_name="3:0" id="70822647" odd="4.25" status="Open"/>
+					<bet outcome_name="3:1" id="70822648" odd="3.75" status="Open"/>
+					<bet outcome_name="3:2" id="70822649" odd="4.33" status="Open"/>
+					<bet outcome_name="0:3" id="70822650" odd="7.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822651" odd="6.00" status="Open"/>
+					<bet outcome_name="2:3" id="70822652" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Highest Scoring Set]" eventid="14197858" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197858" etid="967">
+					<bet outcome_name="1st Set" id="70822653" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822654" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822655" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Result After 2nd Set]" eventid="14197861" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197861" etid="1025">
+					<bet outcome_name="Monza" id="70822662" odd="2.70" status="Open"/>
+					<bet outcome_name="Draw" id="70822663" odd="1.82" status="Open"/>
+					<bet outcome_name="Vibo Valentia" id="70822664" odd="3.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Monza v Vibo Valentia [Tie-Break in the Match]" eventid="14197863" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197863" etid="1033">
+					<bet outcome_name="Yes" id="70822668" odd="2.70" status="Open"/>
+					<bet outcome_name="No" id="70822669" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley" eventid="14197864" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197864" etid="30">
+					<bet outcome_name="Padova" id="70822670" odd="1.36" status="Open"/>
+					<bet outcome_name="Roma Volley" id="70822671" odd="2.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [1st Set Winner]" eventid="14197865" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197865" etid="705">
+					<bet outcome_name="Padova" id="70822672" odd="1.55" status="Open"/>
+					<bet outcome_name="Roma Volley" id="70822673" odd="2.30" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [Double Result]" eventid="14197868" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197868" etid="968">
+					<bet outcome_name="Padova/Padova" id="70822683" odd="1.80" status="Open"/>
+					<bet outcome_name="Padova/Roma Volley" id="70822684" odd="7.00" status="Open"/>
+					<bet outcome_name="Roma Volley/Padova" id="70822685" odd="3.75" status="Open"/>
+					<bet outcome_name="Roma Volley/Roma Volley" id="70822686" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [Exact Score]" eventid="14197866" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197866" etid="706">
+					<bet outcome_name="3:0" id="70822674" odd="3.00" status="Open"/>
+					<bet outcome_name="3:1" id="70822675" odd="3.00" status="Open"/>
+					<bet outcome_name="3:2" id="70822676" odd="4.00" status="Open"/>
+					<bet outcome_name="0:3" id="70822677" odd="13.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822678" odd="9.00" status="Open"/>
+					<bet outcome_name="2:3" id="70822679" odd="7.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [Highest Scoring Set]" eventid="14197867" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197867" etid="967">
+					<bet outcome_name="1st Set" id="70822680" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822681" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822682" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [Result After 2nd Set]" eventid="14197869" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197869" etid="1025">
+					<bet outcome_name="Padova" id="70822687" odd="2.30" status="Open"/>
+					<bet outcome_name="Draw" id="70822688" odd="1.91" status="Open"/>
+					<bet outcome_name="Roma Volley" id="70822689" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Padova v Roma Volley [Tie-Break in the Match]" eventid="14197870" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197870" etid="1033">
+					<bet outcome_name="Yes" id="70822690" odd="3.00" status="Open"/>
+					<bet outcome_name="No" id="70822691" odd="1.35" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino" eventid="14197871" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197871" etid="30">
+					<bet outcome_name="Piacenza" id="70822692" odd="1.50" status="Open"/>
+					<bet outcome_name="San Giustino" id="70822693" odd="2.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [1st Set Winner]" eventid="14197872" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197872" etid="705">
+					<bet outcome_name="Piacenza" id="70822694" odd="1.60" status="Open"/>
+					<bet outcome_name="San Giustino" id="70822695" odd="2.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [At Least One Set]" eventid="14197876" closetime="01/04/2012 18:00">
+				<bettype name="At Least One Set" eventid="14197876" etid="980">
+					<bet outcome_name="Piacenza" id="70822709" odd="1.05" status="Open"/>
+					<bet outcome_name="San Giustino" id="70822710" odd="1.21" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Double Chance After 2nd Set]" eventid="14197878" closetime="01/04/2012 18:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14197878" etid="1032">
+					<bet outcome_name="1 or X" id="70822714" odd="1.06" status="Open"/>
+					<bet outcome_name="X or 2" id="70822715" odd="1.33" status="Open"/>
+					<bet outcome_name="1 or 2" id="70822716" odd="1.57" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Double Result]" eventid="14197875" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197875" etid="968">
+					<bet outcome_name="Piacenza/Piacenza" id="70822705" odd="2.15" status="Open"/>
+					<bet outcome_name="Piacenza/San Giustino" id="70822706" odd="6.25" status="Open"/>
+					<bet outcome_name="San Giustino/Piacenza" id="70822707" odd="3.75" status="Open"/>
+					<bet outcome_name="San Giustino/San Giustino" id="70822708" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Exact Score]" eventid="14197873" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197873" etid="706">
+					<bet outcome_name="3:0" id="70822696" odd="4.00" status="Open"/>
+					<bet outcome_name="3:1" id="70822697" odd="3.50" status="Open"/>
+					<bet outcome_name="3:2" id="70822698" odd="4.25" status="Open"/>
+					<bet outcome_name="0:3" id="70822699" odd="8.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822700" odd="6.50" status="Open"/>
+					<bet outcome_name="2:3" id="70822701" odd="5.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Highest Scoring Set]" eventid="14197874" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197874" etid="967">
+					<bet outcome_name="1st Set" id="70822702" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822703" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822704" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Result After 2nd Set]" eventid="14197877" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197877" etid="1025">
+					<bet outcome_name="Piacenza" id="70822711" odd="2.40" status="Open"/>
+					<bet outcome_name="Draw" id="70822712" odd="1.89" status="Open"/>
+					<bet outcome_name="San Giustino" id="70822713" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v San Giustino [Tie-Break in the Match]" eventid="14197879" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197879" etid="1033">
+					<bet outcome_name="Yes" id="70822717" odd="2.80" status="Open"/>
+					<bet outcome_name="No" id="70822718" odd="1.39" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno" eventid="14197880" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197880" etid="30">
+					<bet outcome_name="Ravenna" id="70822719" odd="2.70" status="Open"/>
+					<bet outcome_name="Sisley Belluno" id="70822720" odd="1.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [1st Set Winner]" eventid="14197881" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197881" etid="705">
+					<bet outcome_name="Ravenna" id="70822721" odd="2.30" status="Open"/>
+					<bet outcome_name="Sisley Belluno" id="70822722" odd="1.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [At Least One Set]" eventid="14197885" closetime="01/04/2012 18:00">
+				<bettype name="At Least One Set" eventid="14197885" etid="980">
+					<bet outcome_name="Ravenna" id="70822736" odd="1.30" status="Open"/>
+					<bet outcome_name="Sisley Belluno" id="70822737" odd="1.02" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Double Chance After 2nd Set]" eventid="14197887" closetime="01/04/2012 18:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14197887" etid="1032">
+					<bet outcome_name="1 or X" id="70822741" odd="1.38" status="Open"/>
+					<bet outcome_name="X or 2" id="70822742" odd="1.04" status="Open"/>
+					<bet outcome_name="1 or 2" id="70822743" odd="1.58" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Double Result]" eventid="14197884" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197884" etid="968">
+					<bet outcome_name="Ravenna/Ravenna" id="70822732" odd="4.50" status="Open"/>
+					<bet outcome_name="Ravenna/Sisley Belluno" id="70822733" odd="3.75" status="Open"/>
+					<bet outcome_name="Sisley Belluno/Ravenna" id="70822734" odd="7.00" status="Open"/>
+					<bet outcome_name="Sisley Belluno/Sisley Belluno" id="70822735" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Exact Score]" eventid="14197882" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197882" etid="706">
+					<bet outcome_name="3:0" id="70822723" odd="11.00" status="Open"/>
+					<bet outcome_name="3:1" id="70822724" odd="8.50" status="Open"/>
+					<bet outcome_name="3:2" id="70822725" odd="6.50" status="Open"/>
+					<bet outcome_name="0:3" id="70822726" odd="3.25" status="Open"/>
+					<bet outcome_name="1:3" id="70822727" odd="3.25" status="Open"/>
+					<bet outcome_name="2:3" id="70822728" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Highest Scoring Set]" eventid="14197883" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197883" etid="967">
+					<bet outcome_name="1st Set" id="70822729" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822730" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822731" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Result After 2nd Set]" eventid="14197886" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197886" etid="1025">
+					<bet outcome_name="Ravenna" id="70822738" odd="5.00" status="Open"/>
+					<bet outcome_name="Draw" id="70822739" odd="1.91" status="Open"/>
+					<bet outcome_name="Sisley Belluno" id="70822740" odd="2.30" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ravenna v Sisley Belluno [Tie-Break in the Match]" eventid="14197888" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197888" etid="1033">
+					<bet outcome_name="Yes" id="70822744" odd="2.90" status="Open"/>
+					<bet outcome_name="No" id="70822745" odd="1.37" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Serie A1 11/12 [Play-offs included.]" eventid="12511018" closetime="01/04/2012 18:00">
+				<bettype name="Outright" eventid="12511018" etid="180">
+					<bet outcome_name="Trentino" id="61712365" odd="1.67" status="Open"/>
+					<bet outcome_name="Macerata" id="61712366" odd="3.25" status="Open"/>
+					<bet outcome_name="Cuneo" id="61712367" odd="3.50" status="Open"/>
+					<bet outcome_name="Sisley Belluno" id="61712371" odd="201.00" status="Open"/>
+					<bet outcome_name="Monza" id="61712369" odd="301.00" status="Open"/>
+					<bet outcome_name="Piacenza" id="61712373" odd="301.00" status="Open"/>
+					<bet outcome_name="Latina" id="61712372" odd="351.00" status="Open"/>
+					<bet outcome_name="Modena" id="61712368" odd="401.00" status="Open"/>
+					<bet outcome_name="Vibo Valentia" id="61712377" odd="501.00" status="Open"/>
+					<bet outcome_name="Roma Volley" id="61712370" odd="501.00" status="Open"/>
+					<bet outcome_name="San Giustino" id="61712378" odd="0.90" status="Open"/>
+					<bet outcome_name="Ravenna" id="61712374" odd="0.90" status="Open"/>
+					<bet outcome_name="Verona" id="61712375" odd="0.90" status="Open"/>
+					<bet outcome_name="Padova" id="61712376" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina" eventid="14197889" closetime="01/04/2012 18:00">
+				<bettype name="Versus" eventid="14197889" etid="30">
+					<bet outcome_name="Trentino" id="70822746" odd="1.20" status="Open"/>
+					<bet outcome_name="Latina" id="70822747" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [1st Set Winner]" eventid="14197890" closetime="01/04/2012 18:00">
+				<bettype name="1st Set Winner" eventid="14197890" etid="705">
+					<bet outcome_name="Trentino" id="70822748" odd="1.25" status="Open"/>
+					<bet outcome_name="Latina" id="70822749" odd="3.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [Double Result]" eventid="14197893" closetime="01/04/2012 18:00">
+				<bettype name="Double Result" eventid="14197893" etid="968">
+					<bet outcome_name="Trentino/Trentino" id="70822759" odd="1.50" status="Open"/>
+					<bet outcome_name="Trentino/Latina" id="70822760" odd="9.25" status="Open"/>
+					<bet outcome_name="Latina/Trentino" id="70822761" odd="4.25" status="Open"/>
+					<bet outcome_name="Latina/Latina" id="70822762" odd="7.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [Exact Score]" eventid="14197891" closetime="01/04/2012 18:00">
+				<bettype name="Exact Score" eventid="14197891" etid="706">
+					<bet outcome_name="3:0" id="70822750" odd="2.10" status="Open"/>
+					<bet outcome_name="3:1" id="70822751" odd="2.90" status="Open"/>
+					<bet outcome_name="3:2" id="70822752" odd="4.75" status="Open"/>
+					<bet outcome_name="0:3" id="70822753" odd="17.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822754" odd="10.00" status="Open"/>
+					<bet outcome_name="2:3" id="70822755" odd="8.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [Highest Scoring Set]" eventid="14197892" closetime="01/04/2012 18:00">
+				<bettype name="Highest Scoring Set" eventid="14197892" etid="967">
+					<bet outcome_name="1st Set" id="70822756" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822757" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822758" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [Result After 2nd Set]" eventid="14197894" closetime="01/04/2012 18:00">
+				<bettype name="Result After 2nd Set" eventid="14197894" etid="1025">
+					<bet outcome_name="Trentino" id="70822763" odd="1.50" status="Open"/>
+					<bet outcome_name="Draw" id="70822764" odd="2.50" status="Open"/>
+					<bet outcome_name="Latina" id="70822765" odd="11.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Trentino v Latina [Tie-Break in the Match]" eventid="14197895" closetime="01/04/2012 18:00">
+				<bettype name="Tie-Break in the Match" eventid="14197895" etid="1033">
+					<bet outcome_name="Yes" id="70822766" odd="3.70" status="Open"/>
+					<bet outcome_name="No" id="70822767" odd="1.24" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Germany - Volleyball Bundesliga (men)" groupid="31855">
+			<event name="SCC Berlin v Friedrichshafen" eventid="14207090" closetime="01/04/2012 16:00">
+				<bettype name="Versus" eventid="14207090" etid="30">
+					<bet outcome_name="SCC Berlin" id="70869365" odd="2.15" status="Open"/>
+					<bet outcome_name="Friedrichshafen" id="70869366" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [1st Set Winner]" eventid="14207091" closetime="01/04/2012 16:00">
+				<bettype name="1st Set Winner" eventid="14207091" etid="705">
+					<bet outcome_name="SCC Berlin" id="70869367" odd="2.00" status="Open"/>
+					<bet outcome_name="Friedrichshafen" id="70869368" odd="1.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [At Least One Set]" eventid="14207095" closetime="01/04/2012 16:00">
+				<bettype name="At Least One Set" eventid="14207095" etid="980">
+					<bet outcome_name="SCC Berlin" id="70869382" odd="1.19" status="Open"/>
+					<bet outcome_name="Friedrichshafen" id="70869383" odd="1.07" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Double Chance After 2nd Set]" eventid="14207097" closetime="01/04/2012 16:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14207097" etid="1032">
+					<bet outcome_name="1 or X" id="70869387" odd="1.22" status="Open"/>
+					<bet outcome_name="X or 2" id="70869388" odd="1.09" status="Open"/>
+					<bet outcome_name="1 or 2" id="70869389" odd="1.56" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Double Result]" eventid="14207094" closetime="01/04/2012 16:00">
+				<bettype name="Double Result" eventid="14207094" etid="968">
+					<bet outcome_name="SCC Berlin/SCC Berlin" id="70869378" odd="3.25" status="Open"/>
+					<bet outcome_name="SCC Berlin/Friedrichshafen" id="70869379" odd="4.00" status="Open"/>
+					<bet outcome_name="Friedrichshafen/SCC Berlin" id="70869380" odd="5.50" status="Open"/>
+					<bet outcome_name="Friedrichshafen/Friedrichshafen" id="70869381" odd="2.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Exact Score]" eventid="14207092" closetime="01/04/2012 16:00">
+				<bettype name="Exact Score" eventid="14207092" etid="706">
+					<bet outcome_name="3:0" id="70869369" odd="7.00" status="Open"/>
+					<bet outcome_name="3:1" id="70869370" odd="6.00" status="Open"/>
+					<bet outcome_name="3:2" id="70869371" odd="5.00" status="Open"/>
+					<bet outcome_name="0:3" id="70869372" odd="4.25" status="Open"/>
+					<bet outcome_name="1:3" id="70869373" odd="3.75" status="Open"/>
+					<bet outcome_name="2:3" id="70869374" odd="4.33" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Highest Scoring Set]" eventid="14207093" closetime="01/04/2012 16:00">
+				<bettype name="Highest Scoring Set" eventid="14207093" etid="967">
+					<bet outcome_name="1st Set" id="70869375" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70869376" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70869377" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Result After 2nd Set]" eventid="14207096" closetime="01/04/2012 16:00">
+				<bettype name="Result After 2nd Set" eventid="14207096" etid="1025">
+					<bet outcome_name="SCC Berlin" id="70869384" odd="3.70" status="Open"/>
+					<bet outcome_name="Draw" id="70869385" odd="1.82" status="Open"/>
+					<bet outcome_name="Friedrichshafen" id="70869386" odd="2.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SCC Berlin v Friedrichshafen [Tie-Break in the Match]" eventid="14207098" closetime="01/04/2012 16:00">
+				<bettype name="Tie-Break in the Match" eventid="14207098" etid="1033">
+					<bet outcome_name="Yes" id="70869390" odd="2.70" status="Open"/>
+					<bet outcome_name="No" id="70869391" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Russia - Superliga (men)" groupid="45173">
+			<event name="Dinamo Moscow v Iskra" eventid="14207912" closetime="04/04/2012 17:00">
+				<bettype name="Versus" eventid="14207912" etid="30">
+					<bet outcome_name="Dinamo Moscow" id="70873460" odd="1.50" status="Open"/>
+					<bet outcome_name="Iskra" id="70873637" odd="2.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [1st Set Winner]" eventid="14207961" closetime="04/04/2012 17:00">
+				<bettype name="1st Set Winner" eventid="14207961" etid="705">
+					<bet outcome_name="Dinamo Moscow" id="70873645" odd="1.60" status="Open"/>
+					<bet outcome_name="Iskra" id="70873646" odd="2.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [At Least One Set]" eventid="14207968" closetime="04/04/2012 17:00">
+				<bettype name="At Least One Set" eventid="14207968" etid="980">
+					<bet outcome_name="Dinamo Moscow" id="70873668" odd="1.05" status="Open"/>
+					<bet outcome_name="Iskra" id="70873669" odd="1.21" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Double Chance After 2nd Set]" eventid="14207971" closetime="04/04/2012 17:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14207971" etid="1032">
+					<bet outcome_name="1 or X" id="70873675" odd="1.06" status="Open"/>
+					<bet outcome_name="X or 2" id="70873683" odd="1.33" status="Open"/>
+					<bet outcome_name="1 or 2" id="70873692" odd="1.57" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Double Result]" eventid="14207966" closetime="04/04/2012 17:00">
+				<bettype name="Double Result" eventid="14207966" etid="968">
+					<bet outcome_name="Dinamo Moscow/Dinamo Moscow" id="70873662" odd="2.15" status="Open"/>
+					<bet outcome_name="Dinamo Moscow/Iskra" id="70873663" odd="6.25" status="Open"/>
+					<bet outcome_name="Iskra/Dinamo Moscow" id="70873664" odd="3.75" status="Open"/>
+					<bet outcome_name="Iskra/Iskra" id="70873665" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Exact Score]" eventid="14207962" closetime="04/04/2012 17:00">
+				<bettype name="Exact Score" eventid="14207962" etid="706">
+					<bet outcome_name="3:0" id="70873647" odd="4.00" status="Open"/>
+					<bet outcome_name="3:1" id="70873648" odd="3.50" status="Open"/>
+					<bet outcome_name="3:2" id="70873649" odd="4.25" status="Open"/>
+					<bet outcome_name="0:3" id="70873650" odd="8.00" status="Open"/>
+					<bet outcome_name="1:3" id="70873651" odd="6.50" status="Open"/>
+					<bet outcome_name="2:3" id="70873652" odd="5.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Highest Scoring Set]" eventid="14207965" closetime="04/04/2012 17:00">
+				<bettype name="Highest Scoring Set" eventid="14207965" etid="967">
+					<bet outcome_name="1st Set" id="70873655" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70873659" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70873661" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Result After 2nd Set]" eventid="14207970" closetime="04/04/2012 17:00">
+				<bettype name="Result After 2nd Set" eventid="14207970" etid="1025">
+					<bet outcome_name="Dinamo Moscow" id="70873672" odd="2.40" status="Open"/>
+					<bet outcome_name="Draw" id="70873673" odd="1.89" status="Open"/>
+					<bet outcome_name="Iskra" id="70873674" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Iskra [Tie-Break in the Match]" eventid="14207974" closetime="04/04/2012 17:00">
+				<bettype name="Tie-Break in the Match" eventid="14207974" etid="1033">
+					<bet outcome_name="Yes" id="70873718" odd="2.80" status="Open"/>
+					<bet outcome_name="No" id="70873725" odd="1.39" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan" eventid="14207890" closetime="01/04/2012 12:00">
+				<bettype name="Versus" eventid="14207890" etid="30">
+					<bet outcome_name="Lokomotiv Novosibirsk" id="70873324" odd="2.15" status="Open"/>
+					<bet outcome_name="Zenit Kazan" id="70873333" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [1st Set Winner]" eventid="14207893" closetime="01/04/2012 12:00">
+				<bettype name="1st Set Winner" eventid="14207893" etid="705">
+					<bet outcome_name="Lokomotiv Novosibirsk" id="70873340" odd="2.00" status="Open"/>
+					<bet outcome_name="Zenit Kazan" id="70873343" odd="1.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [At Least One Set]" eventid="14207908" closetime="01/04/2012 12:00">
+				<bettype name="At Least One Set" eventid="14207908" etid="980">
+					<bet outcome_name="Lokomotiv Novosibirsk" id="70873450" odd="1.19" status="Open"/>
+					<bet outcome_name="Zenit Kazan" id="70873451" odd="1.07" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Double Chance After 2nd Set]" eventid="14207910" closetime="01/04/2012 12:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14207910" etid="1032">
+					<bet outcome_name="1 or X" id="70873455" odd="1.22" status="Open"/>
+					<bet outcome_name="X or 2" id="70873456" odd="1.09" status="Open"/>
+					<bet outcome_name="1 or 2" id="70873457" odd="1.56" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Double Result]" eventid="14207907" closetime="01/04/2012 12:00">
+				<bettype name="Double Result" eventid="14207907" etid="968">
+					<bet outcome_name="Lokomotiv Novosibirsk/Lokomotiv Novosibirsk" id="70873412" odd="3.25" status="Open"/>
+					<bet outcome_name="Lokomotiv Novosibirsk/Zenit Kazan" id="70873424" odd="4.00" status="Open"/>
+					<bet outcome_name="Zenit Kazan/Lokomotiv Novosibirsk" id="70873439" odd="5.50" status="Open"/>
+					<bet outcome_name="Zenit Kazan/Zenit Kazan" id="70873442" odd="2.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Exact Score]" eventid="14207899" closetime="01/04/2012 12:00">
+				<bettype name="Exact Score" eventid="14207899" etid="706">
+					<bet outcome_name="3:0" id="70873354" odd="7.00" status="Open"/>
+					<bet outcome_name="3:1" id="70873356" odd="6.00" status="Open"/>
+					<bet outcome_name="3:2" id="70873358" odd="5.00" status="Open"/>
+					<bet outcome_name="0:3" id="70873359" odd="4.25" status="Open"/>
+					<bet outcome_name="1:3" id="70873360" odd="3.75" status="Open"/>
+					<bet outcome_name="2:3" id="70873361" odd="4.33" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Highest Scoring Set]" eventid="14207902" closetime="01/04/2012 12:00">
+				<bettype name="Highest Scoring Set" eventid="14207902" etid="967">
+					<bet outcome_name="1st Set" id="70873366" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70873369" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70873370" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Result After 2nd Set]" eventid="14207909" closetime="01/04/2012 12:00">
+				<bettype name="Result After 2nd Set" eventid="14207909" etid="1025">
+					<bet outcome_name="Lokomotiv Novosibirsk" id="70873452" odd="3.70" status="Open"/>
+					<bet outcome_name="Draw" id="70873453" odd="1.82" status="Open"/>
+					<bet outcome_name="Zenit Kazan" id="70873454" odd="2.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Novosibirsk v Zenit Kazan [Tie-Break in the Match]" eventid="14207911" closetime="01/04/2012 12:00">
+				<bettype name="Tie-Break in the Match" eventid="14207911" etid="1033">
+					<bet outcome_name="Yes" id="70873458" odd="2.70" status="Open"/>
+					<bet outcome_name="No" id="70873459" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Poland - 1 Liga" groupid="68015">
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA" eventid="14206612" closetime="04/04/2012 20:45">
+				<bettype name="Versus" eventid="14206612" etid="30">
+					<bet outcome_name="PGE Skra Belchatow" id="70866908" odd="1.10" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA" id="70866909" odd="5.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [1st Set Winner]" eventid="14206613" closetime="04/04/2012 20:45">
+				<bettype name="1st Set Winner" eventid="14206613" etid="705">
+					<bet outcome_name="PGE Skra Belchatow" id="70866910" odd="1.20" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA" id="70866911" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [Double Result]" eventid="14206616" closetime="04/04/2012 20:45">
+				<bettype name="Double Result" eventid="14206616" etid="968">
+					<bet outcome_name="PGE Skra Belchatow/PGE Skra Belchatow" id="70866921" odd="1.35" status="Open"/>
+					<bet outcome_name="PGE Skra Belchatow/Jastrzebski Wegiel SSA" id="70866922" odd="10.00" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA/PGE Skra Belchatow" id="70866923" odd="5.00" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA/Jastrzebski Wegiel SSA" id="70866924" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [Exact Score]" eventid="14206614" closetime="04/04/2012 20:45">
+				<bettype name="Exact Score" eventid="14206614" etid="706">
+					<bet outcome_name="3:0" id="70866912" odd="1.60" status="Open"/>
+					<bet outcome_name="3:1" id="70866913" odd="2.75" status="Open"/>
+					<bet outcome_name="3:2" id="70866914" odd="6.00" status="Open"/>
+					<bet outcome_name="0:3" id="70866915" odd="26.00" status="Open"/>
+					<bet outcome_name="1:3" id="70866916" odd="17.00" status="Open"/>
+					<bet outcome_name="2:3" id="70866917" odd="15.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [Highest Scoring Set]" eventid="14206615" closetime="04/04/2012 20:45">
+				<bettype name="Highest Scoring Set" eventid="14206615" etid="967">
+					<bet outcome_name="1st Set" id="70866918" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70866919" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70866920" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [Result After 2nd Set]" eventid="14206617" closetime="04/04/2012 20:45">
+				<bettype name="Result After 2nd Set" eventid="14206617" etid="1025">
+					<bet outcome_name="PGE Skra Belchatow" id="70866925" odd="1.38" status="Open"/>
+					<bet outcome_name="Draw" id="70866926" odd="2.60" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA" id="70866927" odd="14.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PGE Skra Belchatow v Jastrzebski Wegiel SSA [Tie-Break in the Match]" eventid="14206618" closetime="04/04/2012 20:45">
+				<bettype name="Tie-Break in the Match" eventid="14206618" etid="1033">
+					<bet outcome_name="Yes" id="70866928" odd="5.75" status="Open"/>
+					<bet outcome_name="No" id="70866929" odd="1.11" status="Open"/>
+				</bettype>
+			</event>
+			<event name="PlusLiga 11/12" eventid="12462669" closetime="04/04/2012 17:30">
+				<bettype name="Outright" eventid="12462669" etid="180">
+					<bet outcome_name="PGE Skra Belchatow" id="61475211" odd="1.40" status="Open"/>
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle" id="61475214" odd="5.50" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="61475212" odd="7.00" status="Open"/>
+					<bet outcome_name="Jastrzebski Wegiel SSA" id="61475213" odd="10.00" status="Open"/>
+					<bet outcome_name="Delecta Bydgoszcz" id="61475216" odd="0.90" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska" id="61475215" odd="0.90" status="Open"/>
+					<bet outcome_name="AZS Czestochowa" id="61475217" odd="0.90" status="Open"/>
+					<bet outcome_name="KS Fart Kielce" id="61475218" odd="0.90" status="Open"/>
+					<bet outcome_name="AZS UWM Olsztyn" id="61475219" odd="0.90" status="Open"/>
+					<bet outcome_name="Trefl Gdańsk" id="61475220" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow" eventid="14206603" closetime="04/04/2012 17:30">
+				<bettype name="Versus" eventid="14206603" etid="30">
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle" id="70866881" odd="1.50" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70866882" odd="2.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [1st Set Winner]" eventid="14206604" closetime="04/04/2012 17:30">
+				<bettype name="1st Set Winner" eventid="14206604" etid="705">
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle" id="70866883" odd="1.60" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70866884" odd="2.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [At Least One Set]" eventid="14206608" closetime="04/04/2012 17:30">
+				<bettype name="At Least One Set" eventid="14206608" etid="980">
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle" id="70866898" odd="1.05" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70866899" odd="1.21" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Double Chance After 2nd Set]" eventid="14206610" closetime="04/04/2012 17:30">
+				<bettype name="Double Chance After 2nd Set" eventid="14206610" etid="1032">
+					<bet outcome_name="1 or X" id="70866903" odd="1.06" status="Open"/>
+					<bet outcome_name="X or 2" id="70866904" odd="1.33" status="Open"/>
+					<bet outcome_name="1 or 2" id="70866905" odd="1.57" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Double Result]" eventid="14206607" closetime="04/04/2012 17:30">
+				<bettype name="Double Result" eventid="14206607" etid="968">
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle/ZAKSA Kędzierzyn-Kozle" id="70866894" odd="2.15" status="Open"/>
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle/Resovia Rzeszow" id="70866895" odd="6.25" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow/ZAKSA Kędzierzyn-Kozle" id="70866896" odd="3.75" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow/Resovia Rzeszow" id="70866897" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Exact Score]" eventid="14206605" closetime="04/04/2012 17:30">
+				<bettype name="Exact Score" eventid="14206605" etid="706">
+					<bet outcome_name="3:0" id="70866885" odd="4.00" status="Open"/>
+					<bet outcome_name="3:1" id="70866886" odd="3.50" status="Open"/>
+					<bet outcome_name="3:2" id="70866887" odd="4.25" status="Open"/>
+					<bet outcome_name="0:3" id="70866888" odd="8.00" status="Open"/>
+					<bet outcome_name="1:3" id="70866889" odd="6.50" status="Open"/>
+					<bet outcome_name="2:3" id="70866890" odd="5.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Highest Scoring Set]" eventid="14206606" closetime="04/04/2012 17:30">
+				<bettype name="Highest Scoring Set" eventid="14206606" etid="967">
+					<bet outcome_name="1st Set" id="70866891" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70866892" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70866893" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Result After 2nd Set]" eventid="14206609" closetime="04/04/2012 17:30">
+				<bettype name="Result After 2nd Set" eventid="14206609" etid="1025">
+					<bet outcome_name="ZAKSA Kędzierzyn-Kozle" id="70866900" odd="2.40" status="Open"/>
+					<bet outcome_name="Draw" id="70866901" odd="1.89" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70866902" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="ZAKSA Kędzierzyn-Kozle v Resovia Rzeszow [Tie-Break in the Match]" eventid="14206611" closetime="04/04/2012 17:30">
+				<bettype name="Tie-Break in the Match" eventid="14206611" etid="1033">
+					<bet outcome_name="Yes" id="70866906" odd="2.80" status="Open"/>
+					<bet outcome_name="No" id="70866907" odd="1.39" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~CEV Cup (men)~" groupid="113589">
+			<event name="Dinamo Moscow v Resovia Rzeszow" eventid="14197797" closetime="01/04/2012 16:00">
+				<bettype name="Versus" eventid="14197797" etid="30">
+					<bet outcome_name="Dinamo Moscow" id="70822414" odd="1.25" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70822415" odd="3.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [1st Set Winner]" eventid="14197798" closetime="01/04/2012 16:00">
+				<bettype name="1st Set Winner" eventid="14197798" etid="705">
+					<bet outcome_name="Dinamo Moscow" id="70822416" odd="1.35" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70822417" odd="2.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Double Result]" eventid="14197801" closetime="01/04/2012 16:00">
+				<bettype name="Double Result" eventid="14197801" etid="968">
+					<bet outcome_name="Dinamo Moscow/Dinamo Moscow" id="70822427" odd="1.60" status="Open"/>
+					<bet outcome_name="Dinamo Moscow/Resovia Rzeszow" id="70822428" odd="8.50" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow/Dinamo Moscow" id="70822429" odd="3.75" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow/Resovia Rzeszow" id="70822430" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Exact Score]" eventid="14197799" closetime="01/04/2012 16:00">
+				<bettype name="Exact Score" eventid="14197799" etid="706">
+					<bet outcome_name="3:0" id="70822418" odd="2.30" status="Open"/>
+					<bet outcome_name="3:1" id="70822419" odd="3.00" status="Open"/>
+					<bet outcome_name="3:2" id="70822420" odd="4.50" status="Open"/>
+					<bet outcome_name="0:3" id="70822421" odd="15.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822422" odd="10.00" status="Open"/>
+					<bet outcome_name="2:3" id="70822423" odd="8.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Highest Scoring Set]" eventid="14197800" closetime="01/04/2012 16:00">
+				<bettype name="Highest Scoring Set" eventid="14197800" etid="967">
+					<bet outcome_name="1st Set" id="70822424" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822425" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822426" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Result After 2nd Set]" eventid="14197802" closetime="01/04/2012 16:00">
+				<bettype name="Result After 2nd Set" eventid="14197802" etid="1025">
+					<bet outcome_name="Dinamo Moscow" id="70822431" odd="1.74" status="Open"/>
+					<bet outcome_name="Draw" id="70822432" odd="2.10" status="Open"/>
+					<bet outcome_name="Resovia Rzeszow" id="70822433" odd="7.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Tie-Break in the Match]" eventid="14197803" closetime="01/04/2012 16:00">
+				<bettype name="Tie-Break in the Match" eventid="14197803" etid="1033">
+					<bet outcome_name="Yes" id="70822434" odd="3.50" status="Open"/>
+					<bet outcome_name="No" id="70822435" odd="1.27" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Points Handicap] 0:10.5" eventid="14212056" closetime="01/04/2012 16:00">
+				<bettype name="Points Handicap" eventid="14212056" etid="703">
+					<bet outcome_name="1" id="70896149" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70896150" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Dinamo Moscow v Resovia Rzeszow [Total Points]" eventid="14212057" closetime="01/04/2012 16:00">
+				<bettype name="Total Points" eventid="14212057" etid="704">
+					<bet outcome_name="&lt;180.5" id="70896151" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;180.5" id="70896152" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~CEV Cup (ladies)~" groupid="113590">
+			<event name="Busto Arsizio v Galatasaray Istanbul" eventid="14197805" closetime="31/03/2012 20:30">
+				<bettype name="Versus" eventid="14197805" etid="30">
+					<bet outcome_name="Busto Arsizio" id="70822450" odd="1.20" status="Open"/>
+					<bet outcome_name="Galatasaray Istanbul" id="70822451" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [1st Set Winner]" eventid="14197806" closetime="31/03/2012 20:30">
+				<bettype name="1st Set Winner" eventid="14197806" etid="705">
+					<bet outcome_name="Busto Arsizio" id="70822452" odd="1.25" status="Open"/>
+					<bet outcome_name="Galatasaray Istanbul" id="70822453" odd="3.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Double Result]" eventid="14197809" closetime="31/03/2012 20:30">
+				<bettype name="Double Result" eventid="14197809" etid="968">
+					<bet outcome_name="Busto Arsizio/Busto Arsizio" id="70822463" odd="1.40" status="Open"/>
+					<bet outcome_name="Busto Arsizio/Galatasaray Istanbul" id="70822464" odd="9.50" status="Open"/>
+					<bet outcome_name="Galatasaray Istanbul/Busto Arsizio" id="70822465" odd="4.50" status="Open"/>
+					<bet outcome_name="Galatasaray Istanbul/Galatasaray Istanbul" id="70822466" odd="8.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Exact Score]" eventid="14197807" closetime="31/03/2012 20:30">
+				<bettype name="Exact Score" eventid="14197807" etid="706">
+					<bet outcome_name="3:0" id="70822454" odd="1.90" status="Open"/>
+					<bet outcome_name="3:1" id="70822455" odd="2.75" status="Open"/>
+					<bet outcome_name="3:2" id="70822456" odd="5.00" status="Open"/>
+					<bet outcome_name="0:3" id="70822457" odd="21.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822458" odd="11.00" status="Open"/>
+					<bet outcome_name="2:3" id="70822459" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Highest Scoring Set]" eventid="14197808" closetime="31/03/2012 20:30">
+				<bettype name="Highest Scoring Set" eventid="14197808" etid="967">
+					<bet outcome_name="1st Set" id="70822460" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822461" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822462" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Result After 2nd Set]" eventid="14197810" closetime="31/03/2012 20:30">
+				<bettype name="Result After 2nd Set" eventid="14197810" etid="1025">
+					<bet outcome_name="Busto Arsizio" id="70822467" odd="1.50" status="Open"/>
+					<bet outcome_name="Draw" id="70822468" odd="2.50" status="Open"/>
+					<bet outcome_name="Galatasaray Istanbul" id="70822469" odd="11.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Tie-Break in the Match]" eventid="14197811" closetime="31/03/2012 20:30">
+				<bettype name="Tie-Break in the Match" eventid="14197811" etid="1033">
+					<bet outcome_name="Yes" id="70822470" odd="4.00" status="Open"/>
+					<bet outcome_name="No" id="70822471" odd="1.21" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Points Handicap] 0:10.5" eventid="14211996" closetime="31/03/2012 20:30">
+				<bettype name="Points Handicap" eventid="14211996" etid="703">
+					<bet outcome_name="1" id="70895864" odd="1.75" status="Open"/>
+					<bet outcome_name="2" id="70895865" odd="1.95" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Busto Arsizio v Galatasaray Istanbul [Total Points]" eventid="14211997" closetime="31/03/2012 20:30">
+				<bettype name="Total Points" eventid="14211997" etid="704">
+					<bet outcome_name="&lt;178.5" id="70895866" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;178.5" id="70895867" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Challenge Cup Volleyball (men)~" groupid="115142">
+			<event name="Czestochowa v AZS Politechnika Warszawska" eventid="14197813" closetime="31/03/2012 14:30">
+				<bettype name="Versus" eventid="14197813" etid="30">
+					<bet outcome_name="Czestochowa" id="70822479" odd="1.32" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska" id="70822480" odd="2.95" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [1st Set Winner]" eventid="14197814" closetime="31/03/2012 14:30">
+				<bettype name="1st Set Winner" eventid="14197814" etid="705">
+					<bet outcome_name="Czestochowa" id="70822481" odd="1.45" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska" id="70822482" odd="2.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [Double Result]" eventid="14197817" closetime="31/03/2012 14:30">
+				<bettype name="Double Result" eventid="14197817" etid="968">
+					<bet outcome_name="Czestochowa/Czestochowa" id="70822492" odd="1.60" status="Open"/>
+					<bet outcome_name="Czestochowa/AZS Politechnika Warszawska" id="70822493" odd="8.50" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska/Czestochowa" id="70822494" odd="3.75" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska/AZS Politechnika Warszawska" id="70822495" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [Exact Score]" eventid="14197815" closetime="31/03/2012 14:30">
+				<bettype name="Exact Score" eventid="14197815" etid="706">
+					<bet outcome_name="3:0" id="70822483" odd="2.75" status="Open"/>
+					<bet outcome_name="3:1" id="70822484" odd="3.00" status="Open"/>
+					<bet outcome_name="3:2" id="70822485" odd="4.25" status="Open"/>
+					<bet outcome_name="0:3" id="70822486" odd="14.00" status="Open"/>
+					<bet outcome_name="1:3" id="70822487" odd="9.50" status="Open"/>
+					<bet outcome_name="2:3" id="70822488" odd="7.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [Highest Scoring Set]" eventid="14197816" closetime="31/03/2012 14:30">
+				<bettype name="Highest Scoring Set" eventid="14197816" etid="967">
+					<bet outcome_name="1st Set" id="70822489" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822490" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822491" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [Result After 2nd Set]" eventid="14197818" closetime="31/03/2012 14:30">
+				<bettype name="Result After 2nd Set" eventid="14197818" etid="1025">
+					<bet outcome_name="Czestochowa" id="70822496" odd="2.00" status="Open"/>
+					<bet outcome_name="Draw" id="70822497" odd="1.99" status="Open"/>
+					<bet outcome_name="AZS Politechnika Warszawska" id="70822498" odd="6.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Czestochowa v AZS Politechnika Warszawska [Tie-Break in the Match]" eventid="14197819" closetime="31/03/2012 14:30">
+				<bettype name="Tie-Break in the Match" eventid="14197819" etid="1033">
+					<bet outcome_name="Yes" id="70822499" odd="3.20" status="Open"/>
+					<bet outcome_name="No" id="70822500" odd="1.30" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Challenge Cup Volleyball (ladies)~" groupid="115147">
+			<event name="Lokomotiv Baku v Baki Baku" eventid="14197821" closetime="01/04/2012 15:00">
+				<bettype name="Versus" eventid="14197821" etid="30">
+					<bet outcome_name="Lokomotiv Baku" id="70822514" odd="2.00" status="Open"/>
+					<bet outcome_name="Baki Baku" id="70822515" odd="1.67" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [1st Set Winner]" eventid="14197822" closetime="01/04/2012 15:00">
+				<bettype name="1st Set Winner" eventid="14197822" etid="705">
+					<bet outcome_name="Lokomotiv Baku" id="70822516" odd="1.90" status="Open"/>
+					<bet outcome_name="Baki Baku" id="70822517" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [At Least One Set]" eventid="14197826" closetime="01/04/2012 15:00">
+				<bettype name="At Least One Set" eventid="14197826" etid="980">
+					<bet outcome_name="Lokomotiv Baku" id="70822531" odd="1.19" status="Open"/>
+					<bet outcome_name="Baki Baku" id="70822532" odd="1.07" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Double Chance After 2nd Set]" eventid="14197828" closetime="01/04/2012 15:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14197828" etid="1032">
+					<bet outcome_name="1 or X" id="70822536" odd="1.19" status="Open"/>
+					<bet outcome_name="X or 2" id="70822537" odd="1.14" status="Open"/>
+					<bet outcome_name="1 or 2" id="70822538" odd="1.59" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Double Result]" eventid="14197825" closetime="01/04/2012 15:00">
+				<bettype name="Double Result" eventid="14197825" etid="968">
+					<bet outcome_name="Lokomotiv Baku/Lokomotiv Baku" id="70822527" odd="2.90" status="Open"/>
+					<bet outcome_name="Lokomotiv Baku/Baki Baku" id="70822528" odd="4.25" status="Open"/>
+					<bet outcome_name="Baki Baku/Lokomotiv Baku" id="70822529" odd="5.00" status="Open"/>
+					<bet outcome_name="Baki Baku/Baki Baku" id="70822530" odd="2.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Exact Score]" eventid="14197823" closetime="01/04/2012 15:00">
+				<bettype name="Exact Score" eventid="14197823" etid="706">
+					<bet outcome_name="3:0" id="70822518" odd="7.00" status="Open"/>
+					<bet outcome_name="3:1" id="70822519" odd="6.00" status="Open"/>
+					<bet outcome_name="3:2" id="70822520" odd="5.00" status="Open"/>
+					<bet outcome_name="0:3" id="70822521" odd="4.25" status="Open"/>
+					<bet outcome_name="1:3" id="70822522" odd="3.75" status="Open"/>
+					<bet outcome_name="2:3" id="70822523" odd="4.33" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Highest Scoring Set]" eventid="14197824" closetime="01/04/2012 15:00">
+				<bettype name="Highest Scoring Set" eventid="14197824" etid="967">
+					<bet outcome_name="1st Set" id="70822524" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70822525" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70822526" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Result After 2nd Set]" eventid="14197827" closetime="01/04/2012 15:00">
+				<bettype name="Result After 2nd Set" eventid="14197827" etid="1025">
+					<bet outcome_name="Lokomotiv Baku" id="70822533" odd="3.40" status="Open"/>
+					<bet outcome_name="Draw" id="70822534" odd="1.83" status="Open"/>
+					<bet outcome_name="Baki Baku" id="70822535" odd="3.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lokomotiv Baku v Baki Baku [Tie-Break in the Match]" eventid="14197829" closetime="01/04/2012 15:00">
+				<bettype name="Tie-Break in the Match" eventid="14197829" etid="1033">
+					<bet outcome_name="Yes" id="70822539" odd="2.70" status="Open"/>
+					<bet outcome_name="No" id="70822540" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Italy - Campionato A1 (ladies)" groupid="115918">
+			<event name="Bergamo v Villa Cortese" eventid="14207128" closetime="01/04/2012 21:00">
+				<bettype name="Versus" eventid="14207128" etid="30">
+					<bet outcome_name="Bergamo" id="70869571" odd="1.67" status="Open"/>
+					<bet outcome_name="Villa Cortese" id="70869572" odd="2.05" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [1st Set Winner]" eventid="14207129" closetime="01/04/2012 21:00">
+				<bettype name="1st Set Winner" eventid="14207129" etid="705">
+					<bet outcome_name="Bergamo" id="70869573" odd="1.80" status="Open"/>
+					<bet outcome_name="Villa Cortese" id="70869574" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [At Least One Set]" eventid="14207133" closetime="01/04/2012 21:00">
+				<bettype name="At Least One Set" eventid="14207133" etid="980">
+					<bet outcome_name="Bergamo" id="70869588" odd="1.07" status="Open"/>
+					<bet outcome_name="Villa Cortese" id="70869589" odd="1.19" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Double Chance After 2nd Set]" eventid="14207135" closetime="01/04/2012 21:00">
+				<bettype name="Double Chance After 2nd Set" eventid="14207135" etid="1032">
+					<bet outcome_name="1 or X" id="70869593" odd="1.14" status="Open"/>
+					<bet outcome_name="X or 2" id="70869594" odd="1.19" status="Open"/>
+					<bet outcome_name="1 or 2" id="70869595" odd="1.59" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Double Result]" eventid="14207132" closetime="01/04/2012 21:00">
+				<bettype name="Double Result" eventid="14207132" etid="968">
+					<bet outcome_name="Bergamo/Bergamo" id="70869584" odd="2.60" status="Open"/>
+					<bet outcome_name="Bergamo/Villa Cortese" id="70869585" odd="5.00" status="Open"/>
+					<bet outcome_name="Villa Cortese/Bergamo" id="70869586" odd="4.25" status="Open"/>
+					<bet outcome_name="Villa Cortese/Villa Cortese" id="70869587" odd="2.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Exact Score]" eventid="14207130" closetime="01/04/2012 21:00">
+				<bettype name="Exact Score" eventid="14207130" etid="706">
+					<bet outcome_name="3:0" id="70869575" odd="4.25" status="Open"/>
+					<bet outcome_name="3:1" id="70869576" odd="3.75" status="Open"/>
+					<bet outcome_name="3:2" id="70869577" odd="4.33" status="Open"/>
+					<bet outcome_name="0:3" id="70869578" odd="7.00" status="Open"/>
+					<bet outcome_name="1:3" id="70869579" odd="6.00" status="Open"/>
+					<bet outcome_name="2:3" id="70869580" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Highest Scoring Set]" eventid="14207131" closetime="01/04/2012 21:00">
+				<bettype name="Highest Scoring Set" eventid="14207131" etid="967">
+					<bet outcome_name="1st Set" id="70869581" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70869582" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70869583" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Result After 2nd Set]" eventid="14207134" closetime="01/04/2012 21:00">
+				<bettype name="Result After 2nd Set" eventid="14207134" etid="1025">
+					<bet outcome_name="Bergamo" id="70869590" odd="3.00" status="Open"/>
+					<bet outcome_name="Draw" id="70869591" odd="1.83" status="Open"/>
+					<bet outcome_name="Villa Cortese" id="70869592" odd="3.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bergamo v Villa Cortese [Tie-Break in the Match]" eventid="14207136" closetime="01/04/2012 21:00">
+				<bettype name="Tie-Break in the Match" eventid="14207136" etid="1033">
+					<bet outcome_name="Yes" id="70869596" odd="2.70" status="Open"/>
+					<bet outcome_name="No" id="70869597" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio" eventid="14207137" closetime="02/04/2012 20:30">
+				<bettype name="Versus" eventid="14207137" etid="30">
+					<bet outcome_name="Piacenza" id="70869598" odd="3.00" status="Open"/>
+					<bet outcome_name="Busto Arsizio" id="70869599" odd="1.33" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [1st Set Winner]" eventid="14207138" closetime="02/04/2012 20:30">
+				<bettype name="1st Set Winner" eventid="14207138" etid="705">
+					<bet outcome_name="Piacenza" id="70869600" odd="2.55" status="Open"/>
+					<bet outcome_name="Busto Arsizio" id="70869601" odd="1.45" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [Double Result]" eventid="14207141" closetime="02/04/2012 20:30">
+				<bettype name="Double Result" eventid="14207141" etid="968">
+					<bet outcome_name="Piacenza/Piacenza" id="70869611" odd="5.00" status="Open"/>
+					<bet outcome_name="Piacenza/Busto Arsizio" id="70869612" odd="3.75" status="Open"/>
+					<bet outcome_name="Busto Arsizio/Piacenza" id="70869613" odd="8.50" status="Open"/>
+					<bet outcome_name="Busto Arsizio/Busto Arsizio" id="70869614" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [Exact Score]" eventid="14207139" closetime="02/04/2012 20:30">
+				<bettype name="Exact Score" eventid="14207139" etid="706">
+					<bet outcome_name="3:0" id="70869602" odd="14.00" status="Open"/>
+					<bet outcome_name="3:1" id="70869603" odd="9.50" status="Open"/>
+					<bet outcome_name="3:2" id="70869604" odd="7.50" status="Open"/>
+					<bet outcome_name="0:3" id="70869605" odd="2.75" status="Open"/>
+					<bet outcome_name="1:3" id="70869606" odd="3.00" status="Open"/>
+					<bet outcome_name="2:3" id="70869607" odd="4.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [Highest Scoring Set]" eventid="14207140" closetime="02/04/2012 20:30">
+				<bettype name="Highest Scoring Set" eventid="14207140" etid="967">
+					<bet outcome_name="1st Set" id="70869608" odd="2.75" status="Open"/>
+					<bet outcome_name="2nd Set" id="70869609" odd="2.75" status="Open"/>
+					<bet outcome_name="3rd Set" id="70869610" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [Result After 2nd Set]" eventid="14207142" closetime="02/04/2012 20:30">
+				<bettype name="Result After 2nd Set" eventid="14207142" etid="1025">
+					<bet outcome_name="Piacenza" id="70869615" odd="6.00" status="Open"/>
+					<bet outcome_name="Draw" id="70869616" odd="1.99" status="Open"/>
+					<bet outcome_name="Busto Arsizio" id="70869617" odd="2.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Piacenza v Busto Arsizio [Tie-Break in the Match]" eventid="14207143" closetime="02/04/2012 20:30">
+				<bettype name="Tie-Break in the Match" eventid="14207143" etid="1033">
+					<bet outcome_name="Yes" id="70869618" odd="3.20" status="Open"/>
+					<bet outcome_name="No" id="70869619" odd="1.30" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

@@ -1,0 +1,72 @@
+From emmablue001@yahoo.com Wed Jan 16 05:44:16 2013
+Received: from nm9-vm0.bullet.mail.ird.yahoo.com ([77.238.189.197]:34190)
+	by vps.1960sportsbook.com with esmtps (TLSv1:DHE-RSA-AES256-SHA:256)
+	(Exim 4.80)
+	(envelope-from <emmablue001@yahoo.com>)
+	id 1TvLnK-0006qY-QX
+	for support@1960sportsbook.com; Wed, 16 Jan 2013 05:44:16 +0000
+Received: from [77.238.189.55] by nm9.bullet.mail.ird.yahoo.com with NNFMP; 16 Jan 2013 05:45:16 -0000
+Received: from [212.82.108.247] by tm8.bullet.mail.ird.yahoo.com with NNFMP; 16 Jan 2013 05:45:16 -0000
+Received: from [127.0.0.1] by omp1012.mail.ird.yahoo.com with NNFMP; 16 Jan 2013 05:45:16 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 32226.65750.bm@omp1012.mail.ird.yahoo.com
+Received: (qmail 46574 invoked by uid 60001); 16 Jan 2013 05:45:15 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s1024; t=1358315115; bh=nJUxIgFBdH7JNevWIES08ZckKj736di79gw5G0xDad8=; h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:Message-ID:Date:From:Subject:To:MIME-Version:Content-Type:Content-Transfer-Encoding; b=XZAsYD5ujvc0y6k8OIdvG3YebTOUmRzTWM8zyhb14TDwipm4mYw5GzN/6P2D11/irveH1YB+z5oI4NQNB5FZyTviHa6wdOno4v5CB5wbm+8WInfQLYAZUxal9AfpR4kYPOrMQq63hM52IVTEZENQKNBvYdGnWnTqdgYxy0Ifd5s=
+DomainKey-Signature:a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=yahoo.com;
+  h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:Message-ID:Date:From:Subject:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+  b=rbY4kLKqa6pDQX//eePeaFbl5nTx6D9NQ8FmoXC8XLRRQRwqIoHpU2qRcC9/fWqWAimXd0aqAZQ1ogsSBCELXpi12bhqBoQc9f5VKlLd02x7IVWTBATd/7paoIRIbpkIFCoKSn3xMRo9UM1ukQl3IctkEsKXmwrPtn6oUyVWuIs=;
+X-YMail-OSG: 8KZwdZ4VM1mMTZJibQz.B52W03Buvx30h0tDoRShBQs1ut_
+ sXzDdFsRcxilBr3rg07Gb5LOGEVPnCeXoLjm3FPHtULxTMPBLnKHSHl3ZyJR
+ Z7xnF_SfcgrcZHulalizNo7r7gEoCo1GC4NRnKLdrPL9m5wNskSfn218HOlZ
+ 5DomL0QFazwPsveTEKRjgR5RDjGDjBmBToOdzGmNk5D4oRSHXybm2yM9pVpq
+ TsJFMNiTzFAgmBFxCa0EBz8QnIKVYyAd9Xrfqwfs0HcnelBsKSfcqGPeDhC5
+ NKNEtZtzEgejmxCABvFqwAiJkpgL6oONxo9zYQdyzQmYkpmm0gIt1JzuZKU8
+ ZeQ1cZ3CSYmUjR3ckOJl24xUgdMr26_qvkN4GWY.yIkWsPLqwCV2ehhLNunV
+ 3GnNClTAQMn7PTLZfmlknVJQvWGwwURRg5FWv4KMVobRMiMvR68xz3DtnumA
+ X
+Received: from [141.0.9.74] by web171404.mail.ir2.yahoo.com via HTTP; Wed, 16 Jan 2013 05:45:15 GMT
+X-Rocket-MIMEInfo: 001.001,cGxlYXNlIGkgbmVlZCByZXBvbnNlIHRvIHRoZSBtYWlsIGkgc2VudCB0byB5b3Ugb24gbW9uZGF5IGFuZCB5ZXN0ZXJkYXkgdGhhbmtzIG15IHVzZXIgbmFtZSBpcyB1bW9uZGlhATABAQEB
+X-Mailer: YahooMailClassic/15.1.2 YahooMailWebService/0.8.130.494
+Message-ID: <1358315115.29158.YahooMailClassic@web171404.mail.ir2.yahoo.com>
+Date: Wed, 16 Jan 2013 05:45:15 +0000 (GMT)
+From: emmanuel ukpong <emmablue001@yahoo.com>
+Subject: reply of my mails
+To: support@1960sportsbook.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "vps.1960sportsbook.com", has
+ identified this incoming email as possible spam.  The original message
+ has been attached to this so you can view it (if it isn't spam) or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  please i need reponse to the mail i sent to you on monday
+   and yesterday thanks my user name is umondia [...] 
+ 
+ Content analysis details:   (0.1 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             (emmablue001[at]yahoo.com)
+ -0.0 T_RP_MATCHES_RCVD      Envelope sender domain matches handover relay
+                             domain
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit (emmablue001[at]yahoo.com)
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no
+                             trust
+                             [77.238.189.197 listed in list.dnswl.org]
+X-Spam-Flag: NO
+
+please i need reponse to the mail i sent to you on monday and yesterday tha=
+nks my user name is umondia
+

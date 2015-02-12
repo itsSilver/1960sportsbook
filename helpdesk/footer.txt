@@ -1,0 +1,5 @@
+<!--
+<div style="position:centered">
+<a href="http://www.1960sportsbook.com/pages/payment_methods"><img src="img/payment-image.JPG"/></a>
+</div>
+-->

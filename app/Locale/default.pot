@@ -1,0 +1,2064 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-12-28 19:36+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \Controller\AppController.php:225
+msgid "can\'t find"
+msgstr ""
+
+#: \Controller\AppController.php:253
+msgid "Changes saved"
+msgstr ""
+
+#: \Controller\AppController.php:256
+msgid "Can't save item"
+msgstr ""
+
+#: \Controller\AppController.php:283;308
+msgid "Item added"
+msgstr ""
+
+#: \Controller\AppController.php:287;311
+msgid "Can't add item"
+msgstr ""
+
+#: \Controller\AppController.php:331
+#: \Controller\LanguagesController.php:67
+msgid "Item deleted"
+msgstr ""
+
+#: \Controller\AppController.php:335
+#: \Controller\LanguagesController.php:70
+msgid "can\'t delete item"
+msgstr ""
+
+#: \Controller\BetsController.php:20;34
+msgid "Bet added"
+msgstr ""
+
+#: \Controller\BetsController.php:23;37
+msgid "Error adding bet"
+msgstr ""
+
+#: \Controller\DepositsController.php:48;64
+msgid "Min deposit is "
+msgstr ""
+
+#: \Controller\DepositsController.php:51;67
+msgid "Max deposit is "
+msgstr ""
+
+#: \Controller\DepositsController.php:155
+msgid "Deposit request set as completed"
+msgstr ""
+
+#: \Controller\DepositsController.php:161
+msgid "Deposit request canceled"
+msgstr ""
+
+#: \Controller\EventsController.php:74
+#: \webroot\View\Elements\search_box.ctp:7
+#: \webroot\View\Elements\admin\user_menu.ctp:32
+#: \webroot\View\Themed\Red1\Elements\search_box.ctp:7
+#: \webroot\View\Themed\X\Elements\search_box.ctp:5
+msgid "Event name"
+msgstr ""
+
+#: \Controller\FeedsController.php:25;62
+msgid "All feeds updated"
+msgstr ""
+
+#: \Controller\FeedsController.php:34
+msgid "All feeds doanloaded"
+msgstr ""
+
+#: \Controller\FeedsController.php:43
+msgid "All feeds parsed"
+msgstr ""
+
+#: \Controller\FeedsController.php:89
+msgid "Feed updated"
+msgstr ""
+
+#: \Controller\FeedsController.php:98;140
+msgid "can\'t find feed"
+msgstr ""
+
+#: \Controller\GroupsController.php:44
+msgid "Permissions updated"
+msgstr ""
+
+#: \Controller\LanguagesController.php:51
+msgid "Language already exist"
+msgstr ""
+
+#: \Controller\MailsController.php:38;55;68
+msgid "Emails successfully sent"
+msgstr ""
+
+#: \Controller\MailsController.php:40
+msgid "can\'t send emai"
+msgstr ""
+
+#: \Controller\ResultsController.php:84
+msgid "Please enter event result"
+msgstr ""
+
+#: \Controller\ResultsController.php:91;118;242
+msgid "Results updated"
+msgstr ""
+
+#: \Controller\RisksController.php:11;25;42
+#: \Controller\SettingsController.php:11;36;50;64;78;92;105;118;131
+msgid "Settings saved."
+msgstr ""
+
+#: \Controller\RisksController.php:13;27;44
+#: \Controller\SettingsController.php:13;38;52;66;80;94;107;120;133
+msgid "can\'t save settings."
+msgstr ""
+
+#: \Controller\TicketsController.php:23
+msgid "Ticket already printed. Ticket ID: %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:27
+msgid "Can not find ticket. Ticket ID: %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:113
+msgid "can\'t add more bets"
+msgstr ""
+
+#: \Controller\TicketsController.php:118
+msgid "can\'t add bet"
+msgstr ""
+
+#: \Controller\TicketsController.php:328
+msgid "Min betting amount is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:351
+msgid "You can't select multi bet with one bet"
+msgstr ""
+
+#: \Controller\TicketsController.php:361
+msgid "Select betting stake"
+msgstr ""
+
+#: \Controller\TicketsController.php:365
+msgid "Invalid betting stake"
+msgstr ""
+
+#: \Controller\TicketsController.php:369
+msgid "You don\'t have enough money"
+msgstr ""
+
+#: \Controller\TicketsController.php:375
+msgid "Your ticket is not suitable for Jackpot play"
+msgstr ""
+
+#: \Controller\TicketsController.php:402;408
+msgid "Min bet on %s is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:405;411
+msgid "Max bet on %s is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:414
+msgid "Min bet amount is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:417
+msgid "max betting amount is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:442
+msgid "You need to login"
+msgstr ""
+
+#: \Controller\TicketsController.php:447
+msgid "Min picks per ticket is %d"
+msgstr ""
+
+#: \Controller\TicketsController.php:454
+msgid "One or more events already started, please remove them"
+msgstr ""
+
+#: \Controller\TicketsController.php:691
+msgid "Can't find ticket with id: "
+msgstr ""
+
+#: \Controller\UsersController.php:42
+msgid "Registration successful. Check your email."
+msgstr ""
+
+#: \Controller\UsersController.php:67;229
+msgid "Password changed"
+msgstr ""
+
+#: \Controller\UsersController.php:70
+msgid "Wrong old password"
+msgstr ""
+
+#: \Controller\UsersController.php:73;234
+msgid "Passwords do not match"
+msgstr ""
+
+#: \Controller\UsersController.php:124
+msgid "Account information updated."
+msgstr ""
+
+#: \Controller\UsersController.php:159
+msgid "Account settings updated."
+msgstr ""
+
+#: \Controller\UsersController.php:197
+msgid "Password reset link sent to your email"
+msgstr ""
+
+#: \Controller\UsersController.php:200
+msgid "E-mail not valid"
+msgstr ""
+
+#: \Controller\UsersController.php:254
+msgid "Promotional code successfully used"
+msgstr ""
+
+#: \Controller\UsersController.php:256;259
+msgid "Invalid promotional code"
+msgstr ""
+
+#: \Controller\UsersController.php:270
+msgid "Confirm your email."
+msgstr ""
+
+#: \Controller\UsersController.php:277;293
+msgid "Username or password is incorrect"
+msgstr ""
+
+#: \Controller\UsersController.php:354
+msgid "%s (id: %d) made deposit to your account"
+msgstr ""
+
+#: \Controller\UsersController.php:367
+msgid "add balance to %s (id: %d)"
+msgstr ""
+
+#: \Controller\WithdrawsController.php:32
+msgid "Bank information updated."
+msgstr ""
+
+#: \Controller\WithdrawsController.php:45
+msgid "Min withdraw is "
+msgstr ""
+
+#: \Controller\WithdrawsController.php:48
+msgid "Max withdraw is "
+msgstr ""
+
+#: \Controller\WithdrawsController.php:51
+msgid "You don\'t have enough balance"
+msgstr ""
+
+#: \Controller\WithdrawsController.php:96
+msgid "Withdraw request set as completed"
+msgstr ""
+
+#: \Controller\WithdrawsController.php:106
+msgid "Withdraw request canceled"
+msgstr ""
+
+#: \Controller\Component\BetApiComponent.php:12
+#: \webroot\View\Helper\BethHelper.php:120
+msgid "Win"
+msgstr ""
+
+#: \Controller\Component\BetApiComponent.php:15
+#: \Model\Deposit.php:98
+#: \Model\Withdraw.php:33
+#: \webroot\View\Helper\BethHelper.php:123
+msgid "Pending"
+msgstr ""
+
+#: \Controller\Component\BetApiComponent.php:18
+#: \webroot\View\Helper\BethHelper.php:126
+msgid "Lost"
+msgstr ""
+
+#: \Controller\Component\BetApiComponent.php:21
+#: \Model\Deposit.php:100
+#: \Model\Withdraw.php:35
+#: \webroot\View\Helper\BethHelper.php:129
+msgid "Canceled"
+msgstr ""
+
+#: \Model\AppModel.php:118
+msgid "Yes"
+msgstr ""
+
+#: \Model\AppModel.php:120
+msgid "No"
+msgstr ""
+
+#: \Model\AppModel.php:151;232
+#: \Model\League.php:46
+#: \Model\Sport.php:11
+#: \Model\User.php:205
+#: \webroot\View\Sports\admin_view.ctp:26
+#: \webroot\View\Tickets\history.ctp:37
+#: \webroot\View\Tickets\index.ctp:38
+msgid "View"
+msgstr ""
+
+#: \Model\AppModel.php:152;236
+#: \Model\League.php:47
+#: \Model\Sport.php:12
+#: \Model\Staff.php:92
+#: \Model\User.php:96
+#: \webroot\View\Events\admin_view.ctp:34
+#: \webroot\View\Leagues\admin_view.ctp:26
+#: \webroot\View\Sports\admin_view.ctp:27
+msgid "Edit"
+msgstr ""
+
+#: \Model\AppModel.php:153
+#: \Model\Staff.php:93
+#: \Model\User.php:97
+#: \webroot\View\Events\admin_view.ctp:35
+#: \webroot\View\Leagues\admin_view.ctp:27
+#: \webroot\View\Tickets\admin_view.ctp:28
+msgid "Delete"
+msgstr ""
+
+#: \Model\AppModel.php:218
+msgid "List"
+msgstr ""
+
+#: \Model\AppModel.php:222
+#: \webroot\View\AdminCommon\admin_add.ctp:10
+#: \webroot\View\Locales\admin_index.ctp:7
+#: \webroot\View\Users\admin_add_balance.ctp:5
+msgid "Add"
+msgstr ""
+
+#: \Model\AppModel.php:226
+#: \webroot\View\AdminCommon\admin_search.ctp:7
+#: \webroot\View\Elements\search_box.ctp:2;8
+#: \webroot\View\Events\search.ctp:45;54
+#: \webroot\View\Themed\Red1\Elements\search_box.ctp:2;8
+msgid "Search"
+msgstr ""
+
+#: \Model\Bet.php:76
+msgid "All"
+msgstr ""
+
+#: \Model\BottomImage.php:13
+msgid "Bottom Image"
+msgstr ""
+
+#: \Model\BottomImage.php:17
+msgid "Bottom Images"
+msgstr ""
+
+#: \Model\Deposit.php:99
+#: \Model\Withdraw.php:34
+msgid "Completed"
+msgstr ""
+
+#: \Model\Deposit.php:113
+#: \Model\Withdraw.php:26
+msgid "Complete"
+msgstr ""
+
+#: \Model\Deposit.php:114
+#: \Model\Withdraw.php:27
+#: \webroot\View\Results\admin_all_events.ctp:39
+#: \webroot\View\Results\admin_league.ctp:39
+#: \webroot\View\Tickets\admin_view.ctp:31
+msgid "Cancel"
+msgstr ""
+
+#: \Model\Feed.php:10
+msgid "Update"
+msgstr ""
+
+#: \Model\Feed.php:16
+msgid "Update All"
+msgstr ""
+
+#: \Model\Language.php:59
+#: \webroot\View\Users\admin_settings.ctp:33
+#: \webroot\View\Users\settings.ctp:37
+msgid "Language"
+msgstr ""
+
+#: \Model\League.php:48
+msgid "Add Event"
+msgstr ""
+
+#: \Model\Mail.php:26
+msgid "Send Mail"
+msgstr ""
+
+#: \Model\Mail.php:27
+msgid "Send to All"
+msgstr ""
+
+#: \Model\MbMenu.php:18;22
+msgid "Footer menu"
+msgstr ""
+
+#: \Model\MhMenu.php:16;20
+msgid "Header menu"
+msgstr ""
+
+#: \Model\MtMenu.php:17;20
+msgid "Top menu"
+msgstr ""
+
+#: \Model\Report.php:10
+msgid "Users"
+msgstr ""
+
+#: \Model\Report.php:11
+#: \webroot\View\Elements\menu_user_logedin.ctp:3
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:3
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:3
+#: \webroot\View\Tickets\history.ctp:2
+#: \webroot\View\Tickets\index.ctp:2
+#: \webroot\View\Users\admin_tickets.ctp:4
+msgid "Tickets"
+msgstr ""
+
+#: \Model\Report.php:12
+#: \webroot\View\Elements\admin\sidebar.ctp:53
+#: \webroot\View\Users\admin_deposits.ctp:4
+msgid "Deposits"
+msgstr ""
+
+#: \Model\Report.php:13
+#: \webroot\View\Elements\admin\sidebar.ctp:59
+#: \webroot\View\Users\admin_withdraws.ctp:4
+msgid "Withdraws"
+msgstr ""
+
+#: \Model\Result.php:10
+#: \webroot\View\Elements\admin\sidebar.ctp:51
+#: \webroot\View\Events\admin_results.ctp:1
+#: \webroot\View\Results\admin_all_all.ctp:8
+#: \webroot\View\Results\admin_all_events.ctp:3
+#: \webroot\View\Results\admin_all_leagues.ctp:3
+#: \webroot\View\Results\admin_all_sports.ctp:3
+#: \webroot\View\Results\admin_event.ctp:3
+#: \webroot\View\Results\admin_index.ctp:2
+#: \webroot\View\Results\admin_league.ctp:3
+#: \webroot\View\Results\admin_sport.ctp:2
+msgid "Results"
+msgstr ""
+
+#: \Model\Result.php:11
+msgid "Finished events in tickets"
+msgstr ""
+
+#: \Model\Result.php:12
+msgid "Pending events in tickets"
+msgstr ""
+
+#: \Model\Result.php:13
+msgid "All finished events"
+msgstr ""
+
+#: \Model\Risk.php:11
+#: \Model\Setting.php:204
+#: \webroot\View\Elements\admin\sidebar.ctp:84
+msgid "Warnings"
+msgstr ""
+
+#: \Model\Risk.php:12
+#: \Model\Setting.php:205
+#: \webroot\View\Elements\menu_user_logedin.ctp:7
+#: \webroot\View\Elements\admin\sidebar.ctp:66
+#: \webroot\View\Elements\admin\user_menu.ctp:64
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:7
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:7
+#: \webroot\View\Users\admin_settings.ctp:1
+#: \webroot\View\Users\settings.ctp:3
+msgid "Settings"
+msgstr ""
+
+#: \Model\Risk.php:15
+#: \webroot\View\Elements\admin\sidebar.ctp:81
+#: \webroot\View\Settings\admin_index.ctp:1
+msgid "General Settings"
+msgstr ""
+
+#: \Model\Risk.php:16
+msgid "Sports"
+msgstr ""
+
+#: \Model\Risk.php:17
+#: \webroot\View\Sports\admin_view.ctp:2
+msgid "Leagues"
+msgstr ""
+
+#: \Model\Sport.php:13
+msgid "Add League"
+msgstr ""
+
+#: \Model\Staff.php:84
+#: \Model\User.php:182
+#: \webroot\View\Elements\head.ctp:34;37
+#: \webroot\View\Elements\login.ctp:7
+#: \webroot\View\Themed\Red1\Elements\login.ctp:14
+#: \webroot\View\Themed\X\Elements\head.ctp:34;37
+#: \webroot\View\Themed\X\Elements\login.ctp:11
+#: \webroot\View\Users\login.ctp:12
+#: \webroot\View\Users\register.ctp:48
+#: \webroot\View\Users\reset1.ctp:9
+msgid "Password"
+msgstr ""
+
+#: \Model\Staff.php:94
+#: \Model\User.php:98
+msgid "Add balance"
+msgstr ""
+
+#: \Model\Staff.php:95
+#: \Model\User.php:99
+msgid "Report"
+msgstr ""
+
+#: \Model\Ticket.php:265
+msgid "Group ID"
+msgstr ""
+
+#: \Model\Ticket.php:265
+#: \webroot\View\Reports\admin_user_report.ctp:10
+msgid "Tickets created"
+msgstr ""
+
+#: \Model\Ticket.php:265
+#: \webroot\View\Reports\admin_user_report.ctp:11
+msgid "Total"
+msgstr ""
+
+#: \Model\Ticket.php:265
+#: \webroot\View\Reports\admin_user_report.ctp:12
+msgid "Total payout"
+msgstr ""
+
+#: \Model\Ticket.php:265
+#: \webroot\View\Reports\admin_user_report.ctp:13
+msgid "Profit"
+msgstr ""
+
+#: \Model\User.php:206
+msgid "Cancele"
+msgstr ""
+
+#: \webroot\View\Admin\admin_cq.ctp:5
+#: \webroot\View\AdminCommon\admin_edit.ctp:7
+#: \webroot\View\AdminCommon\admin_translate.ctp:7
+#: \webroot\View\Bets\admin_add.ctp:28
+#: \webroot\View\Bets\admin_edit.ctp:31
+#: \webroot\View\Results\admin_all_all.ctp:45
+#: \webroot\View\Results\admin_event.ctp:48
+#: \webroot\View\Users\admin_settings.ctp:39
+msgid "Submit"
+msgstr ""
+
+#: \webroot\View\AdminCommon\admin_add.ctp:9
+#: \webroot\View\AdminCommon\admin_translate.ctp:6
+msgid "Create %s"
+msgstr ""
+
+#: \webroot\View\AdminCommon\admin_edit.ctp:6
+msgid "Edit %s"
+msgstr ""
+
+#: \webroot\View\AdminCommon\admin_search.ctp:6
+msgid "Search %s"
+msgstr ""
+
+#: \webroot\View\AdminCommon\admin_translate.ctp:5
+msgid "locale"
+msgstr ""
+
+#: \webroot\View\Bets\admin_add.ctp:3
+#: \webroot\View\Events\admin_view.ctp:4
+msgid "Add bet"
+msgstr ""
+
+#: \webroot\View\Bets\admin_add.ctp:12
+#: \webroot\View\Bets\admin_edit.ctp:11
+#: \webroot\View\Events\admin_view.ctp:14
+#: \webroot\View\Mails\contact.ctp:11
+msgid "Name"
+msgstr ""
+
+#: \webroot\View\Bets\admin_add.ctp:13
+#: \webroot\View\Bets\admin_edit.ctp:12
+#: \webroot\View\Events\admin_view.ctp:15
+#: \webroot\View\Risks\admin_warnings.ctp:9;34;59
+#: \webroot\View\Tickets\admin_view.ctp:10;44
+#: \webroot\View\Tickets\history.ctp:8
+#: \webroot\View\Tickets\index.ctp:9
+#: \webroot\View\Tickets\preview.ctp:18
+#: \webroot\View\Tickets\printing.ctp:21
+#: \webroot\View\Tickets\review.ctp:28
+#: \webroot\View\Tickets\view.ctp:11
+msgid "Odd"
+msgstr ""
+
+#: \webroot\View\Deposits\deposit.ctp:2
+#: \webroot\View\Deposits\index.ctp:35
+#: \webroot\View\Deposits\vtn.ctp:3
+msgid "Make Deposit"
+msgstr ""
+
+#: \webroot\View\Deposits\deposit.ctp:11
+msgid "Add Test Funds"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:2
+#: \webroot\View\Elements\menu_user_logedin.ctp:4
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:4
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:4
+msgid "Deposit"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:11
+#: \webroot\View\Risks\admin_warnings.ctp:6;31;56;81;102
+#: \webroot\View\Tickets\admin_view.ctp:7;40
+#: \webroot\View\Tickets\history.ctp:7
+#: \webroot\View\Tickets\index.ctp:8
+#: \webroot\View\Withdraws\index.ctp:13
+msgid "Date"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:12
+#: \webroot\View\Tickets\admin_view.ctp:9
+msgid "Type"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:13
+#: \webroot\View\Deposits\preview.ctp:18
+#: \webroot\View\Tickets\history.ctp:9
+#: \webroot\View\Tickets\index.ctp:10
+#: \webroot\View\Withdraws\index.ctp:15
+msgid "Amount"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:14
+#: \webroot\View\Tickets\admin_view.ctp:13;46
+#: \webroot\View\Tickets\history.ctp:11
+#: \webroot\View\Tickets\index.ctp:12
+#: \webroot\View\Tickets\view.ctp:13
+#: \webroot\View\Withdraws\index.ctp:14
+msgid "Status"
+msgstr ""
+
+#: \webroot\View\Deposits\index.ctp:15
+msgid "Deposit ID"
+msgstr ""
+
+#: \webroot\View\Deposits\preview.ctp:3
+msgid "Deposit information:"
+msgstr ""
+
+#: \webroot\View\Deposits\preview.ctp:8
+#: \webroot\View\Risks\admin_warnings.ctp:7;32;57;82;103
+#: \webroot\View\Tickets\admin_view.ctp:8
+msgid "User"
+msgstr ""
+
+#: \webroot\View\Deposits\preview.ctp:13
+msgid "Deposit type"
+msgstr ""
+
+#: \webroot\View\Deposits\preview.ctp:28
+msgid "Make test deposit"
+msgstr ""
+
+#: \webroot\View\Deposits\preview.ctp:31
+msgid "* Disable pop-up blocker before proceeding"
+msgstr ""
+
+#: \webroot\View\Elements\betslip.ctp:2
+msgid "Bet Slip"
+msgstr ""
+
+#: \webroot\View\Elements\footer.ctp:4
+#: \webroot\View\Themed\Red1\Elements\footer.ctp:3
+msgid "Top"
+msgstr ""
+
+#: \webroot\View\Elements\head.ctp:26;29
+#: \webroot\View\Elements\login.ctp:6
+#: \webroot\View\Reports\admin_users.ctp:10
+#: \webroot\View\Themed\Red1\Elements\login.ctp:15
+#: \webroot\View\Themed\X\Elements\head.ctp:26;29
+#: \webroot\View\Themed\X\Elements\login.ctp:9
+#: \webroot\View\Users\account.ctp:23
+#: \webroot\View\Users\login.ctp:10
+#: \webroot\View\Users\register.ctp:46
+msgid "Username"
+msgstr ""
+
+#: \webroot\View\Elements\last_minute_bets.ctp:7
+#: \webroot\View\Themed\Red1\Elements\last_minute_bets.ctp:7
+msgid "Last Minute Bets"
+msgstr ""
+
+#: \webroot\View\Elements\last_minute_bets.ctp:17
+#: \webroot\View\Themed\Red1\Elements\last_minute_bets.ctp:14
+#: \webroot\View\Themed\X\Elements\last_minute_bets.ctp:18
+msgid "%d events available"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:8
+#: \webroot\View\Settings\admin_index.ctp:40
+#: \webroot\View\Users\admin_login.ctp:11
+#: \webroot\View\Users\login.ctp:2;15
+msgid "Login"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:11
+#: \webroot\View\Themed\Red1\Elements\login.ctp:7
+#: \webroot\View\Themed\X\Elements\login.ctp:29
+#: \webroot\View\Users\login.ctp:23
+msgid "Forgotten your password?"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:14
+#: \webroot\View\Themed\Red1\Elements\login.ctp:8
+#: \webroot\View\Themed\X\Elements\login.ctp:23
+#: \webroot\View\Users\login.ctp:22
+msgid "Register now!"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:18
+#: \webroot\View\Themed\Red1\Elements\login.ctp:19
+#: \webroot\View\Themed\X\Elements\login.ctp:35
+msgid "Welcome"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:19
+#: \webroot\View\Themed\Red1\Elements\login.ctp:20
+#: \webroot\View\Themed\X\Elements\login.ctp:36
+msgid "Balance"
+msgstr ""
+
+#: \webroot\View\Elements\login.ctp:21
+#: \webroot\View\Elements\admin\user_menu.ctp:66
+#: \webroot\View\Themed\Red1\Elements\login.ctp:22
+#: \webroot\View\Themed\X\Elements\login.ctp:38
+msgid "Logout"
+msgstr ""
+
+#: \webroot\View\Elements\menu_user_logedin.ctp:5
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:5
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:5
+#: \webroot\View\Withdraws\index.ctp:2
+msgid "Withdraw"
+msgstr ""
+
+#: \webroot\View\Elements\menu_user_logedin.ctp:6
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:6
+msgid "Profile"
+msgstr ""
+
+#: \webroot\View\Elements\menu_user_logedin.ctp:8
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:8
+#: \webroot\View\Themed\X\Elements\menu_user_logedin.ctp:8
+msgid "Promotions"
+msgstr ""
+
+#: \webroot\View\Elements\news.ctp:2
+#: \webroot\View\Themed\Red1\Elements\news.ctp:2
+#: \webroot\View\Themed\X\Elements\news.ctp:3
+msgid "News"
+msgstr ""
+
+#: \webroot\View\Elements\news.ctp:9
+#: \webroot\View\Themed\X\Elements\news.ctp:12
+msgid "Read more"
+msgstr ""
+
+#: \webroot\View\Elements\paginator.ctp:5
+#: \webroot\View\Elements\admin\paginator.ctp:11
+msgid "previous"
+msgstr ""
+
+#: \webroot\View\Elements\paginator.ctp:11
+#: \webroot\View\Elements\admin\paginator.ctp:17
+msgid "next"
+msgstr ""
+
+#: \webroot\View\Elements\search_box.ctp:6
+#: \webroot\View\Elements\admin\user_menu.ctp:21
+#: \webroot\View\Themed\Red1\Elements\search_box.ctp:6
+msgid "Event ID"
+msgstr ""
+
+#: \webroot\View\Elements\sports.ctp:2
+#: \webroot\View\Themed\Red1\Elements\sports.ctp:2
+msgid "Sport's menu"
+msgstr ""
+
+#: \webroot\View\Elements\admin\branding.ctp:3
+msgid "Administration Panel"
+msgstr ""
+
+#: \webroot\View\Elements\admin\list.ctp:22
+#: \webroot\View\Leagues\admin_view.ctp:10
+#: \webroot\View\Results\admin_all_events.ctp:19
+#: \webroot\View\Results\admin_league.ctp:19
+#: \webroot\View\Sports\admin_view.ctp:10
+#: \webroot\View\Tickets\admin_view.ctp:14
+msgid "Actions"
+msgstr ""
+
+#: \webroot\View\Elements\admin\list.ctp:25
+msgid "Translations"
+msgstr ""
+
+#: \webroot\View\Elements\admin\list.ctp:77
+msgid "New translation"
+msgstr ""
+
+#: \webroot\View\Elements\admin\list.ctp:101
+msgid "No records found"
+msgstr ""
+
+#: \webroot\View\Elements\admin\paginator.ctp:4
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: \webroot\View\Elements\admin\reports_form.ctp:6
+msgid "Show"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:5
+msgid "Content"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:7
+msgid "News management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:8
+msgid "Content management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:9
+msgid "Slider management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:10
+msgid "Header menu management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:11
+msgid "Top menu management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:12
+msgid "Bottom menu management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:13
+msgid "Bottom images management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:19
+msgid "Plugins"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:21
+msgid "c"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:22
+msgid "l"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:27
+msgid "Users management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:29
+msgid "List users"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:30
+msgid "Create user"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:31
+msgid "Search user"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:35
+msgid "Staff management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:37
+msgid "List staff"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:38
+msgid "Create staff"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:39
+msgid "Search staff"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:43;47
+msgid "Events management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:45
+msgid "Sports management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:46
+msgid "Leagues management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:54
+msgid "List deposits"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:55
+msgid "Deposit options"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:56
+msgid "Deposit risk management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:57;105
+msgid "Download deposits report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:60
+msgid "List requests"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:61
+msgid "Withdraw options"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:62
+msgid "Withdraw risk management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:63;106
+msgid "Download withdraws report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:68
+msgid "General settings"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:69
+msgid "Ticket settings"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:70
+msgid "Languages"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:71
+msgid "Currencies"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:72
+msgid "SEO settings"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:73
+msgid "Email templates"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:74
+#: \webroot\View\Settings\admin_jackpot.ctp:1
+msgid "Jackpot settings"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:79
+msgid "Risk management"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:82
+msgid "Limits for Sports"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:83
+msgid "Limits for Leagues"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:88
+msgid "Marketing"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:90
+msgid "Create bonus code"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:91
+msgid "Promotion letter"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:95
+msgid "Feed Source"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:97
+msgid "Reports"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:99
+msgid "Download my report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:100
+msgid "Download admins profit report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:101
+msgid "Download operators profit report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:102
+msgid "Download users profit report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:103
+msgid "Download users report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:104
+msgid "Download betting report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:108
+msgid "Download transaction history report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:109
+msgid "Download security report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:110
+msgid "Download events log/report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:111
+msgid "Download results log/report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:112
+msgid "Google analytics report"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:118
+msgid "Submit promotions"
+msgstr ""
+
+#: \webroot\View\Elements\admin\sidebar.ctp:120
+msgid "Manage promotions"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:8
+msgid "Ticket ID"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:45
+msgid "User:"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:49
+msgid "Level:"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:53
+msgid "Current Time:"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:57
+msgid "Current Language:"
+msgstr ""
+
+#: \webroot\View\Elements\admin\user_menu.ctp:62
+msgid "Front Page"
+msgstr ""
+
+#: \webroot\View\Elements\email\html\contact.ctp:5
+#: \webroot\View\Elements\email\text\contact.ctp:5
+msgid "From:"
+msgstr ""
+
+#: \webroot\View\Elements\email\html\contact.ctp:6
+#: \webroot\View\Elements\email\text\contact.ctp:6
+msgid "Email:"
+msgstr ""
+
+#: \webroot\View\Events\admin_view.ctp:9
+#: \webroot\View\Helper\BethHelper.php:195;223;258;286
+msgid "ID: "
+msgstr ""
+
+#: \webroot\View\Events\admin_view.ctp:40
+msgid "Can not find event"
+msgstr ""
+
+#: \webroot\View\Events\search.ctp:21
+msgid "Search results"
+msgstr ""
+
+#: \webroot\View\Feeds\admin_index.ctp:2
+msgid "Feeds"
+msgstr ""
+
+#: \webroot\View\Feeds\admin_index.ctp:4
+msgid "Update all"
+msgstr ""
+
+#: \webroot\View\Groups\admin_edit.ctp:30
+#: \webroot\View\Risks\admin_index.ctp:42
+#: \webroot\View\Risks\admin_leagues.ctp:40
+#: \webroot\View\Risks\admin_sports.ctp:40
+#: \webroot\View\Settings\admin_deposits.ctp:24
+#: \webroot\View\Settings\admin_deposits_risks.ctp:28
+#: \webroot\View\Settings\admin_index.ctp:78
+#: \webroot\View\Settings\admin_jackpot.ctp:55
+#: \webroot\View\Settings\admin_seo.ctp:55
+#: \webroot\View\Settings\admin_settings.ctp:53
+#: \webroot\View\Settings\admin_tickets.ctp:28
+#: \webroot\View\Settings\admin_warnings.ctp:44
+#: \webroot\View\Settings\admin_withdraws.ctp:24
+#: \webroot\View\Settings\admin_withdraws_risks.ctp:28
+msgid "Save"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:40
+msgid "day"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:40
+msgid "days"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:43;43
+msgid "h"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:46;46
+msgid "min"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:104
+msgid "Successful"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:107
+msgid "Failed"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:110
+msgid "Unknown"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:139
+msgid "Decimal"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:142
+msgid "Fractional"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:145
+msgid "American"
+msgstr ""
+
+#: \webroot\View\Helper\BethHelper.php:198;227;261
+msgid "more"
+msgstr ""
+
+#: \webroot\View\Leagues\admin_view.ctp:1
+#: \webroot\View\Sports\admin_view.ctp:28
+msgid "Add event"
+msgstr ""
+
+#: \webroot\View\Leagues\admin_view.ctp:2
+msgid "Events"
+msgstr ""
+
+#: \webroot\View\Locales\admin_index.ctp:2
+msgid "Available cultures"
+msgstr ""
+
+#: \webroot\View\Locales\admin_index.ctp:4
+msgid "Add a culture"
+msgstr ""
+
+#: \webroot\View\Locales\admin_index.ctp:11
+msgid "Cultures this site supports"
+msgstr ""
+
+#: \webroot\View\Locales\admin_index.ctp:17
+msgid "X"
+msgstr ""
+
+#: \webroot\View\Locales\admin_index.ctp:17
+msgid "Are you sure you want to delete "
+msgstr ""
+
+#: \webroot\View\Mails\admin_all.ctp:1
+#: \webroot\View\Mails\admin_index.ctp:1
+msgid "Promotion Letter"
+msgstr ""
+
+#: \webroot\View\Mails\admin_all.ctp:5
+#: \webroot\View\Mails\admin_index.ctp:6
+msgid "Subject:"
+msgstr ""
+
+#: \webroot\View\Mails\admin_all.ctp:6
+#: \webroot\View\Mails\admin_index.ctp:7
+msgid "Content:"
+msgstr ""
+
+#: \webroot\View\Mails\admin_all.ctp:8
+#: \webroot\View\Mails\admin_index.ctp:9
+#: \webroot\View\Mails\contact.ctp:26
+#: \webroot\View\Users\reset.ctp:12
+msgid "Send"
+msgstr ""
+
+#: \webroot\View\Mails\admin_index.ctp:5
+msgid "To:"
+msgstr ""
+
+#: \webroot\View\Mails\contact.ctp:2
+msgid "Contact support team"
+msgstr ""
+
+#: \webroot\View\Mails\contact.ctp:7
+msgid "Subject"
+msgstr ""
+
+#: \webroot\View\Mails\contact.ctp:17
+msgid "Email"
+msgstr ""
+
+#: \webroot\View\Mails\contact.ctp:21
+msgid "Message"
+msgstr ""
+
+#: \webroot\View\Reports\admin_deposits.ctp:27
+#: \webroot\View\Reports\admin_report.ctp:28
+#: \webroot\View\Reports\admin_tickets.ctp:30
+#: \webroot\View\Reports\admin_user_report.ctp:28
+#: \webroot\View\Reports\admin_users.ctp:28
+#: \webroot\View\Reports\admin_withdraws.ctp:30
+msgid "Download"
+msgstr ""
+
+#: \webroot\View\Reports\admin_deposits.ctp:30
+#: \webroot\View\Reports\admin_report.ctp:32
+#: \webroot\View\Reports\admin_tickets.ctp:33
+#: \webroot\View\Reports\admin_user_report.ctp:31
+#: \webroot\View\Reports\admin_users.ctp:31
+#: \webroot\View\Reports\admin_withdraws.ctp:33
+msgid "No data in this period"
+msgstr ""
+
+#: \webroot\View\Reports\admin_user_report.ctp:8
+#: \webroot\View\Reports\admin_users.ctp:8
+msgid "User ID"
+msgstr ""
+
+#: \webroot\View\Reports\admin_user_report.ctp:9
+msgid "User name"
+msgstr ""
+
+#: \webroot\View\Reports\admin_users.ctp:9
+msgid "Date of registration"
+msgstr ""
+
+#: \webroot\View\Reports\admin_users.ctp:11
+msgid "Current balance"
+msgstr ""
+
+#: \webroot\View\Reports\admin_users.ctp:12
+#: \webroot\View\Users\account.ctp:28
+#: \webroot\View\Users\register.ctp:16
+msgid "First name"
+msgstr ""
+
+#: \webroot\View\Reports\admin_withdraws.ctp:7
+msgid "Withdraw report"
+msgstr ""
+
+#: \webroot\View\Results\admin_all_all.ctp:9
+#: \webroot\View\Results\admin_event.ctp:7
+#: \webroot\View\Tickets\admin_view.ctp:42
+#: \webroot\View\Tickets\view.ctp:9
+msgid "Result"
+msgstr ""
+
+#: \webroot\View\Results\admin_all_all.ctp:16
+#: \webroot\View\Results\admin_event.ctp:17
+#: \webroot\View\Tickets\admin_view.ctp:43
+#: \webroot\View\Tickets\preview.ctp:17
+#: \webroot\View\Tickets\printing.ctp:20
+#: \webroot\View\Tickets\review.ctp:27
+#: \webroot\View\Tickets\view.ctp:10
+msgid "Pick"
+msgstr ""
+
+#: \webroot\View\Results\admin_all_events.ctp:39
+#: \webroot\View\Results\admin_league.ctp:39
+msgid "Are you sure you want to cancel this event?"
+msgstr ""
+
+#: \webroot\View\Results\admin_all_events.ctp:49
+#: \webroot\View\Results\admin_all_leagues.ctp:35
+#: \webroot\View\Results\admin_all_sports.ctp:35
+msgid "No events found"
+msgstr ""
+
+#: \webroot\View\Results\admin_league.ctp:49
+msgid "No events in this league"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:1
+#: \webroot\View\Risks\admin_leagues.ctp:2
+#: \webroot\View\Risks\admin_sports.ctp:2
+msgid "Risk Management"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:5
+#: \webroot\View\Risks\admin_leagues.ctp:6
+#: \webroot\View\Risks\admin_sports.ctp:6
+msgid "Set general settings"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:21
+msgid "Minimum bet amount for all bets"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:25
+msgid "Maximum bet amount for all bets"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:29
+msgid "Maximum wining from ticket"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:33
+msgid "Max bets per ticket"
+msgstr ""
+
+#: \webroot\View\Risks\admin_index.ctp:37
+msgid "Min bets per ticket"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:2
+msgid "Warning Odds"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:5;30;55;80;101
+msgid "Id"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:8;33;58
+#: \webroot\View\Tickets\admin_view.ctp:11
+#: \webroot\View\Tickets\betslip.ctp:49
+msgid "Stake"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:10;35;60
+#: \webroot\View\Tickets\admin_view.ctp:12
+#: \webroot\View\Tickets\history.ctp:10
+#: \webroot\View\Tickets\index.ctp:11
+msgid "Winning"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:27
+msgid "Warning Stakes"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:52
+msgid "Warning Winnings"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:77
+msgid "Warning Deposits"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:83;104
+msgid "amount"
+msgstr ""
+
+#: \webroot\View\Risks\admin_warnings.ctp:98
+msgid "Warning Withdraws"
+msgstr ""
+
+#: \webroot\View\Settings\admin_deposits.ctp:15
+#: \webroot\View\Settings\admin_deposits_risks.ctp:15
+#: \webroot\View\Settings\admin_index.ctp:20
+#: \webroot\View\Settings\admin_jackpot.ctp:18
+#: \webroot\View\Settings\admin_seo.ctp:17;30
+#: \webroot\View\Settings\admin_settings.ctp:16
+#: \webroot\View\Settings\admin_tickets.ctp:15
+#: \webroot\View\Settings\admin_warnings.ctp:19
+#: \webroot\View\Settings\admin_withdraws.ctp:15
+#: \webroot\View\Settings\admin_withdraws_risks.ctp:15
+msgid "Description"
+msgstr ""
+
+#: \webroot\View\Settings\admin_deposits.ctp:16
+#: \webroot\View\Settings\admin_deposits_risks.ctp:16
+#: \webroot\View\Settings\admin_index.ctp:21
+#: \webroot\View\Settings\admin_jackpot.ctp:19
+#: \webroot\View\Settings\admin_seo.ctp:18
+#: \webroot\View\Settings\admin_settings.ctp:17
+#: \webroot\View\Settings\admin_tickets.ctp:16
+#: \webroot\View\Settings\admin_warnings.ctp:20
+#: \webroot\View\Settings\admin_withdraws.ctp:16
+#: \webroot\View\Settings\admin_withdraws_risks.ctp:16
+msgid "Value"
+msgstr ""
+
+#: \webroot\View\Settings\admin_deposits.ctp:19
+msgid "Allow deposits"
+msgstr ""
+
+#: \webroot\View\Settings\admin_deposits_risks.ctp:19
+msgid "Min deposit"
+msgstr ""
+
+#: \webroot\View\Settings\admin_deposits_risks.ctp:23
+msgid "Max deposit"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:24
+msgid "Website name"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:28
+msgid "Copyright"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:32
+msgid "Events date format"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:36
+#: \webroot\View\Users\register.ctp:2
+msgid "Registration"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:44
+#: \webroot\View\Users\reset.ctp:2
+#: \webroot\View\Users\reset1.ctp:2
+msgid "Password reset"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:48
+msgid "Default currency"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:52
+msgid "Default timezone:"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:56
+msgid "Default language"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:60
+msgid "Charset"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:64
+msgid "Items per page"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:68
+msgid "Default theme"
+msgstr ""
+
+#: \webroot\View\Settings\admin_index.ctp:73
+msgid "Referals"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:22
+#: \webroot\View\Settings\admin_settings.ctp:20
+msgid "Enable Jackpot"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:26
+#: \webroot\View\Settings\admin_settings.ctp:24
+msgid "Current jackpot"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:30
+#: \webroot\View\Settings\admin_settings.ctp:28
+msgid "Starting pot"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:34
+#: \webroot\View\Settings\admin_settings.ctp:32
+msgid "Pot increase"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:38
+#: \webroot\View\Settings\admin_settings.ctp:36
+msgid "7-predictions to get 7 right"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:42
+#: \webroot\View\Settings\admin_settings.ctp:40
+msgid "8-predictions to get 7 right"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:46
+#: \webroot\View\Settings\admin_settings.ctp:44
+msgid "9-predictions to get 7 right"
+msgstr ""
+
+#: \webroot\View\Settings\admin_jackpot.ctp:50
+#: \webroot\View\Settings\admin_settings.ctp:48
+msgid "10-predictions to get 7 right"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:1
+msgid "SEO Settings"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:22
+msgid "Title"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:26
+msgid "Keywords"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:34
+msgid "Reply to email"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:38
+msgid "Copyright:"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:42
+msgid "Bot content revisit time"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:46
+msgid "Identifier url link:"
+msgstr ""
+
+#: \webroot\View\Settings\admin_seo.ctp:50
+msgid "Author"
+msgstr ""
+
+#: \webroot\View\Settings\admin_tickets.ctp:19
+msgid "Ticket printing"
+msgstr ""
+
+#: \webroot\View\Settings\admin_tickets.ctp:23
+msgid "Ticket preview"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:1
+msgid "Warnings settings"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:23
+msgid "Warning deposit from"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:27
+msgid "Warning withdraws from"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:31
+msgid "Warning stakes from"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:35
+msgid "Warning odds from"
+msgstr ""
+
+#: \webroot\View\Settings\admin_warnings.ctp:39
+msgid "Warning winnings from"
+msgstr ""
+
+#: \webroot\View\Settings\admin_withdraws.ctp:19
+msgid "Allow withdraws"
+msgstr ""
+
+#: \webroot\View\Settings\admin_withdraws_risks.ctp:19
+msgid "Min withdraw"
+msgstr ""
+
+#: \webroot\View\Settings\admin_withdraws_risks.ctp:23
+msgid "Max withdraw"
+msgstr ""
+
+#: \webroot\View\Sports\admin_view.ctp:1
+msgid "Add league"
+msgstr ""
+
+#: \webroot\View\Sports\display.ctp:6
+msgid "Select bet type"
+msgstr ""
+
+#: \webroot\View\Sports\get_sports.ctp:2
+#: \webroot\View\Themed\Red1\Sports\get_sports.ctp:3
+#: \webroot\View\Tickets\view.ctp:28;38
+msgid "Back"
+msgstr ""
+
+#: \webroot\View\Sports\get_sports.ctp:12
+#: \webroot\View\Themed\Red1\Sports\get_sports.ctp:12
+msgid "All today's events"
+msgstr ""
+
+#: \webroot\View\Sports\get_sports.ctp:15
+#: \webroot\View\Themed\Red1\Sports\get_sports.ctp:15
+#: \webroot\View\Themed\X\Sports\get_sports.ctp:7
+msgid "All tomorrow's events"
+msgstr ""
+
+#: \webroot\View\Themed\Red1\Elements\menu_user_logedin.ctp:6
+#: \webroot\View\Users\account.ctp:2
+msgid "Account information"
+msgstr ""
+
+#: \webroot\View\Themed\X\Elements\login.ctp:8
+msgid "Username:"
+msgstr ""
+
+#: \webroot\View\Themed\X\Elements\login.ctp:10
+msgid "Password:"
+msgstr ""
+
+#: \webroot\View\Themed\X\Elements\search_box.ctp:3
+msgid "Your event id"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:3
+msgid "Ticket number #%d"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:6
+msgid "ID"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:26
+#: \webroot\View\Tickets\history.ctp:40
+#: \webroot\View\Tickets\index.ctp:41
+#: \webroot\View\Tickets\review.ctp:75
+#: \webroot\View\Tickets\view.ctp:30
+msgid "Print"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:28
+msgid "Ticket will be deleted. Are yuo sure you want to delete?"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:31
+msgid "Ticket will be canceled. Are yuo sure you want to cancel?"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:37
+msgid "Ticket details"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:41
+#: \webroot\View\Tickets\preview.ctp:16
+#: \webroot\View\Tickets\printing.ctp:19
+#: \webroot\View\Tickets\review.ctp:26
+#: \webroot\View\Tickets\view.ctp:8
+msgid "Event"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:45
+#: \webroot\View\Tickets\view.ctp:12
+msgid "Correct"
+msgstr ""
+
+#: \webroot\View\Tickets\admin_view.ctp:57
+msgid "Add result"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:12;16
+msgid "Single"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:20
+msgid "Multibet"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:24
+msgid "Jackpot"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:61;98
+msgid "Total bets:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:65
+msgid "Total stake:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:69
+msgid "Potential winning:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:103
+msgid "Total odds:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:107;150
+msgid "Stake:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:114;154
+msgid "Possible winning:"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:155
+#: \webroot\View\Tickets\history.ctp:30
+#: \webroot\View\Tickets\index.ctp:31
+#: \webroot\View\Tickets\preview.ctp:51
+#: \webroot\View\Tickets\printing.ctp:55
+#: \webroot\View\Tickets\review.ctp:61
+msgid "JACKPOT"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:166
+msgid "remove all bets"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:171
+msgid "Preview"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:173
+msgid "Place Bet"
+msgstr ""
+
+#: \webroot\View\Tickets\betslip.ctp:185
+msgid "Ticket is empty"
+msgstr ""
+
+#: \webroot\View\Tickets\history.ctp:4
+msgid "Please see your betting history below:"
+msgstr ""
+
+#: \webroot\View\Tickets\history.ctp:50
+#: \webroot\View\Tickets\index.ctp:53
+msgid "Your tickets list is empty at this moment."
+msgstr ""
+
+#: \webroot\View\Tickets\history.ctp:53
+msgid "Pending tickets"
+msgstr ""
+
+#: \webroot\View\Tickets\index.ctp:5
+msgid "Please see you recently placed tickets below:"
+msgstr ""
+
+#: \webroot\View\Tickets\index.ctp:57
+#: \webroot\View\Withdraws\index.ctp:6
+msgid "History"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:2
+msgid "Ticket Preview"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:11
+#: \webroot\View\Tickets\printing.ctp:3
+#: \webroot\View\Tickets\review.ctp:10
+#: \webroot\View\Tickets\view.ctp:2
+msgid "Ticket"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:15
+#: \webroot\View\Tickets\printing.ctp:18
+#: \webroot\View\Tickets\review.ctp:25
+msgid "Event ID / Date"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:23
+#: \webroot\View\Tickets\printing.ctp:26
+#: \webroot\View\Tickets\review.ctp:33
+msgid "ID:"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:37
+#: \webroot\View\Tickets\printing.ctp:40
+#: \webroot\View\Tickets\review.ctp:47
+msgid "Total:"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:41
+#: \webroot\View\Tickets\printing.ctp:44
+#: \webroot\View\Tickets\review.ctp:51
+msgid "Amount:"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:46
+#: \webroot\View\Tickets\printing.ctp:49
+#: \webroot\View\Tickets\review.ctp:56
+msgid "Return:"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:61
+msgid "Delete Ticket"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:61
+msgid "Please confirm ticket cancellation"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:62
+msgid "Submit Ticket"
+msgstr ""
+
+#: \webroot\View\Tickets\preview.ctp:71
+msgid "No bets selected"
+msgstr ""
+
+#: \webroot\View\Tickets\printing.ctp:7
+#: \webroot\View\Tickets\review.ctp:14
+msgid "Date and time"
+msgstr ""
+
+#: \webroot\View\Tickets\printing.ctp:11
+#: \webroot\View\Tickets\review.ctp:18
+msgid "Ticket id"
+msgstr ""
+
+#: \webroot\View\Tickets\review.ctp:2
+msgid "Ticket placed"
+msgstr ""
+
+#: \webroot\View\Tickets\review.ctp:70
+msgid "Your ticket is created successfully"
+msgstr ""
+
+#: \webroot\View\Tickets\review.ctp:72
+msgid "Your ticket number is"
+msgstr ""
+
+#: \webroot\View\Tickets\view.ctp:36
+msgid "Invalid ticket Id"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:3
+msgid "Please provide full personal information to confirm your identity. Owing to regulations, your access to some products, markets and commission discounts may be restricted until you confirm your identity. You can provide personal documents using our secure email service."
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:33
+#: \webroot\View\Users\register.ctp:18
+msgid "Last name"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:38
+msgid "Date of birth"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:43
+#: \webroot\View\Users\register.ctp:20
+msgid "Address"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:52
+#: \webroot\View\Users\register.ctp:24
+msgid "Zip/Postal code"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:57
+#: \webroot\View\Users\register.ctp:26
+msgid "City"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:62
+#: \webroot\View\Users\register.ctp:28
+msgid "Country"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:67
+#: \webroot\View\Users\register.ctp:40
+msgid "Mobile number"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:73
+#: \webroot\View\Users\settings.ctp:43
+#: \webroot\View\Withdraws\settings.ctp:36
+msgid "Confirm changes"
+msgstr ""
+
+#: \webroot\View\Users\account.ctp:74
+#: \webroot\View\Users\password.ctp:19
+msgid "Change Password"
+msgstr ""
+
+#: \webroot\View\Users\admin_settings.ctp:23
+#: \webroot\View\Users\settings.ctp:27
+msgid "Odds type"
+msgstr ""
+
+#: \webroot\View\Users\admin_settings.ctp:28
+#: \webroot\View\Users\settings.ctp:32
+msgid "Time zone"
+msgstr ""
+
+#: \webroot\View\Users\bonus.ctp:2;9
+msgid "Promotional Code"
+msgstr ""
+
+#: \webroot\View\Users\bonus.ctp:3
+msgid "Please add promotional code below to get additional money or other benefit."
+msgstr ""
+
+#: \webroot\View\Users\bonus.ctp:12
+msgid "Submit bonus code"
+msgstr ""
+
+#: \webroot\View\Users\confirm.ctp:2
+#: \webroot\View\Users\register.ctp:61
+msgid "Confirmation"
+msgstr ""
+
+#: \webroot\View\Users\confirm.ctp:4
+msgid "Email has been confirmed. You can now login."
+msgstr ""
+
+#: \webroot\View\Users\confirm.ctp:6
+msgid "Incorect confirmation code"
+msgstr ""
+
+#: \webroot\View\Users\password.ctp:2
+#: \webroot\View\Users\reset1.ctp:14
+msgid "Change password"
+msgstr ""
+
+#: \webroot\View\Users\password.ctp:12
+msgid "Old password"
+msgstr ""
+
+#: \webroot\View\Users\password.ctp:14
+msgid "New password"
+msgstr ""
+
+#: \webroot\View\Users\password.ctp:16
+#: \webroot\View\Users\register.ctp:50
+#: \webroot\View\Users\reset1.ctp:11
+msgid "Confirm password"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:4
+msgid "Opening an account is simple. Fill out the form, make a deposit and you'll have full playing privileges in just minutes. Please ensure you spell all details correctly to avoid any delays in opening your account."
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:13
+msgid "Personal Data"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:22
+msgid " "
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:30
+msgid "Date of birth:"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:38
+#: \webroot\View\Users\reset.ctp:9
+msgid "E-mail"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:43
+msgid "Account Data"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:52
+msgid "Personal question"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:54
+msgid "Personal answer"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:57
+msgid "Referal ID"
+msgstr ""
+
+#: \webroot\View\Users\register.ctp:68
+msgid "Register"
+msgstr ""
+
+#: \webroot\View\Users\reset.ctp:3
+msgid "Fill in email details below. Password reset link sent to your entered email. You will be able to create a new password which you can use to login."
+msgstr ""
+
+#: \webroot\View\Users\reset1.ctp:3
+msgid "Enter your new password"
+msgstr ""
+
+#: \webroot\View\Users\settings.ctp:5
+msgid "Please set up options for more comfortable view."
+msgstr ""
+
+#: \webroot\View\Withdraws\index.ctp:37
+msgid "Request Manual Withdraw"
+msgstr ""
+
+#: \webroot\View\Withdraws\settings.ctp:2
+msgid "Bank info"
+msgstr ""
+
+#: \webroot\View\Withdraws\settings.ctp:3
+msgid "Please provide your bank info"
+msgstr ""
+
+#: \webroot\View\Withdraws\settings.ctp:24
+msgid "Bank name"
+msgstr ""
+
+#: \webroot\View\Withdraws\settings.ctp:29
+msgid "Account number"
+msgstr ""
+
+#: \webroot\test.php:87
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

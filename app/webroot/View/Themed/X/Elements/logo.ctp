@@ -1,0 +1,1 @@
+<?php echo $this->Html->image('logo.png', array('style' => 'float:left;', 'alt' => 'CHALKPRO', 'url' => array('controller' => '/'))) ?>

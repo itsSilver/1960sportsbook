@@ -1,0 +1,318 @@
+<?php
+
+class FeedsController extends AppController {
+
+    public $name = 'Feeds';
+    public $uses = array('Feed', 'Sport', 'League', 'Event', 'Bet', 'BetPart');
+
+    function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow(array('admin_manualUpdate', 'admin_updateAll'));
+    }
+
+    function admin_updateAll($download = true) {
+        if ($download) {
+            $this->downloadAll();
+        }
+        $this->parseAll();
+//        $feeds = $this->Feed->getActiveFeeds();
+//        foreach ($feeds as $key => $feed) {
+//            $this->download($feed['Feed']['id']);
+//        }
+//        foreach ($feeds as $key => $feed) {
+//            $this->update($feed['Feed']['id']);
+//        }
+        $this->__setMessage(__('All feeds updated', true));
+        $this->redirect(array('action' => 'index'));
+    }
+
+    function downloadAll() {
+        $feeds = $this->Feed->getActiveFeeds();
+        foreach ($feeds as $key => $feed) {
+            $this->download($feed['Feed']['id']);
+        }
+        $this->__setMessage(__('All feeds doanloaded', true));
+    }
+
+    function parseAll() {
+        $feeds = $this->Feed->getActiveFeeds();
+        foreach ($feeds as $key => $feed) {
+            //parse only dowanloaded files
+            $this->update($feed['Feed']['id'], false);
+        }
+        $this->__setMessage(__('All feeds parsed', true));
+    }
+
+    function admin_manualUpdate() {
+        $feeds = $this->Feed->getActiveFeeds();
+        $log['total'] = 0;
+        $log[] = 'start update...';
+        $this->Session->write('log', $log);
+        $this->Session->write('feeds', $feeds);
+        $this->redirect(array('action' => 'updating'));
+    }
+
+    function admin_updating() {
+        $feeds = $this->Session->read('feeds');
+        $log = $this->Session->read('log');
+        if (empty($feeds)) {
+            $log[] = 'done';
+            $this->Session->write('log', $log);
+            $this->Session->write('feeds', null);
+            $this->__setMessage(__('All feeds updated', true));
+            debug($log);
+            $this->flash('continue...', array('action' => 'index'), 1);
+            //$this->redirect(array('action' => 'index'));
+        }
+        foreach ($feeds as $key => $feed) {
+            $startTime = microtime(true);
+
+            $this->update($feed['Feed']['id']);
+            unset($feeds[$key]);
+            $this->Session->write('feeds', $feeds);
+
+            $endTime = microtime(true);
+            $time = $endTime - $startTime;
+
+            $log[] = 'updated ' . $feed['Feed']['name'] . ' in ' . $time;
+            $log['total'] += $time;
+            $this->Session->write('log', $log);
+            debug($log);
+            $this->flash('continue...', array('action' => 'updating'), 1);
+            //$this->redirect(array('action' => 'updating'));
+            break;
+        }
+    }
+
+    function admin_update($id = NULL, $download = true, $skip = 0) {
+        $this->update($id, $download, $skip);
+        $this->__setMessage(__('Feed updated', true));
+        $this->redirect(array('action' => 'index'));
+    }
+
+    function download($id = NULL) {
+        $startTime = microtime(true);
+
+        $feed = $this->Feed->getFeed($id);
+        if (empty($feed)) {
+            $this->__setError(__('can\'t find feed', true));
+            return false;
+        }
+
+        $url = $feed['Feed']['url'];
+        //$xml = simplexml_load_file($url);
+//
+        $name = explode('/', $url);
+        $name = $name[count($name) - 1];
+        $fileName = APP . 'webroot' . DS . 'xml' . DS . $name;
+        //$xml->asXML($fileName);
+//        return $xml;
+
+        $ch = curl_init();
+        $timeout = 5;
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
+        $data = curl_exec($ch);
+        curl_close($ch);
+        file_put_contents($fileName, $data);
+
+        $endTime = microtime(true);
+        $time = $endTime - $startTime;
+        //debug($time);die;
+        //debug($data);die;
+        return $data;
+    }
+
+    function update($id = NULL, $download = 1, $skip = 0) {
+
+        
+
+        $memStart = memory_get_usage();
+        $startTime = microtime(true);
+        $log = array();
+
+        $etime = 0;
+
+        $feed = $this->Feed->getFeed($id);
+
+        if (empty($feed)) {
+            $this->__setError(__('can\'t find feed', true));
+            $this->redirect(array('controller' => 'feeds', 'action' => 'index'));
+        }
+
+        //set timezone
+        $timezone = $feed['Feed']['timezone'];
+        date_default_timezone_set($timezone);
+
+        $url = $feed['Feed']['url'];
+        $name = explode('/', $url);
+        $name = $name[count($name) - 1];
+        $url = APP . 'webroot' . DS . 'xml' . DS . $name;
+        //debug($url);        
+        if (file_exists($url)) {
+            $xml = simplexml_load_file($url);
+        } else {
+            if ($download) {
+                $xml = $this->download($id);
+                $this->redirect(array('controller' => 'feeds', 'action' => 'update', $id));
+                return;
+            } else {
+                return;
+            }
+        }
+
+        $memEnd = memory_get_usage();
+        $memTotal = $memEnd - $memStart;
+        $log['download_mem'] = number_format($memTotal);
+        $endTime = microtime(true);
+        $time = $endTime - $startTime;
+        $log['download_time'] = $time;
+
+
+
+        $bets = array();
+
+        foreach ($xml->sport as $sportNode) {
+
+            $sportId = (string) $sportNode->attributes()->sportid;
+            $sportName = $this->__clear((string) $sportNode->attributes()->name);
+            $order = $this->Sport->findLastOrder() + 1;
+
+            $log[] = $sportName;
+
+            $sport = array('Sport' => array('id' => $sportId, 'name' => $sportName, 'active' => 1, 'order' => $order));
+            $this->Sport->save($sport, false);
+            if (isset($this->request->params['pass'][2])) {
+                $skip = $this->request->params['pass'][2];
+            }
+            $leagueNr = -1;
+            foreach ($sportNode->group as $leagueNode) {
+
+                $leagueNr++;
+                if ($leagueNr < $skip) {
+                    continue;
+                }
+
+                $leagueName = $this->__clear((string) $leagueNode->attributes()->name);
+                $leagueId = (string) $leagueNode->attributes()->groupid;
+
+                $log[] = '--' . $leagueName;
+
+                $league = array('League' => array('id' => $leagueId, 'name' => $leagueName, 'sport_id' => $sportId, 'active' => 1));
+
+                $this->League->save($league, false);
+
+                foreach ($leagueNode->event as $eventNode) {
+                    
+                    $eventFullName = $this->__softClear((string) $eventNode->attributes()->name);
+                    $eventName = $this->__clear((string) $eventNode->attributes()->name);
+                    
+                    
+                    $log[] = '-- --' . $eventFullName;                    
+
+                    $a = preg_split('/[\/ :]+/', (string) $eventNode->attributes()->closetime);
+                    $date = mktime($a[3], $a[4], 0, $a[1], $a[0], $a[2]);
+                    $eventDate = gmdate("Y-m-d H:i:s", $date);
+
+                    //$events[] = array('Event' => array('id' => $eventId, 'name' => $eventName, 'league_id' => $leagueId, 'date' => $eventDate, 'active' => 1));
+
+                    $event = $this->Event->find('first', array('recursive' => -1, 'conditions' => array('Event.name' => $eventName, 'Event.league_id' => $leagueId)));
+
+                    $eventId = $event['Event']['id'];
+                    $this->Event->create();
+                    $data = array();
+                    if ($eventId != NULL) {
+                        $data['Event']['id'] = $eventId;
+                    }
+                    $data['Event']['name'] = $eventName;
+                    $data['Event']['league_id'] = $leagueId;
+                    $data['Event']['date'] = $eventDate;
+                    $data['Event']['active'] = 1;
+                    $this->Event->save($data);
+                    $eventId = $this->Event->id;
+
+
+
+                    foreach ($eventNode->bettype as $betNode) {
+
+                        $betName = $eventFullName;
+                        $betType = (string) $betNode->attributes()->name;
+                        $betId = (string) $betNode->attributes()->eventid;
+
+                        if (stristr($betName, $betType) === FALSE) {
+                            $betName .= ' [' . $betType . ']';
+                        }
+
+                        $log[] = '-- -- --' . $betName;
+                        $bet = array('id' => $betId, 'name' => $betName, 'event_id' => $eventId, 'type' => $betType);
+                        $this->Bet->insertBet($bet);
+                        //$this->Bet->save($bet, false);
+
+                        foreach ($betNode->bet as $betPartNode) {
+                            $betPartName = (string) $betPartNode->attributes()->outcome_name;
+                            $betPartOdd = (string) $betPartNode->attributes()->odd;
+                            $betPartId = (string) $betPartNode->attributes()->id;
+
+                            //$log[] = '-- -- -- --' . $betPartName;
+
+                            $betPart = array('id' => $betPartId, 'name' => $betPartName, 'bet_id' => $betId, 'odd' => $betPartOdd);
+
+                            $this->BetPart->insertBetPart($betPart);
+
+
+                            //$this->BetPart->save($betPart, false);
+                        }
+                    }
+                }
+                $endTime = microtime(true);
+                $time = $endTime - $startTime;
+                if ($time > 20) {
+                    $this->redirect(array('action' => 'update', $id, $download, $leagueNr + 1));
+                }
+            }
+        }
+        unlink($url);
+        $this->Feed->updated($id, $this->__getSqlDate());
+
+        $memEnd = memory_get_usage();
+        $memTotal = $memEnd - $memStart;
+        $log['parse_mem'] = number_format($memTotal - $log['download_mem']);
+        $endTime = microtime(true);
+        $time = $endTime - $startTime;
+        $log['parse_time'] = $time - $log['download_time'];
+        $log['etime'] = $etime;
+        //debug($log);
+    }
+
+    function __softClear($string) {
+        $string = preg_replace('/\xc2\xa0/', ' ', $string);
+        return trim(str_replace('~', '', $string));
+    }
+
+    function admin_test() {
+        $str = 'Karlsruher SC v FC St. Pauli 1 1/2:0';
+        $str = $this->__clear($str);
+        debug($str);
+        die;
+    }
+
+    function __clear($string) {
+        $string = $this->__softClear($string);
+        $string = preg_replace('/\[.*/', '', $string);      //match expanded event names [******
+        $string = preg_replace('/-.*\/\+.*/', '', $string); //match handicap -*****/****
+        $string = preg_replace('/\+.*/', '', $string); //match handicap +*****/******
+        //football
+        $string = preg_replace('/\d+:\d+ \d+\/\d+.*/', '', $string); //match handicap 1:0 1/0*****
+        $string = preg_replace('/\d+ \d+\/\d+.*/', '', $string); //match handicap 1 1/0*****
+        $string = preg_replace('/\d+\/\d+:.*/', '', $string); //match handicap 1/0:*****      
+        //ice hotkey
+        $string = preg_replace('/\d+\.d+:.*/', '', $string); //match handicap 1.5:*****              
+        //footbal / all
+        $string = preg_replace('/\d+:\d.*/', '', $string); //match handicap 0:1****
+        return $string;
+    }
+
+}
+
+?>

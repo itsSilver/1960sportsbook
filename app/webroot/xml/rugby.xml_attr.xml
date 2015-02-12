@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:51">
+	<sport name="Rugby" sportid="15447">
+		<group name="Rugby Union - Heineken European Cup " groupid="15854">
+			<event name="Edinburgh v Stade Toulousain" eventid="13645656" closetime="07/04/2012 16:00">
+				<bettype name="Versus (with Draw)" eventid="13645656" etid="31">
+					<bet outcome_name="Edinburgh" id="67865204" odd="3.40" status="Open"/>
+					<bet outcome_name="X" id="67865205" odd="21.00" status="Open"/>
+					<bet outcome_name="Stade Toulousain" id="67865206" odd="1.30" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Heineken Cup 2011/12" eventid="11939042" closetime="06/04/2012 14:00">
+				<bettype name="Outright" eventid="11939042" etid="180">
+					<bet outcome_name="Leinster Rugby" id="59059770" odd="3.00" status="Open"/>
+					<bet outcome_name="Munster Rugby" id="59059773" odd="4.25" status="Open"/>
+					<bet outcome_name="Stade Toulousain" id="59059771" odd="5.00" status="Open"/>
+					<bet outcome_name="Saracens" id="59059775" odd="7.00" status="Open"/>
+					<bet outcome_name="ASM Clermont Auvergne" id="59059776" odd="7.00" status="Open"/>
+					<bet outcome_name="Ulster Rugby" id="59059785" odd="15.00" status="Open"/>
+					<bet outcome_name="Cardiff Blues" id="59059779" odd="34.00" status="Open"/>
+					<bet outcome_name="Edinburgh" id="59059788" odd="41.00" status="Open"/>
+					<bet outcome_name="Gloucester" id="59059782" odd="0.90" status="Open"/>
+					<bet outcome_name="Harlequin FC" id="59059783" odd="0.90" status="Open"/>
+					<bet outcome_name="London Irish" id="59059784" odd="0.90" status="Open"/>
+					<bet outcome_name="Castres Olympique" id="59059786" odd="0.90" status="Open"/>
+					<bet outcome_name="The Scarlets" id="59059787" odd="0.90" status="Open"/>
+					<bet outcome_name="Glasgow Warriors" id="59059789" odd="0.90" status="Open"/>
+					<bet outcome_name="Treviso" id="59059790" odd="0.90" status="Open"/>
+					<bet outcome_name="Bath Rugby" id="59059781" odd="0.90" status="Open"/>
+					<bet outcome_name="Ospreys" id="59059780" odd="0.90" status="Open"/>
+					<bet outcome_name="Racing Métro 92" id="59059778" odd="0.90" status="Open"/>
+					<bet outcome_name="Biarritz Olympique PB" id="59059777" odd="0.90" status="Open"/>
+					<bet outcome_name="Northampton Saints" id="59059774" odd="0.90" status="Open"/>
+					<bet outcome_name="Leicester Tigers" id="59059772" odd="0.90" status="Open"/>
+					<bet outcome_name="Aironi Rugby" id="59059791" odd="0.90" status="Open"/>
+					<bet outcome_name="Montpellier Hérault Rugby" id="59059814" odd="0.90" status="Open"/>
+					<bet outcome_name="Connacht" id="59059816" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Leinster Rugby v Cardiff Blues" eventid="13645657" closetime="07/04/2012 18:45">
+				<bettype name="Versus (with Draw)" eventid="13645657" etid="31">
+					<bet outcome_name="Leinster Rugby" id="67865207" odd="1.15" status="Open"/>
+					<bet outcome_name="X" id="67865208" odd="26.00" status="Open"/>
+					<bet outcome_name="Cardiff Blues" id="67865209" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Munster Rugby v Ulster Rugby" eventid="13645658" closetime="08/04/2012 14:45">
+				<bettype name="Versus (with Draw)" eventid="13645658" etid="31">
+					<bet outcome_name="Munster Rugby" id="67865210" odd="1.28" status="Open"/>
+					<bet outcome_name="X" id="67865211" odd="23.00" status="Open"/>
+					<bet outcome_name="Ulster Rugby" id="67865212" odd="3.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Saracens v ASM Clermont Auvergne" eventid="13645659" closetime="08/04/2012 17:30">
+				<bettype name="Versus (with Draw)" eventid="13645659" etid="31">
+					<bet outcome_name="Saracens" id="67865213" odd="1.73" status="Open"/>
+					<bet outcome_name="X" id="67865214" odd="19.00" status="Open"/>
+					<bet outcome_name="ASM Clermont Auvergne" id="67865215" odd="2.10" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby League - NRL" groupid="23505">
+			<event name="CAN Raiders v NQ Cowboys" eventid="14178377" closetime="02/04/2012 11:00">
+				<bettype name="Versus" eventid="14178377" etid="31">
+					<bet outcome_name="CAN Raiders" id="70718868" odd="1.63" status="Open"/>
+					<bet outcome_name="NQ Cowboys" id="70718869" odd="2.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="CAN Raiders v NQ Cowboys 0:3.5" eventid="14196882" closetime="02/04/2012 11:00">
+				<bettype name="Handicap" eventid="14196882" etid="60">
+					<bet outcome_name="1" id="70818523" odd="1.90" status="Open"/>
+					<bet outcome_name="2" id="70818524" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="GC Titans v CTR Bulldogs" eventid="14178375" closetime="01/04/2012 06:00">
+				<bettype name="Versus" eventid="14178375" etid="31">
+					<bet outcome_name="GC Titans" id="70718864" odd="2.50" status="Open"/>
+					<bet outcome_name="CTR Bulldogs" id="70718865" odd="1.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="GC Titans v CTR Bulldogs 5.5:0" eventid="14196890" closetime="01/04/2012 06:00">
+				<bettype name="Handicap" eventid="14196890" etid="60">
+					<bet outcome_name="1" id="70818563" odd="1.90" status="Open"/>
+					<bet outcome_name="2" id="70818564" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="WES Tigers v SOU Rabbitohs" eventid="14178376" closetime="01/04/2012 07:00">
+				<bettype name="Versus" eventid="14178376" etid="31">
+					<bet outcome_name="WES Tigers" id="70718866" odd="2.40" status="Open"/>
+					<bet outcome_name="SOU Rabbitohs" id="70718867" odd="1.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="WES Tigers v SOU Rabbitohs 4.5:0" eventid="14196892" closetime="01/04/2012 07:00">
+				<bettype name="Handicap" eventid="14196892" etid="60">
+					<bet outcome_name="1" id="70818569" odd="1.90" status="Open"/>
+					<bet outcome_name="2" id="70818570" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby League - Super League" groupid="24580">
+			<event name="Catalans v Widnes Vikings" eventid="14196922" closetime="31/03/2012 18:30">
+				<bettype name="Versus (with Draw)" eventid="14196922" etid="31">
+					<bet outcome_name="Catalans" id="70818718" odd="1.03" status="Open"/>
+					<bet outcome_name="X" id="70818719" odd="34.00" status="Open"/>
+					<bet outcome_name="Widnes Vikings" id="70818720" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Catalans v Widnes Vikings 0:28.5" eventid="14210537" closetime="31/03/2012 18:30">
+				<bettype name="Handicap" eventid="14210537" etid="60">
+					<bet outcome_name="1" id="70888210" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70888211" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="London v Wakefield" eventid="14196923" closetime="31/03/2012 18:45">
+				<bettype name="Versus (with Draw)" eventid="14196923" etid="31">
+					<bet outcome_name="London" id="70818721" odd="1.75" status="Open"/>
+					<bet outcome_name="X" id="70818722" odd="19.00" status="Open"/>
+					<bet outcome_name="Wakefield" id="70818723" odd="2.05" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby Union - Celtic League" groupid="25441">
+			<event name="Munster Rugby v Leinster Rugby" eventid="14210892" closetime="31/03/2012 20:30">
+				<bettype name="Versus (with Draw)" eventid="14210892" etid="31">
+					<bet outcome_name="Munster Rugby" id="70890480" odd="1.85" status="Open"/>
+					<bet outcome_name="X" id="70890481" odd="19.00" status="Open"/>
+					<bet outcome_name="Leinster Rugby" id="70890482" odd="1.95" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14212256" etid="190">
+					<bet outcome_name="&lt;35.5" id="70897158" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;35.5" id="70897159" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ospreys v Treviso" eventid="14210891" closetime="31/03/2012 19:30">
+				<bettype name="Versus (with Draw)" eventid="14210891" etid="31">
+					<bet outcome_name="Ospreys" id="70890477" odd="1.05" status="Open"/>
+					<bet outcome_name="X" id="70890478" odd="34.00" status="Open"/>
+					<bet outcome_name="Treviso" id="70890479" odd="8.00" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14210895" etid="190">
+					<bet outcome_name="&lt;46.5" id="70890489" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;46.5" id="70890490" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Ospreys v Treviso 0:18.5" eventid="14210894" closetime="31/03/2012 19:30">
+				<bettype name="Handicap" eventid="14210894" etid="60">
+					<bet outcome_name="1" id="70890487" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70890488" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby Union - Super 15" groupid="26178">
+			<event name="Lions v C'bury Crusaders" eventid="14188821" closetime="31/03/2012 17:05">
+				<bettype name="Versus (with Draw)" eventid="14188821" etid="31">
+					<bet outcome_name="Lions" id="70775977" odd="3.40" status="Open"/>
+					<bet outcome_name="X" id="70775979" odd="21.00" status="Open"/>
+					<bet outcome_name="C'bury Crusaders" id="70775980" odd="1.30" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14210884" etid="190">
+					<bet outcome_name="&lt;51.5" id="70890434" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;51.5" id="70890435" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lions v C'bury Crusaders 8.5:0" eventid="14196940" closetime="31/03/2012 17:05">
+				<bettype name="Handicap" eventid="14196940" etid="60">
+					<bet outcome_name="1" id="70818800" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70818801" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="The Stormers v Northern Bulls" eventid="14188823" closetime="31/03/2012 19:10">
+				<bettype name="Versus (with Draw)" eventid="14188823" etid="31">
+					<bet outcome_name="The Stormers" id="70775984" odd="1.60" status="Open"/>
+					<bet outcome_name="X" id="70775986" odd="21.00" status="Open"/>
+					<bet outcome_name="Northern Bulls" id="70775987" odd="2.30" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14212347" etid="190">
+					<bet outcome_name="&lt;41.5" id="70897629" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;41.5" id="70897630" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="The Stormers v Northern Bulls 0:3.5" eventid="14196941" closetime="31/03/2012 19:10">
+				<bettype name="Handicap" eventid="14196941" etid="60">
+					<bet outcome_name="1" id="70818802" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70818803" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby Union - France Top 14 Orange" groupid="37419">
+			<event name="Biarritz Olympique PB v ASM Clermont Auvergne" eventid="14191881" closetime="31/03/2012 14:05">
+				<bettype name="Versus (with Draw)" eventid="14191881" etid="31">
+					<bet outcome_name="Biarritz Olympique PB" id="70790964" odd="1.48" status="Open"/>
+					<bet outcome_name="X" id="70790965" odd="17.00" status="Open"/>
+					<bet outcome_name="ASM Clermont Auvergne" id="70790966" odd="2.65" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Biarritz Olympique PB v ASM Clermont Auvergne 0:4.5" eventid="14210552" closetime="31/03/2012 14:05">
+				<bettype name="Handicap" eventid="14210552" etid="60">
+					<bet outcome_name="1" id="70888298" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70888299" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="CA Brive Corrèze Limousin v RC Toulon" eventid="14191882" closetime="31/03/2012 14:15">
+				<bettype name="Versus (with Draw)" eventid="14191882" etid="31">
+					<bet outcome_name="CA Brive Corrèze Limousin" id="70790967" odd="2.00" status="Open"/>
+					<bet outcome_name="X" id="70790968" odd="17.00" status="Open"/>
+					<bet outcome_name="RC Toulon" id="70790969" odd="1.83" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lyon OU v Bordeaux Begles" eventid="14191883" closetime="31/03/2012 14:15">
+				<bettype name="Versus (with Draw)" eventid="14191883" etid="31">
+					<bet outcome_name="Lyon OU" id="70790970" odd="1.53" status="Open"/>
+					<bet outcome_name="X" id="70790971" odd="17.00" status="Open"/>
+					<bet outcome_name="Bordeaux Begles" id="70790972" odd="2.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lyon OU v Bordeaux Begles 0:3.5" eventid="14212424" closetime="31/03/2012 14:15">
+				<bettype name="Handicap" eventid="14212424" etid="60">
+					<bet outcome_name="1" id="70898106" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70898107" odd="1.89" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Montpellier Hérault Rugby v SU Agen" eventid="14191884" closetime="31/03/2012 14:15">
+				<bettype name="Versus (with Draw)" eventid="14191884" etid="31">
+					<bet outcome_name="Montpellier Hérault Rugby" id="70790973" odd="1.05" status="Open"/>
+					<bet outcome_name="X" id="70790974" odd="26.00" status="Open"/>
+					<bet outcome_name="SU Agen" id="70790975" odd="8.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Montpellier Hérault Rugby v SU Agen 0:15.5" eventid="14200718" closetime="31/03/2012 14:15">
+				<bettype name="Handicap" eventid="14200718" etid="60">
+					<bet outcome_name="1" id="70840336" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70840337" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Stade Français Paris v Stade Toulousain" eventid="14191886" closetime="31/03/2012 16:15">
+				<bettype name="Versus (with Draw)" eventid="14191886" etid="31">
+					<bet outcome_name="Stade Français Paris" id="70790979" odd="1.55" status="Open"/>
+					<bet outcome_name="X" id="70790980" odd="17.00" status="Open"/>
+					<bet outcome_name="Stade Toulousain" id="70790981" odd="2.45" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Stade Français Paris v Stade Toulousain 0:3.5" eventid="14200723" closetime="31/03/2012 16:15">
+				<bettype name="Handicap" eventid="14200723" etid="60">
+					<bet outcome_name="1" id="70840366" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70840367" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="USA Perpignan v Aviron Bayonnais" eventid="14191885" closetime="31/03/2012 14:15">
+				<bettype name="Versus (with Draw)" eventid="14191885" etid="31">
+					<bet outcome_name="USA Perpignan" id="70790976" odd="1.28" status="Open"/>
+					<bet outcome_name="X" id="70790977" odd="21.00" status="Open"/>
+					<bet outcome_name="Aviron Bayonnais" id="70790978" odd="3.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="USA Perpignan v Aviron Bayonnais 0:8.5" eventid="14200721" closetime="31/03/2012 14:15">
+				<bettype name="Handicap" eventid="14200721" etid="60">
+					<bet outcome_name="1" id="70840352" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70840353" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby Union - European Challenge Cup" groupid="40633">
+			<event name="European Challenge Cup 11/12" eventid="13586637" closetime="05/04/2012 20:45">
+				<bettype name="Outright" eventid="13586637" etid="180">
+					<bet outcome_name="RC Toulon" id="67546187" odd="2.75" status="Open"/>
+					<bet outcome_name="Stade Francais" id="67546188" odd="4.25" status="Open"/>
+					<bet outcome_name="Biarritz Olympique PB" id="67546194" odd="5.50" status="Open"/>
+					<bet outcome_name="Harlequin FC" id="67546189" odd="8.00" status="Open"/>
+					<bet outcome_name="London Wasps" id="67546190" odd="10.00" status="Open"/>
+					<bet outcome_name="The Scarlets" id="67546192" odd="10.00" status="Open"/>
+					<bet outcome_name="Brive" id="67546191" odd="15.00" status="Open"/>
+					<bet outcome_name="Exeter Chiefs" id="67546193" odd="41.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Rugby Union - Aviva Premiership" groupid="42009">
+			<event name="Bath Rugby v Northampton Saints" eventid="14210747" closetime="31/03/2012 18:30">
+				<bettype name="Versus (with Draw)" eventid="14210747" etid="31">
+					<bet outcome_name="Bath Rugby" id="70889991" odd="2.00" status="Open"/>
+					<bet outcome_name="X" id="70889992" odd="19.00" status="Open"/>
+					<bet outcome_name="Northampton Saints" id="70889993" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Exeter Chiefs v London Irish" eventid="14210745" closetime="31/03/2012 16:00">
+				<bettype name="Versus (with Draw)" eventid="14210745" etid="31">
+					<bet outcome_name="Exeter Chiefs" id="70889985" odd="1.40" status="Open"/>
+					<bet outcome_name="X" id="70889986" odd="21.00" status="Open"/>
+					<bet outcome_name="London Irish" id="70889987" odd="2.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Exeter Chiefs v London Irish 0:7.5" eventid="14211934" closetime="31/03/2012 16:00">
+				<bettype name="Handicap" eventid="14211934" etid="60">
+					<bet outcome_name="1" id="70895474" odd="1.90" status="Open"/>
+					<bet outcome_name="2" id="70895475" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="London Wasps v Gloucester" eventid="14210748" closetime="01/04/2012 16:00">
+				<bettype name="Versus (with Draw)" eventid="14210748" etid="31">
+					<bet outcome_name="London Wasps" id="70889994" odd="1.90" status="Open"/>
+					<bet outcome_name="X" id="70889995" odd="19.00" status="Open"/>
+					<bet outcome_name="Gloucester" id="70889996" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Saracens v Harlequin FC" eventid="14210746" closetime="31/03/2012 16:00">
+				<bettype name="Versus (with Draw)" eventid="14210746" etid="31">
+					<bet outcome_name="Saracens" id="70889988" odd="1.45" status="Open"/>
+					<bet outcome_name="X" id="70889989" odd="19.00" status="Open"/>
+					<bet outcome_name="Harlequin FC" id="70889990" odd="2.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Saracens v Harlequin FC 0:5.5" eventid="14210813" closetime="31/03/2012 16:00">
+				<bettype name="Handicap" eventid="14210813" etid="60">
+					<bet outcome_name="1" id="70890208" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70890209" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

@@ -1,0 +1,96 @@
+From clawnazz@yahoo.com Mon Feb 25 06:33:29 2013
+Received: from nm4-vm0.bullet.mail.ird.yahoo.com ([77.238.189.211]:46579)
+	by vps.1960sportsbook.com with smtp (Exim 4.80)
+	(envelope-from <clawnazz@yahoo.com>)
+	id 1U9rct-0003Z4-6K
+	for support@1960sportsbook.com; Mon, 25 Feb 2013 06:33:29 +0000
+Received: from [77.238.189.52] by nm4.bullet.mail.ird.yahoo.com with NNFMP; 25 Feb 2013 06:33:38 -0000
+Received: from [217.146.188.152] by tm5.bullet.mail.ird.yahoo.com with NNFMP; 25 Feb 2013 06:33:38 -0000
+Received: from [127.0.0.1] by smtp110.mail.ird.yahoo.com with NNFMP; 25 Feb 2013 06:33:38 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s1024; t=1361774018; bh=51MjCu0j5Tnr6Eq8o/T5OHatOkQS4wYzjjY/GoDmOjA=; h=X-Yahoo-Newman-Id:X-Yahoo-Newman-Property:X-YMail-OSG:X-Yahoo-SMTP:Received:Date:From:To:Subject:Message-ID:Importance:X-MSMail-Priority:X-Priority:MIME-Version:Content-Type:Content-Transfer-Encoding; b=ucjV4nUUy//+UTKYdEI0ex0P1HHF8HsglftkJZzQbTRhqtBpW3+ceKcP55giqh97s3GAEPJIoRW7jP4dW5PXTnjyRfccAOAOTYZXTfsrfk1P2kVp74j27d+I2G6SESvwLIDZK8XXop0FwQsntAI0s/NjEdnHBMK9XvhxLPb/TUc=
+X-Yahoo-Newman-Id: 679384.76557.bm@smtp110.mail.ird.yahoo.com
+X-Yahoo-Newman-Property: ymail-3
+X-YMail-OSG: 59ZsUBkVM1k3Cp.3.XYlGmI37E67zN2oQXpdrtn_GsDqehi
+ iGv6kwJYMokEMy.GKkeM19tU_orXW1Q3UgvfyY4e2cGpHoJs8L_BGyXL.1PI
+ RpnWDzBxarFRGsqG3hM6.64JCDlvXIIbsZmxJbAHru1MBZPqgJlZAR2lxyic
+ rAuD1RpHmQI63p.IePZCx5a5np_TMF.gUShz_.GhXnNLDJiTmrG8K9ZTgqNl
+ RUEJlgz8gIT3YIEEkA7dfUurNe.Pu5Danlfbxz8d2ZIweXfElIZTmf8r_o_H
+ htqsYjjcvruEyPUrBWsM_sAwfez.446YM3S7QhjGbmM4jhElVJqNhuf0yKv_
+ mHWtkS.xujxkCx0yOlB7.RD0u1knbSKQB.bucbQwTewwL_BA49lsksEa_K0p
+ cxI1qGHtEiAA9.3lUjua7TrXYamDGLCYhYSp3A.xADiwBxjwDIaKfp5Yot1K
+ b1vhxt0H1RcbNThaRGrZnuo_8qvDLHg--
+X-Yahoo-SMTP: zGMjnzmswBDtrCFxZos3FN5kNc8R
+Received: from [10.97.5.207] (clawnazz@41.190.2.220 with login)
+        by smtp110.mail.ird.yahoo.com with SMTP; 24 Feb 2013 22:33:38 -0800 PST
+Date: Mon, 25 Feb 2013 07:33:23 +0100
+From: <clawnazz@yahoo.com>
+To: <support@1960sportsbook.com>
+Subject: Please verify my last week(thursday)bets
+Message-ID: <19693.1046241203@yahoo.com>
+Importance: Normal
+X-MSMail-Priority: Normal
+X-Priority: 3
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="_-_-_=_Next_Part:FFFFFFFF.FFFFFECF_=_-_-_"
+Content-Transfer-Encoding: 7bit
+X-Spam-Status: No, score=3.5
+X-Spam-Score: 35
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "vps.1960sportsbook.com", has
+ identified this incoming email as possible spam.  The original message
+ has been attached to this so you can view it (if it isn't spam) or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  Dear sir/madam, i made two different mutibet on europa cup
+    matches which i genuinely won with my account name "jaywilly" but was graded
+    as a loss. These are the matches and outcomes below. (Bet 1) Hannover96(first
+    team to score) 70' win. Lazio(first team to score) 10' win. Bordeaux(win/draw)
+    1-0 win. Hannover96(win/draw) 1-1 win. [...] 
+ 
+ Content analysis details:   (3.5 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  1.7 DEAR_SOMETHING         BODY: Contains 'Dear (something)'
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             (clawnazz[at]yahoo.com)
+ -0.0 RP_MATCHES_RCVD        Envelope sender domain matches handover relay domain
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no
+                             trust
+                             [77.238.189.211 listed in list.dnswl.org]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  1.8 MISSING_MIMEOLE        Message has X-MSMail-Priority, but no X-MimeOLE
+X-Spam-Flag: NO
+
+This is a multi-part message in MIME format.
+
+--_-_-_=_Next_Part:FFFFFFFF.FFFFFECF_=_-_-_
+Content-Type: text/plain;
+	charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Dear sir/madam, i made two different mutibet on europa cup matches which i =
+genuinely won with my account name "jaywilly" but was graded as a loss. The=
+se are the matches and outcomes below.=0D=0A=0D=0A(Bet 1) Hannover96(first =
+team to score) 70' win.=0D=0ALazio(first team to score) 10' win.=0D=0ABorde=
+aux(win/draw) 1-0 win.=0D=0AHannover96(win/draw) 1-1 win.=0D=0A=0D=0A(Bet 2=
+) Lyon(first team to score) 17' win.=0D=0ABenfica(first team to score) 60' =
+win.=0D=0AVictoria plzen(win/draw) 2-0 win.=0D=0ALyon(win/draw) 1-1 win.=0D=
+=0A=0D=0AFrankly, i never used lazio and lavente in these bets.It might be =
+an error from your system because they (lazio and lavente) are not even att=
+ached with odds on the bet tickets.=0D=0A=0D=0AI would like to know why it =
+was graded as a loss while i won both bets.=0D=0A=0D=0APlease i'll urge you=
+ to verify my claim/ bets and credit my account accordingly because i obvio=
+usly won.=0D=0A=0D=0AThanks in advance for your cooperation.=0D=0A=0D=0ALoo=
+king forward to hearing from you soon.=0D=0A=0D=0ARegards,=0D=0A=0D=0AWilli=
+ams james.=0D=0A=0D=0APs: For future reference i desperately need answers r=
+egarding why my bets are graded as a loss rather than a win. I am passionat=
+ely appealing for your response.
+--_-_-_=_Next_Part:FFFFFFFF.FFFFFECF_=_-_-_--
+

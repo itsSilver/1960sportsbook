@@ -1,0 +1,69 @@
+From emmablue001@yahoo.com Thu Jan 31 13:59:59 2013
+Received: from nm11.bullet.mail.ird.yahoo.com ([77.238.189.64]:29026)
+	by vps.1960sportsbook.com with smtp (Exim 4.80)
+	(envelope-from <emmablue001@yahoo.com>)
+	id 1U0ugF-00045F-I4
+	for support@1960sportsbook.com; Thu, 31 Jan 2013 13:59:59 +0000
+Received: from [77.238.189.53] by nm11.bullet.mail.ird.yahoo.com with NNFMP; 31 Jan 2013 14:00:33 -0000
+Received: from [212.82.108.242] by tm6.bullet.mail.ird.yahoo.com with NNFMP; 31 Jan 2013 14:00:33 -0000
+Received: from [127.0.0.1] by omp1007.mail.ird.yahoo.com with NNFMP; 31 Jan 2013 14:00:33 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 524275.75522.bm@omp1007.mail.ird.yahoo.com
+Received: (qmail 43450 invoked by uid 60001); 31 Jan 2013 14:00:30 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s1024; t=1359640830; bh=67qGrvE/AwRxS0laIF1c/h+GG5UqqeCRqumOrdQZ2ys=; h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:Message-ID:Date:From:Subject:To:MIME-Version:Content-Type:Content-Transfer-Encoding; b=GpT3WMBWSVZt45vN45c2KKAE/zvgjcoe/FScW9nC/ujUYGSRfJHFhtn5C2pUFb7jSn73HjzoVhvwIPEkCtpZGOZeKvyFxlAXzYVzfUF9kmU6geo/UzlO+aQLTdbenz9NTY4TYa26Ueht87qiyNCAqnDUTD8oqRJVHDVpafBKSlA=
+DomainKey-Signature:a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=yahoo.com;
+  h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:Message-ID:Date:From:Subject:To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+  b=xkmXkPKF0/PdIFZrZVvEpX3VzrdUFxf9n40QLQtrd7TYVrwlnttFuZOCq+nIt3yTGcJMAk3adsEQWiMmXBDbmrBvsJdTImohcUCMjXMBM6DmD4CMQhyoFrrEB12as7i8rlrXhm8gjVzWlXU1ZYv3wEJtAvEezOEghH3/auyjPe8=;
+X-YMail-OSG: Xkfl0BgVM1kJASc.OeQ1Jg8wkTp_3.pG.BTxaz.6sGVjHoh
+ xFUPo94Fd8wRGJj_0p0jFitXgQZjegs1uCdVWjUMkqnN627yN_XHmUJo7Ytv
+ vfF69mk6qDTtjrZuqMWj9wZd8SWWOXYDAYyLL3kzj.HvV5SyRZ5itY9YPc6G
+ HF1P.JbDMKv2p9Q6R4W1fGtQ7tNfTJdWVwAwxlTJ4IJjrmlS4eLQYGQtDNKI
+ d97Bz5tyZfYx6p.ogR95mvL7wuGjYzgBxq.rBzMcVhwbFTaWxmXeQsGow_uu
+ jT92jfYN1X1eFvlG.Hm_k9XXYDY_xiD3KWoGUcdiMUm8r17eeOYBIcxcHZTl
+ D..pYQ.SkCBY5CE_Otx9pBALUc.iijjO0JIT_gx9nFeX88lnfJRQ3wTw0c8P
+ xc78bgYDFTcPHogZmrEKJvyBgcGTZ0M51PhOws32tZwVe2g2KZYc6qBD7YN.
+ Pv.geEDo8Vu0-
+Received: from [82.145.209.100] by web171404.mail.ir2.yahoo.com via HTTP; Thu, 31 Jan 2013 14:00:30 GMT
+X-Rocket-MIMEInfo: 001.001,cGF5IG1lATABAQEB
+X-Mailer: YahooMailClassic/15.1.2 YahooMailWebService/0.8.131.499
+Message-ID: <1359640830.41758.YahooMailClassic@web171404.mail.ir2.yahoo.com>
+Date: Thu, 31 Jan 2013 14:00:30 +0000 (GMT)
+From: emmanuel ukpong <emmablue001@yahoo.com>
+Subject: withdrawal
+To: support@1960sportsbook.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.1
+X-Spam-Score: 1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "vps.1960sportsbook.com", has
+ identified this incoming email as possible spam.  The original message
+ has been attached to this so you can view it (if it isn't spam) or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  pay me [...] 
+ 
+ Content analysis details:   (0.1 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
+                             (emmablue001[at]yahoo.com)
+ -0.0 T_RP_MATCHES_RCVD      Envelope sender domain matches handover relay
+                             domain
+  0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+                             digit (emmablue001[at]yahoo.com)
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no
+                             trust
+                             [77.238.189.64 listed in list.dnswl.org]
+X-Spam-Flag: NO
+
+pay me
+

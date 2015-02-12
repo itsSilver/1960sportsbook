@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:52">
+	<sport name="Winter Sports" sportid="15451">
+		<group name="Curling - World Championship (men)" groupid="123453">
+			<event name="Canada (men) v France (men)" eventid="14208218" closetime="31/03/2012 14:00">
+				<bettype name="Versus" eventid="14208218" etid="50">
+					<bet outcome_name="Canada (men)" id="70874934" odd="1.10" status="Open"/>
+					<bet outcome_name="France (men)" id="70874935" odd="5.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="China (men) v Czech Republic (men)" eventid="14211957" closetime="31/03/2012 19:00">
+				<bettype name="Versus" eventid="14211957" etid="50">
+					<bet outcome_name="China (men)" id="70895602" odd="1.70" status="Open"/>
+					<bet outcome_name="Czech Republic (men)" id="70895603" odd="2.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Denmark (men) v New Zealand (men)" eventid="14211958" closetime="31/03/2012 19:00">
+				<bettype name="Versus" eventid="14211958" etid="50">
+					<bet outcome_name="Denmark (men)" id="70895604" odd="1.18" status="Open"/>
+					<bet outcome_name="New Zealand (men)" id="70895605" odd="4.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="New Zealand (men) v Scotland (men)" eventid="14208219" closetime="31/03/2012 14:00">
+				<bettype name="Versus" eventid="14208219" etid="50">
+					<bet outcome_name="New Zealand (men)" id="70874936" odd="5.00" status="Open"/>
+					<bet outcome_name="Scotland (men)" id="70874937" odd="1.12" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Norway (men) v Denmark (men)" eventid="14208220" closetime="31/03/2012 14:00">
+				<bettype name="Versus" eventid="14208220" etid="50">
+					<bet outcome_name="Norway (men)" id="70874938" odd="1.44" status="Open"/>
+					<bet outcome_name="Denmark (men)" id="70874939" odd="2.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Norway (men) v Scotland (men)" eventid="14211959" closetime="31/03/2012 19:00">
+				<bettype name="Versus" eventid="14211959" etid="50">
+					<bet outcome_name="Norway (men)" id="70895606" odd="1.70" status="Open"/>
+					<bet outcome_name="Scotland (men)" id="70895607" odd="2.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Switzerland (men) v Sweden (men)" eventid="14211960" closetime="31/03/2012 19:00">
+				<bettype name="Versus" eventid="14211960" etid="50">
+					<bet outcome_name="Switzerland (men)" id="70895608" odd="1.90" status="Open"/>
+					<bet outcome_name="Sweden (men)" id="70895609" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="USA (men) v Germany (men)" eventid="14208221" closetime="31/03/2012 14:00">
+				<bettype name="Versus" eventid="14208221" etid="50">
+					<bet outcome_name="USA (men)" id="70874940" odd="1.80" status="Open"/>
+					<bet outcome_name="Germany (men)" id="70874941" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

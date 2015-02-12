@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:53">
+	<sport name="Baseball" sportid="5425">
+		<group name="North America - MLB" groupid="5615">
+			<event name="ARI Diamondbacks v KZC Royals" eventid="14210337" closetime="31/03/2012 22:05">
+				<bettype name="Versus" eventid="14210337" etid="30">
+					<bet outcome_name="ARI Diamondbacks" id="70887397" odd="0.90" status="Open"/>
+					<bet outcome_name="KZC Royals" id="70887398" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BOS Red Sox v TB Rays" eventid="14210329" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210329" etid="30">
+					<bet outcome_name="BOS Red Sox" id="70887381" odd="1.82" status="Open"/>
+					<bet outcome_name="TB Rays" id="70887382" odd="2.02" status="Open"/>
+				</bettype>
+			</event>
+			<event name="CIN Reds v SF Giants" eventid="14210341" closetime="01/04/2012 00:05">
+				<bettype name="Versus" eventid="14210341" etid="30">
+					<bet outcome_name="CIN Reds" id="70887405" odd="2.13" status="Open"/>
+					<bet outcome_name="SF Giants" id="70887406" odd="1.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="COL Rockies v CHI White Sox" eventid="14210338" closetime="31/03/2012 22:05">
+				<bettype name="Versus" eventid="14210338" etid="30">
+					<bet outcome_name="COL Rockies" id="70887399" odd="2.08" status="Open"/>
+					<bet outcome_name="CHI White Sox" id="70887400" odd="1.78" status="Open"/>
+				</bettype>
+			</event>
+			<event name="DET Tigers v ATL Braves" eventid="14210330" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210330" etid="30">
+					<bet outcome_name="DET Tigers" id="70887383" odd="1.72" status="Open"/>
+					<bet outcome_name="ATL Braves" id="70887384" odd="2.19" status="Open"/>
+				</bettype>
+			</event>
+			<event name="LA Angels v CHI Cubs" eventid="14210339" closetime="31/03/2012 22:05">
+				<bettype name="Versus" eventid="14210339" etid="30">
+					<bet outcome_name="LA Angels" id="70887401" odd="1.78" status="Open"/>
+					<bet outcome_name="CHI Cubs" id="70887402" odd="2.08" status="Open"/>
+				</bettype>
+			</event>
+			<event name="NY Mets v MIA Marlins" eventid="14210331" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210331" etid="30">
+					<bet outcome_name="NY Mets" id="70887385" odd="2.29" status="Open"/>
+					<bet outcome_name="MIA Marlins" id="70887386" odd="1.67" status="Open"/>
+				</bettype>
+			</event>
+			<event name="NY Yankees v HOU Astros" eventid="14210332" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210332" etid="30">
+					<bet outcome_name="NY Yankees" id="70887387" odd="1.77" status="Open"/>
+					<bet outcome_name="HOU Astros" id="70887388" odd="2.10" status="Open"/>
+				</bettype>
+			</event>
+			<event name="STL Cardinals v WAS Nationals" eventid="14210334" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210334" etid="30">
+					<bet outcome_name="STL Cardinals" id="70887391" odd="1.82" status="Open"/>
+					<bet outcome_name="WAS Nationals" id="70887392" odd="2.02" status="Open"/>
+				</bettype>
+			</event>
+			<event name="TEX Rangers v CLE Indians" eventid="14210343" closetime="01/04/2012 04:05">
+				<bettype name="Versus" eventid="14210343" etid="30">
+					<bet outcome_name="TEX Rangers" id="70887409" odd="1.98" status="Open"/>
+					<bet outcome_name="CLE Indians" id="70887410" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="TOR Blue Jays v PHL Phillies" eventid="14210335" closetime="31/03/2012 19:05">
+				<bettype name="Versus" eventid="14210335" etid="30">
+					<bet outcome_name="TOR Blue Jays" id="70887393" odd="2.23" status="Open"/>
+					<bet outcome_name="PHL Phillies" id="70887394" odd="1.70" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

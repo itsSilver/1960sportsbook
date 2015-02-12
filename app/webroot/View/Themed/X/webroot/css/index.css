@@ -1,0 +1,165 @@
+/* ----- CSS reset section starts here -----
+http://meyerweb.com/eric/tools/css/reset/ - W4PS edit
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0;	font-size: 100%; font: inherit;  vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1,5; }
+ol, ul { list-style: none; }
+blockquote, q {	quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table {	border-collapse: collapse; border-spacing: 0; }
+b { font-weight:bold; }
+a { text-decoration:none; }
+/* ----- CSS reset section ends here   ----- */
+body { background:url(../img/bg.png) 0 0 repeat; color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+#content { width:990px; margin:0 auto; }
+
+/* ----- Global clases list        ----- */
+h2 { font-size:16px; }
+div.clear { width:100%; height:0; clear:both; }
+div.blue_btn { background:url(../img/blue-btn-bg.png) 0 0 repeat-x; height:22px; padding:0 10px; line-height:22px; text-align:center; color:#fff; float:left; cursor:pointer; }
+a.yellow_link, .color_yellow { color:#ffe400; }
+a.yellow_link:hover { text-decoration:underline; }
+.color_cyan { color:#01acde; }
+/* ----- End of Global clases list ----- */
+
+/* ----- Header section starts here ----- */
+div#header { height:73px; }
+div#login { float:right; margin-top:20px;}
+div#login input { width:120px; height:20px; line-height:20px; border:2px solid #2d2d2d; padding-left:20px; color:#FFF; margin:0 10px 0 5px; }
+input#username_login { background:url(../img/user.png) 4px center no-repeat #000; }
+input#password_login { background:url(../img/password.png) 3px center no-repeat #000; }
+a#register_link { color:#00a8ff; }
+a#register_link:hover { text-decoration:underline; }
+a.white_link { color:#fff; }
+a.white_link:hover { text-decoration:underline; }
+/* ----- Header section ends here   ----- */
+
+/* ----- Content section starts here ----- */
+div#main { background-color:#1f1f1f; width:984px; padding:2px 3px; }
+div#main_menu_cont { background:url(../img/main-menu.png) 0 0 repeat-x; width:100%; height:42px; padding-bottom:5px; }
+ul#main_menu li { display:block; float:left; padding:0 10px; }
+ul#main_menu li a { display:block; float:left; height:42px; line-height:42px; color:#909090; padding:0 10px; font-size:14px; }
+ul#main_menu li.active_menu a, ul#main_menu li a:hover { background:url(../img/main-menu-hover.png) 0 0 repeat-x; color:#fff; }
+
+div#left { float:left; width:205px; }
+div#premier_cont { background:url(../img/top-box-bg.png) 0 0 repeat-x; width:190px; height:64px; padding-left:15px; }
+div.left_box { background:url(../img/left-box-bg.png) 0 0 repeat-x #0c0c0c; padding:5px 0; width:205px; margin-top:5px; }
+div.left_box_title_div { padding:0 10px; float:left; }
+ul.bet_classes li:hover { background-color:#181818; }
+ul.bet_classes li { display:block; width:100%; min-height:19px; }
+ul.bet_classes li a { color:#fff; display:block; padding:0 10px; }
+ul.bet_classes li a:hover { color:#ffe400; }
+span.left_box_title { font-weight:bold; font-size:14px; line-height:20px; }
+ul#sport_categories_menu li a div.delete_fav, ul#sport_categories_menu2 li a div.delete_fav { display:none; }
+div.fav_a_catt { background:url(../img/star.png) 0 center no-repeat; width:15px; height:19px; float:right; display:none; }
+div.delete_fav { background:url(../img/delete.png) 0 center no-repeat; width:19px; height:19px; float:right; }
+div.bet_classes_text { float:left; padding-left:5px; height:19px; line-height:19px; }
+div.sporticon { background:url("../img/sporticons.png") no-repeat; height:19px; width:19px; float:left; }
+ul#sport_categories_menu2 { display:none; }
+ul#best_services { padding-left:10px; }
+ul#best_services li {color:#ffe400; }
+ul#best_services li a {color:#fff; }
+ul#best_services li a:hover { text-decoration:underline; }
+div#search_event { background-color:#0c0c0c; padding:3px; width:199px; margin-top:5px; }
+div#search_event input { background-color:#000; border:1px solid #2b2b2b; height:24px; width:187px; line-height:24px; padding:0 5px; color:#4e4e4e; margin-bottom:4px; }
+div#search_event_btn { background:url(../img/mid-box-bg.png) 0 0 repeat-x; width:80px; height:27px; color:#000; font-size:14px; line-height:27px; font-weight:bold; padding:0 5px; margin-left:108px; cursor:pointer; }
+
+div#mid { float:left; padding:0 5px;  width:483px;}
+div#slider { width:209px; height:155px; }
+div.slider-wrapper { float:left; }
+span.nivo_title { font-size:18px; }
+div.nivo_divas { width:239px; height:20px; line-height:20px; background-color:#1b1b1b; color:#01acde; margin:2px 0; padding:0 5px; }
+div.nivo_divas:hover { background-color:#006cdd; color:#fff; }
+div.nivo_taitl { float:left; width:200px; }
+div.nivo_sk { float:left; width:39px; color:#fff; text-align:right; }
+div.mid_box { background-color:#0c0c0c; }
+div.mid_box_title { background:url(../img/mid-box-bg.png) 0 0 repeat-x; height:27px; line-height:27px; font-size:14px; padding:0 10px; color:#041722; font-weight:bold; }
+div.showtime { float:left; width:300px; }
+div.mid_box_mid { padding:5px; }
+div.show_hide { background:url(../img/up-down-black-arrow.png) 0 0 no-repeat; width:20px; height:20px; float:right; margin-top:3px; }
+div#top_bets_cont { border:1px solid #90c7ff; padding:5px; width:461px; background-color:#1b1b1b; }
+div#top_bets_menu { margin-bottom:-1px; }
+div.top_bets_menu_item { background:url(../img/top-bets-menu.png) 0 0 no-repeat; width:98px; height:33px; line-height:33px; color:#fff; float:left; margin-right:2px; cursor:pointer; }
+div.top_bets_menu_item div.sporticon { margin-left:5px; margin-top:5px; }
+div.top_bets_menu_item div.bet_classes_text { margin-top:5px; }
+div.active_top_bet_menu { background:url(../img/top-bets-active-menu.png) 0 0 no-repeat; }
+div.top_bets_info { width:130px; height:20px; line-height:20px; padding:0 5px; background-color:#0c0c0c; }
+div.top_bets_info:hover, table.other tr td div.top_bets_info:hover { background-color:#e98414; }
+td.first_td { width:95px; }
+td.second_td { width:35px; text-align:right; }
+div.who { float:left; width:130px; }
+div.rating { float:left; width:35px; }
+div#red_status, div#yellow_status { float:left; width:308px; height:18px; }
+div#red_status div, div#yellow_status div { height:18px; width:1%; text-align:center; line-height:18px; color:#000; border-bottom-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+div#red_status div { background:url(../img/red-bar.png) 0 0 repeat-x; }
+div#yellow_status div { background:url(../img/yellow-bar.png) 0 0 repeat-x; }
+div#more_bets { background:url(../img/blue-btn-bg.png) 0 0 repeat-x; width:120px; height:22px; line-height:22px; text-align:center; margin-left:350px; margin-top:10px; }
+div.last_minte_bet { width:473px; height:20px; line-height:20px; }
+div.last_minte_bet div { float:left; }
+div.last_minte_bet div a.color_yellow:hover { color:#01ACDE; }
+div.last_minte_bet div.sporticon { margin-right:5px; }
+div.odd { background-color:#1b1b1b; }
+table#bet_type_filter td { background-color:#303030; border:1px solid #0C0C0C; }
+table.other tr td div.top_bets_info { background-color:#2a2929; }
+table.register_table td.right { text-align:right; }
+table.register_table td.error { text-align:right; }
+table.register_table td.error img { display:none; }
+table.register_table tr td { padding:2px 0; }
+table.register_table td.right input[type=text], table.register_table td.right input[type=password], input.gr_inp { border:1px solid #4a4a4a; background-color:#1f1f1f; color:#fff; width:150px; }
+input.gr_inp { width:50px; }
+div#register { background:url(../img/register-btn.png) 0 0 no-repeat; width:179px; height:44px; line-height:44px; font-size:16px; text-align:center; color:#0c0c0c; float:left; font-weight:bold; margin-left:95px; }
+div#register:hover { background-position:0 -44px; }
+
+div#right { float:left; }
+div#best_slip { width:265px; height:112px; padding:5px 10px; background:url(../img/blue-box-bg.png) 0 0 repeat-x #006cea; color:#020e1a; }
+div.right_box_title { color:#041722; font-size:14px; font-weight:bold; float:left; width:249px; padding-bottom:5px; }
+div.info { float:left; cursor:pointer; position:relative; }
+div.info_box { position:absolute; background-color:#fff; width:150px; height:75px; overflow:hidden; top:-75px; right:3px; padding:3px; display:none; }
+div.right_box { background-color:#0c0c0c; width:285px; }
+div.right_box_title2 { background:url(../img/mid-box-bg.png) 0 0 repeat-x; width:265px; height:27px; line-height:27px; font-size:14px; padding:0 10px; color:#041722; font-weight:bold; margin-top:5px; }
+div.right_box_mid { padding:8px; }
+div#win_btn { background:url(../img/win_btn.png) 0 0 repeat-x; width:120px; height:25px; line-height:25px; color:#ffe400; font-weight:bold; text-align:center; float:left; margin:10px 0 0 15px; }
+div#box { background:url(../img/blue-box2-bg.png) 0 0 repeat-x #006cea; width:277px; height:329px; padding:5px 4px; color:#020e1a; margin-top:5px; }
+div#slip_mid { position:relative; z-index:5; }
+div#slip_menu { height:35px; float:left; width:100%; margin-bottom:-5px; }
+div.slip_menu_item { background:url(../img/passive-slip-menu-bg.png) 0 6px no-repeat; width:92px; height:20px; float:left; position:relative; padding:15px 0 0 0; text-align:center; cursor:pointer; }
+div.first { z-index:4; margin-bottom:-10px; }
+div.second { z-index:3; margin-left:-17px; }
+div.third { z-index:2; margin-left:-17px; }
+div.active_slip_menu { background:url(../img/active-slip-menu-bg.png) -1px 0 no-repeat; z-index:6; color:#fff; }
+div#s_left { background:url(../img/skip-left.png) 0 5px no-repeat; width:5px; height:167px; float:left; }
+div#s_mid { background:url(../img/slip-mid.png) 0 0 repeat-x; width:267px; height:167px; float:left; }
+div#s_right { background:url(../img/slip-right.png) 0 0 no-repeat; width:5px; height:167px; float:left; }
+div.m_m_m { width:100%; height:48px; padding-top:4px; color:#fff; }
+div.m_m_m div { float:left; }
+div.m_m_m div img { margin-top:5px; }
+div.m_m_m div input { margin-top:15px; }
+div#total { padding-top:5px; color:#fff; }
+div#place { background:url(../img/place_btn.png) 0 0 no-repeat; width:87px; height:28px; line-height:28px; font-size:14px; font-weight:bold; text-align:center; margin-top:5px; float:right; margin-right:4px; }
+div#total_left { background:url(../img/total-left.png) 0 0 no-repeat; width:6px; height:62px; float:left; }
+div#total_mid { background:url(../img/total-mid.png) 0 0 repeat-x; width:266px; height:57px; float:left; padding:5px 0 0 0; }
+div.lleft { float:left; width: 180px; padding-left:5px; }
+div.rright { float:right; width:70px; text-align:right; padding-right:5px; }
+div.rright input { width:40px; background-color:#000; border:1px solid #2a3d86; color:#fff; text-align:right; }
+div#total_right { background:url(../img/total-right.png) 0 0 no-repeat; width:5px; height:62px; float:left; }
+div#sponsors { background:url(../img/sponsors.png) 0 0 no-repeat #0C0C0C; width:285px; height:128px; margin-top:5px; }
+div#satisfaction { background:url(../img/100%25.png) 0 0 no-repeat #0C0C0C; width:285px; height:67px; margin-top:5px; }
+div#fade { background:url(../img/fade.png) center 5px no-repeat; width:277px; height:24px; padding-top:5px; line-height:24px; }
+div.team { float:left; width:85px; padding:10px 10px 0 10px; font-size:13px; text-align:center; }
+div#result { float:left; text-align:center; width:67px; padding-top:10px; color:#ffe400; font-size:18px; }
+div#live_cat { background:url(../img/some-bg.png) 0 0 repeat; width:100%; height:24px; }
+div.live_cont { border-top:1px solid #0d0d0d; background-color:#1b1b1b; padding:2px 0 2px 10px; }
+/* ----- Content section ends here   ----- */
+
+/* ----- Footer section starts here ----- */
+div#footer_menu { background-color:#0c0c0c; border-top:1px solid #303030; border-bottom:2px solid #393939; min-height:100px; }
+div.foot_menu_cont { width:157px; padding:10px 20px; float:left; }
+div.foot_menu_cont span { color:#fff; font-size:13px; font-weight:bold; }
+div.foot_menu_cont a { color:#4b4b4b; }
+div.grey_line { width:157px; height:2px; background-color:#4b4b4b; margin:10px 0; }
+div#copyright { text-align:center; }
+/* ----- Footer section ends here   ----- */

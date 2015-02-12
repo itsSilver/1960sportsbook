@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:51">
+	<sport name="Golf" sportid="15444">
+		<group name="US Masters" groupid="25260">
+			<event name="2012 US Masters" eventid="11417443" closetime="08/05/2012 18:00">
+				<bettype name="Outright" eventid="11417443" etid="180">
+					<bet outcome_name="Woods T." id="56646991" odd="4.50" status="Open"/>
+					<bet outcome_name="McIlroy R." id="56646993" odd="5.50" status="Open"/>
+					<bet outcome_name="Mickelson P." id="56646992" odd="9.00" status="Open"/>
+					<bet outcome_name="Donald L." id="56646994" odd="15.00" status="Open"/>
+					<bet outcome_name="Westwood L." id="56646996" odd="15.00" status="Open"/>
+					<bet outcome_name="Garcia S." id="56647013" odd="22.00" status="Open"/>
+					<bet outcome_name="Rose J." id="56647001" odd="23.00" status="Open"/>
+					<bet outcome_name="Scott A." id="56647003" odd="26.00" status="Open"/>
+					<bet outcome_name="Watney N." id="56646995" odd="26.00" status="Open"/>
+					<bet outcome_name="Johnson D." id="56646998" odd="29.00" status="Open"/>
+					<bet outcome_name="Kim A." id="56647008" odd="34.00" status="Open"/>
+					<bet outcome_name="Schwartzel C." id="56647002" odd="34.00" status="Open"/>
+					<bet outcome_name="Kaymer M." id="56646997" odd="34.00" status="Open"/>
+					<bet outcome_name="Mahan H." id="56646999" odd="34.00" status="Open"/>
+					<bet outcome_name="Day J." id="56647016" odd="34.00" status="Open"/>
+					<bet outcome_name="Fowler R." id="56647010" odd="41.00" status="Open"/>
+					<bet outcome_name="Stricker S." id="56647014" odd="41.00" status="Open"/>
+					<bet outcome_name="Casey P." id="56647000" odd="41.00" status="Open"/>
+					<bet outcome_name="Kuchar M." id="56647004" odd="41.00" status="Open"/>
+					<bet outcome_name="Watson B." id="56647007" odd="51.00" status="Open"/>
+					<bet outcome_name="McDowell G." id="56647005" odd="51.00" status="Open"/>
+					<bet outcome_name="Ogilvy G." id="56647006" odd="51.00" status="Open"/>
+					<bet outcome_name="Cabrera A." id="56647020" odd="51.00" status="Open"/>
+					<bet outcome_name="Quiros A." id="56647023" odd="67.00" status="Open"/>
+					<bet outcome_name="Laird M." id="56647021" odd="67.00" status="Open"/>
+					<bet outcome_name="Furyk J." id="56647015" odd="67.00" status="Open"/>
+					<bet outcome_name="Choi K.J." id="56647012" odd="34.00" status="Open"/>
+					<bet outcome_name="Poulter I." id="56647011" odd="67.00" status="Open"/>
+					<bet outcome_name="Harrington P." id="56647009" odd="67.00" status="Open"/>
+					<bet outcome_name="Haas B." id="56647028" odd="67.00" status="Open"/>
+					<bet outcome_name="Goosen R." id="56647017" odd="76.00" status="Open"/>
+					<bet outcome_name="Snedeker B." id="56647043" odd="81.00" status="Open"/>
+					<bet outcome_name="Johnson Z." id="56647045" odd="81.00" status="Open"/>
+					<bet outcome_name="Jimenez M.A." id="56647047" odd="81.00" status="Open"/>
+					<bet outcome_name="Karlsson R." id="56647034" odd="81.00" status="Open"/>
+					<bet outcome_name="Molinari F." id="56647022" odd="81.00" status="Open"/>
+					<bet outcome_name="Els E." id="56647018" odd="81.00" status="Open"/>
+					<bet outcome_name="Yang Y.E." id="56647019" odd="81.00" status="Open"/>
+					<bet outcome_name="Ishikawa R." id="56647039" odd="101.00" status="Open"/>
+					<bet outcome_name="Oosthuizen L." id="56647036" odd="101.00" status="Open"/>
+					<bet outcome_name="Couples F." id="56647033" odd="51.00" status="Open"/>
+					<bet outcome_name="O'Hair S." id="56647032" odd="101.00" status="Open"/>
+					<bet outcome_name="Van Pelt B." id="56647031" odd="101.00" status="Open"/>
+					<bet outcome_name="Woodland G." id="56647030" odd="101.00" status="Open"/>
+					<bet outcome_name="Fisher R." id="56647024" odd="101.00" status="Open"/>
+					<bet outcome_name="Immelman T." id="56647029" odd="101.00" status="Open"/>
+					<bet outcome_name="Baddeley A." id="56647025" odd="101.00" status="Open"/>
+					<bet outcome_name="Cink S." id="56647026" odd="101.00" status="Open"/>
+					<bet outcome_name="Moore R." id="56647027" odd="101.00" status="Open"/>
+					<bet outcome_name="Sabbatini R." id="56647040" odd="126.00" status="Open"/>
+					<bet outcome_name="Clark T." id="56647038" odd="126.00" status="Open"/>
+					<bet outcome_name="Singh V." id="56647037" odd="126.00" status="Open"/>
+					<bet outcome_name="Villegas C." id="56647035" odd="126.00" status="Open"/>
+					<bet outcome_name="Vegas J." id="56647046" odd="126.00" status="Open"/>
+					<bet outcome_name="Molinari E." id="56647041" odd="126.00" status="Open"/>
+					<bet outcome_name="Allenby R." id="56647044" odd="126.00" status="Open"/>
+					<bet outcome_name="Marino S." id="56647042" odd="126.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

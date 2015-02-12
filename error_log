@@ -1,0 +1,1 @@
+[10-Jul-2013 03:54:02 UTC] PHP Fatal error:  Class 'PDO' not found in /home/sports/public_html/lib/Cake/Model/Datasource/Database/Mysql.php on line 177

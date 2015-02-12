@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:51">
+	<sport name="Cricket" sportid="15440">
+		<group name="~MiWAY T20 Challenge~" groupid="18285">
+			<event name="Lions v Titans" eventid="14189641" closetime="01/04/2012 14:00">
+				<bettype name="Versus" eventid="14189641" etid="21">
+					<bet outcome_name="Lions" id="70779289" odd="1.87" status="Open"/>
+					<bet outcome_name="Titans" id="70779290" odd="1.87" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Sri Lanka v England" groupid="31041">
+			<event name="Sri Lanka v England [2nd Test]" eventid="14198514" closetime="03/04/2012 05:00">
+				<bettype name="Versus (with Draw)" eventid="14198514" etid="21">
+					<bet outcome_name="Sri Lanka" id="70826688" odd="3.25" status="Open"/>
+					<bet outcome_name="X" id="70826689" odd="2.30" status="Open"/>
+					<bet outcome_name="England" id="70826690" odd="3.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Indian Premier League~" groupid="42915">
+			<event name="Indian Premier League 2012" eventid="14016454" closetime="04/04/2012 16:00">
+				<bettype name="Outright" eventid="14016454" etid="180">
+					<bet outcome_name="Delhi Daredevils" id="69859871" odd="4.33" status="Open"/>
+					<bet outcome_name="Chennai Super Kings" id="69859872" odd="4.50" status="Open"/>
+					<bet outcome_name="Mumbai Indians" id="69859873" odd="5.50" status="Open"/>
+					<bet outcome_name="Bangalore Royal Challengers" id="69859874" odd="6.50" status="Open"/>
+					<bet outcome_name="Kolkata Knight Riders" id="69859875" odd="8.50" status="Open"/>
+					<bet outcome_name="Mohali Kings XI Punjab" id="69859876" odd="13.00" status="Open"/>
+					<bet outcome_name="Jaipur Rajasthan Royals" id="69859877" odd="13.00" status="Open"/>
+					<bet outcome_name="Pune Warriors" id="69859878" odd="15.00" status="Open"/>
+					<bet outcome_name="Hyderabad Deccan Chargers" id="69859879" odd="15.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

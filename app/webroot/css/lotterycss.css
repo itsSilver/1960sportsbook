@@ -1,0 +1,383 @@
+
+    #slides {
+      position: relative;
+    }
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+   
+      background-repeat: no-repeat;
+      display:block;
+      width:48px;
+      height:48px;
+      overflow: hidden;
+      text-indent: -9999px;
+      margin-right:5px;
+	   position:absolute;
+	  z-index:9999;
+	  bottom:10px;
+    }
+    a.slidesjs-next {
+	  background: url(img/next.png);
+	  right:30px;
+    }
+
+    a.slidesjs-previous {
+      background: url(img/previous.png);
+	   left:30px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+     right:20px;
+	 top:30px;
+      list-style: none;
+	  position:absolute;
+	  z-index:9999;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+.HomeTablewinner{
+    overflow: hidden;
+    padding: 10px;
+	height:auto;
+	background:#fff;
+}
+.HomeTablewinner h1{
+	font-size:36px;
+	line-height:normal;
+	color:#E7E700;
+}
+.HomeTablewinner h1 span{
+	font-size:12px;	
+	line-height:18px;
+	vertical-align: top;
+}
+.HomeTablewinner p.subtitle{
+	font-size:18px;
+	line-height:normal;
+	color:#000;
+}
+.HomeTablewinner p.subtitle a{
+	color:#E7E700;
+}
+.HomeTablewinner .MegaMillionbox{
+	background:#6396C9;
+	padding:7px;
+	border:1px solid #fff;
+	border-radius:5px;
+	 -moz-border-radius:5px;
+	 -webket-border-radius:5px;
+	height:130px;
+	 position: relative;
+}
+.HomeTablewinner .MegaMillionbox .leftSidearrow{
+	background:url(img/rightRrrowBg.png) no-repeat left top;
+	width:90px;
+	height:53px;
+	padding:40px 47px 38px 20px;
+	position: relative;
+	margin-left:-20px;
+	float:left;
+}
+.HomeTablewinner .MegaMillionbox .leftSidearrow .payout{
+		 position:absolute;
+		font-size:12px;
+		top:7px;
+		left:15px;
+		color:#E7E700;
+		font-weight:bold;
+}
+.HomeTablewinner .MegaMillionbox .centerDiv{
+	width:270px;
+	height:auto;
+	float:right;
+	padding:7px 15px 7px 15px;
+	min-height:70px;
+}
+.drawings_title{
+	color: #E7E7E7;
+    font-family: Arial,Helvetica,Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 12px;
+    text-decoration: none;
+	margin-bottom:10px;
+}
+.mm_numbers{
+	background:#005a9c;
+	padding:8px;
+	border:0px none;
+	border-radius:10px;
+	 -moz-border-radius:10px;
+	 -webket-border-radius:10px;
+	 font-size:18px;
+	 color:#fff;
+	 height:auto;
+	 overflow:hidden;
+}
+.mm_powerball{
+    color: #000;
+    font-family: Arial,Helvetica,Sans-Serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+	background:#d9d9d9;
+	border:0px none;
+	border-radius:10px;
+	 -moz-border-radius:10px;
+	 -webket-border-radius:10px;
+	float:right;
+	padding:10px;
+}
+.mm_powerball span{color: #D31245;}
+.mm_nextdrawing{
+	 color: #fff;
+    font-family: Arial,Helvetica,Sans-Serif;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 4px;
+    text-decoration: none;
+}
+.mm_nextdrawing span{
+	 color: #CCCCCC;
+    font-size: 11px;
+    text-decoration: none;
+}
+.megaBottomDetail{
+	background: none repeat scroll 0 0 #6396C9;
+    border: 1px solid #6396C9;
+    border-radius: 5px;
+    padding: 7px;
+    position: relative;
+	margin: 20px 0px 0px 0px ;
+}
+.megaBottomDetail .topHeader {
+    display: block;
+    height: 30px;
+    line-height: 28px;
+    font-size: 11px !important;
+    color: #fefefe;    /* module title font */
+    padding: 20px;
+    background-color: #003366; /* module title background */
+    text-transform: uppercase;
+    margin: 0px 0px 0px 0px ;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+
+}
+.megaBottomDetail .topHeader h3{float:left;font-size:25px;padding:0px !important;}
+.megaBottomDetail .topHeader span{float:right;}
+.megaBottomDetail .topHeader span select{width:auto !important;}
+.megaBottomDetail .megacontent {
+	height:auto;
+	overflow:hidden;
+	
+}
+.megaBottomDetail .megacontent .magalayout-content {
+    padding: 15px 10px;
+	height:auto;
+	overflow:hidden;
+	border:1px solid #6396C9;
+}
+.megaNav{
+	background: #003366;
+	height:auto;
+	overflow:hidden;
+}
+.megaNav ul{
+	display:block;
+	list-style:none;
+	margin-left:30px;
+}
+.megaNav ul li {
+    color: #000;
+    display: block;
+    float: left;
+    height: 25px;
+    padding: 0 14px;
+	background:#6396C9;
+	line-height:25px;
+	font-weight:bold;
+}
+.megaNav ul li a {
+    color: #000;
+}
+.magalayout-content .subtitle {
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+	font-weight:bold;
+}
+.magalayout-content .subtitle {
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+	font-weight:bold;
+}
+.magalayout-content .subtitle .back{color:#000;float:right;padding-right:15px;font-weight:bold;font-size:12px;}
+.magalayout-content .subtitle p{
+   color: #000000;
+    font-size: 12px;
+    line-height: normal;
+    padding: 10px 0 !important;
+}
+.megaSelectRange{
+	clear:both;
+	padding:30px 0px;
+	font-size:10px;
+	font-weight:bold;
+	color:#000;
+	display:inline;
+}
+.megaSelectRange select{
+	display: inline !important;
+    padding: 2px;
+    width: 54px !important;
+	margin:0px !important;
+	font-size:11px;
+}
+.megaSelectNumber tr td{
+	padding-top:10px;color:#fff !important;text-align:left;font-weight:bold;
+}
+.megaSelectNumber tr td input[type="text"]{
+	padding:4px;
+	width:30px;margin-right:3px;
+	background:#fff;
+}
+.megatableBottom{margin-top:20px;}
+.megatableBottom table thead th{
+	background:#003366;
+	padding:5px;
+	line-height:20px;
+	color:#fff;
+	font-weight:bold;
+}
+.megatableBottom table tbody td{background:#fff;padding:5px;line-height:20px;color:#000;border-bottom:2px solid #003366;}
+.megatableBottom table tbody td a{color:#003366;font-size:11px;}
+
+/*** 12/23/2013 ***/
+.lotteryNewsDetail{
+	background: none repeat scroll 0 0 #6396C9;
+    border: 1px solid #6396C9;
+    position: relative;
+	margin: 20px 0px 0px 0px ;
+	overflow:hidden;
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radiust: 5px;
+	font-size:14px;
+}
+.lotteryNewsDetail h2{
+	background:#003366;
+	padding:10px;
+	line-height:normal;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+}
+.lotteryNewsDetail-content {
+    height: auto;
+    overflow: hidden;
+    padding: 15px 10px;
+}
+.lotteryNewsDetail-content .title{
+	font-size:14px;
+	color:#000;
+	border-bottom:2px solid #ccc;
+	margin-bottom:15px;
+	overflow:hidden;
+	padding-bottom:10px;
+	font-weight:bold;
+}
+.lotteryNewsDetail-content .title a.back{
+	font-size:14px;
+	color:#003366;
+	float:right;
+	font-weight:normal;
+}
+.content100{width:100%;overflow:hidden;}
+.chnglotteryName{
+	width:50%;
+	float:left;
+	color:#fff;
+}
+.content100 p strong{color:#000;}
+.content100 p{color:#fff;}
+.customerTable
+{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+.customerTable td, .customerTable th 
+{
+font-size:13px;
+border:2px solid #000;
+padding:5px 7px 5px 7px;
+color:#000;
+text-align:center;line-height: 20px;
+}
+.customerTable th 
+{
+text-align:left;
+border-top:5px;
+padding-bottom:4px;
+background-color:#003366;
+color:#ffffff;
+font-weight:bold;
+}
+.customerTable td{background:#fff;}
+.sporttxt{
+	font-size:20px;
+	line-height:normal;
+	color:#000;
+	text-align:center;
+}
+.sporttable td{text-align:left;}
+.inputUserID {color:#fff;}
+.inputUserID  input[type="text"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 4px;
+    width: 150px;
+}

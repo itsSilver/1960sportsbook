@@ -1,0 +1,14 @@
+button, .button, a.button-blue {
+    background: #6f91bd;
+    border: 1px solid #6f91bd;
+}
+#footer-container {     
+    background: #6f91bd;
+}
+#layout-main h3 {
+    background: #6f91bd;
+}
+#header-second {        
+    background: #6f91bd;
+}
+

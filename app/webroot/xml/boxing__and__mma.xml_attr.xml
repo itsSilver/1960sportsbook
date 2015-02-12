@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:51">
+	<sport name="Boxing &amp; MMA" sportid="15400">
+		<group name="Martial Arts - UFC" groupid="20380">
+			<event name="Diaz N. v Miller J." eventid="14079167" closetime="06/05/2012 04:00">
+				<bettype name="Versus" eventid="14079167" etid="40">
+					<bet outcome_name="Diaz N." id="70189904" odd="2.65" status="Open"/>
+					<bet outcome_name="Miller J." id="70189905" odd="1.45" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Evans R. v Jones J." eventid="14079166" closetime="22/04/2012 05:05">
+				<bettype name="Versus" eventid="14079166" etid="40">
+					<bet outcome_name="Evans R." id="70189902" odd="4.40" status="Open"/>
+					<bet outcome_name="Jones J." id="70189903" odd="1.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Hendricks J. v Koscheck J." eventid="14079168" closetime="06/05/2012 03:30">
+				<bettype name="Versus" eventid="14079168" etid="40">
+					<bet outcome_name="Hendricks J." id="70189906" odd="1.87" status="Open"/>
+					<bet outcome_name="Koscheck J." id="70189907" odd="1.87" status="Open"/>
+				</bettype>
+			</event>
+			<event name="McDonald M. v Torres M." eventid="14085635" closetime="22/04/2012 02:25">
+				<bettype name="Versus" eventid="14085635" etid="40">
+					<bet outcome_name="McDonald M." id="70226862" odd="1.95" status="Open"/>
+					<bet outcome_name="Torres M." id="70226863" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Mills C. v McDonald R." eventid="14179379" closetime="22/04/2012 04:35">
+				<bettype name="Versus" eventid="14179379" etid="40">
+					<bet outcome_name="Mills C." id="70724178" odd="4.40" status="Open"/>
+					<bet outcome_name="McDonald R." id="70724179" odd="1.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Rothwell B. v Schaub B." eventid="14179381" closetime="22/04/2012 04:05">
+				<bettype name="Versus" eventid="14179381" etid="40">
+					<bet outcome_name="Rothwell B." id="70724182" odd="2.85" status="Open"/>
+					<bet outcome_name="Schaub B." id="70724183" odd="1.40" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sakara A. v Stann B." eventid="14079151" closetime="14/04/2012 23:30">
+				<bettype name="Versus" eventid="14079151" etid="40">
+					<bet outcome_name="Sakara A." id="70189809" odd="3.75" status="Open"/>
+					<bet outcome_name="Stann B." id="70189810" odd="1.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Silva T. v Gustafsson A." eventid="14079150" closetime="15/04/2012 00:00">
+				<bettype name="Versus" eventid="14079150" etid="40">
+					<bet outcome_name="Silva T." id="70189807" odd="2.85" status="Open"/>
+					<bet outcome_name="Gustafsson A." id="70189808" odd="1.40" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Super Middleweight" groupid="24524">
+			<event name="Abraham A. v Wilczewski P." eventid="14179567" closetime="31/03/2012 21:00">
+				<bettype name="Versus (with Draw)" eventid="14179567" etid="40">
+					<bet outcome_name="Abraham A." id="70724997" odd="1.22" status="Open"/>
+					<bet outcome_name="X" id="70724998" odd="26.00" status="Open"/>
+					<bet outcome_name="Wilczewski P." id="70724999" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Light Middleweight" groupid="26386">
+			<event name="Alvarez S. v Mosley S." eventid="13907950" closetime="06/05/2012 03:00">
+				<bettype name="Versus (with Draw)" eventid="13907950" etid="40">
+					<bet outcome_name="Alvarez S." id="69282666" odd="1.09" status="Open"/>
+					<bet outcome_name="X" id="69282667" odd="34.00" status="Open"/>
+					<bet outcome_name="Mosley S." id="69282668" odd="6.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Mayweather F. v Cotto M.A." eventid="13907949" closetime="06/05/2012 04:00">
+				<bettype name="Versus (with Draw)" eventid="13907949" etid="40">
+					<bet outcome_name="Mayweather F." id="69282663" odd="1.10" status="Open"/>
+					<bet outcome_name="X" id="69282664" odd="36.00" status="Open"/>
+					<bet outcome_name="Cotto M.A." id="69282665" odd="5.75" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Light Heavyweight" groupid="26423">
+			<event name="Dawson C. v Hopkins B." eventid="13907815" closetime="29/04/2012 04:00">
+				<bettype name="Versus (with Draw)" eventid="13907815" etid="40">
+					<bet outcome_name="Dawson C." id="69282127" odd="1.28" status="Open"/>
+					<bet outcome_name="X" id="69282128" odd="29.00" status="Open"/>
+					<bet outcome_name="Hopkins B." id="69282129" odd="3.30" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:51">
+	<sport name="Aussie Rules" sportid="15439">
+		<group name="Australia - AFL " groupid="19121">
+			<event name="Port Adelaide v St.Kilda" eventid="13552256" closetime="01/04/2012 08:40">
+				<bettype name="Versus" eventid="13552256" etid="30">
+					<bet outcome_name="Port Adelaide" id="67359893" odd="2.75" status="Open"/>
+					<bet outcome_name="St.Kilda" id="67359894" odd="1.42" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Port Adelaide v St.Kilda +17.5/-17.5" eventid="14195081" closetime="01/04/2012 08:40">
+				<bettype name="Handicap" eventid="14195081" etid="60">
+					<bet outcome_name="1" id="70810054" odd="1.91" status="Open"/>
+					<bet outcome_name="2" id="70810055" odd="1.91" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Western Bulldogs v West Coast" eventid="13552255" closetime="01/04/2012 05:10">
+				<bettype name="Versus" eventid="13552255" etid="30">
+					<bet outcome_name="Western Bulldogs" id="67359891" odd="2.25" status="Open"/>
+					<bet outcome_name="West Coast" id="67359892" odd="1.63" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Western Bulldogs v West Coast +8.5/-8.5" eventid="14195083" closetime="01/04/2012 05:10">
+				<bettype name="Handicap" eventid="14195083" etid="60">
+					<bet outcome_name="1" id="70810060" odd="1.91" status="Open"/>
+					<bet outcome_name="2" id="70810061" odd="1.91" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

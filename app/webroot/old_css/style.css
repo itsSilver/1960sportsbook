@@ -1,0 +1,897 @@
+
+/* Clearing Floats
+***************************************************************/
+
+.group:after 
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ 
+/* General
+***************************************************************/
+html, body {
+    height: 100%;
+}
+body {
+    font-size: 62.5%;
+    color: #707070;    
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* Headings 
+h1,h2,h3,h4,h5,h6 { font-weight: normal; margin:.6em 0;}
+
+h1 { font-size: 1.308em; }
+h2 { font-size: 1.231em; }
+h3 { font-size: 1.154em; }
+*/
+h4 {
+    font-size: 1.2em; 
+    font-style: italic;
+    padding: 5px 10px;
+}
+/*
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+h1 img, h2 img, h3 img, 
+h4 img, h5 img, h6 img {
+    margin: 0;
+}
+
+/* Lists */
+li { display: inline; }
+/*
+li ul, 
+li ol       { margin:0 1.5em; }
+ul, ol      { margin: 1.5em; line-height: 1.538em; }
+
+ul          { list-style-type: disc; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+/* Text elements 
+p           { margin: 0 0 1em; line-height: 1.538em; }
+p img.left  { float: left; margin: 0.923em 0.923em 0.923em 0; padding: 0; }
+p img.right { float: right; margin: 0.923em 0 0.923em 0.923em; }
+*/
+a:focus, 
+a:hover     { text-decoration: underline; }
+a           { color: #0679A7; font-size: 12px; text-decoration: none; }
+/*
+blockquote  { margin: 0.923em; color: #666; font-style: italic; }
+strong      { font-weight: bold; }
+em,dfn      { font-style: italic; }
+dfn         { font-weight: bold; }
+sup, sub    { line-height: 0; }
+
+abbr, 
+acronym     { border-bottom: 1px dotted #666; }
+address     { margin: 0 0 0.923em; font-style: italic; }
+del         { color:#666; }
+
+pre         { margin: 0.923em 0; white-space: pre; }
+pre,code,tt { font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.462em; }
+
+
+
+/* Forms
+**************************************************************
+
+form              { margin: 0; padding: 0; }
+legend            { font-size: 1.231em; font-weight: normal; margin: 0 0 1.2em 0; border:none; }
+fieldset          { padding:0em; margin: 0 0 0em 0; border: 0px solid #dbdbdb; }
+*/
+label             {
+    display: block;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #053E75;
+    padding: 8px 0 4px 10px;
+}
+/*
+label.forcheckbox { margin:0 0 0 .4em; display:inline; }
+*/
+
+/*
+input[type="checkbox"] {
+    margin:.2em 0 1.2em 0;
+}
+
+fieldset ol     { list-style-type:none; padding: 0; margin: 0; }
+fieldset ol li  { margin: 0 0 6px 0; }
+
+*/
+
+.message {
+    border: 1px solid;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+
+#layout-wraper {    
+    font-size: 1.2em;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -131px;
+}
+
+.centered {
+    text-align: center;    
+    padding: 10px;
+}
+.lefted {       
+    padding: 10px;
+}
+
+.hiden {
+    display: none;
+}
+
+
+ul.sidemenu li.all-events a {    
+    color: #015CA2;
+}
+
+/* BUTTONS 
+***********************************************************/
+button, .button, a.button-blue {
+    background: #1474BD;
+    border: 1px solid #1474BD;
+    color:#fff;
+    cursor: pointer;
+    display: inline-block;    
+    padding: 4px 12px;
+
+    /*position: relative;*/
+    text-align: center;
+    text-decoration: none;
+
+    /*----CSS3 properties----*/
+    text-shadow: rgba(40,53,9,.2) 0px 0px 1px;
+    -webkit-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2); 
+    -moz-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2); 
+    box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.2);
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+a.button-blue:hover span{
+    text-decoration:underline;
+}
+
+/*Header
+***********************************************************/
+
+#layout-header {    
+    margin: auto;    
+    min-width: 960px;
+}
+
+/*first header div*/
+#header-first {    
+    padding: 10px 20px;
+    bbackground: #1474BD;
+}
+#header-first a {
+    color: #fff;
+}
+#menu-header {
+    float: left;
+    width: 49%;    
+    padding: 4px 0;
+}
+#menu-header ul li {    
+    padding: 0 8px 0 0;
+    margin: 0 8px 0 0;
+}
+#login {
+    float: right;
+    width: 49%;
+    text-align: right;
+}
+#login a {
+    padding: 0 0 2px 10px;
+}
+
+#login a:hover {
+    text-decoration: underline;        
+}
+#login input[type=text], 
+#login input[type=password] {
+    border: 1px solid #ffffff;
+    color: #fff;
+    height: 16px;
+    margin: 0 5px 0 0;
+    padding: 2px;
+    width: 109px;
+}
+#login input[type=submit] {
+    background: transparent;   
+    border-color: #ffffff;
+}
+/*second header div*/
+#header-second {    
+    padding: 10px 20px;
+    border-bottom: 1px solid #DADADA;
+    background: #1474BD;
+}
+#header-second a {   
+    color: white;
+}
+#logo {
+    float: left;
+    width: 250px;
+    margin-top: 5px;
+}
+#menu-main {
+    float: right; 
+    wwidth: 700px;
+    text-align: right;
+    padding-top: 11px;    
+}
+#menu-main ul li a {
+    font-size: 1.5em;	
+    color: #053E75;	
+    padding: 12px 7px;    
+}
+/*third header div*/
+#header-third {
+    padding: 10px 20px;
+}
+#languages {    
+    text-align: right;    
+
+}
+#languages ul {    
+
+}
+#languages ul li {
+    margin: 0 0 0 10px;
+}
+
+/*MAIN CONTENT*/
+#layout-main {
+    padding: 0 20px;
+    min-width: 960px;
+}
+
+#layout-main h3 {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;    
+    padding: 7px 10px;
+    background: #1474BD;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+
+}
+
+#content {
+    padding: 5px;
+    line-height: 1.5;
+}
+
+#layout-content {
+    padding: 8px;
+    border: 1px solid #E1E1E1;
+    margin-left: 230px;
+    margin-right: 282px;
+}
+
+#layout-content p {
+    padding: 10px;
+}
+
+
+/*Other stuff*/
+
+/* SPORTS MENU SIDEBAR */
+#sports-loading {
+    width: 100%;
+    height: 130px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);        
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 55%;
+}
+
+#sidebar {
+    float: left;
+    width: 220px;
+
+}
+
+#sidebar .sidebar-box {
+    padding: 8px;
+    background: white;
+    border: 1px solid #E1E1E1;
+    margin: 0 0 10px 0;        
+}
+
+#sidebar .sidebar-box input[type="text"], #events input[type="text"] {   
+    color: #707070;
+    padding: 4px;
+    border-top: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    background-color: whiteSmoke;
+    width: 192px;    
+
+}
+#sidebar .sidebar-box input, #sidebar .sidebar-box .button-blue {
+    margin: 10px 0 0 0;  
+}
+
+#sidebar ul.sidemenu li.gr1{
+    background: #E1E1E1;
+}
+#sidebar ul.sidemenu li.gr2{
+    background: #DADADA;
+}
+#sidebar ul.sidemenu li a{
+    font: 11px Arial, Helvetica, sans-serif;
+    color: #627178;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    background: transparent url(../img/plus.gif) no-repeat scroll 184px;
+    padding: 5px 20px 5px 10px;
+    margin: 0 0 1px 0;
+}
+#sidebar ul.sidemenu li a:hover{
+    text-decoration: none;
+}
+
+/* ASIDE SECOND **********************************/
+
+#aside-second {    
+    float: right;
+}
+#aside-second .box {
+    width: 254px;
+    padding: 8px;    
+    border: 1px solid #E1E1E1;
+    margin: 0 0 6px 0;
+}
+
+/* CYCLE***************888888888888888888888 */
+#cycle_slider {
+    height: 250px; 
+    width: 750px; 
+}
+#cycle_slider img {
+    height: 250px; 
+    width: 750px; 
+}
+#cycle-slider-c {
+    position: relative;
+    overflow: hidden;
+}
+#cycle-loading {
+    height: 250px; 
+    width: 750px;         
+    opacity: 0.4;
+    filter: alpha(opacity=40);        
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 30% 55%;
+
+}
+#cycle_slider .cycle-slider-container {
+    position: relative;
+}
+#cycle_slider .cycle-slider-text, #cycle_slider .cycle-slider-bg {
+    position: absolute;
+    bottom: 0;      
+    width: 100%;
+} 
+#cycle_slider .cycle-slider-bg {
+    background: #606060;      
+    opacity:0.5;
+    filter:alpha(opacity=50);    
+}
+#cycle_slider .cycle-slider-text p, #cycle_slider .cycle-slider-bg p {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 10px 10px 14px;
+}
+
+/*EVENTS*/
+#sports .select {
+    padding-bottom: 10px;
+}
+#events {
+    font: 11px Tahoma, Arial, Helvetica, sans-serif;
+    color: #707070;
+}
+#events div{
+
+}
+#events .event {
+    padding: 4px;
+}
+#events .main-bet {
+    border: 1px solid #E1E1E1;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    color: #015CA2;
+    padding: 4px;
+}
+#events .main-bet .event-id {
+    float: left;
+    margin-right: 10px;
+}
+#events .main-bet .event-holder {
+    padding: 0 0 0 0px; 
+}
+#events .main-bet .event-date {
+    background: #EAEAEA;
+    float: left;
+    width: 110px;
+}
+
+#events .main-bet .event-title {
+    margin: 0 40px 0 120px;
+}
+#events .main-bet .event-more {
+    float: right;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;    
+    font-size: 10px;
+}
+#events .main-bet .event-title .left-bet {
+    width: 40%;
+}
+#events .main-bet .event-title .right-bet {
+    width: 50%;
+    float: right;
+}
+/*with draw*/
+#events .main-bet .event-title .left-bet {
+    width: 30%;
+}
+#events .main-bet .event-title .right-bet {
+    width: 40%;
+    float: right;
+}
+/* @TOUCH UP*/
+#events .main-bet .event-title .middle-bet {
+    width: 5%;
+    float: right;
+    margin-right:15%;    
+}
+
+#events .other-bets {
+    display: none;
+}
+#events .other-bets bet-name {
+
+}
+#events  .bet-holder {
+    padding: 4px;
+}
+#events  .bet-holder:hover {
+    background-color: #015CA2;
+    color: white;
+}
+#events  .bet-odd {
+    cursor: pointer;
+    float: right;
+    width: 40px;
+    text-align: center;    
+}
+#events  .bet-outright {
+    margin: 0 40px 0 0;
+}
+#events  .bet-outright:hover {
+
+}
+
+/*USERS ***********************************/
+#users h5 {
+    padding: 10px 0 5px 10px;
+    color: #000000;
+    font-size: 1.3em;
+    border-bottom: 1px solid #707070;
+}
+#users input[type="text"], #users input[type="password"], select, #user #UserCountry {
+    font: 12px Arial, Helvetica, sans-serif;    
+    color: #000000;    
+    margin: 0 0 0 10px;
+    padding: 4px;
+    width: 40%;
+    display: inline-block;
+    border: 1px solid #DADADA;
+    background-color: whiteSmoke;    
+}
+#users input[type="checkbox"] {
+    width: auto;    
+    position: relative;
+    top: 3px;
+}
+
+#users .checkbox label {
+    display: inline-block;
+}
+#users #UserDateOfBirthDay, #UserDateOfBirthMonth, #UserDateOfBirthYear {
+    width: auto;
+}
+
+/******************************************/
+
+.radio input[type="radio"] {
+    margin-left: 10px;
+}
+
+.button-margin {
+    margin: 10px;
+}
+
+/*ticket*/
+.default-table {
+    width:100%;       
+}
+
+.default-table tr {
+    border: 0px solid #707070; 
+}
+.default-table th {
+    font-size:120%;
+    font-weight: bold;    
+}
+
+.default-table td, .default-table th {
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.print {
+    float: right;
+    text-align: right;
+}
+
+.ticket-won {
+    color: #008000;
+}
+
+.ticket-lost {
+    color: #c33;
+}
+
+
+/* TICKET PREVIEW REVIEW (print layout) --------------------*/
+#tickets .ticket-print {
+    margin-bottom: 30px;
+}
+.ticket-print {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 300px;    
+    font-size: 10px;
+}
+.ticket-print h1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 2em;
+}
+.ticket-print h2 {
+    text-align: center;
+    margin: 0px;
+    font-size: 1.5em;
+}
+.ticket-print table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 11px;
+}
+.ticket-print table th {
+    font-weight: bold;
+    border-bottom: 2px dashed #000000;
+}
+
+.ticket-print table.bets {
+    border-bottom: 2px dashed #000000;
+}
+.ticket-print table.bets td {
+    padding-right: 5px;
+}
+.ticket-print table.bets td.no-padding {
+    padding-right: 0;
+}
+
+.ticket-print table.odds {
+    font-weight: bold;
+}
+
+.ticket-print .align-right {
+    text-align: right;
+}
+
+/* ERRORS */
+.register-error {
+    color: #e32;
+    padding: 5px 0;
+    width: 55%;
+    float: right;
+}
+.checkbox .register-error {
+    float: none;
+    padding: 5px 5px 5px 10px;
+}
+.error-message {
+    color: #e32;
+    padding-left: 10px;
+}
+
+span.welcome {
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+/*BETSLIP**********************************************************/
+#betslip-type ul{
+    border-bottom: 1px solid #E1E1E1;
+    height: 20px;
+    margin: 0 0 5px 0;
+}
+#betslip-type ul li {
+    float: left;
+    margin: 0 4px;
+}
+#betslip-type ul li a {    
+    color: #707070;
+    display: block;
+    height: 12px;
+    padding: 4px 8px;
+}
+#betslip-type ul li a.selected {
+    border: 1px solid #E1E1E1;
+    border-bottom: none;
+    background: white;
+    color: #015CA2;
+}
+/*bets *************/
+#betslip-bets table {    
+    width: 100%;
+    font-size: 11px;
+} 
+#betslip-bets table td {  
+    vertical-align: middle;
+    padding: 8px 3px 0px 3px;
+}
+#betslip-bets table.bets .bet-name{  
+    font-weight: bold;    
+    text-transform: uppercase;
+}
+#betslip-bets table.bets .pick{  
+    color: #1474BD;
+}
+#betslip-bets table.bets .single-stake{  
+    text-align: right;
+}
+#betslip-bets table.bets td.last{  
+    text-align: right;
+}
+#betslip-bets table.bets td.bottom{  
+    border-bottom: 1px solid #707070;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+#betslip-bets table.bets td input {  
+    border: 1px solid #E1E1E1;
+    width: 70px;
+}
+#betslip-totals table.totals {    
+    width: 100%;
+    margin: 10px 0;
+} 
+#betslip-totals table.totals td {    
+    text-align: right;
+    width: 70px;
+} 
+#betslip-totals table.totals th {  
+    padding: 8px 3px 0px 3px;
+    text-align: right;
+    color: #015CA2;
+} 
+#betslip-totals table.totals #total-stake {  
+    border: 1px solid #E1E1E1;
+    width: 100%;
+} 
+
+#bet-slip-container {
+    position: relative;
+}
+#bet-slip-container .load {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity:0.4;
+    filter:alpha(opacity=40);        
+    background-image: url(../img/loading.gif);
+    background-repeat: no-repeat;
+    background-position: 55% 55%;
+}
+
+#bet-slip-container .clear-all {    
+    float: left;
+}
+#bet-slip-container .place-ticket {    
+    float: right;
+}
+.bet-slip-remove-all {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#betslip .actions {
+    margin: 0 0 10px 0;
+}
+
+.users-login-links {
+    padding: 0 0 0 10px;
+}
+
+#users table tr {
+    border: 0px;
+}
+
+/* NEWS ************************/
+#news h4 {
+    background: #d3d3d3;
+    color: #333333;
+}
+#news .new {
+    margin: 0 0 15px 0;
+}
+#news .read-more {
+    text-align: right;
+}
+#news .read-more a {
+    
+}
+
+
+/*paginator 8888888888888888888888*/
+.paginator {
+    margin-top: 10px
+}
+
+/* FOOTER ////////////////////////////////////*/
+
+#layout-footer, #footer-pusher {
+    height: 132px;
+}
+#menu-bottom {
+    border-top: 1px solid #DADADA;	
+    padding: 10px 0;
+    text-align: center;	
+}
+#bottom-images {
+    border-top: 1px solid #DADADA;    
+    text-align: center;	
+    height: 66px;
+}
+#menu-bottom a, #bottom-images a {    
+    color: #707070;    
+    margin: 0 7px;
+}
+#footer-container {     
+    background: #1474BD;
+    color: #ffffff;      
+}
+#footer {
+    padding: 11px 10px;
+    width: 940px;  
+    margin: 0 auto;
+}
+#footer a{
+    float: right;
+    padding: 0 10px 0 0;
+    color: #ffffff;
+}
+/* THEMES *****************************/
+#themes {
+    bbackground: #000000;
+    padding: 10px 0px;
+    float: right; 
+}
+#themes ul {
+    display: inline-block;
+    vertical-align: top;
+}
+#themes span {
+    color: #ffffff;    
+    display: inline-block;
+    padding: 4px 0 0 0;
+}
+#themes li a,#themes li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+#themes li a.Blue {
+    background: #1474BD;
+}
+#themes li a.Green {
+    background: #007f3f;
+}
+#themes li a.Orange {
+    background: #fd7e26;
+}
+#themes li a.Pink {
+    background: #a248a3;
+}
+#themes li a.Black {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #aaaaaa;
+    background: #000000;
+}
+#themes li a.Brown {
+    background: #943d43;
+}
+#themes li a.DarkRed {
+    background: #c90004;
+}
+#themes li a.Grey {
+    background: #7e7e7e;
+}
+#themes li a.LightBlue {
+    background: #6f91bd;
+}
+#themes li a.Red {
+    background: #ec1b23;
+}
+
+
+/*********************************/
+textarea.regi {
+    width: 90%;
+    height: 200px;
+    
+}
+.regi{
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #707070;
+	padding: 4px;
+	border: 1px solid #DADADA;
+	background-color: #F5F5F5;
+	width: 50%;
+        margin-left:  10px;
+}
+
+#com100 {
+    padding: 0 0 0 15px;
+}
+#bottom_promo {
+	text-align: center;
+}

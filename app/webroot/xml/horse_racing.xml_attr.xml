@@ -1,0 +1,1559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:52">
+	<sport name="Horse Racing" sportid="22341">
+		<group name="Stratford" groupid="27880">
+			<event name="2.15 Stratford" eventid="14206785" closetime="31/03/2012 15:16">
+				<bettype name="Outright" eventid="14206785" etid="260">
+					<bet outcome_name="Peadar Miguel" id="70867987" odd="3.50" status="Open"/>
+					<bet outcome_name="Allez Les Rouges" id="70867988" odd="9.00" status="Open"/>
+					<bet outcome_name="Anywhere" id="70867989" odd="201.00" status="Open"/>
+					<bet outcome_name="Honoured" id="70867990" odd="17.00" status="Open"/>
+					<bet outcome_name="Notarfbad" id="70867991" odd="5.00" status="Open"/>
+					<bet outcome_name="The Names Harry" id="70867992" odd="51.00" status="Open"/>
+					<bet outcome_name="Tindaro" id="70867993" odd="2.50" status="Open"/>
+					<bet outcome_name="Alayir" id="70867994" odd="21.00" status="Open"/>
+					<bet outcome_name="Daddyow" id="70867995" odd="17.00" status="Open"/>
+					<bet outcome_name="Dark Spirit" id="70867996" odd="10.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.15 Stratford SP" eventid="14206787" closetime="31/03/2012 15:16">
+				<bettype name="SP" eventid="14206787" etid="260">
+					<bet outcome_name="Peadar Miguel SP" id="70868007" odd="SP" status="Open"/>
+					<bet outcome_name="Allez Les Rouges SP" id="70868008" odd="SP" status="Open"/>
+					<bet outcome_name="Anywhere SP" id="70868009" odd="SP" status="Open"/>
+					<bet outcome_name="Honoured SP" id="70868010" odd="SP" status="Open"/>
+					<bet outcome_name="Notarfbad SP" id="70868011" odd="SP" status="Open"/>
+					<bet outcome_name="The Names Harry SP" id="70868012" odd="SP" status="Open"/>
+					<bet outcome_name="Tindaro SP" id="70868013" odd="SP" status="Open"/>
+					<bet outcome_name="Alayir SP" id="70868014" odd="SP" status="Open"/>
+					<bet outcome_name="Daddyow SP" id="70868015" odd="SP" status="Open"/>
+					<bet outcome_name="Dark Spirit SP" id="70868016" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.50 Stratford" eventid="14206824" closetime="31/03/2012 15:51">
+				<bettype name="Outright" eventid="14206824" etid="260">
+					<bet outcome_name="Farleigh House" id="70868273" odd="4.00" status="Open"/>
+					<bet outcome_name="Mon Chevalier" id="70868274" odd="4.00" status="Open"/>
+					<bet outcome_name="Bhaltair" id="70868275" odd="5.50" status="Open"/>
+					<bet outcome_name="Wild Desert" id="70868276" odd="5.00" status="Open"/>
+					<bet outcome_name="Take Of Shocs" id="70868277" odd="4.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.50 Stratford SP" eventid="14206826" closetime="31/03/2012 15:51">
+				<bettype name="SP" eventid="14206826" etid="260">
+					<bet outcome_name="Farleigh House SP" id="70868283" odd="SP" status="Open"/>
+					<bet outcome_name="Mon Chevalier SP" id="70868284" odd="SP" status="Open"/>
+					<bet outcome_name="Bhaltair SP" id="70868285" odd="SP" status="Open"/>
+					<bet outcome_name="Wild Desert SP" id="70868286" odd="SP" status="Open"/>
+					<bet outcome_name="Take Of Shocs SP" id="70868287" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.20 Stratford" eventid="14206818" closetime="31/03/2012 16:21">
+				<bettype name="Outright" eventid="14206818" etid="260">
+					<bet outcome_name="Hibiki" id="70868239" odd="3.25" status="Open"/>
+					<bet outcome_name="Extremely So" id="70868240" odd="2.50" status="Open"/>
+					<bet outcome_name="Nether Stream" id="70868241" odd="10.00" status="Open"/>
+					<bet outcome_name="Swiss Art" id="70868242" odd="9.00" status="Open"/>
+					<bet outcome_name="Tarkesar" id="70868243" odd="41.00" status="Open"/>
+					<bet outcome_name="Edgware Road" id="70868244" odd="3.00" status="Open"/>
+					<bet outcome_name="Sea Fury" id="70868245" odd="10.00" status="Open"/>
+					<bet outcome_name="Takhreej" id="70868246" odd="8.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.20 Stratford SP" eventid="14206820" closetime="31/03/2012 16:21">
+				<bettype name="SP" eventid="14206820" etid="260">
+					<bet outcome_name="Hibiki SP" id="70868255" odd="SP" status="Open"/>
+					<bet outcome_name="Extremely So SP" id="70868256" odd="SP" status="Open"/>
+					<bet outcome_name="Nether Stream SP" id="70868257" odd="SP" status="Open"/>
+					<bet outcome_name="Swiss Art SP" id="70868258" odd="SP" status="Open"/>
+					<bet outcome_name="Tarkesar SP" id="70868259" odd="SP" status="Open"/>
+					<bet outcome_name="Edgware Road SP" id="70868260" odd="SP" status="Locked"/>
+					<bet outcome_name="Sea Fury SP" id="70868261" odd="SP" status="Open"/>
+					<bet outcome_name="Takhreej SP" id="70868262" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.55 Stratford" eventid="14206811" closetime="31/03/2012 16:56">
+				<bettype name="Outright" eventid="14206811" etid="260">
+					<bet outcome_name="Rumble Of Thunder" id="70868153" odd="15.00" status="Open"/>
+					<bet outcome_name="Praxiteles" id="70868154" odd="13.00" status="Open"/>
+					<bet outcome_name="Tatispout" id="70868155" odd="17.00" status="Open"/>
+					<bet outcome_name="Cousin Khee" id="70868156" odd="8.00" status="Open"/>
+					<bet outcome_name="Knight In Purple" id="70868157" odd="4.50" status="Open"/>
+					<bet outcome_name="Laterly" id="70868158" odd="8.00" status="Open"/>
+					<bet outcome_name="Rampant Ronnie" id="70868159" odd="51.00" status="Open"/>
+					<bet outcome_name="Saltagioo" id="70868160" odd="67.00" status="Open"/>
+					<bet outcome_name="Dreambrook Lady" id="70868161" odd="13.00" status="Open"/>
+					<bet outcome_name="Trip The Light" id="70868162" odd="10.00" status="Open"/>
+					<bet outcome_name="Snow Blizzard" id="70868163" odd="17.00" status="Open"/>
+					<bet outcome_name="Teshali" id="70868164" odd="26.00" status="Open"/>
+					<bet outcome_name="Fashionable Gal" id="70868165" odd="8.50" status="Open"/>
+					<bet outcome_name="Laudatory" id="70868166" odd="10.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.55 Stratford SP" eventid="14206813" closetime="31/03/2012 16:56">
+				<bettype name="SP" eventid="14206813" etid="260">
+					<bet outcome_name="Rumble Of Thunder SP" id="70868181" odd="SP" status="Open"/>
+					<bet outcome_name="Praxiteles SP" id="70868182" odd="SP" status="Open"/>
+					<bet outcome_name="Tatispout SP" id="70868183" odd="SP" status="Open"/>
+					<bet outcome_name="Cousin Khee SP" id="70868184" odd="SP" status="Open"/>
+					<bet outcome_name="Knight In Purple SP" id="70868185" odd="SP" status="Open"/>
+					<bet outcome_name="Laterly SP" id="70868186" odd="SP" status="Open"/>
+					<bet outcome_name="Rampant Ronnie SP" id="70868187" odd="SP" status="Open"/>
+					<bet outcome_name="Saltagioo SP" id="70868188" odd="SP" status="Open"/>
+					<bet outcome_name="Dreambrook Lady SP" id="70868189" odd="SP" status="Open"/>
+					<bet outcome_name="Trip The Light SP" id="70868190" odd="SP" status="Open"/>
+					<bet outcome_name="Snow Blizzard SP" id="70868191" odd="SP" status="Open"/>
+					<bet outcome_name="Teshali SP" id="70868192" odd="SP" status="Open"/>
+					<bet outcome_name="Fashionable Gal SP" id="70868193" odd="SP" status="Open"/>
+					<bet outcome_name="Laudatory SP" id="70868194" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.25 Stratford" eventid="14206805" closetime="31/03/2012 17:26">
+				<bettype name="Outright" eventid="14206805" etid="260">
+					<bet outcome_name="Dakota Boy" id="70868106" odd="17.00" status="Open"/>
+					<bet outcome_name="Like Ice" id="70868107" odd="5.00" status="Open"/>
+					<bet outcome_name="Himrayn" id="70868108" odd="12.00" status="Open"/>
+					<bet outcome_name="Is It Me" id="70868109" odd="4.50" status="Open"/>
+					<bet outcome_name="The Goldmeister" id="70868110" odd="5.00" status="Open"/>
+					<bet outcome_name="Santamina" id="70868111" odd="21.00" status="Open"/>
+					<bet outcome_name="Himayna" id="70868112" odd="0.90" status="Open"/>
+					<bet outcome_name="Beattie Green" id="70868113" odd="6.00" status="Open"/>
+					<bet outcome_name="Alaccordion" id="70868114" odd="67.00" status="Open"/>
+					<bet outcome_name="Shipboard Romance" id="70868115" odd="26.00" status="Open"/>
+					<bet outcome_name="Themanfromfraam" id="70868116" odd="6.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.25 Stratford SP" eventid="14206807" closetime="31/03/2012 17:26">
+				<bettype name="SP" eventid="14206807" etid="260">
+					<bet outcome_name="Dakota Boy SP" id="70868128" odd="SP" status="Open"/>
+					<bet outcome_name="Like Ice SP" id="70868129" odd="SP" status="Open"/>
+					<bet outcome_name="Himrayn SP" id="70868130" odd="SP" status="Open"/>
+					<bet outcome_name="Is It Me SP" id="70868131" odd="SP" status="Open"/>
+					<bet outcome_name="The Goldmeister SP" id="70868132" odd="SP" status="Open"/>
+					<bet outcome_name="Santamina SP" id="70868133" odd="SP" status="Open"/>
+					<bet outcome_name="Himayna SP" id="70868134" odd="SP" status="Locked"/>
+					<bet outcome_name="Beattie Green SP" id="70868135" odd="SP" status="Open"/>
+					<bet outcome_name="Alaccordion SP" id="70868136" odd="SP" status="Open"/>
+					<bet outcome_name="Shipboard Romance SP" id="70868137" odd="SP" status="Open"/>
+					<bet outcome_name="Themanfromfraam SP" id="70868138" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.00 Stratford" eventid="14206797" closetime="31/03/2012 18:01">
+				<bettype name="Outright" eventid="14206797" etid="260">
+					<bet outcome_name="Pickamus" id="70868062" odd="3.25" status="Open"/>
+					<bet outcome_name="Time For Spring" id="70868063" odd="2.25" status="Open"/>
+					<bet outcome_name="Chain Of Command" id="70868064" odd="7.00" status="Open"/>
+					<bet outcome_name="Indian Pipe Dream" id="70868065" odd="8.50" status="Open"/>
+					<bet outcome_name="Otage De Brion" id="70868066" odd="11.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.00 Stratford SP" eventid="14206799" closetime="31/03/2012 18:01">
+				<bettype name="SP" eventid="14206799" etid="260">
+					<bet outcome_name="Pickamus SP" id="70868072" odd="SP" status="Open"/>
+					<bet outcome_name="Time For Spring SP" id="70868073" odd="SP" status="Open"/>
+					<bet outcome_name="Chain Of Command SP" id="70868074" odd="SP" status="Open"/>
+					<bet outcome_name="Indian Pipe Dream SP" id="70868075" odd="SP" status="Open"/>
+					<bet outcome_name="Otage De Brion SP" id="70868076" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.35 Stratford" eventid="14206791" closetime="31/03/2012 18:36">
+				<bettype name="Outright" eventid="14206791" etid="260">
+					<bet outcome_name="Kings Lad" id="70868029" odd="3.75" status="Open"/>
+					<bet outcome_name="Emperor Commodos" id="70868030" odd="8.00" status="Open"/>
+					<bet outcome_name="Forge The Way" id="70868031" odd="34.00" status="Open"/>
+					<bet outcome_name="Inch Rover" id="70868032" odd="5.00" status="Open"/>
+					<bet outcome_name="May Court" id="70868033" odd="201.00" status="Open"/>
+					<bet outcome_name="Whisky Yankee" id="70868034" odd="2.00" status="Open"/>
+					<bet outcome_name="Reyno" id="70868035" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.35 Stratford SP" eventid="14206793" closetime="31/03/2012 18:36">
+				<bettype name="SP" eventid="14206793" etid="260">
+					<bet outcome_name="Kings Lad SP" id="70868043" odd="SP" status="Open"/>
+					<bet outcome_name="Emperor Commodos SP" id="70868044" odd="SP" status="Open"/>
+					<bet outcome_name="Forge The Way SP" id="70868045" odd="SP" status="Open"/>
+					<bet outcome_name="Inch Rover SP" id="70868046" odd="SP" status="Open"/>
+					<bet outcome_name="May Court SP" id="70868047" odd="SP" status="Open"/>
+					<bet outcome_name="Whisky Yankee SP" id="70868048" odd="SP" status="Open"/>
+					<bet outcome_name="Reyno SP" id="70868049" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Doncaster" groupid="28051">
+			<event name="2.05 Doncaster" eventid="14205137" closetime="31/03/2012 15:06">
+				<bettype name="Outright" eventid="14205137" etid="260">
+					<bet outcome_name="Kyllachy Star" id="70860647" odd="21.00" status="Open"/>
+					<bet outcome_name="Crown Counsel" id="70860648" odd="15.00" status="Open"/>
+					<bet outcome_name="Weapon Of Choice" id="70860649" odd="17.00" status="Open"/>
+					<bet outcome_name="Kiwi Bay" id="70860650" odd="34.00" status="Open"/>
+					<bet outcome_name="Leviathan" id="70860651" odd="13.00" status="Open"/>
+					<bet outcome_name="Perfect Cracker" id="70860652" odd="17.00" status="Open"/>
+					<bet outcome_name="Redvers" id="70860653" odd="17.00" status="Open"/>
+					<bet outcome_name="Prince Of Burma" id="70860654" odd="26.00" status="Open"/>
+					<bet outcome_name="Snow Bay" id="70860655" odd="15.00" status="Open"/>
+					<bet outcome_name="Kingscroft" id="70860656" odd="17.00" status="Open"/>
+					<bet outcome_name="Reve De Nuit" id="70860657" odd="13.00" status="Open"/>
+					<bet outcome_name="Mont Ras" id="70860658" odd="8.50" status="Open"/>
+					<bet outcome_name="Kay Gee Be" id="70860659" odd="13.00" status="Open"/>
+					<bet outcome_name="Miami Gator" id="70860660" odd="67.00" status="Open"/>
+					<bet outcome_name="Arabian Spirit" id="70860661" odd="26.00" status="Open"/>
+					<bet outcome_name="Pats Legacy" id="70860662" odd="34.00" status="Open"/>
+					<bet outcome_name="First Post" id="70860663" odd="21.00" status="Open"/>
+					<bet outcome_name="Shamdarley" id="70860664" odd="8.50" status="Open"/>
+					<bet outcome_name="Norse Blues" id="70860665" odd="51.00" status="Open"/>
+					<bet outcome_name="Mullins Way" id="70860666" odd="34.00" status="Open"/>
+					<bet outcome_name="Captain Bertie" id="70860667" odd="7.50" status="Open"/>
+					<bet outcome_name="Tevez" id="70860668" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.05 Doncaster SP" eventid="14205139" closetime="31/03/2012 15:06">
+				<bettype name="SP" eventid="14205139" etid="260">
+					<bet outcome_name="Kyllachy Star SP" id="70860691" odd="SP" status="Open"/>
+					<bet outcome_name="Crown Counsel SP" id="70860692" odd="SP" status="Open"/>
+					<bet outcome_name="Weapon Of Choice SP" id="70860693" odd="SP" status="Open"/>
+					<bet outcome_name="Kiwi Bay SP" id="70860694" odd="SP" status="Open"/>
+					<bet outcome_name="Leviathan SP" id="70860695" odd="SP" status="Open"/>
+					<bet outcome_name="Perfect Cracker SP" id="70860696" odd="SP" status="Open"/>
+					<bet outcome_name="Redvers SP" id="70860697" odd="SP" status="Open"/>
+					<bet outcome_name="Prince Of Burma SP" id="70860698" odd="SP" status="Open"/>
+					<bet outcome_name="Snow Bay SP" id="70860699" odd="SP" status="Open"/>
+					<bet outcome_name="Kingscroft SP" id="70860700" odd="SP" status="Open"/>
+					<bet outcome_name="Reve De Nuit SP" id="70860701" odd="SP" status="Open"/>
+					<bet outcome_name="Mont Ras SP" id="70860702" odd="SP" status="Open"/>
+					<bet outcome_name="Kay Gee Be SP" id="70860703" odd="SP" status="Open"/>
+					<bet outcome_name="Miami Gator SP" id="70860704" odd="SP" status="Open"/>
+					<bet outcome_name="Arabian Spirit SP" id="70860705" odd="SP" status="Open"/>
+					<bet outcome_name="Pats Legacy SP" id="70860706" odd="SP" status="Open"/>
+					<bet outcome_name="First Post SP" id="70860707" odd="SP" status="Open"/>
+					<bet outcome_name="Shamdarley SP" id="70860708" odd="SP" status="Open"/>
+					<bet outcome_name="Norse Blues SP" id="70860709" odd="SP" status="Open"/>
+					<bet outcome_name="Mullins Way SP" id="70860710" odd="SP" status="Open"/>
+					<bet outcome_name="Captain Bertie SP" id="70860711" odd="SP" status="Open"/>
+					<bet outcome_name="Tevez SP" id="70860712" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.40 Doncaster" eventid="14205146" closetime="31/03/2012 15:41">
+				<bettype name="Outright" eventid="14205146" etid="260">
+					<bet outcome_name="Royal Rock" id="70860747" odd="7.50" status="Open"/>
+					<bet outcome_name="Fratellino" id="70860748" odd="26.00" status="Open"/>
+					<bet outcome_name="Sirius Prospect" id="70860749" odd="3.25" status="Open"/>
+					<bet outcome_name="High Standing" id="70860750" odd="21.00" status="Open"/>
+					<bet outcome_name="Internationaldebut" id="70860751" odd="17.00" status="Open"/>
+					<bet outcome_name="Jimmy Styles" id="70860752" odd="13.00" status="Open"/>
+					<bet outcome_name="Mayson" id="70860753" odd="7.50" status="Open"/>
+					<bet outcome_name="Pabusar" id="70860754" odd="17.00" status="Open"/>
+					<bet outcome_name="The Cheka" id="70860755" odd="8.50" status="Open"/>
+					<bet outcome_name="Waffle" id="70860756" odd="8.50" status="Open"/>
+					<bet outcome_name="Googlette" id="70860757" odd="101.00" status="Open"/>
+					<bet outcome_name="Sos Brillante" id="70860758" odd="201.00" status="Open"/>
+					<bet outcome_name="Bannock" id="70860759" odd="7.50" status="Open"/>
+					<bet outcome_name="Boris Grigoriev" id="70860760" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.40 Doncaster SP" eventid="14205148" closetime="31/03/2012 15:41">
+				<bettype name="SP" eventid="14205148" etid="260">
+					<bet outcome_name="Royal Rock SP" id="70860775" odd="SP" status="Open"/>
+					<bet outcome_name="Fratellino SP" id="70860776" odd="SP" status="Open"/>
+					<bet outcome_name="Sirius Prospect SP" id="70860777" odd="SP" status="Open"/>
+					<bet outcome_name="High Standing SP" id="70860778" odd="SP" status="Open"/>
+					<bet outcome_name="Internationaldebut SP" id="70860779" odd="SP" status="Open"/>
+					<bet outcome_name="Jimmy Styles SP" id="70860780" odd="SP" status="Open"/>
+					<bet outcome_name="Mayson SP" id="70860781" odd="SP" status="Open"/>
+					<bet outcome_name="Pabusar SP" id="70860782" odd="SP" status="Open"/>
+					<bet outcome_name="The Cheka SP" id="70860783" odd="SP" status="Open"/>
+					<bet outcome_name="Waffle SP" id="70860784" odd="SP" status="Open"/>
+					<bet outcome_name="Googlette SP" id="70860785" odd="SP" status="Open"/>
+					<bet outcome_name="Sos Brillante SP" id="70860786" odd="SP" status="Open"/>
+					<bet outcome_name="Bannock SP" id="70860787" odd="SP" status="Open"/>
+					<bet outcome_name="Boris Grigoriev SP" id="70860788" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.15 Doncaster" eventid="14205155" closetime="31/03/2012 16:16">
+				<bettype name="Outright" eventid="14205155" etid="260">
+					<bet outcome_name="Eton Forever" id="70860815" odd="6.50" status="Open"/>
+					<bet outcome_name="Fury" id="70860833" odd="7.00" status="Open"/>
+					<bet outcome_name="Cocozza" id="70860831" odd="13.00" status="Open"/>
+					<bet outcome_name="Mull Of Killough" id="70860838" odd="11.00" status="Open"/>
+					<bet outcome_name="Edinburgh Knight" id="70860812" odd="13.00" status="Open"/>
+					<bet outcome_name="Start Right" id="70860822" odd="12.00" status="Open"/>
+					<bet outcome_name="Light From Mars" id="70860842" odd="12.00" status="Open"/>
+					<bet outcome_name="Man Of Action" id="70860818" odd="15.00" status="Open"/>
+					<bet outcome_name="Mias Boy" id="70860827" odd="17.00" status="Open"/>
+					<bet outcome_name="Dont Call Me" id="70860841" odd="17.00" status="Open"/>
+					<bet outcome_name="Smarty Socks" id="70860817" odd="26.00" status="Open"/>
+					<bet outcome_name="Stevie Thunder" id="70860843" odd="21.00" status="Open"/>
+					<bet outcome_name="Field Of Dream" id="70860830" odd="26.00" status="Open"/>
+					<bet outcome_name="Barren Brook" id="70860848" odd="21.00" status="Open"/>
+					<bet outcome_name="Brae Hill" id="70860840" odd="21.00" status="Open"/>
+					<bet outcome_name="Pintura" id="70860832" odd="21.00" status="Open"/>
+					<bet outcome_name="Shavansky" id="70860846" odd="26.00" status="Open"/>
+					<bet outcome_name="Clockmaker" id="70860836" odd="41.00" status="Open"/>
+					<bet outcome_name="Lowther" id="70860835" odd="41.00" status="Open"/>
+					<bet outcome_name="Askaud" id="70860834" odd="41.00" status="Open"/>
+					<bet outcome_name="Dubai Dynamo" id="70860849" odd="41.00" status="Open"/>
+					<bet outcome_name="Amitola" id="70860847" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.15 Doncaster SP" eventid="14205160" closetime="31/03/2012 16:16">
+				<bettype name="SP" eventid="14205160" etid="260">
+					<bet outcome_name="Eton Forever SP" id="70860873" odd="SP" status="Open"/>
+					<bet outcome_name="Fury SP" id="70860881" odd="SP" status="Open"/>
+					<bet outcome_name="Cocozza SP" id="70860879" odd="SP" status="Open"/>
+					<bet outcome_name="Mull Of Killough SP" id="70860885" odd="SP" status="Open"/>
+					<bet outcome_name="Edinburgh Knight SP" id="70860872" odd="SP" status="Open"/>
+					<bet outcome_name="Start Right SP" id="70860876" odd="SP" status="Open"/>
+					<bet outcome_name="Light From Mars SP" id="70860888" odd="SP" status="Open"/>
+					<bet outcome_name="Man Of Action SP" id="70860875" odd="SP" status="Open"/>
+					<bet outcome_name="Mias Boy SP" id="70860877" odd="SP" status="Open"/>
+					<bet outcome_name="Dont Call Me SP" id="70860887" odd="SP" status="Open"/>
+					<bet outcome_name="Smarty Socks SP" id="70860874" odd="SP" status="Open"/>
+					<bet outcome_name="Stevie Thunder SP" id="70860889" odd="SP" status="Open"/>
+					<bet outcome_name="Field Of Dream SP" id="70860878" odd="SP" status="Open"/>
+					<bet outcome_name="Barren Brook SP" id="70860892" odd="SP" status="Open"/>
+					<bet outcome_name="Brae Hill SP" id="70860886" odd="SP" status="Open"/>
+					<bet outcome_name="Pintura SP" id="70860880" odd="SP" status="Open"/>
+					<bet outcome_name="Shavansky SP" id="70860890" odd="SP" status="Open"/>
+					<bet outcome_name="Clockmaker SP" id="70860884" odd="SP" status="Open"/>
+					<bet outcome_name="Lowther SP" id="70860883" odd="SP" status="Open"/>
+					<bet outcome_name="Askaud SP" id="70860882" odd="SP" status="Open"/>
+					<bet outcome_name="Dubai Dynamo SP" id="70860893" odd="SP" status="Open"/>
+					<bet outcome_name="Amitola SP" id="70860891" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.50 Doncaster" eventid="14205168" closetime="31/03/2012 16:51">
+				<bettype name="Outright" eventid="14205168" etid="260">
+					<bet outcome_name="Deepest Blue" id="70860929" odd="8.50" status="Open"/>
+					<bet outcome_name="Heavy Metal" id="70860930" odd="9.00" status="Open"/>
+					<bet outcome_name="Just Past Andover" id="70860931" odd="5.00" status="Open"/>
+					<bet outcome_name="Lucky Lodge" id="70860932" odd="34.00" status="Open"/>
+					<bet outcome_name="Marvelino" id="70860933" odd="3.50" status="Open"/>
+					<bet outcome_name="Maypole Joe" id="70860934" odd="11.00" status="Open"/>
+					<bet outcome_name="My Boy Bill" id="70860935" odd="11.00" status="Open"/>
+					<bet outcome_name="Perfect Words" id="70860936" odd="21.00" status="Open"/>
+					<bet outcome_name="Well Acquainted" id="70860937" odd="9.00" status="Open"/>
+					<bet outcome_name="Emperors Daughter" id="70860938" odd="26.00" status="Open"/>
+					<bet outcome_name="Lady Poppy" id="70860939" odd="15.00" status="Open"/>
+					<bet outcome_name="Mayfield Girl" id="70860940" odd="26.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.50 Doncaster SP" eventid="14205170" closetime="31/03/2012 16:51">
+				<bettype name="SP" eventid="14205170" etid="260">
+					<bet outcome_name="Deepest Blue SP" id="70860953" odd="SP" status="Open"/>
+					<bet outcome_name="Heavy Metal SP" id="70860954" odd="SP" status="Open"/>
+					<bet outcome_name="Just Past Andover SP" id="70860955" odd="SP" status="Open"/>
+					<bet outcome_name="Lucky Lodge SP" id="70860956" odd="SP" status="Open"/>
+					<bet outcome_name="Marvelino SP" id="70860957" odd="SP" status="Open"/>
+					<bet outcome_name="Maypole Joe SP" id="70860958" odd="SP" status="Open"/>
+					<bet outcome_name="My Boy Bill SP" id="70860959" odd="SP" status="Open"/>
+					<bet outcome_name="Perfect Words SP" id="70860960" odd="SP" status="Open"/>
+					<bet outcome_name="Well Acquainted SP" id="70860961" odd="SP" status="Open"/>
+					<bet outcome_name="Emperors Daughter SP" id="70860962" odd="SP" status="Open"/>
+					<bet outcome_name="Lady Poppy SP" id="70860963" odd="SP" status="Open"/>
+					<bet outcome_name="Mayfield Girl SP" id="70860964" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.20 Doncaster" eventid="14205199" closetime="31/03/2012 17:21">
+				<bettype name="Outright" eventid="14205199" etid="260">
+					<bet outcome_name="Falkland" id="70861059" odd="12.00" status="Open"/>
+					<bet outcome_name="Kaafel" id="70861060" odd="4.50" status="Open"/>
+					<bet outcome_name="Last Shadow" id="70861061" odd="67.00" status="Open"/>
+					<bet outcome_name="Lelaps" id="70861062" odd="9.00" status="Open"/>
+					<bet outcome_name="Minimise Risk" id="70861063" odd="11.00" status="Open"/>
+					<bet outcome_name="Mr Snoozy" id="70861064" odd="67.00" status="Open"/>
+					<bet outcome_name="Razzle Dazzle em" id="70861065" odd="101.00" status="Open"/>
+					<bet outcome_name="Sehnsucht" id="70861066" odd="13.00" status="Open"/>
+					<bet outcome_name="Sir Graham Wade" id="70861067" odd="2.50" status="Open"/>
+					<bet outcome_name="Theturnofthesun" id="70861068" odd="5.00" status="Open"/>
+					<bet outcome_name="Johanna Fosie" id="70861069" odd="67.00" status="Open"/>
+					<bet outcome_name="Medlaur" id="70861070" odd="101.00" status="Open"/>
+					<bet outcome_name="Zaina" id="70861071" odd="21.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.20 Doncaster SP" eventid="14205201" closetime="31/03/2012 17:21">
+				<bettype name="SP" eventid="14205201" etid="260">
+					<bet outcome_name="Falkland SP" id="70861085" odd="SP" status="Open"/>
+					<bet outcome_name="Kaafel SP" id="70861086" odd="SP" status="Open"/>
+					<bet outcome_name="Last Shadow SP" id="70861087" odd="SP" status="Open"/>
+					<bet outcome_name="Lelaps SP" id="70861088" odd="SP" status="Open"/>
+					<bet outcome_name="Minimise Risk SP" id="70861089" odd="SP" status="Open"/>
+					<bet outcome_name="Mr Snoozy SP" id="70861090" odd="SP" status="Open"/>
+					<bet outcome_name="Razzle Dazzle em SP" id="70861091" odd="SP" status="Open"/>
+					<bet outcome_name="Sehnsucht SP" id="70861092" odd="SP" status="Open"/>
+					<bet outcome_name="Sir Graham Wade SP" id="70861093" odd="SP" status="Open"/>
+					<bet outcome_name="Theturnofthesun SP" id="70861094" odd="SP" status="Open"/>
+					<bet outcome_name="Johanna Fosie SP" id="70861095" odd="SP" status="Open"/>
+					<bet outcome_name="Medlaur SP" id="70861096" odd="SP" status="Open"/>
+					<bet outcome_name="Zaina SP" id="70861097" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.55 Doncaster" eventid="14205239" closetime="31/03/2012 17:56">
+				<bettype name="Outright" eventid="14205239" etid="260">
+					<bet outcome_name="Kaolak" id="70861233" odd="17.00" status="Open"/>
+					<bet outcome_name="Indian Ocean" id="70861234" odd="51.00" status="Open"/>
+					<bet outcome_name="Yojimbo" id="70861235" odd="15.00" status="Open"/>
+					<bet outcome_name="Landaman" id="70861236" odd="5.50" status="Open"/>
+					<bet outcome_name="Reachforthebucks" id="70861237" odd="5.00" status="Open"/>
+					<bet outcome_name="Qaraaba" id="70861238" odd="7.00" status="Open"/>
+					<bet outcome_name="The Fun Crusher" id="70861239" odd="10.00" status="Open"/>
+					<bet outcome_name="Gritstone" id="70861240" odd="12.00" status="Open"/>
+					<bet outcome_name="Veroon" id="70861241" odd="21.00" status="Open"/>
+					<bet outcome_name="Imaginary World" id="70861242" odd="17.00" status="Open"/>
+					<bet outcome_name="City Ground" id="70861243" odd="15.00" status="Open"/>
+					<bet outcome_name="Beat Of The Blues" id="70861244" odd="67.00" status="Open"/>
+					<bet outcome_name="Ailsa Craig" id="70861245" odd="26.00" status="Open"/>
+					<bet outcome_name="Daring Indian" id="70861246" odd="13.00" status="Open"/>
+					<bet outcome_name="Knowe Head" id="70861247" odd="26.00" status="Open"/>
+					<bet outcome_name="Maven" id="70861248" odd="21.00" status="Open"/>
+					<bet outcome_name="Embsay Crag" id="70861249" odd="13.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.55 Doncaster SP" eventid="14205241" closetime="31/03/2012 17:56">
+				<bettype name="SP" eventid="14205241" etid="260">
+					<bet outcome_name="Kaolak SP" id="70861267" odd="SP" status="Open"/>
+					<bet outcome_name="Indian Ocean SP" id="70861268" odd="SP" status="Open"/>
+					<bet outcome_name="Yojimbo SP" id="70861269" odd="SP" status="Open"/>
+					<bet outcome_name="Landaman SP" id="70861270" odd="SP" status="Open"/>
+					<bet outcome_name="Reachforthebucks SP" id="70861271" odd="SP" status="Open"/>
+					<bet outcome_name="Qaraaba SP" id="70861272" odd="SP" status="Open"/>
+					<bet outcome_name="The Fun Crusher SP" id="70861273" odd="SP" status="Open"/>
+					<bet outcome_name="Gritstone SP" id="70861274" odd="SP" status="Open"/>
+					<bet outcome_name="Veroon SP" id="70861275" odd="SP" status="Open"/>
+					<bet outcome_name="Imaginary World SP" id="70861276" odd="SP" status="Open"/>
+					<bet outcome_name="City Ground SP" id="70861277" odd="SP" status="Open"/>
+					<bet outcome_name="Beat Of The Blues SP" id="70861278" odd="SP" status="Open"/>
+					<bet outcome_name="Ailsa Craig SP" id="70861279" odd="SP" status="Open"/>
+					<bet outcome_name="Daring Indian SP" id="70861280" odd="SP" status="Open"/>
+					<bet outcome_name="Knowe Head SP" id="70861281" odd="SP" status="Open"/>
+					<bet outcome_name="Maven SP" id="70861282" odd="SP" status="Open"/>
+					<bet outcome_name="Embsay Crag SP" id="70861283" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.30 Doncaster" eventid="14205262" closetime="31/03/2012 18:31">
+				<bettype name="Outright" eventid="14205262" etid="260">
+					<bet outcome_name="Tres Coronas" id="70861357" odd="12.00" status="Open"/>
+					<bet outcome_name="Jonny Lesters Hair" id="70861358" odd="15.00" status="Open"/>
+					<bet outcome_name="Dunhoy" id="70861359" odd="6.50" status="Open"/>
+					<bet outcome_name="Tiger Webb" id="70861360" odd="21.00" status="Open"/>
+					<bet outcome_name="Standpoint" id="70861361" odd="13.00" status="Open"/>
+					<bet outcome_name="Good Boy Jackson" id="70861362" odd="9.00" status="Open"/>
+					<bet outcome_name="Audacious" id="70861363" odd="26.00" status="Open"/>
+					<bet outcome_name="Judicious" id="70861364" odd="13.00" status="Open"/>
+					<bet outcome_name="Calaf" id="70861365" odd="10.00" status="Open"/>
+					<bet outcome_name="Mcbirney" id="70861366" odd="7.50" status="Open"/>
+					<bet outcome_name="Souter Point" id="70861367" odd="51.00" status="Open"/>
+					<bet outcome_name="West End Lad" id="70861368" odd="34.00" status="Open"/>
+					<bet outcome_name="Alfred Hutchinson" id="70861369" odd="5.50" status="Open"/>
+					<bet outcome_name="Amazing Blue Sky" id="70861370" odd="26.00" status="Open"/>
+					<bet outcome_name="Dr Red Eye" id="70861371" odd="15.00" status="Open"/>
+					<bet outcome_name="Hail Bold Chief" id="70861372" odd="15.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.30 Doncaster SP" eventid="14205264" closetime="31/03/2012 18:31">
+				<bettype name="SP" eventid="14205264" etid="260">
+					<bet outcome_name="Tres Coronas SP" id="70861389" odd="SP" status="Open"/>
+					<bet outcome_name="Jonny Lesters Hair SP" id="70861390" odd="SP" status="Open"/>
+					<bet outcome_name="Dunhoy SP" id="70861391" odd="SP" status="Open"/>
+					<bet outcome_name="Tiger Webb SP" id="70861392" odd="SP" status="Open"/>
+					<bet outcome_name="Standpoint SP" id="70861393" odd="SP" status="Open"/>
+					<bet outcome_name="Good Boy Jackson SP" id="70861394" odd="SP" status="Open"/>
+					<bet outcome_name="Audacious SP" id="70861395" odd="SP" status="Open"/>
+					<bet outcome_name="Judicious SP" id="70861396" odd="SP" status="Open"/>
+					<bet outcome_name="Calaf SP" id="70861397" odd="SP" status="Open"/>
+					<bet outcome_name="Mcbirney SP" id="70861398" odd="SP" status="Open"/>
+					<bet outcome_name="Souter Point SP" id="70861399" odd="SP" status="Open"/>
+					<bet outcome_name="West End Lad SP" id="70861400" odd="SP" status="Open"/>
+					<bet outcome_name="Alfred Hutchinson SP" id="70861401" odd="SP" status="Open"/>
+					<bet outcome_name="Amazing Blue Sky SP" id="70861402" odd="SP" status="Open"/>
+					<bet outcome_name="Dr Red Eye SP" id="70861403" odd="SP" status="Open"/>
+					<bet outcome_name="Hail Bold Chief SP" id="70861404" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.05 Doncaster" eventid="14205270" closetime="31/03/2012 19:06">
+				<bettype name="Outright" eventid="14205270" etid="260">
+					<bet outcome_name="Piceno" id="70861429" odd="26.00" status="Open"/>
+					<bet outcome_name="Veiled Applause" id="70861430" odd="7.00" status="Open"/>
+					<bet outcome_name="Pertuis" id="70861431" odd="34.00" status="Open"/>
+					<bet outcome_name="Yorksters Prince" id="70861432" odd="10.00" status="Open"/>
+					<bet outcome_name="Trans Sonic" id="70861433" odd="12.00" status="Open"/>
+					<bet outcome_name="Zafranagar" id="70861434" odd="8.00" status="Open"/>
+					<bet outcome_name="Thunderstruck" id="70861435" odd="15.00" status="Open"/>
+					<bet outcome_name="Tribal Myth" id="70861436" odd="34.00" status="Open"/>
+					<bet outcome_name="Xclaim" id="70861437" odd="41.00" status="Open"/>
+					<bet outcome_name="Sartingo" id="70861438" odd="12.00" status="Open"/>
+					<bet outcome_name="Follow The Flag" id="70861439" odd="11.00" status="Open"/>
+					<bet outcome_name="Dialogue" id="70861440" odd="12.00" status="Open"/>
+					<bet outcome_name="Sharp Sovereign" id="70861441" odd="21.00" status="Open"/>
+					<bet outcome_name="One For Joules" id="70861442" odd="7.00" status="Open"/>
+					<bet outcome_name="Ay Tay Tate" id="70861443" odd="21.00" status="Open"/>
+					<bet outcome_name="Potentiale" id="70861444" odd="17.00" status="Open"/>
+					<bet outcome_name="Cottam Donny" id="70861445" odd="10.00" status="Open"/>
+					<bet outcome_name="One Of Twins" id="70861446" odd="10.00" status="Open"/>
+					<bet outcome_name="Hits Only Jude" id="70861447" odd="21.00" status="Open"/>
+					<bet outcome_name="Absolute Princess" id="70861448" odd="21.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.05 Doncaster SP" eventid="14205272" closetime="31/03/2012 19:06">
+				<bettype name="SP" eventid="14205272" etid="260">
+					<bet outcome_name="Piceno SP" id="70861469" odd="SP" status="Open"/>
+					<bet outcome_name="Veiled Applause SP" id="70861470" odd="SP" status="Open"/>
+					<bet outcome_name="Pertuis SP" id="70861471" odd="SP" status="Open"/>
+					<bet outcome_name="Yorksters Prince SP" id="70861472" odd="SP" status="Open"/>
+					<bet outcome_name="Trans Sonic SP" id="70861473" odd="SP" status="Open"/>
+					<bet outcome_name="Zafranagar SP" id="70861474" odd="SP" status="Open"/>
+					<bet outcome_name="Thunderstruck SP" id="70861475" odd="SP" status="Locked"/>
+					<bet outcome_name="Tribal Myth SP" id="70861476" odd="SP" status="Open"/>
+					<bet outcome_name="Xclaim SP" id="70861477" odd="SP" status="Open"/>
+					<bet outcome_name="Sartingo SP" id="70861478" odd="SP" status="Open"/>
+					<bet outcome_name="Follow The Flag SP" id="70861479" odd="SP" status="Open"/>
+					<bet outcome_name="Dialogue SP" id="70861480" odd="SP" status="Open"/>
+					<bet outcome_name="Sharp Sovereign SP" id="70861481" odd="SP" status="Open"/>
+					<bet outcome_name="One For Joules SP" id="70861482" odd="SP" status="Locked"/>
+					<bet outcome_name="Ay Tay Tate SP" id="70861483" odd="SP" status="Open"/>
+					<bet outcome_name="Potentiale SP" id="70861484" odd="SP" status="Open"/>
+					<bet outcome_name="Cottam Donny SP" id="70861485" odd="SP" status="Open"/>
+					<bet outcome_name="One Of Twins SP" id="70861486" odd="SP" status="Open"/>
+					<bet outcome_name="Hits Only Jude SP" id="70861487" odd="SP" status="Open"/>
+					<bet outcome_name="Absolute Princess SP" id="70861488" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Kempton" groupid="28067">
+			<event name="1.50 Kempton" eventid="14205446" closetime="31/03/2012 14:51">
+				<bettype name="Outright" eventid="14205446" etid="260">
+					<bet outcome_name="Bheleyf" id="70862209" odd="7.00" status="Open"/>
+					<bet outcome_name="Ceiling Kitty" id="70862210" odd="3.00" status="Open"/>
+					<bet outcome_name="Cherryred Girl" id="70862211" odd="26.00" status="Open"/>
+					<bet outcome_name="Dreamy Ciara" id="70862212" odd="21.00" status="Open"/>
+					<bet outcome_name="Lively Little Lady" id="70862213" odd="26.00" status="Open"/>
+					<bet outcome_name="Poetic Princess" id="70862214" odd="21.00" status="Open"/>
+					<bet outcome_name="Red Star Lady" id="70862215" odd="5.50" status="Open"/>
+					<bet outcome_name="Reinvigorate" id="70862216" odd="4.33" status="Open"/>
+					<bet outcome_name="Relay" id="70862217" odd="6.00" status="Open"/>
+					<bet outcome_name="Sally Bruce" id="70862218" odd="101.00" status="Open"/>
+					<bet outcome_name="Vanessa" id="70862219" odd="11.00" status="Open"/>
+					<bet outcome_name="Woodland Mill" id="70862220" odd="5.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="1.50 Kempton SP" eventid="14205448" closetime="31/03/2012 14:51">
+				<bettype name="SP" eventid="14205448" etid="260">
+					<bet outcome_name="Bheleyf SP" id="70862233" odd="SP" status="Open"/>
+					<bet outcome_name="Ceiling Kitty SP" id="70862234" odd="SP" status="Open"/>
+					<bet outcome_name="Cherryred Girl SP" id="70862235" odd="SP" status="Open"/>
+					<bet outcome_name="Dreamy Ciara SP" id="70862236" odd="SP" status="Open"/>
+					<bet outcome_name="Lively Little Lady SP" id="70862237" odd="SP" status="Open"/>
+					<bet outcome_name="Poetic Princess SP" id="70862238" odd="SP" status="Open"/>
+					<bet outcome_name="Red Star Lady SP" id="70862239" odd="SP" status="Open"/>
+					<bet outcome_name="Reinvigorate SP" id="70862240" odd="SP" status="Locked"/>
+					<bet outcome_name="Relay SP" id="70862241" odd="SP" status="Open"/>
+					<bet outcome_name="Sally Bruce SP" id="70862242" odd="SP" status="Open"/>
+					<bet outcome_name="Vanessa SP" id="70862243" odd="SP" status="Open"/>
+					<bet outcome_name="Woodland Mill SP" id="70862244" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.20 Kempton" eventid="14205413" closetime="31/03/2012 15:21">
+				<bettype name="Outright" eventid="14205413" etid="260">
+					<bet outcome_name="Arctic Cosmos" id="70862112" odd="1.72" status="Open"/>
+					<bet outcome_name="Fair Trade" id="70862113" odd="5.00" status="Open"/>
+					<bet outcome_name="Hurricane Higgins" id="70862114" odd="5.00" status="Open"/>
+					<bet outcome_name="Kings Trail" id="70862115" odd="17.00" status="Open"/>
+					<bet outcome_name="Mr Willis" id="70862116" odd="21.00" status="Open"/>
+					<bet outcome_name="Tinshu" id="70862117" odd="7.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.20 Kempton SP" eventid="14205415" closetime="31/03/2012 15:21">
+				<bettype name="SP" eventid="14205415" etid="260">
+					<bet outcome_name="Arctic Cosmos SP" id="70862124" odd="SP" status="Open"/>
+					<bet outcome_name="Fair Trade SP" id="70862125" odd="SP" status="Open"/>
+					<bet outcome_name="Hurricane Higgins SP" id="70862126" odd="SP" status="Open"/>
+					<bet outcome_name="Kings Trail SP" id="70862127" odd="SP" status="Open"/>
+					<bet outcome_name="Mr Willis SP" id="70862128" odd="SP" status="Open"/>
+					<bet outcome_name="Tinshu SP" id="70862129" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.55 Kempton" eventid="14205376" closetime="31/03/2012 15:56">
+				<bettype name="Outright" eventid="14205376" etid="260">
+					<bet outcome_name="Choice Words" id="70861973" odd="13.00" status="Open"/>
+					<bet outcome_name="Trade Commissioner" id="70861974" odd="11.00" status="Open"/>
+					<bet outcome_name="Bartolomeu" id="70861975" odd="2.00" status="Open"/>
+					<bet outcome_name="Dance With Me" id="70861976" odd="8.00" status="Open"/>
+					<bet outcome_name="Ghazeer" id="70861977" odd="101.00" status="Open"/>
+					<bet outcome_name="Glen Moss" id="70861978" odd="6.50" status="Open"/>
+					<bet outcome_name="Impel" id="70861979" odd="3.40" status="Open"/>
+					<bet outcome_name="Jay Bee Blue" id="70861980" odd="41.00" status="Open"/>
+					<bet outcome_name="Mayforde Jack" id="70861981" odd="101.00" status="Open"/>
+					<bet outcome_name="Star Date" id="70861982" odd="0.90" status="Open"/>
+					<bet outcome_name="Thrasos" id="70861983" odd="26.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.55 Kempton SP" eventid="14205379" closetime="31/03/2012 15:56">
+				<bettype name="SP" eventid="14205379" etid="260">
+					<bet outcome_name="Choice Words SP" id="70861998" odd="SP" status="Open"/>
+					<bet outcome_name="Trade Commissioner SP" id="70861999" odd="SP" status="Open"/>
+					<bet outcome_name="Bartolomeu SP" id="70862000" odd="SP" status="Open"/>
+					<bet outcome_name="Dance With Me SP" id="70862001" odd="SP" status="Open"/>
+					<bet outcome_name="Ghazeer SP" id="70862002" odd="SP" status="Open"/>
+					<bet outcome_name="Glen Moss SP" id="70862003" odd="SP" status="Open"/>
+					<bet outcome_name="Impel SP" id="70862005" odd="SP" status="Open"/>
+					<bet outcome_name="Jay Bee Blue SP" id="70862006" odd="SP" status="Open"/>
+					<bet outcome_name="Mayforde Jack SP" id="70862008" odd="SP" status="Open"/>
+					<bet outcome_name="Star Date SP" id="70862009" odd="SP" status="Locked"/>
+					<bet outcome_name="Thrasos SP" id="70862010" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.30 Kempton" eventid="14205365" closetime="31/03/2012 16:31">
+				<bettype name="Outright" eventid="14205365" etid="260">
+					<bet outcome_name="William Haigh" id="70861895" odd="7.50" status="Open"/>
+					<bet outcome_name="Sirvino" id="70861896" odd="17.00" status="Open"/>
+					<bet outcome_name="Nazreef" id="70861897" odd="12.00" status="Open"/>
+					<bet outcome_name="Starluck" id="70861898" odd="11.00" status="Open"/>
+					<bet outcome_name="Hillview Boy" id="70861899" odd="17.00" status="Open"/>
+					<bet outcome_name="Licence To Till" id="70861900" odd="15.00" status="Open"/>
+					<bet outcome_name="Eshtibaak" id="70861901" odd="3.00" status="Open"/>
+					<bet outcome_name="Fattsota" id="70861902" odd="17.00" status="Open"/>
+					<bet outcome_name="Charles Camoin" id="70861903" odd="11.00" status="Open"/>
+					<bet outcome_name="Fork Handles" id="70861904" odd="34.00" status="Open"/>
+					<bet outcome_name="Jehanbux" id="70861905" odd="26.00" status="Open"/>
+					<bet outcome_name="Brunston" id="70861906" odd="13.00" status="Open"/>
+					<bet outcome_name="Reflect" id="70861907" odd="8.50" status="Open"/>
+					<bet outcome_name="Franco Is My Name" id="70861908" odd="15.00" status="Open"/>
+					<bet outcome_name="Ramona Chase" id="70861909" odd="26.00" status="Open"/>
+					<bet outcome_name="Romeo Montague" id="70861910" odd="17.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.30 Kempton SP" eventid="14205367" closetime="31/03/2012 16:31">
+				<bettype name="SP" eventid="14205367" etid="260">
+					<bet outcome_name="William Haigh SP" id="70861927" odd="SP" status="Open"/>
+					<bet outcome_name="Sirvino SP" id="70861928" odd="SP" status="Open"/>
+					<bet outcome_name="Nazreef SP" id="70861929" odd="SP" status="Open"/>
+					<bet outcome_name="Starluck SP" id="70861930" odd="SP" status="Open"/>
+					<bet outcome_name="Hillview Boy SP" id="70861931" odd="SP" status="Open"/>
+					<bet outcome_name="Licence To Till SP" id="70861932" odd="SP" status="Open"/>
+					<bet outcome_name="Eshtibaak SP" id="70861933" odd="SP" status="Open"/>
+					<bet outcome_name="Fattsota SP" id="70861934" odd="SP" status="Open"/>
+					<bet outcome_name="Charles Camoin SP" id="70861935" odd="SP" status="Open"/>
+					<bet outcome_name="Fork Handles SP" id="70861936" odd="SP" status="Open"/>
+					<bet outcome_name="Jehanbux SP" id="70861937" odd="SP" status="Open"/>
+					<bet outcome_name="Brunston SP" id="70861938" odd="SP" status="Open"/>
+					<bet outcome_name="Reflect SP" id="70861939" odd="SP" status="Open"/>
+					<bet outcome_name="Franco Is My Name SP" id="70861940" odd="SP" status="Open"/>
+					<bet outcome_name="Ramona Chase SP" id="70861941" odd="SP" status="Open"/>
+					<bet outcome_name="Romeo Montague SP" id="70861942" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.05 Kempton" eventid="14205337" closetime="31/03/2012 17:06">
+				<bettype name="Outright" eventid="14205337" etid="260">
+					<bet outcome_name="Alben Star" id="70861768" odd="3.40" status="Open"/>
+					<bet outcome_name="Bravo Echo" id="70861769" odd="13.00" status="Open"/>
+					<bet outcome_name="Palace Moon" id="70861770" odd="6.00" status="Open"/>
+					<bet outcome_name="Primaeval" id="70861771" odd="1.91" status="Open"/>
+					<bet outcome_name="Rodrigo De Torres" id="70861772" odd="26.00" status="Open"/>
+					<bet outcome_name="Seek The Fair Land" id="70861773" odd="34.00" status="Open"/>
+					<bet outcome_name="Cochabamba" id="70861774" odd="21.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.05 Kempton SP" eventid="14205339" closetime="31/03/2012 17:06">
+				<bettype name="SP" eventid="14205339" etid="260">
+					<bet outcome_name="Alben Star SP" id="70861782" odd="SP" status="Open"/>
+					<bet outcome_name="Bravo Echo SP" id="70861783" odd="SP" status="Open"/>
+					<bet outcome_name="Palace Moon SP" id="70861784" odd="SP" status="Open"/>
+					<bet outcome_name="Primaeval SP" id="70861785" odd="SP" status="Open"/>
+					<bet outcome_name="Rodrigo De Torres SP" id="70861786" odd="SP" status="Open"/>
+					<bet outcome_name="Seek The Fair Land SP" id="70861787" odd="SP" status="Open"/>
+					<bet outcome_name="Cochabamba SP" id="70861788" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.40 Kempton" eventid="14205314" closetime="31/03/2012 17:41">
+				<bettype name="Outright" eventid="14205314" etid="260">
+					<bet outcome_name="Taajub" id="70861656" odd="12.00" status="Open"/>
+					<bet outcome_name="New Leyf" id="70861657" odd="6.00" status="Open"/>
+					<bet outcome_name="Sacrosanctus" id="70861658" odd="26.00" status="Open"/>
+					<bet outcome_name="We Have A Dream" id="70861659" odd="26.00" status="Open"/>
+					<bet outcome_name="Tagula Night" id="70861660" odd="17.00" status="Open"/>
+					<bet outcome_name="Shropshire" id="70861661" odd="5.00" status="Open"/>
+					<bet outcome_name="Courageous" id="70861662" odd="5.00" status="Open"/>
+					<bet outcome_name="Farlow" id="70861663" odd="5.50" status="Open"/>
+					<bet outcome_name="Arctic Feeling" id="70861664" odd="34.00" status="Open"/>
+					<bet outcome_name="Mac Gille Eoin" id="70861665" odd="41.00" status="Open"/>
+					<bet outcome_name="Button Moon" id="70861666" odd="26.00" status="Open"/>
+					<bet outcome_name="Triple Charm" id="70861667" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.40 Kempton SP" eventid="14205317" closetime="31/03/2012 17:41">
+				<bettype name="SP" eventid="14205317" etid="260">
+					<bet outcome_name="Taajub SP" id="70861681" odd="SP" status="Open"/>
+					<bet outcome_name="New Leyf SP" id="70861683" odd="SP" status="Open"/>
+					<bet outcome_name="Sacrosanctus SP" id="70861684" odd="SP" status="Open"/>
+					<bet outcome_name="We Have A Dream SP" id="70861685" odd="SP" status="Open"/>
+					<bet outcome_name="Tagula Night SP" id="70861686" odd="SP" status="Open"/>
+					<bet outcome_name="Shropshire SP" id="70861688" odd="SP" status="Open"/>
+					<bet outcome_name="Courageous SP" id="70861689" odd="SP" status="Open"/>
+					<bet outcome_name="Farlow SP" id="70861690" odd="SP" status="Open"/>
+					<bet outcome_name="Arctic Feeling SP" id="70861691" odd="SP" status="Open"/>
+					<bet outcome_name="Mac Gille Eoin SP" id="70861692" odd="SP" status="Open"/>
+					<bet outcome_name="Button Moon SP" id="70861693" odd="SP" status="Open"/>
+					<bet outcome_name="Triple Charm SP" id="70861694" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.10 Kempton" eventid="14205296" closetime="31/03/2012 18:11">
+				<bettype name="Outright" eventid="14205296" etid="260">
+					<bet outcome_name="Sir Glanton" id="70861594" odd="17.00" status="Open"/>
+					<bet outcome_name="Gabrials Gift" id="70861595" odd="3.60" status="Open"/>
+					<bet outcome_name="Clean Bowled" id="70861596" odd="6.50" status="Open"/>
+					<bet outcome_name="Karma Chameleon" id="70861597" odd="4.50" status="Open"/>
+					<bet outcome_name="Majestic Zafeen" id="70861598" odd="5.00" status="Open"/>
+					<bet outcome_name="Savanna Days" id="70861599" odd="6.50" status="Open"/>
+					<bet outcome_name="Fennell Bay" id="70861600" odd="8.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.10 Kempton SP" eventid="14205298" closetime="31/03/2012 18:11">
+				<bettype name="SP" eventid="14205298" etid="260">
+					<bet outcome_name="Sir Glanton SP" id="70861608" odd="SP" status="Open"/>
+					<bet outcome_name="Gabrials Gift SP" id="70861609" odd="SP" status="Open"/>
+					<bet outcome_name="Clean Bowled SP" id="70861610" odd="SP" status="Open"/>
+					<bet outcome_name="Karma Chameleon SP" id="70861611" odd="SP" status="Open"/>
+					<bet outcome_name="Majestic Zafeen SP" id="70861612" odd="SP" status="Open"/>
+					<bet outcome_name="Savanna Days SP" id="70861613" odd="SP" status="Open"/>
+					<bet outcome_name="Fennell Bay SP" id="70861614" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Uttoxeter" groupid="28313">
+			<event name="1.55 Uttoxeter" eventid="14206670" closetime="31/03/2012 14:56">
+				<bettype name="Outright" eventid="14206670" etid="260">
+					<bet outcome_name="Agitation" id="70867246" odd="201.00" status="Open"/>
+					<bet outcome_name="An Capall Mor" id="70867247" odd="4.50" status="Open"/>
+					<bet outcome_name="Dubara Reef" id="70867248" odd="13.00" status="Open"/>
+					<bet outcome_name="Fantino" id="70867249" odd="21.00" status="Open"/>
+					<bet outcome_name="Raktiman" id="70867250" odd="2.50" status="Open"/>
+					<bet outcome_name="River Purple" id="70867251" odd="17.00" status="Open"/>
+					<bet outcome_name="The Banana Man" id="70867252" odd="26.00" status="Open"/>
+					<bet outcome_name="Uncle Johnny" id="70867253" odd="5.50" status="Open"/>
+					<bet outcome_name="Irish Symphony" id="70867254" odd="11.00" status="Open"/>
+					<bet outcome_name="Mysula" id="70867255" odd="26.00" status="Open"/>
+					<bet outcome_name="Scimon Templar" id="70867256" odd="7.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="1.55 Uttoxeter SP" eventid="14206672" closetime="31/03/2012 14:56">
+				<bettype name="SP" eventid="14206672" etid="260">
+					<bet outcome_name="Agitation SP" id="70867268" odd="SP" status="Open"/>
+					<bet outcome_name="An Capall Mor SP" id="70867269" odd="SP" status="Open"/>
+					<bet outcome_name="Dubara Reef SP" id="70867270" odd="SP" status="Open"/>
+					<bet outcome_name="Fantino SP" id="70867271" odd="SP" status="Open"/>
+					<bet outcome_name="Raktiman SP" id="70867272" odd="SP" status="Open"/>
+					<bet outcome_name="River Purple SP" id="70867273" odd="SP" status="Open"/>
+					<bet outcome_name="The Banana Man SP" id="70867274" odd="SP" status="Open"/>
+					<bet outcome_name="Uncle Johnny SP" id="70867275" odd="SP" status="Open"/>
+					<bet outcome_name="Irish Symphony SP" id="70867276" odd="SP" status="Open"/>
+					<bet outcome_name="Mysula SP" id="70867277" odd="SP" status="Open"/>
+					<bet outcome_name="Scimon Templar SP" id="70867278" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.30 Uttoxeter" eventid="14206676" closetime="31/03/2012 15:31">
+				<bettype name="Outright" eventid="14206676" etid="260">
+					<bet outcome_name="Littledean Jimmy" id="70867292" odd="17.00" status="Locked"/>
+					<bet outcome_name="Jolly Roger" id="70867293" odd="7.50" status="Locked"/>
+					<bet outcome_name="Trojan Sun" id="70867294" odd="17.00" status="Locked"/>
+					<bet outcome_name="Rigid" id="70867295" odd="26.00" status="Locked"/>
+					<bet outcome_name="Mytara" id="70867296" odd="21.00" status="Locked"/>
+					<bet outcome_name="Mr Bachster" id="70867297" odd="6.50" status="Locked"/>
+					<bet outcome_name="Prince Freddie" id="70867298" odd="13.00" status="Locked"/>
+					<bet outcome_name="Strategic Plan" id="70867299" odd="67.00" status="Locked"/>
+					<bet outcome_name="Dont Panic" id="70867300" odd="8.50" status="Locked"/>
+					<bet outcome_name="Sacco Doro" id="70867301" odd="17.00" status="Locked"/>
+					<bet outcome_name="Song Of Pride" id="70867302" odd="21.00" status="Locked"/>
+					<bet outcome_name="Flash Harriet" id="70867303" odd="8.00" status="Locked"/>
+					<bet outcome_name="Minkie Moon" id="70867304" odd="21.00" status="Locked"/>
+					<bet outcome_name="Naughtyatiz" id="70867305" odd="5.50" status="Locked"/>
+					<bet outcome_name="Aughcarra" id="70867306" odd="10.00" status="Locked"/>
+					<bet outcome_name="Mad Professor" id="70867307" odd="67.00" status="Locked"/>
+				</bettype>
+			</event>
+			<event name="2.30 Uttoxeter SP" eventid="14206678" closetime="31/03/2012 15:31">
+				<bettype name="SP" eventid="14206678" etid="260">
+					<bet outcome_name="Littledean Jimmy SP" id="70867325" odd="SP" status="Locked"/>
+					<bet outcome_name="Jolly Roger SP" id="70867326" odd="SP" status="Open"/>
+					<bet outcome_name="Trojan Sun SP" id="70867327" odd="SP" status="Open"/>
+					<bet outcome_name="Rigid SP" id="70867328" odd="SP" status="Open"/>
+					<bet outcome_name="Mytara SP" id="70867329" odd="SP" status="Open"/>
+					<bet outcome_name="Mr Bachster SP" id="70867330" odd="SP" status="Open"/>
+					<bet outcome_name="Prince Freddie SP" id="70867331" odd="SP" status="Open"/>
+					<bet outcome_name="Strategic Plan SP" id="70867332" odd="SP" status="Open"/>
+					<bet outcome_name="Dont Panic SP" id="70867333" odd="SP" status="Open"/>
+					<bet outcome_name="Sacco Doro SP" id="70867334" odd="SP" status="Open"/>
+					<bet outcome_name="Song Of Pride SP" id="70867335" odd="SP" status="Open"/>
+					<bet outcome_name="Flash Harriet SP" id="70867336" odd="SP" status="Open"/>
+					<bet outcome_name="Minkie Moon SP" id="70867337" odd="SP" status="Open"/>
+					<bet outcome_name="Naughtyatiz SP" id="70867338" odd="SP" status="Open"/>
+					<bet outcome_name="Aughcarra SP" id="70867339" odd="SP" status="Open"/>
+					<bet outcome_name="Mad Professor SP" id="70867340" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.05 Uttoxeter" eventid="14206683" closetime="31/03/2012 16:06">
+				<bettype name="Outright" eventid="14206683" etid="260">
+					<bet outcome_name="Avenging Ace" id="70867363" odd="6.00" status="Locked"/>
+					<bet outcome_name="Balding Banker" id="70867364" odd="3.40" status="Locked"/>
+					<bet outcome_name="Garyricken" id="70867365" odd="26.00" status="Locked"/>
+					<bet outcome_name="Oscars Secret" id="70867366" odd="7.00" status="Locked"/>
+					<bet outcome_name="Scourie Bay" id="70867367" odd="21.00" status="Locked"/>
+					<bet outcome_name="Sixty Something" id="70867368" odd="3.75" status="Locked"/>
+					<bet outcome_name="Woodbank" id="70867369" odd="11.00" status="Locked"/>
+					<bet outcome_name="Flame Of Dixie" id="70867370" odd="26.00" status="Locked"/>
+					<bet outcome_name="Mabel Tasman" id="70867371" odd="4.00" status="Locked"/>
+					<bet outcome_name="Tackswop" id="70867372" odd="51.00" status="Locked"/>
+					<bet outcome_name="Almadan" id="70867373" odd="21.00" status="Locked"/>
+				</bettype>
+			</event>
+			<event name="3.05 Uttoxeter SP" eventid="14206685" closetime="31/03/2012 16:06">
+				<bettype name="SP" eventid="14206685" etid="260">
+					<bet outcome_name="Avenging Ace SP" id="70867385" odd="SP" status="Locked"/>
+					<bet outcome_name="Balding Banker SP" id="70867386" odd="SP" status="Open"/>
+					<bet outcome_name="Garyricken SP" id="70867387" odd="SP" status="Open"/>
+					<bet outcome_name="Oscars Secret SP" id="70867388" odd="SP" status="Open"/>
+					<bet outcome_name="Scourie Bay SP" id="70867389" odd="SP" status="Open"/>
+					<bet outcome_name="Sixty Something SP" id="70867390" odd="SP" status="Open"/>
+					<bet outcome_name="Woodbank SP" id="70867391" odd="SP" status="Open"/>
+					<bet outcome_name="Flame Of Dixie SP" id="70867392" odd="SP" status="Open"/>
+					<bet outcome_name="Mabel Tasman SP" id="70867393" odd="SP" status="Open"/>
+					<bet outcome_name="Tackswop SP" id="70867394" odd="SP" status="Open"/>
+					<bet outcome_name="Almadan SP" id="70867395" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.40 Uttoxeter" eventid="14206689" closetime="31/03/2012 16:41">
+				<bettype name="Outright" eventid="14206689" etid="260">
+					<bet outcome_name="Autumn Haze" id="70867409" odd="15.00" status="Open"/>
+					<bet outcome_name="Noble Legend" id="70867410" odd="8.00" status="Open"/>
+					<bet outcome_name="Sonic Anthem" id="70867411" odd="21.00" status="Open"/>
+					<bet outcome_name="Tonic Mellysse" id="70867412" odd="1.22" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.40 Uttoxeter SP" eventid="14206690" closetime="31/03/2012 16:41">
+				<bettype name="SP" eventid="14206690" etid="260">
+					<bet outcome_name="Autumn Haze SP" id="70867413" odd="SP" status="Open"/>
+					<bet outcome_name="Noble Legend SP" id="70867414" odd="SP" status="Open"/>
+					<bet outcome_name="Sonic Anthem SP" id="70867415" odd="SP" status="Open"/>
+					<bet outcome_name="Tonic Mellysse SP" id="70867416" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.10 Uttoxeter" eventid="14206698" closetime="31/03/2012 17:11">
+				<bettype name="Outright" eventid="14206698" etid="260">
+					<bet outcome_name="Godsmejudge" id="70867468" odd="4.33" status="Open"/>
+					<bet outcome_name="Total Rebellion" id="70867469" odd="6.00" status="Open"/>
+					<bet outcome_name="Fentara" id="70867470" odd="3.75" status="Open"/>
+					<bet outcome_name="Abnaki" id="70867471" odd="8.50" status="Open"/>
+					<bet outcome_name="Hassadin" id="70867472" odd="15.00" status="Open"/>
+					<bet outcome_name="Rory Boy" id="70867473" odd="8.00" status="Open"/>
+					<bet outcome_name="Ebony River" id="70867474" odd="9.00" status="Open"/>
+					<bet outcome_name="Saint Luke" id="70867475" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.10 Uttoxeter SP" eventid="14206700" closetime="31/03/2012 17:11">
+				<bettype name="SP" eventid="14206700" etid="260">
+					<bet outcome_name="Godsmejudge SP" id="70867484" odd="SP" status="Open"/>
+					<bet outcome_name="Total Rebellion SP" id="70867485" odd="SP" status="Open"/>
+					<bet outcome_name="Fentara SP" id="70867486" odd="SP" status="Open"/>
+					<bet outcome_name="Abnaki SP" id="70867487" odd="SP" status="Open"/>
+					<bet outcome_name="Hassadin SP" id="70867488" odd="SP" status="Open"/>
+					<bet outcome_name="Rory Boy SP" id="70867489" odd="SP" status="Open"/>
+					<bet outcome_name="Ebony River SP" id="70867490" odd="SP" status="Open"/>
+					<bet outcome_name="Saint Luke SP" id="70867491" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.45 Uttoxeter" eventid="14206710" closetime="31/03/2012 17:46">
+				<bettype name="Outright" eventid="14206710" etid="260">
+					<bet outcome_name="Westlin Winds" id="70867527" odd="7.00" status="Open"/>
+					<bet outcome_name="Bathwick Brave" id="70867528" odd="6.50" status="Open"/>
+					<bet outcome_name="Gospel Preacher" id="70867529" odd="7.50" status="Open"/>
+					<bet outcome_name="Moonstreaker" id="70867530" odd="41.00" status="Open"/>
+					<bet outcome_name="Cantabilly" id="70867531" odd="17.00" status="Open"/>
+					<bet outcome_name="Castletown Bridge" id="70867532" odd="1.91" status="Open"/>
+					<bet outcome_name="Henok" id="70867533" odd="5.00" status="Open"/>
+					<bet outcome_name="Copsehill Girl" id="70867534" odd="26.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.45 Uttoxeter SP" eventid="14206712" closetime="31/03/2012 17:46">
+				<bettype name="SP" eventid="14206712" etid="260">
+					<bet outcome_name="Westlin Winds SP" id="70867543" odd="SP" status="Open"/>
+					<bet outcome_name="Bathwick Brave SP" id="70867544" odd="SP" status="Open"/>
+					<bet outcome_name="Gospel Preacher SP" id="70867545" odd="SP" status="Open"/>
+					<bet outcome_name="Moonstreaker SP" id="70867546" odd="SP" status="Open"/>
+					<bet outcome_name="Cantabilly SP" id="70867547" odd="SP" status="Open"/>
+					<bet outcome_name="Castletown Bridge SP" id="70867548" odd="SP" status="Open"/>
+					<bet outcome_name="Henok SP" id="70867549" odd="SP" status="Open"/>
+					<bet outcome_name="Copsehill Girl SP" id="70867550" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.15 Uttoxeter" eventid="14206720" closetime="31/03/2012 18:16">
+				<bettype name="Outright" eventid="14206720" etid="260">
+					<bet outcome_name="Easter Dancer" id="70867589" odd="17.00" status="Open"/>
+					<bet outcome_name="Fairey Delta" id="70867590" odd="21.00" status="Open"/>
+					<bet outcome_name="Finmerello" id="70867591" odd="41.00" status="Open"/>
+					<bet outcome_name="Hella Petite" id="70867592" odd="15.00" status="Open"/>
+					<bet outcome_name="Indian Citizen" id="70867593" odd="51.00" status="Open"/>
+					<bet outcome_name="Jessica Valentine" id="70867594" odd="26.00" status="Open"/>
+					<bet outcome_name="La Calinda" id="70867595" odd="21.00" status="Open"/>
+					<bet outcome_name="Miss Chardonay" id="70867596" odd="51.00" status="Open"/>
+					<bet outcome_name="Move Along" id="70867597" odd="7.50" status="Open"/>
+					<bet outcome_name="Queenswood Bay" id="70867598" odd="51.00" status="Open"/>
+					<bet outcome_name="Crowcombe Park" id="70867599" odd="67.00" status="Open"/>
+					<bet outcome_name="Detour Ahead" id="70867600" odd="67.00" status="Open"/>
+					<bet outcome_name="Golden Electra" id="70867601" odd="3.75" status="Open"/>
+					<bet outcome_name="Patna" id="70867602" odd="41.00" status="Open"/>
+					<bet outcome_name="Queen Olivia" id="70867603" odd="101.00" status="Open"/>
+					<bet outcome_name="Royal Present" id="70867604" odd="4.50" status="Open"/>
+					<bet outcome_name="Sharwakom" id="70867605" odd="7.00" status="Open"/>
+					<bet outcome_name="Where I Be" id="70867606" odd="10.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.15 Uttoxeter SP" eventid="14206722" closetime="31/03/2012 18:16">
+				<bettype name="SP" eventid="14206722" etid="260">
+					<bet outcome_name="Easter Dancer SP" id="70867625" odd="SP" status="Open"/>
+					<bet outcome_name="Fairey Delta SP" id="70867626" odd="SP" status="Open"/>
+					<bet outcome_name="Finmerello SP" id="70867627" odd="SP" status="Open"/>
+					<bet outcome_name="Hella Petite SP" id="70867628" odd="SP" status="Open"/>
+					<bet outcome_name="Indian Citizen SP" id="70867629" odd="SP" status="Open"/>
+					<bet outcome_name="Jessica Valentine SP" id="70867630" odd="SP" status="Open"/>
+					<bet outcome_name="La Calinda SP" id="70867631" odd="SP" status="Open"/>
+					<bet outcome_name="Miss Chardonay SP" id="70867632" odd="SP" status="Open"/>
+					<bet outcome_name="Move Along SP" id="70867633" odd="SP" status="Open"/>
+					<bet outcome_name="Queenswood Bay SP" id="70867634" odd="SP" status="Open"/>
+					<bet outcome_name="Crowcombe Park SP" id="70867635" odd="SP" status="Open"/>
+					<bet outcome_name="Detour Ahead SP" id="70867636" odd="SP" status="Open"/>
+					<bet outcome_name="Golden Electra SP" id="70867637" odd="SP" status="Open"/>
+					<bet outcome_name="Patna SP" id="70867638" odd="SP" status="Open"/>
+					<bet outcome_name="Queen Olivia SP" id="70867639" odd="SP" status="Open"/>
+					<bet outcome_name="Royal Present SP" id="70867640" odd="SP" status="Open"/>
+					<bet outcome_name="Sharwakom SP" id="70867641" odd="SP" status="Open"/>
+					<bet outcome_name="Where I Be SP" id="70867642" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.45 Uttoxeter" eventid="14206729" closetime="31/03/2012 18:46">
+				<bettype name="Outright" eventid="14206729" etid="260">
+					<bet outcome_name="Its Like That" id="70867673" odd="6.00" status="Open"/>
+					<bet outcome_name="Management" id="70867674" odd="15.00" status="Open"/>
+					<bet outcome_name="Humbel Ben" id="70867675" odd="10.00" status="Open"/>
+					<bet outcome_name="North Stack" id="70867676" odd="2.88" status="Open"/>
+					<bet outcome_name="Cebonne" id="70867677" odd="11.00" status="Open"/>
+					<bet outcome_name="Ive Been Framed" id="70867678" odd="7.50" status="Open"/>
+					<bet outcome_name="Musical Wedge" id="70867679" odd="15.00" status="Open"/>
+					<bet outcome_name="Thoresby" id="70867680" odd="12.00" status="Open"/>
+					<bet outcome_name="Pistol Basc" id="70867681" odd="7.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.45 Uttoxeter SP" eventid="14206731" closetime="31/03/2012 18:46">
+				<bettype name="SP" eventid="14206731" etid="260">
+					<bet outcome_name="Its Like That SP" id="70867697" odd="SP" status="Open"/>
+					<bet outcome_name="Management SP" id="70867691" odd="SP" status="Open"/>
+					<bet outcome_name="Humbel Ben SP" id="70867692" odd="SP" status="Open"/>
+					<bet outcome_name="North Stack SP" id="70867693" odd="SP" status="Open"/>
+					<bet outcome_name="Cebonne SP" id="70867694" odd="SP" status="Open"/>
+					<bet outcome_name="Ive Been Framed SP" id="70867695" odd="SP" status="Open"/>
+					<bet outcome_name="Musical Wedge SP" id="70867696" odd="SP" status="Open"/>
+					<bet outcome_name="Thoresby SP" id="70867698" odd="SP" status="Open"/>
+					<bet outcome_name="Pistol Basc SP" id="70867699" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Navan (IRE)" groupid="31546">
+			<event name="2.35 Navan" eventid="14207541" closetime="31/03/2012 15:36">
+				<bettype name="Outright" eventid="14207541" etid="260">
+					<bet outcome_name="Casta Diva" id="70871708" odd="51.00" status="Open"/>
+					<bet outcome_name="Cathrine De Medici" id="70871709" odd="26.00" status="Open"/>
+					<bet outcome_name="Chasing Shadows" id="70871710" odd="4.00" status="Open"/>
+					<bet outcome_name="Cnoc Seoda" id="70871711" odd="17.00" status="Open"/>
+					<bet outcome_name="Dearest Girl" id="70871712" odd="26.00" status="Open"/>
+					<bet outcome_name="Flaming Pop" id="70871713" odd="3.60" status="Open"/>
+					<bet outcome_name="Galianna" id="70871714" odd="4.50" status="Open"/>
+					<bet outcome_name="Great Oak" id="70871715" odd="21.00" status="Open"/>
+					<bet outcome_name="Lough Roe Lady" id="70871716" odd="6.50" status="Open"/>
+					<bet outcome_name="Lucky Pigeon" id="70871717" odd="34.00" status="Open"/>
+					<bet outcome_name="Ma Nolan" id="70871718" odd="13.00" status="Open"/>
+					<bet outcome_name="Miss Rouge" id="70871719" odd="67.00" status="Open"/>
+					<bet outcome_name="Napier" id="70871720" odd="67.00" status="Open"/>
+					<bet outcome_name="Now You Know" id="70871721" odd="34.00" status="Open"/>
+					<bet outcome_name="Rare Benefit" id="70871722" odd="41.00" status="Open"/>
+					<bet outcome_name="Rose Of Dunamase" id="70871723" odd="34.00" status="Open"/>
+					<bet outcome_name="Runaway Lady" id="70871724" odd="67.00" status="Open"/>
+					<bet outcome_name="Tikkanese" id="70871725" odd="67.00" status="Open"/>
+					<bet outcome_name="Well In" id="70871726" odd="101.00" status="Open"/>
+					<bet outcome_name="Windwood Bay" id="70871727" odd="17.00" status="Open"/>
+					<bet outcome_name="Derrylea Girl" id="70871728" odd="26.00" status="Open"/>
+					<bet outcome_name="Freefairngenuine" id="70871729" odd="26.00" status="Open"/>
+					<bet outcome_name="Narjawa" id="70871730" odd="17.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.35 Navan SP" eventid="14207543" closetime="31/03/2012 15:36">
+				<bettype name="SP" eventid="14207543" etid="260">
+					<bet outcome_name="Casta Diva SP" id="70871754" odd="SP" status="Open"/>
+					<bet outcome_name="Cathrine De Medici SP" id="70871755" odd="SP" status="Locked"/>
+					<bet outcome_name="Chasing Shadows SP" id="70871756" odd="SP" status="Open"/>
+					<bet outcome_name="Cnoc Seoda SP" id="70871757" odd="SP" status="Open"/>
+					<bet outcome_name="Dearest Girl SP" id="70871758" odd="SP" status="Open"/>
+					<bet outcome_name="Flaming Pop SP" id="70871759" odd="SP" status="Open"/>
+					<bet outcome_name="Galianna SP" id="70871760" odd="SP" status="Open"/>
+					<bet outcome_name="Great Oak SP" id="70871761" odd="SP" status="Open"/>
+					<bet outcome_name="Lough Roe Lady SP" id="70871762" odd="SP" status="Open"/>
+					<bet outcome_name="Lucky Pigeon SP" id="70871763" odd="SP" status="Open"/>
+					<bet outcome_name="Ma Nolan SP" id="70871764" odd="SP" status="Open"/>
+					<bet outcome_name="Miss Rouge SP" id="70871765" odd="SP" status="Open"/>
+					<bet outcome_name="Napier SP" id="70871766" odd="SP" status="Open"/>
+					<bet outcome_name="Now You Know SP" id="70871767" odd="SP" status="Open"/>
+					<bet outcome_name="Rare Benefit SP" id="70871768" odd="SP" status="Open"/>
+					<bet outcome_name="Rose Of Dunamase SP" id="70871769" odd="SP" status="Open"/>
+					<bet outcome_name="Runaway Lady SP" id="70871770" odd="SP" status="Open"/>
+					<bet outcome_name="Tikkanese SP" id="70871771" odd="SP" status="Open"/>
+					<bet outcome_name="Well In SP" id="70871772" odd="SP" status="Open"/>
+					<bet outcome_name="Windwood Bay SP" id="70871773" odd="SP" status="Open"/>
+					<bet outcome_name="Derrylea Girl SP" id="70871774" odd="SP" status="Open"/>
+					<bet outcome_name="Freefairngenuine SP" id="70871775" odd="SP" status="Open"/>
+					<bet outcome_name="Narjawa SP" id="70871776" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.10 Navan" eventid="14207533" closetime="31/03/2012 16:11">
+				<bettype name="Outright" eventid="14207533" etid="260">
+					<bet outcome_name="Adapt A Buzz" id="70871634" odd="101.00" status="Open"/>
+					<bet outcome_name="Alasty" id="70871635" odd="15.00" status="Open"/>
+					<bet outcome_name="Beef To The Heels" id="70871636" odd="2.63" status="Open"/>
+					<bet outcome_name="Clonleney" id="70871637" odd="26.00" status="Open"/>
+					<bet outcome_name="Flemingo Domingo" id="70871638" odd="8.00" status="Open"/>
+					<bet outcome_name="Flying Light" id="70871639" odd="3.00" status="Open"/>
+					<bet outcome_name="Julie Prince" id="70871640" odd="13.00" status="Open"/>
+					<bet outcome_name="Kai Li" id="70871641" odd="26.00" status="Open"/>
+					<bet outcome_name="Law Rebel" id="70871642" odd="4.00" status="Open"/>
+					<bet outcome_name="Lightning Rory" id="70871643" odd="67.00" status="Open"/>
+					<bet outcome_name="Old Palm" id="70871644" odd="41.00" status="Open"/>
+					<bet outcome_name="Phoenix Star" id="70871645" odd="13.00" status="Open"/>
+					<bet outcome_name="Silent Reaper" id="70871646" odd="101.00" status="Open"/>
+					<bet outcome_name="The Amarillo Kid" id="70871647" odd="6.50" status="Open"/>
+					<bet outcome_name="Tipped Up Harry" id="70871648" odd="41.00" status="Open"/>
+					<bet outcome_name="Who Said Mass" id="70871649" odd="101.00" status="Open"/>
+					<bet outcome_name="Yathinkyaknowitall" id="70871650" odd="101.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.10 Navan SP" eventid="14207535" closetime="31/03/2012 16:11">
+				<bettype name="SP" eventid="14207535" etid="260">
+					<bet outcome_name="Adapt A Buzz SP" id="70871668" odd="SP" status="Open"/>
+					<bet outcome_name="Alasty SP" id="70871669" odd="SP" status="Open"/>
+					<bet outcome_name="Beef To The Heels SP" id="70871670" odd="SP" status="Open"/>
+					<bet outcome_name="Clonleney SP" id="70871671" odd="SP" status="Open"/>
+					<bet outcome_name="Flemingo Domingo SP" id="70871672" odd="SP" status="Open"/>
+					<bet outcome_name="Flying Light SP" id="70871673" odd="SP" status="Open"/>
+					<bet outcome_name="Julie Prince SP" id="70871674" odd="SP" status="Open"/>
+					<bet outcome_name="Kai Li SP" id="70871675" odd="SP" status="Open"/>
+					<bet outcome_name="Law Rebel SP" id="70871676" odd="SP" status="Locked"/>
+					<bet outcome_name="Lightning Rory SP" id="70871677" odd="SP" status="Open"/>
+					<bet outcome_name="Old Palm SP" id="70871678" odd="SP" status="Open"/>
+					<bet outcome_name="Phoenix Star SP" id="70871679" odd="SP" status="Open"/>
+					<bet outcome_name="Silent Reaper SP" id="70871680" odd="SP" status="Open"/>
+					<bet outcome_name="The Amarillo Kid SP" id="70871681" odd="SP" status="Open"/>
+					<bet outcome_name="Tipped Up Harry SP" id="70871682" odd="SP" status="Open"/>
+					<bet outcome_name="Who Said Mass SP" id="70871683" odd="SP" status="Open"/>
+					<bet outcome_name="Yathinkyaknowitall SP" id="70871684" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.45 Navan" eventid="14207523" closetime="31/03/2012 16:46">
+				<bettype name="Outright" eventid="14207523" etid="260">
+					<bet outcome_name="Table Mountain" id="70871538" odd="2.88" status="Open"/>
+					<bet outcome_name="Sean Airgead" id="70871539" odd="5.50" status="Open"/>
+					<bet outcome_name="Bobby John" id="70871540" odd="13.00" status="Open"/>
+					<bet outcome_name="Character Actor" id="70871541" odd="21.00" status="Open"/>
+					<bet outcome_name="Tinas Exhibition" id="70871542" odd="13.00" status="Open"/>
+					<bet outcome_name="Carpenter" id="70871543" odd="26.00" status="Open"/>
+					<bet outcome_name="Motaraqeb" id="70871544" odd="26.00" status="Open"/>
+					<bet outcome_name="Inis Ceithleann" id="70871545" odd="17.00" status="Open"/>
+					<bet outcome_name="Cerveza Dinero" id="70871546" odd="17.00" status="Open"/>
+					<bet outcome_name="Chapter Eleven" id="70871547" odd="21.00" status="Open"/>
+					<bet outcome_name="Millenarys Lady" id="70871548" odd="7.50" status="Open"/>
+					<bet outcome_name="Cometotheboardroom" id="70871549" odd="21.00" status="Open"/>
+					<bet outcome_name="Boleybawn Cat" id="70871550" odd="26.00" status="Open"/>
+					<bet outcome_name="Brian The Warrior" id="70871551" odd="26.00" status="Open"/>
+					<bet outcome_name="Cantrell" id="70871552" odd="17.00" status="Open"/>
+					<bet outcome_name="The Rattler Obrien" id="70871553" odd="17.00" status="Open"/>
+					<bet outcome_name="Mac Tigue" id="70871554" odd="21.00" status="Open"/>
+					<bet outcome_name="The Gnathologist" id="70871555" odd="26.00" status="Open"/>
+					<bet outcome_name="Baynes Cross" id="70871556" odd="26.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.45 Navan SP" eventid="14207525" closetime="31/03/2012 16:46">
+				<bettype name="SP" eventid="14207525" etid="260">
+					<bet outcome_name="Table Mountain SP" id="70871576" odd="SP" status="Open"/>
+					<bet outcome_name="Sean Airgead SP" id="70871577" odd="SP" status="Open"/>
+					<bet outcome_name="Bobby John SP" id="70871578" odd="SP" status="Open"/>
+					<bet outcome_name="Character Actor SP" id="70871579" odd="SP" status="Open"/>
+					<bet outcome_name="Tinas Exhibition SP" id="70871580" odd="SP" status="Open"/>
+					<bet outcome_name="Carpenter SP" id="70871581" odd="SP" status="Open"/>
+					<bet outcome_name="Motaraqeb SP" id="70871582" odd="SP" status="Open"/>
+					<bet outcome_name="Inis Ceithleann SP" id="70871583" odd="SP" status="Open"/>
+					<bet outcome_name="Cerveza Dinero SP" id="70871584" odd="SP" status="Open"/>
+					<bet outcome_name="Chapter Eleven SP" id="70871585" odd="SP" status="Open"/>
+					<bet outcome_name="Millenarys Lady SP" id="70871586" odd="SP" status="Open"/>
+					<bet outcome_name="Cometotheboardroom SP" id="70871587" odd="SP" status="Open"/>
+					<bet outcome_name="Boleybawn Cat SP" id="70871588" odd="SP" status="Open"/>
+					<bet outcome_name="Brian The Warrior SP" id="70871589" odd="SP" status="Open"/>
+					<bet outcome_name="Cantrell SP" id="70871590" odd="SP" status="Open"/>
+					<bet outcome_name="The Rattler Obrien SP" id="70871591" odd="SP" status="Open"/>
+					<bet outcome_name="Mac Tigue SP" id="70871592" odd="SP" status="Open"/>
+					<bet outcome_name="The Gnathologist SP" id="70871593" odd="SP" status="Open"/>
+					<bet outcome_name="Baynes Cross SP" id="70871594" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.15 Navan" eventid="14207479" closetime="31/03/2012 17:16">
+				<bettype name="Outright" eventid="14207479" etid="260">
+					<bet outcome_name="Saddlenomore" id="70871263" odd="6.00" status="Open"/>
+					<bet outcome_name="Its All Hush Hush" id="70871264" odd="13.00" status="Open"/>
+					<bet outcome_name="Labeille" id="70871265" odd="17.00" status="Open"/>
+					<bet outcome_name="Derinlaur" id="70871266" odd="5.00" status="Open"/>
+					<bet outcome_name="Coolking" id="70871267" odd="7.50" status="Open"/>
+					<bet outcome_name="Hang Up My Boots" id="70871268" odd="15.00" status="Open"/>
+					<bet outcome_name="Western Bound" id="70871269" odd="9.00" status="Open"/>
+					<bet outcome_name="Donegal" id="70871270" odd="17.00" status="Open"/>
+					<bet outcome_name="Donttellmother" id="70871271" odd="10.00" status="Open"/>
+					<bet outcome_name="High Cian" id="70871272" odd="11.00" status="Open"/>
+					<bet outcome_name="Zelkova Island" id="70871273" odd="17.00" status="Open"/>
+					<bet outcome_name="Enter The Indian" id="70871274" odd="17.00" status="Open"/>
+					<bet outcome_name="Court Knee" id="70871275" odd="21.00" status="Open"/>
+					<bet outcome_name="Academy Coolbawn" id="70871276" odd="21.00" status="Open"/>
+					<bet outcome_name="Sinbinned" id="70871277" odd="21.00" status="Open"/>
+					<bet outcome_name="Storm Breaker" id="70871278" odd="13.00" status="Open"/>
+					<bet outcome_name="Lady Sunshine" id="70871279" odd="26.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.15 Navan SP" eventid="14207481" closetime="31/03/2012 17:16">
+				<bettype name="SP" eventid="14207481" etid="260">
+					<bet outcome_name="Saddlenomore SP" id="70871297" odd="SP" status="Open"/>
+					<bet outcome_name="Its All Hush Hush SP" id="70871298" odd="SP" status="Open"/>
+					<bet outcome_name="Labeille SP" id="70871299" odd="SP" status="Open"/>
+					<bet outcome_name="Derinlaur SP" id="70871300" odd="SP" status="Open"/>
+					<bet outcome_name="Coolking SP" id="70871301" odd="SP" status="Open"/>
+					<bet outcome_name="Hang Up My Boots SP" id="70871302" odd="SP" status="Open"/>
+					<bet outcome_name="Western Bound SP" id="70871303" odd="SP" status="Open"/>
+					<bet outcome_name="Donegal SP" id="70871304" odd="SP" status="Open"/>
+					<bet outcome_name="Donttellmother SP" id="70871305" odd="SP" status="Open"/>
+					<bet outcome_name="High Cian SP" id="70871306" odd="SP" status="Open"/>
+					<bet outcome_name="Zelkova Island SP" id="70871307" odd="SP" status="Open"/>
+					<bet outcome_name="Enter The Indian SP" id="70871308" odd="SP" status="Open"/>
+					<bet outcome_name="Court Knee SP" id="70871309" odd="SP" status="Open"/>
+					<bet outcome_name="Academy Coolbawn SP" id="70871310" odd="SP" status="Open"/>
+					<bet outcome_name="Sinbinned SP" id="70871311" odd="SP" status="Open"/>
+					<bet outcome_name="Storm Breaker SP" id="70871312" odd="SP" status="Open"/>
+					<bet outcome_name="Lady Sunshine SP" id="70871313" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.50 Navan" eventid="14207458" closetime="31/03/2012 17:51">
+				<bettype name="Outright" eventid="14207458" etid="260">
+					<bet outcome_name="Empire Theatre" id="70871077" odd="17.00" status="Open"/>
+					<bet outcome_name="Maca Rince" id="70871078" odd="34.00" status="Open"/>
+					<bet outcome_name="Lisrose" id="70871079" odd="3.60" status="Open"/>
+					<bet outcome_name="Aladdins Cave" id="70871080" odd="4.33" status="Open"/>
+					<bet outcome_name="Forjoethepainter" id="70871081" odd="8.50" status="Open"/>
+					<bet outcome_name="Gentle Paddy" id="70871082" odd="17.00" status="Open"/>
+					<bet outcome_name="Brookville" id="70871083" odd="8.00" status="Open"/>
+					<bet outcome_name="Seldom Fed" id="70871084" odd="13.00" status="Open"/>
+					<bet outcome_name="Hayzoom" id="70871085" odd="26.00" status="Open"/>
+					<bet outcome_name="Starling Lady" id="70871086" odd="9.00" status="Open"/>
+					<bet outcome_name="Lady Olwyn" id="70871087" odd="17.00" status="Open"/>
+					<bet outcome_name="Eddie Zero" id="70871088" odd="17.00" status="Open"/>
+					<bet outcome_name="Leney Lou" id="70871089" odd="34.00" status="Open"/>
+					<bet outcome_name="Slim To None" id="70871090" odd="34.00" status="Open"/>
+					<bet outcome_name="Afram Blue" id="70871091" odd="21.00" status="Open"/>
+					<bet outcome_name="High Destiny" id="70871092" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.50 Navan SP" eventid="14207460" closetime="31/03/2012 17:51">
+				<bettype name="SP" eventid="14207460" etid="260">
+					<bet outcome_name="Empire Theatre SP" id="70871109" odd="SP" status="Open"/>
+					<bet outcome_name="Maca Rince SP" id="70871110" odd="SP" status="Open"/>
+					<bet outcome_name="Lisrose SP" id="70871111" odd="SP" status="Open"/>
+					<bet outcome_name="Aladdins Cave SP" id="70871112" odd="SP" status="Open"/>
+					<bet outcome_name="Forjoethepainter SP" id="70871113" odd="SP" status="Open"/>
+					<bet outcome_name="Gentle Paddy SP" id="70871114" odd="SP" status="Open"/>
+					<bet outcome_name="Brookville SP" id="70871115" odd="SP" status="Open"/>
+					<bet outcome_name="Seldom Fed SP" id="70871116" odd="SP" status="Open"/>
+					<bet outcome_name="Hayzoom SP" id="70871117" odd="SP" status="Open"/>
+					<bet outcome_name="Starling Lady SP" id="70871118" odd="SP" status="Open"/>
+					<bet outcome_name="Lady Olwyn SP" id="70871119" odd="SP" status="Open"/>
+					<bet outcome_name="Eddie Zero SP" id="70871120" odd="SP" status="Open"/>
+					<bet outcome_name="Leney Lou SP" id="70871121" odd="SP" status="Open"/>
+					<bet outcome_name="Slim To None SP" id="70871122" odd="SP" status="Open"/>
+					<bet outcome_name="Afram Blue SP" id="70871123" odd="SP" status="Open"/>
+					<bet outcome_name="High Destiny SP" id="70871124" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.20 Navan SP" eventid="14207454" closetime="31/03/2012 18:21">
+				<bettype name="SP" eventid="14207454" etid="260">
+					<bet outcome_name="Realt Dubh SP" id="70871059" odd="SP" status="Locked"/>
+					<bet outcome_name="Tranquil Sea SP" id="70871060" odd="SP" status="Open"/>
+					<bet outcome_name="Roi Du Mee SP" id="70871061" odd="SP" status="Locked"/>
+					<bet outcome_name="I Hear A Symphony SP" id="70871062" odd="SP" status="Open"/>
+					<bet outcome_name="Natal SP" id="70871063" odd="SP" status="Open"/>
+					<bet outcome_name="Saddlers Native SP" id="70871064" odd="SP" status="Open"/>
+					<bet outcome_name="Trafford Lad SP" id="70871065" odd="SP" status="Open"/>
+					<bet outcome_name="Zaarito SP" id="70871066" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.55 Navan" eventid="14207446" closetime="31/03/2012 18:56">
+				<bettype name="Outright" eventid="14207446" etid="260">
+					<bet outcome_name="Slieveardagh" id="70871010" odd="2.20" status="Open"/>
+					<bet outcome_name="Imperial Shabra" id="70871011" odd="13.00" status="Open"/>
+					<bet outcome_name="Original Option" id="70871012" odd="6.00" status="Open"/>
+					<bet outcome_name="Perfect Smile" id="70871013" odd="3.00" status="Open"/>
+					<bet outcome_name="Regal Destruval" id="70871014" odd="10.00" status="Open"/>
+					<bet outcome_name="Blue Vic" id="70871015" odd="34.00" status="Open"/>
+					<bet outcome_name="Brega Queen" id="70871016" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.55 Navan SP" eventid="14207448" closetime="31/03/2012 18:56">
+				<bettype name="SP" eventid="14207448" etid="260">
+					<bet outcome_name="Slieveardagh SP" id="70871024" odd="SP" status="Open"/>
+					<bet outcome_name="Imperial Shabra SP" id="70871025" odd="SP" status="Open"/>
+					<bet outcome_name="Original Option SP" id="70871026" odd="SP" status="Open"/>
+					<bet outcome_name="Perfect Smile SP" id="70871027" odd="SP" status="Open"/>
+					<bet outcome_name="Regal Destruval SP" id="70871028" odd="SP" status="Open"/>
+					<bet outcome_name="Blue Vic SP" id="70871029" odd="SP" status="Open"/>
+					<bet outcome_name="Brega Queen SP" id="70871030" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.30 Navan" eventid="14207439" closetime="31/03/2012 19:31">
+				<bettype name="Outright" eventid="14207439" etid="260">
+					<bet outcome_name="Arkendale" id="70870948" odd="9.00" status="Open"/>
+					<bet outcome_name="Mirador Del Conde" id="70870949" odd="5.00" status="Open"/>
+					<bet outcome_name="Celtic Wish" id="70870950" odd="17.00" status="Open"/>
+					<bet outcome_name="Kylebeg Krystle" id="70870951" odd="12.00" status="Open"/>
+					<bet outcome_name="Any Bets" id="70870952" odd="10.00" status="Open"/>
+					<bet outcome_name="Rayhani" id="70870953" odd="12.00" status="Open"/>
+					<bet outcome_name="Aces And Kings" id="70870954" odd="13.00" status="Open"/>
+					<bet outcome_name="Lockdown" id="70870955" odd="17.00" status="Open"/>
+					<bet outcome_name="China Goes Green" id="70870956" odd="6.50" status="Open"/>
+					<bet outcome_name="Hold Em Cowboy" id="70870957" odd="6.00" status="Open"/>
+					<bet outcome_name="Tipolino" id="70870958" odd="21.00" status="Open"/>
+					<bet outcome_name="Bruff" id="70870959" odd="6.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.30 Navan SP" eventid="14207441" closetime="31/03/2012 19:31">
+				<bettype name="SP" eventid="14207441" etid="260">
+					<bet outcome_name="Arkendale SP" id="70870972" odd="SP" status="Open"/>
+					<bet outcome_name="Mirador Del Conde SP" id="70870973" odd="SP" status="Open"/>
+					<bet outcome_name="Celtic Wish SP" id="70870974" odd="SP" status="Open"/>
+					<bet outcome_name="Kylebeg Krystle SP" id="70870975" odd="SP" status="Open"/>
+					<bet outcome_name="Any Bets SP" id="70870976" odd="SP" status="Open"/>
+					<bet outcome_name="Rayhani SP" id="70870977" odd="SP" status="Open"/>
+					<bet outcome_name="Aces And Kings SP" id="70870978" odd="SP" status="Open"/>
+					<bet outcome_name="Lockdown SP" id="70870979" odd="SP" status="Open"/>
+					<bet outcome_name="China Goes Green SP" id="70870980" odd="SP" status="Open"/>
+					<bet outcome_name="Hold Em Cowboy SP" id="70870981" odd="SP" status="Open"/>
+					<bet outcome_name="Tipolino SP" id="70870982" odd="SP" status="Open"/>
+					<bet outcome_name="Bruff SP" id="70870983" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Meydan (UAE)" groupid="122465">
+			<event name="1.30 Meydan SP" eventid="14204953" closetime="31/03/2012 14:31">
+				<bettype name="SP" eventid="14204953" etid="260">
+					<bet outcome_name="Nieshan SP" id="70859785" odd="SP" status="Open"/>
+					<bet outcome_name="Seraphin Du Paon SP" id="70859786" odd="SP" status="Open"/>
+					<bet outcome_name="Timadit Al Mels SP" id="70859787" odd="SP" status="Open"/>
+					<bet outcome_name="Versac Py SP" id="70859788" odd="SP" status="Open"/>
+					<bet outcome_name="Sahib Du Clos SP" id="70859789" odd="SP" status="Open"/>
+					<bet outcome_name="Kandar Du Falgas SP" id="70859790" odd="SP" status="Open"/>
+					<bet outcome_name="Aktar Lotois SP" id="70859791" odd="SP" status="Open"/>
+					<bet outcome_name="Tm Fred Texas SP" id="70859792" odd="SP" status="Open"/>
+					<bet outcome_name="Af Alghabra SP" id="70859793" odd="SP" status="Open"/>
+					<bet outcome_name="Fryvolous SP" id="70859794" odd="SP" status="Open"/>
+					<bet outcome_name="Dariya SP" id="70859795" odd="SP" status="Open"/>
+					<bet outcome_name="Albar Lotois SP" id="70859796" odd="SP" status="Open"/>
+					<bet outcome_name="Al Mujahaz SP" id="70859797" odd="SP" status="Open"/>
+					<bet outcome_name="Harran Asf SP" id="70859798" odd="SP" status="Open"/>
+					<bet outcome_name="Periander SP" id="70859799" odd="SP" status="Open"/>
+					<bet outcome_name="Rami SP" id="70859800" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.10 Meydan" eventid="14204961" closetime="31/03/2012 15:11">
+				<bettype name="Outright" eventid="14204961" etid="260">
+					<bet outcome_name="Richards Kid" id="70859838" odd="34.00" status="Open"/>
+					<bet outcome_name="Sandagiyr" id="70859839" odd="11.00" status="Open"/>
+					<bet outcome_name="African Story" id="70859840" odd="2.00" status="Open"/>
+					<bet outcome_name="First City" id="70859841" odd="26.00" status="Open"/>
+					<bet outcome_name="Shamalgan" id="70859842" odd="21.00" status="Open"/>
+					<bet outcome_name="Derbaas" id="70859843" odd="15.00" status="Open"/>
+					<bet outcome_name="Western Aristocrat" id="70859844" odd="6.00" status="Open"/>
+					<bet outcome_name="Red Jazz" id="70859845" odd="10.00" status="Open"/>
+					<bet outcome_name="Dux Scholar" id="70859846" odd="26.00" status="Open"/>
+					<bet outcome_name="Do It All" id="70859847" odd="10.00" status="Open"/>
+					<bet outcome_name="Snaafy" id="70859848" odd="26.00" status="Open"/>
+					<bet outcome_name="Viscount Nelson" id="70859849" odd="11.00" status="Open"/>
+					<bet outcome_name="Haatheq" id="70859850" odd="21.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.10 Meydan SP" eventid="14204963" closetime="31/03/2012 15:11">
+				<bettype name="SP" eventid="14204963" etid="260">
+					<bet outcome_name="Richards Kid SP" id="70859864" odd="SP" status="Open"/>
+					<bet outcome_name="Sandagiyr SP" id="70859865" odd="SP" status="Open"/>
+					<bet outcome_name="African Story SP" id="70859866" odd="SP" status="Open"/>
+					<bet outcome_name="First City SP" id="70859867" odd="SP" status="Open"/>
+					<bet outcome_name="Shamalgan SP" id="70859868" odd="SP" status="Open"/>
+					<bet outcome_name="Derbaas SP" id="70859869" odd="SP" status="Open"/>
+					<bet outcome_name="Western Aristocrat SP" id="70859870" odd="SP" status="Open"/>
+					<bet outcome_name="Red Jazz SP" id="70859871" odd="SP" status="Open"/>
+					<bet outcome_name="Dux Scholar SP" id="70859872" odd="SP" status="Open"/>
+					<bet outcome_name="Do It All SP" id="70859873" odd="SP" status="Open"/>
+					<bet outcome_name="Snaafy SP" id="70859874" odd="SP" status="Open"/>
+					<bet outcome_name="Viscount Nelson SP" id="70859875" odd="SP" status="Open"/>
+					<bet outcome_name="Haatheq SP" id="70859876" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.45 Meydan" eventid="14204968" closetime="31/03/2012 15:46">
+				<bettype name="Outright" eventid="14204968" etid="260">
+					<bet outcome_name="Makani Bisty" id="70859893" odd="11.00" status="Open"/>
+					<bet outcome_name="Barbican" id="70859896" odd="8.00" status="Open"/>
+					<bet outcome_name="Unusual Suspect" id="70859897" odd="26.00" status="Open"/>
+					<bet outcome_name="Averroes" id="70859898" odd="67.00" status="Open"/>
+					<bet outcome_name="Joshua Tree" id="70859899" odd="15.00" status="Open"/>
+					<bet outcome_name="Irish Flame" id="70859901" odd="21.00" status="Open"/>
+					<bet outcome_name="Bronze Cannon" id="70859903" odd="26.00" status="Open"/>
+					<bet outcome_name="Mikhail Glinka" id="70859904" odd="7.00" status="Open"/>
+					<bet outcome_name="Grand Vent" id="70859905" odd="17.00" status="Open"/>
+					<bet outcome_name="Opinion Poll" id="70859907" odd="3.25" status="Open"/>
+					<bet outcome_name="Fox Hunt" id="70859909" odd="3.75" status="Open"/>
+					<bet outcome_name="Zanzamar" id="70859910" odd="17.00" status="Open"/>
+					<bet outcome_name="Kasbah Bliss" id="70859913" odd="15.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="2.45 Meydan SP" eventid="14204977" closetime="31/03/2012 15:46">
+				<bettype name="SP" eventid="14204977" etid="260">
+					<bet outcome_name="Makani Bisty SP" id="70859942" odd="SP" status="Open"/>
+					<bet outcome_name="Barbican SP" id="70859943" odd="SP" status="Open"/>
+					<bet outcome_name="Unusual Suspect SP" id="70859944" odd="SP" status="Open"/>
+					<bet outcome_name="Averroes SP" id="70859945" odd="SP" status="Open"/>
+					<bet outcome_name="Joshua Tree SP" id="70859946" odd="SP" status="Open"/>
+					<bet outcome_name="Irish Flame SP" id="70859947" odd="SP" status="Open"/>
+					<bet outcome_name="Bronze Cannon SP" id="70859948" odd="SP" status="Open"/>
+					<bet outcome_name="Mikhail Glinka SP" id="70859950" odd="SP" status="Open"/>
+					<bet outcome_name="Grand Vent SP" id="70859951" odd="SP" status="Open"/>
+					<bet outcome_name="Opinion Poll SP" id="70859952" odd="SP" status="Open"/>
+					<bet outcome_name="Fox Hunt SP" id="70859954" odd="SP" status="Open"/>
+					<bet outcome_name="Zanzamar SP" id="70859955" odd="SP" status="Open"/>
+					<bet outcome_name="Kasbah Bliss SP" id="70859956" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.25 Meydan" eventid="14204990" closetime="31/03/2012 16:26">
+				<bettype name="Outright" eventid="14204990" etid="260">
+					<bet outcome_name="Lucky Chappy" id="70859989" odd="11.00" status="Open"/>
+					<bet outcome_name="Burano" id="70859990" odd="26.00" status="Open"/>
+					<bet outcome_name="Maritimer" id="70859991" odd="17.00" status="Open"/>
+					<bet outcome_name="Balada Sale" id="70859992" odd="10.00" status="Open"/>
+					<bet outcome_name="Genten" id="70859993" odd="41.00" status="Open"/>
+					<bet outcome_name="Mickdaam" id="70859994" odd="5.50" status="Open"/>
+					<bet outcome_name="Daddy Long Legs" id="70859995" odd="7.50" status="Open"/>
+					<bet outcome_name="Yang Tse Kiang" id="70859996" odd="17.00" status="Open"/>
+					<bet outcome_name="Kinglet" id="70859997" odd="13.00" status="Open"/>
+					<bet outcome_name="Falls Of Lora" id="70859998" odd="13.00" status="Open"/>
+					<bet outcome_name="Entifaadha" id="70859999" odd="13.00" status="Open"/>
+					<bet outcome_name="Red Duke" id="70860000" odd="9.00" status="Open"/>
+					<bet outcome_name="Wrote" id="70860001" odd="4.50" status="Open"/>
+					<bet outcome_name="Helmet" id="70860002" odd="8.50" status="Open"/>
+					<bet outcome_name="Mehdi" id="70860003" odd="51.00" status="Open"/>
+					<bet outcome_name="Surfer" id="70860004" odd="41.00" status="Open"/>
+					<bet outcome_name="Counterglow" id="70860005" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="3.25 Meydan SP" eventid="14204992" closetime="31/03/2012 16:26">
+				<bettype name="SP" eventid="14204992" etid="260">
+					<bet outcome_name="Lucky Chappy SP" id="70860023" odd="SP" status="Open"/>
+					<bet outcome_name="Burano SP" id="70860024" odd="SP" status="Open"/>
+					<bet outcome_name="Maritimer SP" id="70860025" odd="SP" status="Open"/>
+					<bet outcome_name="Balada Sale SP" id="70860026" odd="SP" status="Open"/>
+					<bet outcome_name="Genten SP" id="70860027" odd="SP" status="Open"/>
+					<bet outcome_name="Mickdaam SP" id="70860028" odd="SP" status="Open"/>
+					<bet outcome_name="Daddy Long Legs SP" id="70860029" odd="SP" status="Open"/>
+					<bet outcome_name="Yang Tse Kiang SP" id="70860030" odd="SP" status="Open"/>
+					<bet outcome_name="Kinglet SP" id="70860031" odd="SP" status="Open"/>
+					<bet outcome_name="Falls Of Lora SP" id="70860032" odd="SP" status="Open"/>
+					<bet outcome_name="Entifaadha SP" id="70860033" odd="SP" status="Open"/>
+					<bet outcome_name="Red Duke SP" id="70860034" odd="SP" status="Open"/>
+					<bet outcome_name="Wrote SP" id="70860035" odd="SP" status="Open"/>
+					<bet outcome_name="Helmet SP" id="70860036" odd="SP" status="Open"/>
+					<bet outcome_name="Mehdi SP" id="70860037" odd="SP" status="Locked"/>
+					<bet outcome_name="Surfer SP" id="70860038" odd="SP" status="Locked"/>
+					<bet outcome_name="Counterglow SP" id="70860039" odd="SP" status="Locked"/>
+				</bettype>
+			</event>
+			<event name="4.00 Meydan" eventid="14205014" closetime="31/03/2012 17:01">
+				<bettype name="Outright" eventid="14205014" etid="260">
+					<bet outcome_name="Monsieur Joe" id="70860110" odd="26.00" status="Open"/>
+					<bet outcome_name="Addictive Dream" id="70860111" odd="9.00" status="Open"/>
+					<bet outcome_name="Regally Ready" id="70860112" odd="11.00" status="Open"/>
+					<bet outcome_name="A Shin Virgo" id="70860113" odd="26.00" status="Open"/>
+					<bet outcome_name="Nocturnal Affair" id="70860114" odd="11.00" status="Open"/>
+					<bet outcome_name="Joy And Fun" id="70860115" odd="6.50" status="Open"/>
+					<bet outcome_name="Invincible Ash" id="70860116" odd="13.00" status="Open"/>
+					<bet outcome_name="August Rush" id="70860117" odd="26.00" status="Open"/>
+					<bet outcome_name="War Artist" id="70860118" odd="13.00" status="Open"/>
+					<bet outcome_name="Ortensia" id="70860119" odd="8.00" status="Open"/>
+					<bet outcome_name="Eagle Regiment" id="70860120" odd="11.00" status="Open"/>
+					<bet outcome_name="Prohibit" id="70860121" odd="11.00" status="Open"/>
+					<bet outcome_name="Better Be The One" id="70860122" odd="17.00" status="Open"/>
+					<bet outcome_name="Secret Asset" id="70860123" odd="21.00" status="Open"/>
+					<bet outcome_name="Sole Power" id="70860124" odd="6.50" status="Open"/>
+					<bet outcome_name="Margot Did" id="70860125" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.00 Meydan SP" eventid="14205016" closetime="31/03/2012 17:01">
+				<bettype name="SP" eventid="14205016" etid="260">
+					<bet outcome_name="Monsieur Joe SP" id="70860142" odd="SP" status="Open"/>
+					<bet outcome_name="Addictive Dream SP" id="70860143" odd="SP" status="Open"/>
+					<bet outcome_name="Regally Ready SP" id="70860144" odd="SP" status="Open"/>
+					<bet outcome_name="A Shin Virgo SP" id="70860145" odd="SP" status="Open"/>
+					<bet outcome_name="Nocturnal Affair SP" id="70860146" odd="SP" status="Open"/>
+					<bet outcome_name="Joy And Fun SP" id="70860147" odd="SP" status="Open"/>
+					<bet outcome_name="Invincible Ash SP" id="70860148" odd="SP" status="Open"/>
+					<bet outcome_name="August Rush SP" id="70860149" odd="SP" status="Open"/>
+					<bet outcome_name="War Artist SP" id="70860150" odd="SP" status="Open"/>
+					<bet outcome_name="Ortensia SP" id="70860151" odd="SP" status="Open"/>
+					<bet outcome_name="Eagle Regiment SP" id="70860152" odd="SP" status="Open"/>
+					<bet outcome_name="Prohibit SP" id="70860153" odd="SP" status="Open"/>
+					<bet outcome_name="Better Be The One SP" id="70860154" odd="SP" status="Open"/>
+					<bet outcome_name="Secret Asset SP" id="70860155" odd="SP" status="Open"/>
+					<bet outcome_name="Sole Power SP" id="70860156" odd="SP" status="Open"/>
+					<bet outcome_name="Margot Did SP" id="70860157" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.35 Meydan" eventid="14205035" closetime="31/03/2012 17:36">
+				<bettype name="Outright" eventid="14205035" etid="260">
+					<bet outcome_name="Rocket Man" id="70860211" odd="3.75" status="Open"/>
+					<bet outcome_name="Happy Dubai" id="70860212" odd="51.00" status="Open"/>
+					<bet outcome_name="Giant Ryan" id="70860213" odd="17.00" status="Open"/>
+					<bet outcome_name="Russian Rock" id="70860214" odd="41.00" status="Open"/>
+					<bet outcome_name="Krypton Factor" id="70860215" odd="7.00" status="Open"/>
+					<bet outcome_name="Hitchens" id="70860216" odd="13.00" status="Open"/>
+					<bet outcome_name="The Factor" id="70860217" odd="4.50" status="Open"/>
+					<bet outcome_name="Iver Bridge Lad" id="70860218" odd="51.00" status="Open"/>
+					<bet outcome_name="Sepoy" id="70860219" odd="4.00" status="Open"/>
+					<bet outcome_name="Inxile" id="70860220" odd="41.00" status="Open"/>
+					<bet outcome_name="Soul" id="70860221" odd="13.00" status="Open"/>
+					<bet outcome_name="Lucky Nine" id="70860222" odd="8.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="4.35 Meydan SP" eventid="14205037" closetime="31/03/2012 17:36">
+				<bettype name="SP" eventid="14205037" etid="260">
+					<bet outcome_name="Rocket Man SP" id="70860235" odd="SP" status="Open"/>
+					<bet outcome_name="Happy Dubai SP" id="70860236" odd="SP" status="Open"/>
+					<bet outcome_name="Giant Ryan SP" id="70860237" odd="SP" status="Open"/>
+					<bet outcome_name="Russian Rock SP" id="70860238" odd="SP" status="Open"/>
+					<bet outcome_name="Krypton Factor SP" id="70860239" odd="SP" status="Open"/>
+					<bet outcome_name="Hitchens SP" id="70860240" odd="SP" status="Open"/>
+					<bet outcome_name="The Factor SP" id="70860241" odd="SP" status="Open"/>
+					<bet outcome_name="Iver Bridge Lad SP" id="70860242" odd="SP" status="Open"/>
+					<bet outcome_name="Sepoy SP" id="70860243" odd="SP" status="Open"/>
+					<bet outcome_name="Inxile SP" id="70860244" odd="SP" status="Open"/>
+					<bet outcome_name="Soul SP" id="70860245" odd="SP" status="Open"/>
+					<bet outcome_name="Lucky Nine SP" id="70860246" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.25 Meydan" eventid="14205042" closetime="31/03/2012 18:26">
+				<bettype name="Outright" eventid="14205042" etid="260">
+					<bet outcome_name="Green Destiny" id="70860265" odd="26.00" status="Open"/>
+					<bet outcome_name="Await The Dawn" id="70860266" odd="9.00" status="Open"/>
+					<bet outcome_name="Rajsaman" id="70860267" odd="67.00" status="Open"/>
+					<bet outcome_name="Ambitious Dragon" id="70860268" odd="3.75" status="Open"/>
+					<bet outcome_name="Musir" id="70860269" odd="12.00" status="Open"/>
+					<bet outcome_name="Delegator" id="70860270" odd="17.00" status="Open"/>
+					<bet outcome_name="Dark Shadow" id="70860271" odd="12.00" status="Open"/>
+					<bet outcome_name="California Memory" id="70860272" odd="10.00" status="Open"/>
+					<bet outcome_name="Xtension" id="70860273" odd="15.00" status="Open"/>
+					<bet outcome_name="Mutahadee" id="70860274" odd="6.50" status="Open"/>
+					<bet outcome_name="Cityscape" id="70860275" odd="8.00" status="Open"/>
+					<bet outcome_name="Presvis" id="70860276" odd="15.00" status="Open"/>
+					<bet outcome_name="City Style" id="70860277" odd="17.00" status="Open"/>
+					<bet outcome_name="Rio De La Plata" id="70860278" odd="34.00" status="Open"/>
+					<bet outcome_name="Wigmore Hall" id="70860279" odd="13.00" status="Open"/>
+					<bet outcome_name="Dubawi Gold" id="70860280" odd="17.00" status="Open"/>
+					<bet outcome_name="Albaasil" id="70860281" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="5.25 Meydan SP" eventid="14205045" closetime="31/03/2012 18:26">
+				<bettype name="SP" eventid="14205045" etid="260">
+					<bet outcome_name="Green Destiny SP" id="70860299" odd="SP" status="Open"/>
+					<bet outcome_name="Await The Dawn SP" id="70860300" odd="SP" status="Open"/>
+					<bet outcome_name="Rajsaman SP" id="70860301" odd="SP" status="Open"/>
+					<bet outcome_name="Ambitious Dragon SP" id="70860302" odd="SP" status="Open"/>
+					<bet outcome_name="Musir SP" id="70860303" odd="SP" status="Open"/>
+					<bet outcome_name="Delegator SP" id="70860304" odd="SP" status="Open"/>
+					<bet outcome_name="Dark Shadow SP" id="70860305" odd="SP" status="Open"/>
+					<bet outcome_name="California Memory SP" id="70860307" odd="SP" status="Open"/>
+					<bet outcome_name="Xtension SP" id="70860308" odd="SP" status="Open"/>
+					<bet outcome_name="Mutahadee SP" id="70860309" odd="SP" status="Open"/>
+					<bet outcome_name="Cityscape SP" id="70860310" odd="SP" status="Open"/>
+					<bet outcome_name="Presvis SP" id="70860311" odd="SP" status="Open"/>
+					<bet outcome_name="City Style SP" id="70860313" odd="SP" status="Open"/>
+					<bet outcome_name="Rio De La Plata SP" id="70860314" odd="SP" status="Open"/>
+					<bet outcome_name="Wigmore Hall SP" id="70860315" odd="SP" status="Open"/>
+					<bet outcome_name="Dubawi Gold SP" id="70860316" odd="SP" status="Open"/>
+					<bet outcome_name="Albaasil SP" id="70860318" odd="SP" status="Locked"/>
+				</bettype>
+			</event>
+			<event name="6.00 Meydan" eventid="14205067" closetime="31/03/2012 19:01">
+				<bettype name="Outright" eventid="14205067" etid="260">
+					<bet outcome_name="Songcraft" id="70860396" odd="15.00" status="Open"/>
+					<bet outcome_name="Bold Silvano" id="70860397" odd="13.00" status="Open"/>
+					<bet outcome_name="Beaten Up" id="70860398" odd="4.00" status="Open"/>
+					<bet outcome_name="Mahbooba" id="70860399" odd="15.00" status="Open"/>
+					<bet outcome_name="Cavalryman" id="70860400" odd="13.00" status="Open"/>
+					<bet outcome_name="Treasure Beach" id="70860401" odd="9.00" status="Open"/>
+					<bet outcome_name="Jakkalberry" id="70860402" odd="26.00" status="Open"/>
+					<bet outcome_name="Cirrus Des Aigles" id="70860403" odd="3.40" status="Open"/>
+					<bet outcome_name="St Nicholas Abbey" id="70860404" odd="3.60" status="Open"/>
+					<bet outcome_name="Shimraan" id="70860405" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.00 Meydan SP" eventid="14205073" closetime="31/03/2012 19:01">
+				<bettype name="SP" eventid="14205073" etid="260">
+					<bet outcome_name="Songcraft SP" id="70860425" odd="SP" status="Open"/>
+					<bet outcome_name="Bold Silvano SP" id="70860426" odd="SP" status="Open"/>
+					<bet outcome_name="Beaten Up SP" id="70860427" odd="SP" status="Open"/>
+					<bet outcome_name="Mahbooba SP" id="70860429" odd="SP" status="Open"/>
+					<bet outcome_name="Cavalryman SP" id="70860430" odd="SP" status="Open"/>
+					<bet outcome_name="Treasure Beach SP" id="70860431" odd="SP" status="Open"/>
+					<bet outcome_name="Jakkalberry SP" id="70860433" odd="SP" status="Open"/>
+					<bet outcome_name="Cirrus Des Aigles SP" id="70860434" odd="SP" status="Open"/>
+					<bet outcome_name="St Nicholas Abbey SP" id="70860435" odd="SP" status="Open"/>
+					<bet outcome_name="Shimraan SP" id="70860437" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.40 Meydan" eventid="14205114" closetime="31/03/2012 19:41">
+				<bettype name="Outright" eventid="14205114" etid="260">
+					<bet outcome_name="Master Of Hounds" id="70860541" odd="21.00" status="Open"/>
+					<bet outcome_name="Eishin Flash" id="70860542" odd="11.00" status="Open"/>
+					<bet outcome_name="Zazou" id="70860543" odd="11.00" status="Open"/>
+					<bet outcome_name="So You Think" id="70860544" odd="3.00" status="Open"/>
+					<bet outcome_name="Smart Falcon" id="70860545" odd="6.00" status="Open"/>
+					<bet outcome_name="Planteur" id="70860546" odd="15.00" status="Open"/>
+					<bet outcome_name="Royal Delta" id="70860547" odd="9.00" status="Open"/>
+					<bet outcome_name="Monterosso" id="70860548" odd="17.00" status="Open"/>
+					<bet outcome_name="Silver Pond" id="70860549" odd="26.00" status="Open"/>
+					<bet outcome_name="Transcend" id="70860550" odd="21.00" status="Open"/>
+					<bet outcome_name="Capponi" id="70860551" odd="10.00" status="Open"/>
+					<bet outcome_name="Prince Bishop" id="70860552" odd="34.00" status="Open"/>
+					<bet outcome_name="Mendip" id="70860553" odd="34.00" status="Open"/>
+					<bet outcome_name="Game On Dude" id="70860554" odd="8.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="6.40 Meydan SP" eventid="14205120" closetime="31/03/2012 19:41">
+				<bettype name="SP" eventid="14205120" etid="260">
+					<bet outcome_name="Master Of Hounds SP" id="70860578" odd="SP" status="Open"/>
+					<bet outcome_name="Eishin Flash SP" id="70860579" odd="SP" status="Open"/>
+					<bet outcome_name="Zazou SP" id="70860580" odd="SP" status="Open"/>
+					<bet outcome_name="So You Think SP" id="70860581" odd="SP" status="Open"/>
+					<bet outcome_name="Smart Falcon SP" id="70860582" odd="SP" status="Open"/>
+					<bet outcome_name="Planteur SP" id="70860583" odd="SP" status="Open"/>
+					<bet outcome_name="Royal Delta SP" id="70860584" odd="SP" status="Open"/>
+					<bet outcome_name="Monterosso SP" id="70860585" odd="SP" status="Open"/>
+					<bet outcome_name="Silver Pond SP" id="70860586" odd="SP" status="Locked"/>
+					<bet outcome_name="Transcend SP" id="70860587" odd="SP" status="Open"/>
+					<bet outcome_name="Capponi SP" id="70860588" odd="SP" status="Open"/>
+					<bet outcome_name="Prince Bishop SP" id="70860590" odd="SP" status="Open"/>
+					<bet outcome_name="Mendip SP" id="70860591" odd="SP" status="Open"/>
+					<bet outcome_name="Game On Dude SP" id="70860593" odd="SP" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

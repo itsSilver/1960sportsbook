@@ -1,0 +1,1 @@
+ALTER TABLE  `ticket_parts` CHANGE  `odd`  `odd` DECIMAL( 10, 2 ) NULL DEFAULT NULL

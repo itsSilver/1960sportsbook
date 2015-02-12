@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 14:19">
+	<sport name="Snooker &amp; Pool" sportid="15448">
+		<group name="Snooker - World Championship" groupid="18381">
+			<event name="World Championship 2012" eventid="11524123" closetime="21/04/2012 12:00">
+				<bettype name="Outright" eventid="11524123" etid="180">
+					<bet outcome_name="Trump J." id="57146924" odd="6.00" status="Open"/>
+					<bet outcome_name="O'Sullivan R." id="57146921" odd="7.50" status="Open"/>
+					<bet outcome_name="Higgins J." id="57146919" odd="8.00" status="Open"/>
+					<bet outcome_name="Robertson N." id="57146925" odd="9.00" status="Open"/>
+					<bet outcome_name="Selby M." id="57146920" odd="9.00" status="Open"/>
+					<bet outcome_name="Maguire S." id="57146929" odd="11.00" status="Open"/>
+					<bet outcome_name="Allen M." id="57146927" odd="11.00" status="Open"/>
+					<bet outcome_name="Williams M." id="57146923" odd="11.00" status="Open"/>
+					<bet outcome_name="Junhui D." id="57146922" odd="11.00" status="Open"/>
+					<bet outcome_name="Murphy S." id="57146926" odd="13.00" status="Open"/>
+					<bet outcome_name="Lee S." id="57146941" odd="26.00" status="Open"/>
+					<bet outcome_name="Dott G." id="57146930" odd="34.00" status="Open"/>
+					<bet outcome_name="Fu M." id="57146931" odd="41.00" status="Open"/>
+					<bet outcome_name="Carter A." id="57146928" odd="41.00" status="Open"/>
+					<bet outcome_name="Cope J." id="57146933" odd="67.00" status="Open"/>
+					<bet outcome_name="Day R." id="57146934" odd="67.00" status="Open"/>
+					<bet outcome_name="Walden R." id="57146935" odd="67.00" status="Open"/>
+					<bet outcome_name="Hendry S." id="57146939" odd="67.00" status="Open"/>
+					<bet outcome_name="Bingham S." id="57146940" odd="67.00" status="Open"/>
+					<bet outcome_name="Stevens M." id="57146932" odd="67.00" status="Open"/>
+					<bet outcome_name="Gould M." id="57146937" odd="81.00" status="Open"/>
+					<bet outcome_name="Ebdon P." id="57146936" odd="81.00" status="Open"/>
+					<bet outcome_name="Wen Bo L." id="57146938" odd="81.00" status="Open"/>
+					<bet outcome_name="King M." id="57146947" odd="81.00" status="Open"/>
+					<bet outcome_name="Swail J." id="57146953" odd="101.00" status="Open"/>
+					<bet outcome_name="Holt M." id="57146946" odd="101.00" status="Open"/>
+					<bet outcome_name="Milkins R." id="57146948" odd="126.00" status="Open"/>
+					<bet outcome_name="Davis M." id="57146942" odd="126.00" status="Open"/>
+					<bet outcome_name="Pinches B." id="57146951" odd="151.00" status="Open"/>
+					<bet outcome_name="Hamilton A." id="57146952" odd="151.00" status="Open"/>
+					<bet outcome_name="Pagett A." id="57146950" odd="151.00" status="Open"/>
+					<bet outcome_name="Lisowski J." id="57146949" odd="151.00" status="Open"/>
+					<bet outcome_name="Higginson A." id="57146945" odd="151.00" status="Open"/>
+					<bet outcome_name="Perry J." id="57146943" odd="151.00" status="Open"/>
+					<bet outcome_name="Hawkins B." id="57146944" odd="151.00" status="Open"/>
+					<bet outcome_name="Campbell M." id="57146955" odd="151.00" status="Open"/>
+					<bet outcome_name="Doherty K." id="57146954" odd="151.00" status="Open"/>
+					<bet outcome_name="Burnett J." id="57146956" odd="201.00" status="Open"/>
+					<bet outcome_name="Selt M." id="57146958" odd="251.00" status="Open"/>
+					<bet outcome_name="Drago T." id="57146957" odd="251.00" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>

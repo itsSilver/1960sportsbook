@@ -1,0 +1,2 @@
+[10-Oct-2013 14:40:51] PHP Fatal error:  Class 'AppHelper' not found in /home/sports/public_html/app/webroot/View/Helper/TimeZoneHelper.php on line 3
+[10-Oct-2013 14:40:55] PHP Fatal error:  Class 'AppHelper' not found in /home/sports/public_html/app/webroot/View/Helper/TimeZoneHelper.php on line 3

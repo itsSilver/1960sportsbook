@@ -1,0 +1,4370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE pinnacle_line_feed [
+<!ELEMENT PinnacleFeedTime (#PCDATA)>
+<!ELEMENT lastContest (#PCDATA)>
+<!ELEMENT lastGame (#PCDATA)>
+<!ELEMENT contest_maximum (#PCDATA)>
+<!ELEMENT contestantnum (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT event (event_datetimeGMT, gamenumber, sporttype, league,IsLive?, contest_maximum?, description?, (participants |  periods | total)+)>
+<!ELEMENT event_datetimeGMT (#PCDATA)>
+<!ELEMENT gamenumber (#PCDATA)>
+<!ELEMENT league (#PCDATA)>
+<!ELEMENT odds (moneyline_value, to_base?)>
+<!ELEMENT over_adjust (#PCDATA)>
+<!ELEMENT participants (participant*)>
+<!ELEMENT participant (participant_name, contestantnum, rotnum, visiting_home_draw?, odds?, pitcher?)>
+<!ELEMENT participant_name (#PCDATA)>
+<!ELEMENT periods (period*)>
+<!ELEMENT period (period_number, period_description, periodcutoff_datetimeGMT, period_status, period_update, spread_maximum?, moneyline_maximum?, total_maximum?, moneyline?, spread?, total?)>
+<!ELEMENT period_number (#PCDATA)>
+<!ELEMENT period_description (#PCDATA)>
+<!ELEMENT period_status (#PCDATA)>
+<!ELEMENT period_update (#PCDATA)>
+<!ELEMENT periodcutoff_datetimeGMT (#PCDATA)>
+<!ELEMENT pinnacle_line_feed (PinnacleFeedTime, lastContest, lastGame, events)>
+<!ELEMENT events (event*)>
+<!ELEMENT pitcher (#PCDATA)>
+<!ELEMENT rotnum (#PCDATA)>
+<!ELEMENT sporttype (#PCDATA)>
+<!ELEMENT moneyline (moneyline_visiting, moneyline_home, moneyline_draw?)>
+<!ELEMENT moneyline_value (#PCDATA)>
+<!ELEMENT moneyline_visiting (#PCDATA)>
+<!ELEMENT moneyline_home (#PCDATA)>
+<!ELEMENT moneyline_draw (#PCDATA)>
+<!ELEMENT moneyline_maximum (#PCDATA)>
+<!ELEMENT spread (spread_visiting, spread_adjust_visiting, spread_home, spread_adjust_home)>
+<!ELEMENT spread_adjust_home (#PCDATA)>
+<!ELEMENT spread_adjust_visiting (#PCDATA)>
+<!ELEMENT spread_home (#PCDATA)>
+<!ELEMENT spread_maximum (#PCDATA)>
+<!ELEMENT spread_visiting (#PCDATA)>
+<!ELEMENT to_base (#PCDATA)>
+<!ELEMENT total (total_points, over_adjust?, under_adjust?, units?)>
+<!ELEMENT total_maximum (#PCDATA)>
+<!ELEMENT total_points (#PCDATA)>
+<!ELEMENT under_adjust (#PCDATA)>
+<!ELEMENT units (#PCDATA)>
+<!ELEMENT IsLive (#PCDATA)>
+<!ELEMENT visiting_home_draw (#PCDATA)>
+]>
+
+
+<!--
+IMPORTANT CHANGE - June, 2008
+
+Some xml consumers have reported incorrect Soccer Total (Asian Handicaps) and others have reported missed updates.
+
+A release performed on June 24th, 2008 addresses the incorrect odds reported for Soccer Total (Asian Handicaps).
+
+As for the missed updates, due to the complexity of our platform, a small schema change along with a new way to make incremental calls has been developed.
+
+It is important to note that the previous functionality, using the last parameter, has been grandfathered so that current users do not need to worry about this upgrade breaking their parsing software.  At some point, we will remove this functionality, so please upgrade your software in a timely fashion.
+
+The feed will now contain two new elements, lastGame and lastContest.
+
+If you are interested in games only you can use the value of the element lastGame to make an incremental call.
+
+For example.
+Get the static file - http://xml.pinnaclesports.com/pinnaclefeed.asp
+Make an incremental call to get up to date - http://xml.pinnaclesports.com/pinaclefeed.asp?lastGame=42145789 (the value for lastGame is found in the static file and subsequent incremental updates)
+
+If you are also interested in contests, simply add the parameter lastContest to the query string with the value found in the static file.
+
+For example.
+Get the static file - http://xml.pinnaclesports.com/pinnaclefeed.asp
+Make an incremental call to get up to date - http://xml.pinnclesports.com/pinnaclefeed.asp?lastGame=42145789&lastContest=4678
+
+You can also mix and match sportType, sportSubType with lastGame if you are only interested in one sport (see examples way below, mixing sporttype, sportSubType and last).
+
+Attention:  lastContest does not work without lastGame.
+
+Attention:  last supercedes the usage of either lastGame or lastContest.  If you issue both last and either of lastGame or lastContest in the same call, only last will be used.
+
+Warning:  The usage of SportType and SportSubtype is being abused.  The intent is to only be used by those who are only interested in one or two specific leagues.  We have observed, from the same IP, calls to all individual soccer leagues (more than 800 of them) in rapid succession.  This is a situation that calls for getting the static file, and then getting incremental updates without a sportType/sportSubtype being specified.  This type of abuse puts a lot of stress on our backend servers.  We are monitoring and will limit access to our systems from IP exhibiting this type of behavior.
+
+
+
+
+IMPORTANT CHANGE
+
+Pinnacle Sports has released a new and updated version of our live lines feed. A working knowledge of XML is required for integration purposes. Pinnacle Sports regrets that it is unable to provide additional programming support.
+
+USAGE:
+
+-  Get the file produced by http://xml.pinnaclesports.com/pinnacleFeed.asp. The server will produce a static file which is updated every 10 minutes.
+-  Make an incremental call to the same URL to receive the latest updates since the static file was produced by using the PinnacleFeedTime found in the previous call (example http://xml.pinnaclesports.com/pinnacleFeed.asp?last=1196199051920)
+-  The PinnacleFeedTime is a critical part of this system and represents the number of milliseconds since the epoch. To compensate for the various latencies between the time at which the PinnacleFeedTime value was generated and the production of the static file, it is perfectly acceptable to deduct a certain number of seconds (in milliseconds) from this value.  Please note however, that this can result in duplicate updates which you will need to be able to resolve.
+
+
+
+PARAMETERS:
+
+last: This is used to receive incremental updates using the value of PinncelFeedTime. Always use the value of PinnacleFeedTime found in the previous evocation of the xml feed. A PinnacleFeedTime older than 60 minutes, in the absence of the sportType parameter, will have no effect. If you do not include the PinnacleFeedTime, you will receive the same static file as if you had issued a call without it (unless the sporttype parameter was used, see next section).
+
+sporttype: (maximum size of 20 characters) This can be used to restrict the feed to a particular sport (examples of a valid sporttype are Baseball, Football (for American Football), Handball, Hockey, Soccer etc.). With the exception of soccer, providing a sporttype parameter will result in a dynamic feed with lines current at the time of the call. Due to the number of individual leagues in soccer, please refer to the Standard usage example below to receive up to date lines for soccer. A list of valid "sports" can be found at http://xml.pinnaclesports.com/leagues.asp.
+
+sportsubtype:  (maximum size of 12 characters) This can be used to restrict the feed to a chosen League only for a particular sport. When using a specific sportsubtype, you must include a valid sporttype to identify the sport and league. For example, NCAA could refer to either Basketball or Football in American college sports. Refer to http://xml.pinnaclesports.com/leagues.asp for the complete list of leagues that are currently available together with the matching 12 character abbreviation.
+
+contest: This can be used to prevent the display of contests using the following name/value pair in the query string: contest=no.
+
+
+
+EXAMPLES:
+
+Standard usage
+1. Get the complete feed with http://xml.pinnaclesports.com/pinnacleFeed.asp
+2. Make an incremental call to receive the latest changes with http://xml.pinnaclesports.com/pinnacleFeed.asp?last=1196336347638
+3. Make a second incremental call 60 seconds later to receive the latest changes with http://xml.pinnaclesports.com/pinnacleFeed.asp?last=1196336407638
+4. In this example it was assumed that the complete feed included a value of 1196336347638 for the PinnacleFeedTime. Please ensure to always use the value present in the feed obtained in the previous call.
+
+
+Interested in Hockey only
+1.  Get the full list of hockey games with http://xml.pinnaclesports.com/pinnacleFeed.asp?sportType=Hockey&contest=no
+2.  Make an incremental call to receive the latest changes in Hockey with ttp://xml.pinnaclesports.com/pinnacleFeed.asp?sportType=Hockey&last=1196336347639&contest=no
+3.  Make another incremental call 60 seconds later to receive the latest changes with http://xml.pinnaclesports.com/pinnacleFeed.asp?sportType=Hockey&last=1196336407639&contest=no
+4.  In this example it was assumed that the complete feed included a value of 1196336347639 for the PinnacleFeedTime. Please ensure to always use the value present in the feed obtained in the previous call.
+
+Interested in Soccer only
+1. Get the complete feed with http://xml.pinnaclesports.com/pinnacleFeed.asp
+2. Make an incremental call to receive the latest changes with http://xml.pinnaclesports.com/pinnacleFeed.asp?sportType=Soccer&last=1196336347640
+3. Make another incremental call 60 seconds later to receive the latest changes with http://xml.pinnaclesports.com/pinnacleFeed.asp?sportType=Hockey&last=1196336407640&contest=no
+4. In this example it was assumed that the complete feed included a value of 1196336347640 for the PinnacleFeedTime. Please ensure to always use the value present in the feed obtained in the previous call.
+
+IMPORTANT NOTICE:
+
+Please refrain from using a very high frequency of calls to the xml feed. Pinnacle Sports reserves the right to monitor usage of the XML feed and block the IP address range of any user that abuses this service. 1 call per minute is considered an acceptable usage of the feed.
+
+UPDATE September, 2010:
+
+There is a new element ‘IsLive’, it indicates whether the event is dealt live or not. All live soccer spread lines are in the 'full game' format. Please note that on the website the spread odds are in the 'rest of the game' format
+-->
+<pinnacle_line_feed>
+
+
+<PinnacleFeedTime>1330385835236</PinnacleFeedTime>
+<lastContest>10903361</lastContest>
+<lastGame>74701931</lastGame>
+<events>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601390</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Isner</participant_name>
+			<contestantnum>4301</contestantnum>
+			<rotnum>4301</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Levine</participant_name>
+			<contestantnum>4302</contestantnum>
+			<rotnum>4302</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-650</moneyline_visiting>
+				<moneyline_home>516</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 02:05</event_datetimeGMT>
+	<gamenumber>235601462</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Haas</participant_name>
+			<contestantnum>4307</contestantnum>
+			<rotnum>4307</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Tomic</participant_name>
+			<contestantnum>4308</contestantnum>
+			<rotnum>4308</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 02:05</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>200</moneyline_visiting>
+				<moneyline_home>-229</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 02:00</event_datetimeGMT>
+	<gamenumber>235601475</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Haas</participant_name>
+			<contestantnum>4307</contestantnum>
+			<rotnum>4307</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Tomic</participant_name>
+			<contestantnum>4308</contestantnum>
+			<rotnum>4308</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 02:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>3.5</spread_visiting>
+				<spread_adjust_visiting>-132</spread_adjust_visiting>
+				<spread_home>-3.5</spread_home>
+				<spread_adjust_home>113</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>22</total_points>
+				<over_adjust>-130</over_adjust>
+				<under_adjust>111</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 02:05</event_datetimeGMT>
+	<gamenumber>235601462</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Haas</participant_name>
+			<contestantnum>4307</contestantnum>
+			<rotnum>4307</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Tomic</participant_name>
+			<contestantnum>4308</contestantnum>
+			<rotnum>4308</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 02:05</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>167</moneyline_visiting>
+				<moneyline_home>-198</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601482</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Roddick</participant_name>
+			<contestantnum>4309</contestantnum>
+			<rotnum>4309</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>P. Petzschner</participant_name>
+			<contestantnum>4310</contestantnum>
+			<rotnum>4310</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-218</moneyline_visiting>
+				<moneyline_home>191</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601509</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>X. Malisse</participant_name>
+			<contestantnum>4313</contestantnum>
+			<rotnum>4313</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>G. Garcia-Lopez</participant_name>
+			<contestantnum>4314</contestantnum>
+			<rotnum>4314</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-142</moneyline_visiting>
+				<moneyline_home>126</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601544</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Falla</participant_name>
+			<contestantnum>4321</contestantnum>
+			<rotnum>4321</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>E. Gulbis</participant_name>
+			<contestantnum>4322</contestantnum>
+			<rotnum>4322</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>105</moneyline_visiting>
+				<moneyline_home>-118</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601562</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Darcis</participant_name>
+			<contestantnum>4323</contestantnum>
+			<rotnum>4323</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>V. Troicki</participant_name>
+			<contestantnum>4324</contestantnum>
+			<rotnum>4324</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>167</moneyline_visiting>
+				<moneyline_home>-190</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601579</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Kohlschreiber</participant_name>
+			<contestantnum>4325</contestantnum>
+			<rotnum>4325</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>O. Rochus</participant_name>
+			<contestantnum>4326</contestantnum>
+			<rotnum>4326</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-235</moneyline_visiting>
+				<moneyline_home>205</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601609</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Dodig</participant_name>
+			<contestantnum>4327</contestantnum>
+			<rotnum>4327</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Bachinger</participant_name>
+			<contestantnum>4328</contestantnum>
+			<rotnum>4328</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-236</moneyline_visiting>
+				<moneyline_home>206</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235601690</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Nieminen</participant_name>
+			<contestantnum>4331</contestantnum>
+			<rotnum>4331</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Cilic</participant_name>
+			<contestantnum>4332</contestantnum>
+			<rotnum>4332</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-151</moneyline_visiting>
+				<moneyline_home>134</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779662</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Isner (-1.5 Sets)</participant_name>
+			<contestantnum>8301</contestantnum>
+			<rotnum>8301</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Levine (+1.5 Sets)</participant_name>
+			<contestantnum>8302</contestantnum>
+			<rotnum>8302</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 02:05</event_datetimeGMT>
+	<gamenumber>235778509</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Haas (+1.5 Sets)</participant_name>
+			<contestantnum>8307</contestantnum>
+			<rotnum>8307</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Tomic (-1.5 Sets)</participant_name>
+			<contestantnum>8308</contestantnum>
+			<rotnum>8308</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 02:05</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-126</moneyline_visiting>
+				<moneyline_home>112</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779673</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Roddick (-1.5 Sets)</participant_name>
+			<contestantnum>8309</contestantnum>
+			<rotnum>8309</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>P. Petzschner (+1.5 Sets)</participant_name>
+			<contestantnum>8310</contestantnum>
+			<rotnum>8310</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779677</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>X. Malisse (-1.5 Sets)</participant_name>
+			<contestantnum>8313</contestantnum>
+			<rotnum>8313</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>G. Garcia-Lopez (+1.5 Sets)</participant_name>
+			<contestantnum>8314</contestantnum>
+			<rotnum>8314</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779693</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Falla (-1.5 Sets)</participant_name>
+			<contestantnum>8321</contestantnum>
+			<rotnum>8321</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>E. Gulbis (+1.5 Sets)</participant_name>
+			<contestantnum>8322</contestantnum>
+			<rotnum>8322</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779715</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Darcis (+1.5 Sets)</participant_name>
+			<contestantnum>8323</contestantnum>
+			<rotnum>8323</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>V. Troicki (-1.5 Sets)</participant_name>
+			<contestantnum>8324</contestantnum>
+			<rotnum>8324</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779731</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Kohlschreiber (-1.5 Sets)</participant_name>
+			<contestantnum>8325</contestantnum>
+			<rotnum>8325</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>O. Rochus (+1.5 Sets)</participant_name>
+			<contestantnum>8326</contestantnum>
+			<rotnum>8326</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779739</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Dodig (-1.5 Sets)</participant_name>
+			<contestantnum>8327</contestantnum>
+			<rotnum>8327</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Bachinger (+1.5 Sets)</participant_name>
+			<contestantnum>8328</contestantnum>
+			<rotnum>8328</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:00</event_datetimeGMT>
+	<gamenumber>235779753</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Delray R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Nieminen (-1.5 Sets)</participant_name>
+			<contestantnum>8331</contestantnum>
+			<rotnum>8331</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Cilic (+1.5 Sets)</participant_name>
+			<contestantnum>8332</contestantnum>
+			<rotnum>8332</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235432127</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Stakhovsky</participant_name>
+			<contestantnum>4203</contestantnum>
+			<rotnum>4203</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>O. Awadhy</participant_name>
+			<contestantnum>4204</contestantnum>
+			<rotnum>4204</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-7.5</spread_visiting>
+				<spread_adjust_visiting>-133</spread_adjust_visiting>
+				<spread_home>7.5</spread_home>
+				<spread_adjust_home>114</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>16.5</total_points>
+				<over_adjust>-101</over_adjust>
+				<under_adjust>-116</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235432095</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Stakhovsky</participant_name>
+			<contestantnum>4203</contestantnum>
+			<rotnum>4203</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>O. Awadhy</participant_name>
+			<contestantnum>4204</contestantnum>
+			<rotnum>4204</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-10000</moneyline_visiting>
+				<moneyline_home>2462</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 13:00</event_datetimeGMT>
+	<gamenumber>235432301</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Ljubicic</participant_name>
+			<contestantnum>4205</contestantnum>
+			<rotnum>4205</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Cipolla</participant_name>
+			<contestantnum>4206</contestantnum>
+			<rotnum>4206</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-200</moneyline_visiting>
+				<moneyline_home>176</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-3.5</spread_visiting>
+				<spread_adjust_visiting>105</spread_adjust_visiting>
+				<spread_home>3.5</spread_home>
+				<spread_adjust_home>-123</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>22.5</total_points>
+				<over_adjust>107</over_adjust>
+				<under_adjust>-125</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-182</moneyline_visiting>
+				<moneyline_home>154</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235432419</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Kunitsyn</participant_name>
+			<contestantnum>4207</contestantnum>
+			<rotnum>4207</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Tipsarevic</participant_name>
+			<contestantnum>4208</contestantnum>
+			<rotnum>4208</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>5.5</spread_visiting>
+				<spread_adjust_visiting>-133</spread_adjust_visiting>
+				<spread_home>-5.5</spread_home>
+				<spread_adjust_home>114</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>19.5</total_points>
+				<over_adjust>-120</over_adjust>
+				<under_adjust>103</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>674</moneyline_visiting>
+				<moneyline_home>-900</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>432</moneyline_visiting>
+				<moneyline_home>-569</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778329</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Murray</participant_name>
+			<contestantnum>4209</contestantnum>
+			<rotnum>4209</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Berrer</participant_name>
+			<contestantnum>4210</contestantnum>
+			<rotnum>4210</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-4000</moneyline_visiting>
+				<moneyline_home>1768</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235778344</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Murray</participant_name>
+			<contestantnum>4209</contestantnum>
+			<rotnum>4209</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Berrer</participant_name>
+			<contestantnum>4210</contestantnum>
+			<rotnum>4210</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-6.5</spread_visiting>
+				<spread_adjust_visiting>125</spread_adjust_visiting>
+				<spread_home>6.5</spread_home>
+				<spread_adjust_home>-146</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>18.5</total_points>
+				<over_adjust>-101</over_adjust>
+				<under_adjust>-116</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778329</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Murray</participant_name>
+			<contestantnum>4209</contestantnum>
+			<rotnum>4209</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Berrer</participant_name>
+			<contestantnum>4210</contestantnum>
+			<rotnum>4210</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-1356</moneyline_visiting>
+				<moneyline_home>822</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778359</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Davydenko</participant_name>
+			<contestantnum>4211</contestantnum>
+			<rotnum>4211</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Chiudinelli</participant_name>
+			<contestantnum>4212</contestantnum>
+			<rotnum>4212</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-305</moneyline_visiting>
+				<moneyline_home>262</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:00</event_datetimeGMT>
+	<gamenumber>235778365</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Davydenko</participant_name>
+			<contestantnum>4211</contestantnum>
+			<rotnum>4211</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Chiudinelli</participant_name>
+			<contestantnum>4212</contestantnum>
+			<rotnum>4212</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-4</spread_visiting>
+				<spread_adjust_visiting>-124</spread_adjust_visiting>
+				<spread_home>4</spread_home>
+				<spread_adjust_home>106</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>21.5</total_points>
+				<over_adjust>106</over_adjust>
+				<under_adjust>-124</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778359</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Davydenko</participant_name>
+			<contestantnum>4211</contestantnum>
+			<rotnum>4211</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Chiudinelli</participant_name>
+			<contestantnum>4212</contestantnum>
+			<rotnum>4212</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-255</moneyline_visiting>
+				<moneyline_home>212</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 13:00</event_datetimeGMT>
+	<gamenumber>235432566</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>B. Becker</participant_name>
+			<contestantnum>4215</contestantnum>
+			<rotnum>4215</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>T. Berdych</participant_name>
+			<contestantnum>4216</contestantnum>
+			<rotnum>4216</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>943</moneyline_visiting>
+				<moneyline_home>-1400</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>5</spread_visiting>
+				<spread_adjust_visiting>105</spread_adjust_visiting>
+				<spread_home>-5</spread_home>
+				<spread_adjust_home>-123</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>19.5</total_points>
+				<over_adjust>-116</over_adjust>
+				<under_adjust>-101</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 13:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>520</moneyline_visiting>
+				<moneyline_home>-715</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:30</event_datetimeGMT>
+	<gamenumber>235432743</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. M. Del Potro</participant_name>
+			<contestantnum>4217</contestantnum>
+			<rotnum>4217</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Dolgopolov</participant_name>
+			<contestantnum>4218</contestantnum>
+			<rotnum>4218</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 16:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-4.5</spread_visiting>
+				<spread_adjust_visiting>110</spread_adjust_visiting>
+				<spread_home>4.5</spread_home>
+				<spread_adjust_home>-129</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>21</total_points>
+				<over_adjust>-123</over_adjust>
+				<under_adjust>105</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 16:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-353</moneyline_visiting>
+				<moneyline_home>300</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 16:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-289</moneyline_visiting>
+				<moneyline_home>238</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 12:05</event_datetimeGMT>
+	<gamenumber>235433127</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Baghdatis</participant_name>
+			<contestantnum>4223</contestantnum>
+			<rotnum>4223</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J-W. Tsonga</participant_name>
+			<contestantnum>4224</contestantnum>
+			<rotnum>4224</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 12:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>315</moneyline_visiting>
+				<moneyline_home>-372</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 12:00</event_datetimeGMT>
+	<gamenumber>235433148</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Baghdatis</participant_name>
+			<contestantnum>4223</contestantnum>
+			<rotnum>4223</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J-W. Tsonga</participant_name>
+			<contestantnum>4224</contestantnum>
+			<rotnum>4224</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 12:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>4</spread_visiting>
+				<spread_adjust_visiting>-123</spread_adjust_visiting>
+				<spread_home>-4</spread_home>
+				<spread_adjust_home>105</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>21.5</total_points>
+				<over_adjust>-111</over_adjust>
+				<under_adjust>-105</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 12:05</event_datetimeGMT>
+	<gamenumber>235433127</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Baghdatis</participant_name>
+			<contestantnum>4223</contestantnum>
+			<rotnum>4223</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J-W. Tsonga</participant_name>
+			<contestantnum>4224</contestantnum>
+			<rotnum>4224</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 12:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>243</moneyline_visiting>
+				<moneyline_home>-295</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235433382</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Youzhny</participant_name>
+			<contestantnum>4227</contestantnum>
+			<rotnum>4227</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Gasquet</participant_name>
+			<contestantnum>4228</contestantnum>
+			<rotnum>4228</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>3</spread_visiting>
+				<spread_adjust_visiting>107</spread_adjust_visiting>
+				<spread_home>-3</spread_home>
+				<spread_adjust_home>-125</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>22.5</total_points>
+				<over_adjust>118</over_adjust>
+				<under_adjust>-138</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>202</moneyline_visiting>
+				<moneyline_home>-231</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>167</moneyline_visiting>
+				<moneyline_home>-197</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 14:30</event_datetimeGMT>
+	<gamenumber>235433498</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Mahut</participant_name>
+			<contestantnum>4229</contestantnum>
+			<rotnum>4229</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Lopez</participant_name>
+			<contestantnum>4230</contestantnum>
+			<rotnum>4230</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 14:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>2.5</spread_visiting>
+				<spread_adjust_visiting>100</spread_adjust_visiting>
+				<spread_home>-2.5</spread_home>
+				<spread_adjust_home>-117</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>23</total_points>
+				<over_adjust>-117</over_adjust>
+				<under_adjust>100</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 14:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>184</moneyline_visiting>
+				<moneyline_home>-210</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 14:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>161</moneyline_visiting>
+				<moneyline_home>-190</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 15:00</event_datetimeGMT>
+	<gamenumber>235433670</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Llodra</participant_name>
+			<contestantnum>4231</contestantnum>
+			<rotnum>4231</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Federer</participant_name>
+			<contestantnum>4232</contestantnum>
+			<rotnum>4232</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 15:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>5</spread_visiting>
+				<spread_adjust_visiting>-140</spread_adjust_visiting>
+				<spread_home>-5</spread_home>
+				<spread_adjust_home>120</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20</total_points>
+				<over_adjust>-140</over_adjust>
+				<under_adjust>120</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 15:05</event_datetimeGMT>
+	<gamenumber>235433647</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Llodra</participant_name>
+			<contestantnum>4231</contestantnum>
+			<rotnum>4231</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Federer</participant_name>
+			<contestantnum>4232</contestantnum>
+			<rotnum>4232</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 15:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>1312</moneyline_visiting>
+				<moneyline_home>-2300</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235432246</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Stakhovsky (-1.5 Sets)</participant_name>
+			<contestantnum>8203</contestantnum>
+			<rotnum>8203</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>O. Awadhy (+1.5 Sets)</participant_name>
+			<contestantnum>8204</contestantnum>
+			<rotnum>8204</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 13:00</event_datetimeGMT>
+	<gamenumber>235432362</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Ljubicic (-1.5 Sets)</participant_name>
+			<contestantnum>8205</contestantnum>
+			<rotnum>8205</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Cipolla (+1.5 Sets)</participant_name>
+			<contestantnum>8206</contestantnum>
+			<rotnum>8206</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235432531</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>I. Kunitsyn (+1.5 Sets)</participant_name>
+			<contestantnum>8207</contestantnum>
+			<rotnum>8207</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Tipsarevic (-1.5 Sets)</participant_name>
+			<contestantnum>8208</contestantnum>
+			<rotnum>8208</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778348</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Murray (-1.5 Sets)</participant_name>
+			<contestantnum>8209</contestantnum>
+			<rotnum>8209</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Berrer (+1.5 Sets)</participant_name>
+			<contestantnum>8210</contestantnum>
+			<rotnum>8210</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235778373</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Davydenko (-1.5 Sets)</participant_name>
+			<contestantnum>8211</contestantnum>
+			<rotnum>8211</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Chiudinelli (+1.5 Sets)</participant_name>
+			<contestantnum>8212</contestantnum>
+			<rotnum>8212</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 13:00</event_datetimeGMT>
+	<gamenumber>235432648</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>B. Becker (+1.5 Sets)</participant_name>
+			<contestantnum>8215</contestantnum>
+			<rotnum>8215</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>T. Berdych (-1.5 Sets)</participant_name>
+			<contestantnum>8216</contestantnum>
+			<rotnum>8216</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 16:30</event_datetimeGMT>
+	<gamenumber>235432789</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. M. Del Potro (-1.5 Sets)</participant_name>
+			<contestantnum>8217</contestantnum>
+			<rotnum>8217</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Dolgopolov (+1.5 Sets)</participant_name>
+			<contestantnum>8218</contestantnum>
+			<rotnum>8218</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 12:05</event_datetimeGMT>
+	<gamenumber>235433169</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Baghdatis (+1.5 Sets)</participant_name>
+			<contestantnum>8223</contestantnum>
+			<rotnum>8223</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J-W. Tsonga (-1.5 Sets)</participant_name>
+			<contestantnum>8224</contestantnum>
+			<rotnum>8224</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235433420</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Youzhny (+1.5 Sets)</participant_name>
+			<contestantnum>8227</contestantnum>
+			<rotnum>8227</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Gasquet (-1.5 Sets)</participant_name>
+			<contestantnum>8228</contestantnum>
+			<rotnum>8228</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 14:30</event_datetimeGMT>
+	<gamenumber>235433576</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>N. Mahut (+1.5 Sets)</participant_name>
+			<contestantnum>8229</contestantnum>
+			<rotnum>8229</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Lopez (-1.5 Sets)</participant_name>
+			<contestantnum>8230</contestantnum>
+			<rotnum>8230</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 15:05</event_datetimeGMT>
+	<gamenumber>235433728</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Dubai R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Llodra (+1.5 Sets)</participant_name>
+			<contestantnum>8231</contestantnum>
+			<rotnum>8231</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Federer (-1.5 Sets)</participant_name>
+			<contestantnum>8232</contestantnum>
+			<rotnum>8232</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-03-03 10:00</event_datetimeGMT>
+	<gamenumber>235753326</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Live Dub R16</league>
+	<IsLive>Yes</IsLive>
+	<participants>
+		<participant>
+			<participant_name>ATP Dubai - Dubai Duty Free Championship</participant_name>
+			<contestantnum>9998</contestantnum>
+			<rotnum>9998</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>Selected matches will be dealt LIVE</participant_name>
+			<contestantnum>9999</contestantnum>
+			<rotnum>9999</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-03-04 07:30</periodcutoff_datetimeGMT>
+			<period_status>H</period_status>
+			<period_update>offline</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>500</total_maximum>
+			<spread>
+				<spread_visiting>0</spread_visiting>
+				<spread_adjust_visiting>-108</spread_adjust_visiting>
+				<spread_home>0</spread_home>
+				<spread_adjust_home>-108</spread_adjust_home>
+			</spread>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-03-03 17:00</event_datetimeGMT>
+	<gamenumber>235753374</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Live Tel QF</league>
+	<IsLive>Yes</IsLive>
+	<participants>
+		<participant>
+			<participant_name>ATP Acapulco - Abierto Mexicano Telcel</participant_name>
+			<contestantnum>9998</contestantnum>
+			<rotnum>9998</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>Selected matches will be dealt LIVE</participant_name>
+			<contestantnum>9999</contestantnum>
+			<rotnum>9999</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-03-04 07:30</periodcutoff_datetimeGMT>
+			<period_status>H</period_status>
+			<period_update>offline</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>500</total_maximum>
+			<spread>
+				<spread_visiting>0</spread_visiting>
+				<spread_adjust_visiting>-108</spread_adjust_visiting>
+				<spread_home>0</spread_home>
+				<spread_adjust_home>-108</spread_adjust_home>
+			</spread>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235754336</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>D. Ferrer</participant_name>
+			<contestantnum>4401</contestantnum>
+			<rotnum>4401</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Gonzalez</participant_name>
+			<contestantnum>4402</contestantnum>
+			<rotnum>4402</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-6000</moneyline_visiting>
+				<moneyline_home>2097</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235749845</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>L. Kubot</participant_name>
+			<contestantnum>4403</contestantnum>
+			<rotnum>4403</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>D. Garza</participant_name>
+			<contestantnum>4404</contestantnum>
+			<rotnum>4404</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-1150</moneyline_visiting>
+				<moneyline_home>793</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235750850</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>G. Simon</participant_name>
+			<contestantnum>4409</contestantnum>
+			<rotnum>4409</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>C. Berlocq</participant_name>
+			<contestantnum>4410</contestantnum>
+			<rotnum>4410</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>148</moneyline_visiting>
+				<moneyline_home>-167</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235754589</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>D. Nalbandian</participant_name>
+			<contestantnum>4413</contestantnum>
+			<rotnum>4413</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Giraldo</participant_name>
+			<contestantnum>4414</contestantnum>
+			<rotnum>4414</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-295</moneyline_visiting>
+				<moneyline_home>254</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235755152</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Monaco</participant_name>
+			<contestantnum>4417</contestantnum>
+			<rotnum>4417</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Ramos-Vinolas</participant_name>
+			<contestantnum>4418</contestantnum>
+			<rotnum>4418</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-290</moneyline_visiting>
+				<moneyline_home>250</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235751985</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J.C. Ferrero</participant_name>
+			<contestantnum>4419</contestantnum>
+			<rotnum>4419</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Wawrinka</participant_name>
+			<contestantnum>4420</contestantnum>
+			<rotnum>4420</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>223</moneyline_visiting>
+				<moneyline_home>-256</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235752019</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Chardy</participant_name>
+			<contestantnum>4421</contestantnum>
+			<rotnum>4421</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Machado</participant_name>
+			<contestantnum>4422</contestantnum>
+			<rotnum>4422</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-201</moneyline_visiting>
+				<moneyline_home>177</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235754649</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Montanes</participant_name>
+			<contestantnum>4423</contestantnum>
+			<rotnum>4423</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Nishikori</participant_name>
+			<contestantnum>4424</contestantnum>
+			<rotnum>4424</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>189</moneyline_visiting>
+				<moneyline_home>-216</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235754669</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>F. Verdasco</participant_name>
+			<contestantnum>4425</contestantnum>
+			<rotnum>4425</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Volandri</participant_name>
+			<contestantnum>4426</contestantnum>
+			<rotnum>4426</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-199</moneyline_visiting>
+				<moneyline_home>175</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 03:00</event_datetimeGMT>
+	<gamenumber>235754682</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J.I. Chela</participant_name>
+			<contestantnum>4427</contestantnum>
+			<rotnum>4427</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>C. Ramirez</participant_name>
+			<contestantnum>4428</contestantnum>
+			<rotnum>4428</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 03:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>-6.5</spread_visiting>
+				<spread_adjust_visiting>-117</spread_adjust_visiting>
+				<spread_home>6.5</spread_home>
+				<spread_adjust_home>100</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>18</total_points>
+				<over_adjust>111</over_adjust>
+				<under_adjust>-130</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 03:05</event_datetimeGMT>
+	<gamenumber>235752120</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. I. Chela</participant_name>
+			<contestantnum>4427</contestantnum>
+			<rotnum>4427</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>C. Ramirez</participant_name>
+			<contestantnum>4428</contestantnum>
+			<rotnum>4428</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 03:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-1400</moneyline_visiting>
+				<moneyline_home>943</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 03:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-928</moneyline_visiting>
+				<moneyline_home>626</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 01:30</event_datetimeGMT>
+	<gamenumber>235777622</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. S. Cabal</participant_name>
+			<contestantnum>4429</contestantnum>
+			<rotnum>4429</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Paire</participant_name>
+			<contestantnum>4430</contestantnum>
+			<rotnum>4430</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 01:30</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>4</spread_visiting>
+				<spread_adjust_visiting>116</spread_adjust_visiting>
+				<spread_home>-4</spread_home>
+				<spread_adjust_home>-136</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-101</over_adjust>
+				<under_adjust>-116</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 01:30</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>246</moneyline_visiting>
+				<moneyline_home>-285</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 01:30</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>209</moneyline_visiting>
+				<moneyline_home>-251</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235774391</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Riba</participant_name>
+			<contestantnum>4431</contestantnum>
+			<rotnum>4431</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>N. Almagro</participant_name>
+			<contestantnum>4432</contestantnum>
+			<rotnum>4432</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>600</moneyline_visiting>
+				<moneyline_home>-779</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777742</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>D. Ferrer (-1.5 Sets)</participant_name>
+			<contestantnum>8401</contestantnum>
+			<rotnum>8401</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Gonzalez (+1.5 Sets)</participant_name>
+			<contestantnum>8402</contestantnum>
+			<rotnum>8402</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777747</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>L. Kubot (-1.5 Sets)</participant_name>
+			<contestantnum>8403</contestantnum>
+			<rotnum>8403</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>D. Garza (+1.5 Sets)</participant_name>
+			<contestantnum>8404</contestantnum>
+			<rotnum>8404</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777752</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>G. Simon (-1.5 Sets)</participant_name>
+			<contestantnum>8409</contestantnum>
+			<rotnum>8409</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>C. Berlocq (+1.5 Sets)</participant_name>
+			<contestantnum>8410</contestantnum>
+			<rotnum>8410</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777773</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>D. Nalbandian (-1.5 Sets)</participant_name>
+			<contestantnum>8413</contestantnum>
+			<rotnum>8413</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Giraldo (+1.5 Sets)</participant_name>
+			<contestantnum>8414</contestantnum>
+			<rotnum>8414</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777791</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Monaco (-1.5 Sets)</participant_name>
+			<contestantnum>8417</contestantnum>
+			<rotnum>8417</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Ramos-Vinolas (+1.5 Sets)</participant_name>
+			<contestantnum>8418</contestantnum>
+			<rotnum>8418</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777817</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J.C. Ferrero (+1.5 Sets)</participant_name>
+			<contestantnum>8419</contestantnum>
+			<rotnum>8419</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Wawrinka (-1.5 Sets)</participant_name>
+			<contestantnum>8420</contestantnum>
+			<rotnum>8420</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777836</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Chardy (-1.5 Sets)</participant_name>
+			<contestantnum>8421</contestantnum>
+			<rotnum>8421</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>R. Machado (+1.5 Sets)</participant_name>
+			<contestantnum>8422</contestantnum>
+			<rotnum>8422</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777842</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Montanes (+1.5 Sets)</participant_name>
+			<contestantnum>8423</contestantnum>
+			<rotnum>8423</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Nishikori (-1.5 Sets)</participant_name>
+			<contestantnum>8424</contestantnum>
+			<rotnum>8424</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777857</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>F. Verdasco (-1.5 Sets)</participant_name>
+			<contestantnum>8425</contestantnum>
+			<rotnum>8425</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Volandri (+1.5 Sets)</participant_name>
+			<contestantnum>8426</contestantnum>
+			<rotnum>8426</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 03:05</event_datetimeGMT>
+	<gamenumber>235777709</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. I. Chela (-1.5 Sets)</participant_name>
+			<contestantnum>8427</contestantnum>
+			<rotnum>8427</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>C. Ramirez (+1.5 Sets)</participant_name>
+			<contestantnum>8428</contestantnum>
+			<rotnum>8428</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 03:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-420</moneyline_visiting>
+				<moneyline_home>352</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 01:30</event_datetimeGMT>
+	<gamenumber>235777720</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>Telcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. S. Cabal (+1.5 Sets)</participant_name>
+			<contestantnum>8429</contestantnum>
+			<rotnum>8429</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Paire (-1.5 Sets)</participant_name>
+			<contestantnum>8430</contestantnum>
+			<rotnum>8430</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 01:30</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>110</moneyline_visiting>
+				<moneyline_home>-124</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235427091</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Radwanska</participant_name>
+			<contestantnum>4701</contestantnum>
+			<rotnum>4701</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Amanmuradova</participant_name>
+			<contestantnum>4702</contestantnum>
+			<rotnum>4702</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-7</spread_visiting>
+				<spread_adjust_visiting>-136</spread_adjust_visiting>
+				<spread_home>7</spread_home>
+				<spread_adjust_home>116</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>17</total_points>
+				<over_adjust>107</over_adjust>
+				<under_adjust>-125</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 11:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-2000</moneyline_visiting>
+				<moneyline_home>1139</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:05</event_datetimeGMT>
+	<gamenumber>235427226</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>C. Dellacqua</participant_name>
+			<contestantnum>4705</contestantnum>
+			<rotnum>4705</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Jovanovski</participant_name>
+			<contestantnum>4706</contestantnum>
+			<rotnum>4706</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>2.5</spread_visiting>
+				<spread_adjust_visiting>-112</spread_adjust_visiting>
+				<spread_home>-2.5</spread_home>
+				<spread_adjust_home>-104</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-116</over_adjust>
+				<under_adjust>-101</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>127</moneyline_visiting>
+				<moneyline_home>-143</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:05</event_datetimeGMT>
+	<gamenumber>235427422</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Gajdosova</participant_name>
+			<contestantnum>4709</contestantnum>
+			<rotnum>4709</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Woerle</participant_name>
+			<contestantnum>4710</contestantnum>
+			<rotnum>4710</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-476</moneyline_visiting>
+				<moneyline_home>393</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-5.5</spread_visiting>
+				<spread_adjust_visiting>-106</spread_adjust_visiting>
+				<spread_home>5.5</spread_home>
+				<spread_adjust_home>-110</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>19</total_points>
+				<over_adjust>-107</over_adjust>
+				<under_adjust>-109</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 06:30</event_datetimeGMT>
+	<gamenumber>235427730</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>E. Daniilidou</participant_name>
+			<contestantnum>4711</contestantnum>
+			<rotnum>4711</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Mirza</participant_name>
+			<contestantnum>4712</contestantnum>
+			<rotnum>4712</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 06:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>156</moneyline_visiting>
+				<moneyline_home>-177</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 06:30</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>3</spread_visiting>
+				<spread_adjust_visiting>116</spread_adjust_visiting>
+				<spread_home>-3</spread_home>
+				<spread_adjust_home>-136</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-101</over_adjust>
+				<under_adjust>-116</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 08:00</event_datetimeGMT>
+	<gamenumber>235428714</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>Y. Meusburger</participant_name>
+			<contestantnum>4723</contestantnum>
+			<rotnum>4723</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Peng</participant_name>
+			<contestantnum>4724</contestantnum>
+			<rotnum>4724</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 08:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>549</moneyline_visiting>
+				<moneyline_home>-701</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:00</event_datetimeGMT>
+	<gamenumber>235429245</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Craybas</participant_name>
+			<contestantnum>4729</contestantnum>
+			<rotnum>4729</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>Y. Sema</participant_name>
+			<contestantnum>4730</contestantnum>
+			<rotnum>4730</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-156</moneyline_visiting>
+				<moneyline_home>138</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 05:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>-2.5</spread_visiting>
+				<spread_adjust_visiting>100</spread_adjust_visiting>
+				<spread_home>2.5</spread_home>
+				<spread_adjust_home>-117</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-110</over_adjust>
+				<under_adjust>-106</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235429409</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>C. Garcia</participant_name>
+			<contestantnum>4731</contestantnum>
+			<rotnum>4731</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Jankovic</participant_name>
+			<contestantnum>4732</contestantnum>
+			<rotnum>4732</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 22:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>943</moneyline_visiting>
+				<moneyline_home>-1400</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 10:05</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<spread>
+				<spread_visiting>7</spread_visiting>
+				<spread_adjust_visiting>100</spread_adjust_visiting>
+				<spread_home>-7</spread_home>
+				<spread_adjust_home>-117</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>17</total_points>
+				<over_adjust>-103</over_adjust>
+				<under_adjust>-113</under_adjust>
+			</total>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 11:30</event_datetimeGMT>
+	<gamenumber>235427285</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Radwanska (-1.5 Sets)</participant_name>
+			<contestantnum>8701</contestantnum>
+			<rotnum>8701</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Amanmuradova (+1.5 Sets)</participant_name>
+			<contestantnum>8702</contestantnum>
+			<rotnum>8702</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:05</event_datetimeGMT>
+	<gamenumber>235427338</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>C. Dellacqua (+1.5 Sets)</participant_name>
+			<contestantnum>8705</contestantnum>
+			<rotnum>8705</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>B. Jovanovski (-1.5 Sets)</participant_name>
+			<contestantnum>8706</contestantnum>
+			<rotnum>8706</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:05</event_datetimeGMT>
+	<gamenumber>235427506</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Gajdosova (-1.5 Sets)</participant_name>
+			<contestantnum>8709</contestantnum>
+			<rotnum>8709</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Woerle (+1.5 Sets)</participant_name>
+			<contestantnum>8710</contestantnum>
+			<rotnum>8710</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 06:30</event_datetimeGMT>
+	<gamenumber>235427807</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>E. Daniilidou (-1.5 Sets)</participant_name>
+			<contestantnum>8711</contestantnum>
+			<rotnum>8711</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Mirza (+1.5 Sets)</participant_name>
+			<contestantnum>8712</contestantnum>
+			<rotnum>8712</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 08:00</event_datetimeGMT>
+	<gamenumber>235428792</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>Y. Meusburger (+1.5 Sets)</participant_name>
+			<contestantnum>8723</contestantnum>
+			<rotnum>8723</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Peng (-1.5 Sets)</participant_name>
+			<contestantnum>8724</contestantnum>
+			<rotnum>8724</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 05:00</event_datetimeGMT>
+	<gamenumber>235429333</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>J. Craybas (-1.5 Sets)</participant_name>
+			<contestantnum>8729</contestantnum>
+			<rotnum>8729</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>Y. Sema (+1.5 Sets)</participant_name>
+			<contestantnum>8730</contestantnum>
+			<rotnum>8730</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 10:05</event_datetimeGMT>
+	<gamenumber>235429554</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>C. Garcia (+1.5 Sets)</participant_name>
+			<contestantnum>8731</contestantnum>
+			<rotnum>8731</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Jankovic (-1.5 Sets)</participant_name>
+			<contestantnum>8732</contestantnum>
+			<rotnum>8732</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-29 03:00</event_datetimeGMT>
+	<gamenumber>235816168</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR16</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>O. Rogowska</participant_name>
+			<contestantnum>4739</contestantnum>
+			<rotnum>4739</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Dokic</participant_name>
+			<contestantnum>4740</contestantnum>
+			<rotnum>4740</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-29 03:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>228</moneyline_visiting>
+				<moneyline_home>-257</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-29 03:00</event_datetimeGMT>
+	<gamenumber>235816202</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR16</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Martic</participant_name>
+			<contestantnum>4741</contestantnum>
+			<rotnum>4741</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Nara</participant_name>
+			<contestantnum>4742</contestantnum>
+			<rotnum>4742</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 15:00</event_datetimeGMT>
+	<gamenumber>235816194</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR16</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Martic</participant_name>
+			<contestantnum>4741</contestantnum>
+			<rotnum>4741</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Nara</participant_name>
+			<contestantnum>4742</contestantnum>
+			<rotnum>4742</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 15:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-300</moneyline_visiting>
+				<moneyline_home>264</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-29 03:00</event_datetimeGMT>
+	<gamenumber>235816273</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR16</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>O. Rogowska (-1.5 Sets)</participant_name>
+			<contestantnum>8739</contestantnum>
+			<rotnum>8739</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>J. Dokic (+1.5 Sets)</participant_name>
+			<contestantnum>8740</contestantnum>
+			<rotnum>8740</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-29 03:00</event_datetimeGMT>
+	<gamenumber>235816317</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>W MalaysiR16</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>P. Martic (-1.5 Sets)</participant_name>
+			<contestantnum>8741</contestantnum>
+			<rotnum>8741</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>K. Nara (+1.5 Sets)</participant_name>
+			<contestantnum>8742</contestantnum>
+			<rotnum>8742</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235755376</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>R. Vinci</participant_name>
+			<contestantnum>4801</contestantnum>
+			<rotnum>4801</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Soler Espinosa</participant_name>
+			<contestantnum>4802</contestantnum>
+			<rotnum>4802</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-244</moneyline_visiting>
+				<moneyline_home>213</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235757801</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Krajicek</participant_name>
+			<contestantnum>4805</contestantnum>
+			<rotnum>4805</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Cadantu</participant_name>
+			<contestantnum>4806</contestantnum>
+			<rotnum>4806</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>109</moneyline_visiting>
+				<moneyline_home>-123</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235758440</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Cornet</participant_name>
+			<contestantnum>4807</contestantnum>
+			<rotnum>4807</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Brianti</participant_name>
+			<contestantnum>4808</contestantnum>
+			<rotnum>4808</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>139</moneyline_visiting>
+				<moneyline_home>-157</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>2.5</spread_visiting>
+				<spread_adjust_visiting>-105</spread_adjust_visiting>
+				<spread_home>-2.5</spread_home>
+				<spread_adjust_home>-111</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-122</over_adjust>
+				<under_adjust>105</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>116</moneyline_visiting>
+				<moneyline_home>-136</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235758565</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Errani</participant_name>
+			<contestantnum>4809</contestantnum>
+			<rotnum>4809</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>I. Falconi</participant_name>
+			<contestantnum>4810</contestantnum>
+			<rotnum>4810</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-1450</moneyline_visiting>
+				<moneyline_home>941</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235758675</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>L. Dominguez Lino</participant_name>
+			<contestantnum>4815</contestantnum>
+			<rotnum>4815</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>G. Dulko</participant_name>
+			<contestantnum>4816</contestantnum>
+			<rotnum>4816</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-124</moneyline_visiting>
+				<moneyline_home>110</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235758772</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Dulgheru</participant_name>
+			<contestantnum>4817</contestantnum>
+			<rotnum>4817</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Rybarikova</participant_name>
+			<contestantnum>4818</contestantnum>
+			<rotnum>4818</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-205</moneyline_visiting>
+				<moneyline_home>180</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235758797</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>X. Hermoso</participant_name>
+			<contestantnum>4819</contestantnum>
+			<rotnum>4819</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>P. Mayr-Achleitner</participant_name>
+			<contestantnum>4820</contestantnum>
+			<rotnum>4820</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>634</moneyline_visiting>
+				<moneyline_home>-833</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>6.5</spread_visiting>
+				<spread_adjust_visiting>-119</spread_adjust_visiting>
+				<spread_home>-6.5</spread_home>
+				<spread_adjust_home>102</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>17.5</total_points>
+				<over_adjust>-136</over_adjust>
+				<under_adjust>116</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>250</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>452</moneyline_visiting>
+				<moneyline_home>-600</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235759890</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>E. Birnerova</participant_name>
+			<contestantnum>4821</contestantnum>
+			<rotnum>4821</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Tatishvili</participant_name>
+			<contestantnum>4822</contestantnum>
+			<rotnum>4822</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 21:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>154</moneyline_visiting>
+				<moneyline_home>-174</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235759951</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Bacsinszky</participant_name>
+			<contestantnum>4823</contestantnum>
+			<rotnum>4823</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>I.C. Begu</participant_name>
+			<contestantnum>4824</contestantnum>
+			<rotnum>4824</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>176</moneyline_visiting>
+				<moneyline_home>-200</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>1000</spread_maximum>
+			<moneyline_maximum>2000</moneyline_maximum>
+			<total_maximum>1000</total_maximum>
+			<spread>
+				<spread_visiting>3.5</spread_visiting>
+				<spread_adjust_visiting>-106</spread_adjust_visiting>
+				<spread_home>-3.5</spread_home>
+				<spread_adjust_home>-110</spread_adjust_home>
+			</spread>
+			<total>
+				<total_points>20.5</total_points>
+				<over_adjust>-108</over_adjust>
+				<under_adjust>-108</under_adjust>
+			</total>
+		</period>
+		<period>
+			<period_number>1</period_number>
+			<period_description>1st Set Winner</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>O</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>5000</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>5000</total_maximum>
+			<moneyline>
+				<moneyline_visiting>141</moneyline_visiting>
+				<moneyline_home>-166</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 09:00</event_datetimeGMT>
+	<gamenumber>235777018</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Parra Santonja</participant_name>
+			<contestantnum>4831</contestantnum>
+			<rotnum>4831</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Pennetta</participant_name>
+			<contestantnum>4832</contestantnum>
+			<rotnum>4832</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 09:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>500</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>468</moneyline_visiting>
+				<moneyline_home>-581</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235777022</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Parra Santonja</participant_name>
+			<contestantnum>4831</contestantnum>
+			<rotnum>4831</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Pennetta</participant_name>
+			<contestantnum>4832</contestantnum>
+			<rotnum>4832</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779549</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>R. Vinci (-1.5 Sets)</participant_name>
+			<contestantnum>8801</contestantnum>
+			<rotnum>8801</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>S. Soler Espinosa (+1.5 Sets)</participant_name>
+			<contestantnum>8802</contestantnum>
+			<rotnum>8802</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779557</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>M. Krajicek (-1.5 Sets)</participant_name>
+			<contestantnum>8805</contestantnum>
+			<rotnum>8805</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Cadantu (+1.5 Sets)</participant_name>
+			<contestantnum>8806</contestantnum>
+			<rotnum>8806</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235779390</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Cornet (-1.5 Sets)</participant_name>
+			<contestantnum>8807</contestantnum>
+			<rotnum>8807</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Brianti (+1.5 Sets)</participant_name>
+			<contestantnum>8808</contestantnum>
+			<rotnum>8808</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>292</moneyline_visiting>
+				<moneyline_home>-342</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-185</moneyline_visiting>
+				<moneyline_home>163</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779570</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>S. Errani (-1.5 Sets)</participant_name>
+			<contestantnum>8809</contestantnum>
+			<rotnum>8809</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>I. Falconi (+1.5 Sets)</participant_name>
+			<contestantnum>8810</contestantnum>
+			<rotnum>8810</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779583</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>L. Dominguez Lino (+1.5 Sets)</participant_name>
+			<contestantnum>8815</contestantnum>
+			<rotnum>8815</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>G. Dulko (-1.5 Sets)</participant_name>
+			<contestantnum>8816</contestantnum>
+			<rotnum>8816</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779591</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Dulgheru (-1.5 Sets)</participant_name>
+			<contestantnum>8817</contestantnum>
+			<rotnum>8817</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>M. Rybarikova (+1.5 Sets)</participant_name>
+			<contestantnum>8818</contestantnum>
+			<rotnum>8818</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235779510</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>X. Hermoso (+1.5 Sets)</participant_name>
+			<contestantnum>8819</contestantnum>
+			<rotnum>8819</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>P. Mayr-Achleitner (-1.5 Sets)</participant_name>
+			<contestantnum>8820</contestantnum>
+			<rotnum>8820</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>246</moneyline_visiting>
+				<moneyline_home>-285</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779611</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>E. Birnerova (+1.5 Sets)</participant_name>
+			<contestantnum>8821</contestantnum>
+			<rotnum>8821</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>A. Tatishvili (-1.5 Sets)</participant_name>
+			<contestantnum>8822</contestantnum>
+			<rotnum>8822</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 00:00</event_datetimeGMT>
+	<gamenumber>235779519</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>T. Bacsinszky (+1.5 Sets)</participant_name>
+			<contestantnum>8823</contestantnum>
+			<rotnum>8823</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>I.C. Begu (-1.5 Sets)</participant_name>
+			<contestantnum>8824</contestantnum>
+			<rotnum>8824</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>-148</moneyline_visiting>
+				<moneyline_home>131</moneyline_home>
+			</moneyline>
+		</period>
+		<period>
+			<period_number>0</period_number>
+			<period_description>Game</period_description>
+			<periodcutoff_datetimeGMT>2012-02-28 00:00</periodcutoff_datetimeGMT>
+			<period_status>I</period_status>
+			<period_update>open</period_update>
+			<spread_maximum>250</spread_maximum>
+			<moneyline_maximum>1000</moneyline_maximum>
+			<total_maximum>250</total_maximum>
+			<moneyline>
+				<moneyline_visiting>352</moneyline_visiting>
+				<moneyline_home>-420</moneyline_home>
+			</moneyline>
+		</period>
+	</periods>
+</event>
+<event>
+	<event_datetimeGMT>2012-02-28 21:00</event_datetimeGMT>
+	<gamenumber>235779619</gamenumber>
+	<sporttype>Tennis</sporttype>
+	<league>WTelcel R1</league>
+	<IsLive>No</IsLive>
+	<participants>
+		<participant>
+			<participant_name>A. Parra Santonja (+1.5 Sets)</participant_name>
+			<contestantnum>8831</contestantnum>
+			<rotnum>8831</rotnum>
+			<visiting_home_draw>Visiting</visiting_home_draw>
+		</participant>
+		<participant>
+			<participant_name>F. Pennetta (-1.5 Sets)</participant_name>
+			<contestantnum>8832</contestantnum>
+			<rotnum>8832</rotnum>
+			<visiting_home_draw>Home</visiting_home_draw>
+		</participant>
+	</participants>
+	<periods>
+	</periods>
+</event>
+
+</events>
+</pinnacle_line_feed>

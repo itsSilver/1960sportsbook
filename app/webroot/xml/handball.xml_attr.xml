@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<partybets last_modified="31/03/2012 13:53">
+	<sport name="Handball" sportid="5424">
+		<group name="Germany - Handball Bundesliga 1 (men)" groupid="5799">
+			<event name="SC Magdeburg v HSV Hamburg " eventid="14197653" closetime="31/03/2012 15:00">
+				<bettype name="Versus (with Draw)" eventid="14197653" etid="10">
+					<bet outcome_name="SC Magdeburg" id="70821522" odd="3.40" status="Open"/>
+					<bet outcome_name="X" id="70821523" odd="9.00" status="Open"/>
+					<bet outcome_name="HSV Hamburg " id="70821524" odd="1.44" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211605" etid="170">
+					<bet outcome_name="&lt;57" id="70894211" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;57" id="70894212" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  2.5:0" eventid="14211600" closetime="31/03/2012 15:00">
+				<bettype name="Handicap" eventid="14211600" etid="60">
+					<bet outcome_name="1" id="70894201" odd="1.75" status="Open"/>
+					<bet outcome_name="2" id="70894202" odd="1.95" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  [Double Result]" eventid="14197655" closetime="31/03/2012 15:00">
+				<bettype name="Double Result" eventid="14197655" etid="956">
+					<bet outcome_name="SC Magdeburg/SC Magdeburg" id="70821528" odd="4.25" status="Open"/>
+					<bet outcome_name="SC Magdeburg/HSV Hamburg " id="70821529" odd="7.00" status="Open"/>
+					<bet outcome_name="SC Magdeburg/Tie" id="70821530" odd="23.00" status="Open"/>
+					<bet outcome_name="HSV Hamburg /HSV Hamburg " id="70821531" odd="1.75" status="Open"/>
+					<bet outcome_name="HSV Hamburg /SC Magdeburg" id="70821532" odd="13.00" status="Open"/>
+					<bet outcome_name="HSV Hamburg /Tie" id="70821533" odd="23.00" status="Open"/>
+					<bet outcome_name="Tie/SC Magdeburg" id="70821534" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/HSV Hamburg " id="70821535" odd="9.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70821536" odd="45.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  [Half Time]" eventid="14197654" closetime="31/03/2012 15:00">
+				<bettype name="Half Time" eventid="14197654" etid="726">
+					<bet outcome_name="SC Magdeburg" id="70821525" odd="3.10" status="Open"/>
+					<bet outcome_name="Draw" id="70821526" odd="6.50" status="Open"/>
+					<bet outcome_name="HSV Hamburg " id="70821527" odd="1.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  [Highest Scoring Half]" eventid="14197656" closetime="31/03/2012 15:00">
+				<bettype name="Highest Scoring Half" eventid="14197656" etid="957">
+					<bet outcome_name="1st half" id="70821537" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70821538" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  [Half Time Handicap] 1.5:0" eventid="14211606" closetime="31/03/2012 15:00">
+				<bettype name="Half Time Handicap" eventid="14211606" etid="727">
+					<bet outcome_name="1" id="70894213" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894214" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="SC Magdeburg v HSV Hamburg  [Half Time Under/Over]" eventid="14211610" closetime="31/03/2012 15:00">
+				<bettype name="Half Time Under/Over" eventid="14211610" etid="728">
+					<bet outcome_name="&lt;28.5" id="70894238" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;28.5" id="70894239" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Sweden - Handball Eliteserien (men)" groupid="5821">
+			<event name=" HEH Elitserien 11/12 [Play-offs included.]" eventid="12430812" closetime="01/04/2012 16:00">
+				<bettype name="Outright" eventid="12430812" etid="180">
+					<bet outcome_name="IF Guif" id="61320839" odd="3.00" status="Open"/>
+					<bet outcome_name="IK Sävehof" id="61320837" odd="3.25" status="Open"/>
+					<bet outcome_name="Ystads IF HF" id="61320842" odd="4.00" status="Open"/>
+					<bet outcome_name="Alingsås HK" id="61320838" odd="7.00" status="Open"/>
+					<bet outcome_name="IFK Skövde HK" id="61320841" odd="15.00" status="Open"/>
+					<bet outcome_name="IFK Kristianstad" id="61320845" odd="15.00" status="Open"/>
+					<bet outcome_name="HK Malmö" id="61320844" odd="17.00" status="Open"/>
+					<bet outcome_name="Lugi HF" id="61320840" odd="26.00" status="Open"/>
+					<bet outcome_name="Hammarby IF" id="61320849" odd="0.90" status="Open"/>
+					<bet outcome_name="H 43" id="61320848" odd="0.90" status="Open"/>
+					<bet outcome_name="HK Aranäs" id="61320847" odd="0.90" status="Open"/>
+					<bet outcome_name="Redbergslids IK" id="61320846" odd="0.90" status="Open"/>
+					<bet outcome_name="IFK Tumba HK" id="61320850" odd="0.90" status="Open"/>
+					<bet outcome_name="HK Drott" id="61320843" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HK Malmö v IF Guif" eventid="14203372" closetime="01/04/2012 16:00">
+				<bettype name="Versus (with Draw)" eventid="14203372" etid="10">
+					<bet outcome_name="HK Malmö" id="70853910" odd="2.25" status="Open"/>
+					<bet outcome_name="X" id="70853911" odd="8.00" status="Open"/>
+					<bet outcome_name="IF Guif" id="70853912" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HK Malmö v IF Guif [Double Result]" eventid="14203374" closetime="01/04/2012 16:00">
+				<bettype name="Double Result" eventid="14203374" etid="956">
+					<bet outcome_name="HK Malmö/HK Malmö" id="70853916" odd="2.60" status="Open"/>
+					<bet outcome_name="HK Malmö/IF Guif" id="70853917" odd="9.00" status="Open"/>
+					<bet outcome_name="HK Malmö/Tie" id="70853918" odd="17.00" status="Open"/>
+					<bet outcome_name="IF Guif/IF Guif" id="70853919" odd="2.50" status="Open"/>
+					<bet outcome_name="IF Guif/HK Malmö" id="70853920" odd="9.00" status="Open"/>
+					<bet outcome_name="IF Guif/Tie" id="70853921" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/HK Malmö" id="70853922" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/IF Guif" id="70853923" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853924" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HK Malmö v IF Guif [Half Time]" eventid="14203373" closetime="01/04/2012 16:00">
+				<bettype name="Half Time" eventid="14203373" etid="726">
+					<bet outcome_name="HK Malmö" id="70853913" odd="2.25" status="Open"/>
+					<bet outcome_name="Draw" id="70853914" odd="5.50" status="Open"/>
+					<bet outcome_name="IF Guif" id="70853915" odd="2.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HK Malmö v IF Guif [Highest Scoring Half]" eventid="14203375" closetime="01/04/2012 16:00">
+				<bettype name="Highest Scoring Half" eventid="14203375" etid="957">
+					<bet outcome_name="1st half" id="70853925" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853926" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK" eventid="14203368" closetime="31/03/2012 14:00">
+				<bettype name="Versus (with Draw)" eventid="14203368" etid="10">
+					<bet outcome_name="IFK Kristianstad" id="70853893" odd="1.53" status="Open"/>
+					<bet outcome_name="X" id="70853894" odd="9.50" status="Open"/>
+					<bet outcome_name="Alingsås HK" id="70853895" odd="2.90" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211946" etid="170">
+					<bet outcome_name="&lt;49.5" id="70895545" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;49.5" id="70895546" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK 0:1.5" eventid="14211650" closetime="31/03/2012 14:00">
+				<bettype name="Handicap" eventid="14211650" etid="60">
+					<bet outcome_name="1" id="70894387" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894388" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK [Double Result]" eventid="14203370" closetime="31/03/2012 14:00">
+				<bettype name="Double Result" eventid="14203370" etid="956">
+					<bet outcome_name="IFK Kristianstad/IFK Kristianstad" id="70853899" odd="1.85" status="Open"/>
+					<bet outcome_name="IFK Kristianstad/Alingsås HK" id="70853900" odd="12.00" status="Open"/>
+					<bet outcome_name="IFK Kristianstad/Tie" id="70853901" odd="23.00" status="Open"/>
+					<bet outcome_name="Alingsås HK/Alingsås HK" id="70853902" odd="3.80" status="Open"/>
+					<bet outcome_name="Alingsås HK/IFK Kristianstad" id="70853903" odd="7.50" status="Open"/>
+					<bet outcome_name="Alingsås HK/Tie" id="70853904" odd="23.00" status="Open"/>
+					<bet outcome_name="Tie/IFK Kristianstad" id="70853905" odd="9.50" status="Open"/>
+					<bet outcome_name="Tie/Alingsås HK" id="70853906" odd="16.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853907" odd="45.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK [Half Time]" eventid="14203369" closetime="31/03/2012 14:00">
+				<bettype name="Half Time" eventid="14203369" etid="726">
+					<bet outcome_name="IFK Kristianstad" id="70853896" odd="1.63" status="Open"/>
+					<bet outcome_name="Draw" id="70853897" odd="6.50" status="Open"/>
+					<bet outcome_name="Alingsås HK" id="70853898" odd="2.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK [Highest Scoring Half]" eventid="14203371" closetime="31/03/2012 14:00">
+				<bettype name="Highest Scoring Half" eventid="14203371" etid="957">
+					<bet outcome_name="1st half" id="70853908" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853909" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK [Half Time Handicap] 0:1" eventid="14211652" closetime="31/03/2012 14:00">
+				<bettype name="Half Time Handicap" eventid="14211652" etid="727">
+					<bet outcome_name="1" id="70894391" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894392" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Kristianstad v Alingsås HK [Half Time Under/Over]" eventid="14211654" closetime="31/03/2012 14:00">
+				<bettype name="Half Time Under/Over" eventid="14211654" etid="728">
+					<bet outcome_name="&lt;25.5" id="70894399" odd="1.80" status="Open"/>
+					<bet outcome_name="&gt;25.5" id="70894400" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Skövde HK v IK Sävehof" eventid="14203380" closetime="01/04/2012 19:00">
+				<bettype name="Versus (with Draw)" eventid="14203380" etid="10">
+					<bet outcome_name="IFK Skövde HK" id="70853944" odd="2.40" status="Open"/>
+					<bet outcome_name="X" id="70853945" odd="8.50" status="Open"/>
+					<bet outcome_name="IK Sävehof" id="70853946" odd="1.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Skövde HK v IK Sävehof [Double Result]" eventid="14203382" closetime="01/04/2012 19:00">
+				<bettype name="Double Result" eventid="14203382" etid="956">
+					<bet outcome_name="IFK Skövde HK/IFK Skövde HK" id="70853950" odd="3.00" status="Open"/>
+					<bet outcome_name="IFK Skövde HK/IK Sävehof" id="70853951" odd="8.00" status="Open"/>
+					<bet outcome_name="IFK Skövde HK/Tie" id="70853952" odd="19.00" status="Open"/>
+					<bet outcome_name="IK Sävehof/IK Sävehof" id="70853953" odd="2.25" status="Open"/>
+					<bet outcome_name="IK Sävehof/IFK Skövde HK" id="70853954" odd="10.00" status="Open"/>
+					<bet outcome_name="IK Sävehof/Tie" id="70853955" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/IFK Skövde HK" id="70853956" odd="13.00" status="Open"/>
+					<bet outcome_name="Tie/IK Sävehof" id="70853957" odd="11.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853958" odd="38.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Skövde HK v IK Sävehof [Half Time]" eventid="14203381" closetime="01/04/2012 19:00">
+				<bettype name="Half Time" eventid="14203381" etid="726">
+					<bet outcome_name="IFK Skövde HK" id="70853947" odd="2.35" status="Open"/>
+					<bet outcome_name="Draw" id="70853948" odd="6.00" status="Open"/>
+					<bet outcome_name="IK Sävehof" id="70853949" odd="1.87" status="Open"/>
+				</bettype>
+			</event>
+			<event name="IFK Skövde HK v IK Sävehof [Highest Scoring Half]" eventid="14203383" closetime="01/04/2012 19:00">
+				<bettype name="Highest Scoring Half" eventid="14203383" etid="957">
+					<bet outcome_name="1st half" id="70853959" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853960" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lugi HF v Ystads IF HF" eventid="14203376" closetime="01/04/2012 17:00">
+				<bettype name="Versus (with Draw)" eventid="14203376" etid="10">
+					<bet outcome_name="Lugi HF" id="70853927" odd="1.90" status="Open"/>
+					<bet outcome_name="X" id="70853928" odd="8.00" status="Open"/>
+					<bet outcome_name="Ystads IF HF" id="70853929" odd="2.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lugi HF v Ystads IF HF [Double Result]" eventid="14203378" closetime="01/04/2012 17:00">
+				<bettype name="Double Result" eventid="14203378" etid="956">
+					<bet outcome_name="Lugi HF/Lugi HF" id="70853933" odd="2.50" status="Open"/>
+					<bet outcome_name="Lugi HF/Ystads IF HF" id="70853934" odd="9.00" status="Open"/>
+					<bet outcome_name="Lugi HF/Tie" id="70853935" odd="17.00" status="Open"/>
+					<bet outcome_name="Ystads IF HF/Ystads IF HF" id="70853936" odd="2.60" status="Open"/>
+					<bet outcome_name="Ystads IF HF/Lugi HF" id="70853937" odd="9.00" status="Open"/>
+					<bet outcome_name="Ystads IF HF/Tie" id="70853938" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/Lugi HF" id="70853939" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Ystads IF HF" id="70853940" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853941" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lugi HF v Ystads IF HF [Half Time]" eventid="14203377" closetime="01/04/2012 17:00">
+				<bettype name="Half Time" eventid="14203377" etid="726">
+					<bet outcome_name="Lugi HF" id="70853930" odd="2.05" status="Open"/>
+					<bet outcome_name="Draw" id="70853931" odd="5.50" status="Open"/>
+					<bet outcome_name="Ystads IF HF" id="70853932" odd="2.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Lugi HF v Ystads IF HF [Highest Scoring Half]" eventid="14203379" closetime="01/04/2012 17:00">
+				<bettype name="Highest Scoring Half" eventid="14203379" etid="957">
+					<bet outcome_name="1st half" id="70853942" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853943" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Denmark - Handball Liga (men)" groupid="5836">
+			<event name="AG Kobenhavn v Skjern Håndbold" eventid="14203242" closetime="31/03/2012 17:15">
+				<bettype name="Versus (with Draw)" eventid="14203242" etid="10">
+					<bet outcome_name="AG Kobenhavn" id="70853218" odd="1.10" status="Open"/>
+					<bet outcome_name="X" id="70853219" odd="15.00" status="Open"/>
+					<bet outcome_name="Skjern Håndbold" id="70853220" odd="8.00" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211558" etid="170">
+					<bet outcome_name="&lt;54" id="70894026" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;54" id="70894027" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold 0:5.5" eventid="14211557" closetime="31/03/2012 17:15">
+				<bettype name="Handicap" eventid="14211557" etid="60">
+					<bet outcome_name="1" id="70894024" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894025" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold [Double Result]" eventid="14203244" closetime="31/03/2012 17:15">
+				<bettype name="Double Result" eventid="14203244" etid="956">
+					<bet outcome_name="AG Kobenhavn/AG Kobenhavn" id="70853224" odd="1.25" status="Open"/>
+					<bet outcome_name="AG Kobenhavn/Skjern Håndbold" id="70853225" odd="21.00" status="Open"/>
+					<bet outcome_name="AG Kobenhavn/Tie" id="70853226" odd="34.00" status="Open"/>
+					<bet outcome_name="Skjern Håndbold/Skjern Håndbold" id="70853227" odd="7.50" status="Open"/>
+					<bet outcome_name="Skjern Håndbold/AG Kobenhavn" id="70853228" odd="4.00" status="Open"/>
+					<bet outcome_name="Skjern Håndbold/Tie" id="70853229" odd="34.00" status="Open"/>
+					<bet outcome_name="Tie/AG Kobenhavn" id="70853230" odd="6.00" status="Open"/>
+					<bet outcome_name="Tie/Skjern Håndbold" id="70853231" odd="26.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853232" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold [Half Time]" eventid="14203243" closetime="31/03/2012 17:15">
+				<bettype name="Half Time" eventid="14203243" etid="726">
+					<bet outcome_name="AG Kobenhavn" id="70853221" odd="1.14" status="Open"/>
+					<bet outcome_name="Draw" id="70853222" odd="9.50" status="Open"/>
+					<bet outcome_name="Skjern Håndbold" id="70853223" odd="7.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold [Highest Scoring Half]" eventid="14203245" closetime="31/03/2012 17:15">
+				<bettype name="Highest Scoring Half" eventid="14203245" etid="957">
+					<bet outcome_name="1st half" id="70853233" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853234" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold [Half Time Handicap] 0:2.5" eventid="14211559" closetime="31/03/2012 17:15">
+				<bettype name="Half Time Handicap" eventid="14211559" etid="727">
+					<bet outcome_name="1" id="70894028" odd="1.90" status="Open"/>
+					<bet outcome_name="2" id="70894029" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="AG Kobenhavn v Skjern Håndbold [Half Time Under/Over]" eventid="14211560" closetime="31/03/2012 17:15">
+				<bettype name="Half Time Under/Over" eventid="14211560" etid="728">
+					<bet outcome_name="&lt;27.5" id="70894030" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;27.5" id="70894031" odd="1.84" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK" eventid="14203254" closetime="31/03/2012 15:30">
+				<bettype name="Versus (with Draw)" eventid="14203254" etid="10">
+					<bet outcome_name="Bjerringbro-Silkeborg" id="70853269" odd="1.30" status="Open"/>
+					<bet outcome_name="X" id="70853270" odd="11.00" status="Open"/>
+					<bet outcome_name="Viborg HK" id="70853271" odd="4.20" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211547" etid="170">
+					<bet outcome_name="&lt;52" id="70893983" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;52" id="70893984" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK 0:3.5" eventid="14211546" closetime="31/03/2012 15:30">
+				<bettype name="Handicap" eventid="14211546" etid="60">
+					<bet outcome_name="1" id="70893981" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70893982" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK [Double Result]" eventid="14203256" closetime="31/03/2012 15:30">
+				<bettype name="Double Result" eventid="14203256" etid="956">
+					<bet outcome_name="Bjerringbro-Silkeborg/Bjerringbro-Silkeborg" id="70853275" odd="1.55" status="Open"/>
+					<bet outcome_name="Bjerringbro-Silkeborg/Viborg HK" id="70853276" odd="15.00" status="Open"/>
+					<bet outcome_name="Bjerringbro-Silkeborg/Tie" id="70853277" odd="26.00" status="Open"/>
+					<bet outcome_name="Viborg HK/Viborg HK" id="70853278" odd="5.25" status="Open"/>
+					<bet outcome_name="Viborg HK/Bjerringbro-Silkeborg" id="70853279" odd="6.00" status="Open"/>
+					<bet outcome_name="Viborg HK/Tie" id="70853280" odd="26.00" status="Open"/>
+					<bet outcome_name="Tie/Bjerringbro-Silkeborg" id="70853281" odd="8.00" status="Open"/>
+					<bet outcome_name="Tie/Viborg HK" id="70853282" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853283" odd="50.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK [Half Time]" eventid="14203255" closetime="31/03/2012 15:30">
+				<bettype name="Half Time" eventid="14203255" etid="726">
+					<bet outcome_name="Bjerringbro-Silkeborg" id="70853272" odd="1.35" status="Open"/>
+					<bet outcome_name="Draw" id="70853273" odd="7.00" status="Open"/>
+					<bet outcome_name="Viborg HK" id="70853274" odd="4.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK [Highest Scoring Half]" eventid="14203257" closetime="31/03/2012 15:30">
+				<bettype name="Highest Scoring Half" eventid="14203257" etid="957">
+					<bet outcome_name="1st half" id="70853284" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853285" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK [Half Time Handicap] 0:1.5" eventid="14211548" closetime="31/03/2012 15:30">
+				<bettype name="Half Time Handicap" eventid="14211548" etid="727">
+					<bet outcome_name="1" id="70893985" odd="1.75" status="Open"/>
+					<bet outcome_name="2" id="70893986" odd="1.95" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Bjerringbro-Silkeborg v Viborg HK [Half Time Under/Over]" eventid="14211550" closetime="31/03/2012 15:30">
+				<bettype name="Half Time Under/Over" eventid="14211550" etid="728">
+					<bet outcome_name="&lt;26" id="70893991" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;26" id="70893992" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Herre Håndbold Ligaen 11/12 [Play-offs included.]" eventid="12358265" closetime="31/03/2012 15:00">
+				<bettype name="Outright" eventid="12358265" etid="180">
+					<bet outcome_name="AG Kobenhavn" id="60987797" odd="1.12" status="Open"/>
+					<bet outcome_name="KIF Kolding" id="60987800" odd="11.00" status="Open"/>
+					<bet outcome_name="Bjerringbro-Silkeborg" id="60987798" odd="13.00" status="Open"/>
+					<bet outcome_name="AaB Håndbold" id="60987801" odd="13.00" status="Open"/>
+					<bet outcome_name="Skjern Håndbold" id="60987799" odd="23.00" status="Open"/>
+					<bet outcome_name="Team Tvis Holstebro" id="60987802" odd="29.00" status="Open"/>
+					<bet outcome_name="Viborg HK" id="60987810" odd="67.00" status="Open"/>
+					<bet outcome_name="Århus GF" id="60987803" odd="101.00" status="Open"/>
+					<bet outcome_name="Skanderborg Håndbold " id="60987805" odd="0.90" status="Open"/>
+					<bet outcome_name="Skive fH" id="60987806" odd="0.90" status="Open"/>
+					<bet outcome_name="SønderjyskE " id="60987807" odd="0.90" status="Open"/>
+					<bet outcome_name="Lemvig Håndbold" id="60987808" odd="0.90" status="Open"/>
+					<bet outcome_name="Mors - Thy Håndbold" id="60987809" odd="0.90" status="Open"/>
+					<bet outcome_name="Nordsjælland Håndbold" id="60987804" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="KIF Kolding v AaB Håndbold" eventid="14203250" closetime="31/03/2012 15:00">
+				<bettype name="Versus (with Draw)" eventid="14203250" etid="10">
+					<bet outcome_name="KIF Kolding" id="70853252" odd="1.85" status="Open"/>
+					<bet outcome_name="X" id="70853253" odd="8.00" status="Open"/>
+					<bet outcome_name="AaB Håndbold" id="70853254" odd="2.30" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211542" etid="170">
+					<bet outcome_name="&lt;55.5" id="70893962" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;55.5" id="70893963" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="KIF Kolding v AaB Håndbold [Double Result]" eventid="14203252" closetime="31/03/2012 15:00">
+				<bettype name="Double Result" eventid="14203252" etid="956">
+					<bet outcome_name="KIF Kolding/KIF Kolding" id="70853258" odd="2.50" status="Open"/>
+					<bet outcome_name="KIF Kolding/AaB Håndbold" id="70853259" odd="9.00" status="Open"/>
+					<bet outcome_name="KIF Kolding/Tie" id="70853260" odd="17.00" status="Open"/>
+					<bet outcome_name="AaB Håndbold/AaB Håndbold" id="70853261" odd="2.60" status="Open"/>
+					<bet outcome_name="AaB Håndbold/KIF Kolding" id="70853262" odd="9.00" status="Open"/>
+					<bet outcome_name="AaB Håndbold/Tie" id="70853263" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/KIF Kolding" id="70853264" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/AaB Håndbold" id="70853265" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853266" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="KIF Kolding v AaB Håndbold [Half Time]" eventid="14203251" closetime="31/03/2012 15:00">
+				<bettype name="Half Time" eventid="14203251" etid="726">
+					<bet outcome_name="KIF Kolding" id="70853255" odd="2.00" status="Open"/>
+					<bet outcome_name="Draw" id="70853256" odd="5.50" status="Open"/>
+					<bet outcome_name="AaB Håndbold" id="70853257" odd="2.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="KIF Kolding v AaB Håndbold [Highest Scoring Half]" eventid="14203253" closetime="31/03/2012 15:00">
+				<bettype name="Highest Scoring Half" eventid="14203253" etid="957">
+					<bet outcome_name="1st half" id="70853267" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853268" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="KIF Kolding v AaB Håndbold [Half Time Under/Over]" eventid="14211543" closetime="31/03/2012 15:00">
+				<bettype name="Half Time Under/Over" eventid="14211543" etid="728">
+					<bet outcome_name="&lt;27.5" id="70893964" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;27.5" id="70893965" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Team Tvis Holstebro v Århus GF" eventid="14203246" closetime="01/04/2012 19:30">
+				<bettype name="Versus (with Draw)" eventid="14203246" etid="10">
+					<bet outcome_name="Team Tvis Holstebro" id="70853235" odd="1.33" status="Open"/>
+					<bet outcome_name="X" id="70853236" odd="10.00" status="Open"/>
+					<bet outcome_name="Århus GF" id="70853237" odd="4.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Team Tvis Holstebro v Århus GF [Double Result]" eventid="14203248" closetime="01/04/2012 19:30">
+				<bettype name="Double Result" eventid="14203248" etid="956">
+					<bet outcome_name="Team Tvis Holstebro/Team Tvis Holstebro" id="70853241" odd="1.55" status="Open"/>
+					<bet outcome_name="Team Tvis Holstebro/Århus GF" id="70853242" odd="15.00" status="Open"/>
+					<bet outcome_name="Team Tvis Holstebro/Tie" id="70853243" odd="26.00" status="Open"/>
+					<bet outcome_name="Århus GF/Århus GF" id="70853244" odd="5.25" status="Open"/>
+					<bet outcome_name="Århus GF/Team Tvis Holstebro" id="70853245" odd="6.00" status="Open"/>
+					<bet outcome_name="Århus GF/Tie" id="70853246" odd="26.00" status="Open"/>
+					<bet outcome_name="Tie/Team Tvis Holstebro" id="70853247" odd="8.00" status="Open"/>
+					<bet outcome_name="Tie/Århus GF" id="70853248" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853249" odd="50.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Team Tvis Holstebro v Århus GF [Half Time]" eventid="14203247" closetime="01/04/2012 19:30">
+				<bettype name="Half Time" eventid="14203247" etid="726">
+					<bet outcome_name="Team Tvis Holstebro" id="70853238" odd="1.42" status="Open"/>
+					<bet outcome_name="Draw" id="70853239" odd="7.00" status="Open"/>
+					<bet outcome_name="Århus GF" id="70853240" odd="3.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Team Tvis Holstebro v Århus GF [Highest Scoring Half]" eventid="14203249" closetime="01/04/2012 19:30">
+				<bettype name="Highest Scoring Half" eventid="14203249" etid="957">
+					<bet outcome_name="1st half" id="70853250" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853251" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Norway - Postenligaen (men)" groupid="15909">
+			<event name="Postenligaen 11/12 [Play-offs included.]" eventid="12486522" closetime="11/04/2012 16:00">
+				<bettype name="Outright" eventid="12486522" etid="180">
+					<bet outcome_name="Haslum HK" id="61591965" odd="2.25" status="Open"/>
+					<bet outcome_name="Elverum" id="61591964" odd="2.50" status="Open"/>
+					<bet outcome_name="Drammen" id="61591966" odd="7.00" status="Open"/>
+					<bet outcome_name="Runar" id="61591972" odd="7.50" status="Open"/>
+					<bet outcome_name="Fyllingen" id="61591969" odd="21.00" status="Open"/>
+					<bet outcome_name="ØIF Arendal " id="61591968" odd="29.00" status="Open"/>
+					<bet outcome_name="Notteroy" id="61591974" odd="34.00" status="Open"/>
+					<bet outcome_name="BSK/NIF" id="61591970" odd="51.00" status="Open"/>
+					<bet outcome_name="Sandefjord" id="61591975" odd="0.90" status="Open"/>
+					<bet outcome_name="Follo " id="61591971" odd="0.90" status="Open"/>
+					<bet outcome_name="Stavanger" id="61591967" odd="0.90" status="Open"/>
+					<bet outcome_name="Herulf Moss" id="61591973" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Champions League Handball (men)~" groupid="24012">
+			<event name="EHF Champions League (men) 11/12" eventid="13020352" closetime="20/04/2012 20:10">
+				<bettype name="Outright" eventid="13020352" etid="180">
+					<bet outcome_name="THW Kiel" id="64430718" odd="2.50" status="Open"/>
+					<bet outcome_name="F.C. Barcelona" id="64430719" odd="3.25" status="Open"/>
+					<bet outcome_name="Atletico Madrid" id="64430720" odd="3.50" status="Open"/>
+					<bet outcome_name="AG Kobenhavn" id="64430722" odd="7.00" status="Open"/>
+					<bet outcome_name="Füchse Berlin" id="64430724" odd="15.00" status="Open"/>
+					<bet outcome_name="Reale Ademar" id="64430729" odd="34.00" status="Open"/>
+					<bet outcome_name="HC Croatia Osiguranje" id="64430725" odd="51.00" status="Open"/>
+					<bet outcome_name="RK Cimos Koper" id="64430735" odd="101.00" status="Open"/>
+					<bet outcome_name="MKB Veszprem KC" id="64430727" odd="0.90" status="Open"/>
+					<bet outcome_name="Vive Targi Kielce" id="64430728" odd="0.90" status="Open"/>
+					<bet outcome_name="IK Sävehof" id="64430741" odd="0.90" status="Open"/>
+					<bet outcome_name="Chambery Savoie HB" id="64430730" odd="0.90" status="Open"/>
+					<bet outcome_name="Wisla Plock S.A." id="64430731" odd="0.90" status="Open"/>
+					<bet outcome_name="Montpellier" id="64430723" odd="0.90" status="Open"/>
+					<bet outcome_name="Bjerringbro-Silkeborg" id="64430733" odd="0.90" status="Open"/>
+					<bet outcome_name="Kadetten Schaffhausen" id="64430734" odd="0.90" status="Open"/>
+					<bet outcome_name="St. Petersburg HC" id="64430736" odd="0.90" status="Open"/>
+					<bet outcome_name="HC Bosna Sarajevo" id="64430737" odd="0.90" status="Open"/>
+					<bet outcome_name="HC Metalurg Skopje" id="64430738" odd="0.90" status="Open"/>
+					<bet outcome_name="Partizan Belgrad" id="64430739" odd="0.90" status="Open"/>
+					<bet outcome_name="HCM Constanta" id="64430740" odd="0.90" status="Open"/>
+					<bet outcome_name="Chehovski Medvedi" id="64430726" odd="0.90" status="Open"/>
+					<bet outcome_name="HSV Hamburg " id="64430721" odd="0.90" status="Open"/>
+					<bet outcome_name="SC Pick Szeged" id="64430732" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Spain - Liga Asobal (men)" groupid="25897">
+			<event name="BM. Granollers v BM. Antequera" eventid="14197681" closetime="31/03/2012 16:15">
+				<bettype name="Versus (with Draw)" eventid="14197681" etid="10">
+					<bet outcome_name="BM. Granollers" id="70821657" odd="1.30" status="Open"/>
+					<bet outcome_name="X" id="70821658" odd="9.00" status="Open"/>
+					<bet outcome_name="BM. Antequera" id="70821659" odd="4.50" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211630" etid="170">
+					<bet outcome_name="&lt;57.5" id="70894333" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;57.5" id="70894334" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera 0:3.5" eventid="14211629" closetime="31/03/2012 16:15">
+				<bettype name="Handicap" eventid="14211629" etid="60">
+					<bet outcome_name="1" id="70894331" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70894332" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera [Double Result]" eventid="14197683" closetime="31/03/2012 16:15">
+				<bettype name="Double Result" eventid="14197683" etid="956">
+					<bet outcome_name="BM. Granollers/BM. Granollers" id="70821663" odd="1.55" status="Open"/>
+					<bet outcome_name="BM. Granollers/BM. Antequera" id="70821664" odd="15.00" status="Open"/>
+					<bet outcome_name="BM. Granollers/Tie" id="70821665" odd="26.00" status="Open"/>
+					<bet outcome_name="BM. Antequera/BM. Antequera" id="70821666" odd="5.25" status="Open"/>
+					<bet outcome_name="BM. Antequera/BM. Granollers" id="70821667" odd="6.00" status="Open"/>
+					<bet outcome_name="BM. Antequera/Tie" id="70821668" odd="26.00" status="Open"/>
+					<bet outcome_name="Tie/BM. Granollers" id="70821669" odd="8.00" status="Open"/>
+					<bet outcome_name="Tie/BM. Antequera" id="70821670" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70821671" odd="50.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera [Half Time]" eventid="14197682" closetime="31/03/2012 16:15">
+				<bettype name="Half Time" eventid="14197682" etid="726">
+					<bet outcome_name="BM. Granollers" id="70821660" odd="1.35" status="Open"/>
+					<bet outcome_name="Draw" id="70821661" odd="7.00" status="Open"/>
+					<bet outcome_name="BM. Antequera" id="70821662" odd="4.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera [Highest Scoring Half]" eventid="14197684" closetime="31/03/2012 16:15">
+				<bettype name="Highest Scoring Half" eventid="14197684" etid="957">
+					<bet outcome_name="1st half" id="70821672" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70821673" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera [Half Time Handicap] 0:1.5" eventid="14211631" closetime="31/03/2012 16:15">
+				<bettype name="Half Time Handicap" eventid="14211631" etid="727">
+					<bet outcome_name="1" id="70894335" odd="1.80" status="Open"/>
+					<bet outcome_name="2" id="70894336" odd="1.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="BM. Granollers v BM. Antequera [Half Time Under/Over]" eventid="14211632" closetime="31/03/2012 16:15">
+				<bettype name="Half Time Under/Over" eventid="14211632" etid="728">
+					<bet outcome_name="&lt;28.5" id="70894337" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;28.5" id="70894338" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Liga Asobal 11/12 " eventid="12390549" closetime="31/03/2012 16:15">
+				<bettype name="Outright" eventid="12390549" etid="180">
+					<bet outcome_name="F.C. Barcelona" id="61141712" odd="1.40" status="Open"/>
+					<bet outcome_name="Atlético Madrid" id="61141713" odd="2.70" status="Open"/>
+					<bet outcome_name="Valladolid" id="61141715" odd="0.90" status="Open"/>
+					<bet outcome_name="Reale Ademar" id="61141714" odd="0.90" status="Open"/>
+					<bet outcome_name="Aragon" id="61141717" odd="0.90" status="Open"/>
+					<bet outcome_name="BM. Ciudad Encantada" id="61141720" odd="0.90" status="Open"/>
+					<bet outcome_name="C.BM. Torrevieja" id="61141722" odd="0.90" status="Open"/>
+					<bet outcome_name="BM. Granollers" id="61141716" odd="0.90" status="Open"/>
+					<bet outcome_name="Naturhouse La Rioja" id="61141719" odd="0.90" status="Open"/>
+					<bet outcome_name="Academia Octavio" id="61141727" odd="0.90" status="Open"/>
+					<bet outcome_name="San Antonio " id="61141718" odd="0.90" status="Open"/>
+					<bet outcome_name="BM. Guadalajara " id="61141725" odd="0.90" status="Open"/>
+					<bet outcome_name="Alser Puerto Sagunto" id="61141721" odd="0.90" status="Open"/>
+					<bet outcome_name="BM. Antequera" id="61141723" odd="0.90" status="Open"/>
+					<bet outcome_name="Helvetia Anaitasuna" id="61141724" odd="0.90" status="Open"/>
+					<bet outcome_name="BM. Huesca" id="61141726" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~EHF Cup (ladies)~" groupid="26768">
+			<event name="HC Lada v KIF Vejen" eventid="14212281" closetime="01/04/2012 14:00">
+				<bettype name="Versus (with Draw)" eventid="14212281" etid="10">
+					<bet outcome_name="HC Lada" id="70897269" odd="1.20" status="Open"/>
+					<bet outcome_name="X" id="70897270" odd="12.00" status="Open"/>
+					<bet outcome_name="KIF Vejen" id="70897271" odd="5.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Lada v KIF Vejen [Double Result]" eventid="14212283" closetime="01/04/2012 14:00">
+				<bettype name="Double Result" eventid="14212283" etid="956">
+					<bet outcome_name="HC Lada/HC Lada" id="70897275" odd="1.45" status="Open"/>
+					<bet outcome_name="HC Lada/KIF Vejen" id="70897276" odd="17.00" status="Open"/>
+					<bet outcome_name="HC Lada/Tie" id="70897277" odd="29.00" status="Open"/>
+					<bet outcome_name="KIF Vejen/KIF Vejen" id="70897278" odd="5.75" status="Open"/>
+					<bet outcome_name="KIF Vejen/HC Lada" id="70897279" odd="5.00" status="Open"/>
+					<bet outcome_name="KIF Vejen/Tie" id="70897280" odd="29.00" status="Open"/>
+					<bet outcome_name="Tie/HC Lada" id="70897281" odd="7.00" status="Open"/>
+					<bet outcome_name="Tie/KIF Vejen" id="70897282" odd="21.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70897283" odd="60.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Lada v KIF Vejen [Half Time]" eventid="14212282" closetime="01/04/2012 14:00">
+				<bettype name="Half Time" eventid="14212282" etid="726">
+					<bet outcome_name="HC Lada" id="70897272" odd="1.25" status="Open"/>
+					<bet outcome_name="Draw" id="70897273" odd="7.50" status="Open"/>
+					<bet outcome_name="KIF Vejen" id="70897274" odd="5.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Lada v KIF Vejen [Highest Scoring Half]" eventid="14212284" closetime="01/04/2012 14:00">
+				<bettype name="Highest Scoring Half" eventid="14212284" etid="957">
+					<bet outcome_name="1st half" id="70897284" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70897285" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="Denmark - Handball Liga (ladies)" groupid="27828">
+			<event name="Dame Håndbold Ligaen 11/12 [Play-offs included.]" eventid="13334100" closetime="10/04/2012 16:00">
+				<bettype name="Outright" eventid="13334100" etid="180">
+					<bet outcome_name="Viborg HK" id="66171891" odd="1.67" status="Open"/>
+					<bet outcome_name="Randers HK" id="66171892" odd="3.00" status="Open"/>
+					<bet outcome_name="FCM Handbold" id="66171893" odd="4.50" status="Open"/>
+					<bet outcome_name="Team Tvis Holstebro" id="66171895" odd="15.00" status="Open"/>
+					<bet outcome_name="Team Esbjerg" id="66171894" odd="51.00" status="Open"/>
+					<bet outcome_name="FIF" id="66171897" odd="67.00" status="Open"/>
+					<bet outcome_name="Aalborg DH" id="66171899" odd="0.90" status="Open"/>
+					<bet outcome_name="Slagelse DT" id="66171901" odd="0.90" status="Open"/>
+					<bet outcome_name="Silkeborg-Voel KFUM" id="66171900" odd="0.90" status="Open"/>
+					<bet outcome_name="SK Aarhus" id="66171898" odd="0.90" status="Open"/>
+					<bet outcome_name="HC Odense" id="66171902" odd="0.90" status="Open"/>
+					<bet outcome_name="KIF Vejen" id="66171896" odd="0.90" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Champions League Handball (ladies)~" groupid="32254">
+			<event name="C.S. Oltchim RM Valcea v Györi Audi ETO" eventid="14197663" closetime="01/04/2012 17:00">
+				<bettype name="Versus (with Draw)" eventid="14197663" etid="10">
+					<bet outcome_name="C.S. Oltchim RM Valcea" id="70821572" odd="2.00" status="Open"/>
+					<bet outcome_name="X" id="70821573" odd="8.50" status="Open"/>
+					<bet outcome_name="Györi Audi ETO" id="70821574" odd="2.05" status="Open"/>
+				</bettype>
+			</event>
+			<event name="C.S. Oltchim RM Valcea v Györi Audi ETO [Double Result]" eventid="14197665" closetime="01/04/2012 17:00">
+				<bettype name="Double Result" eventid="14197665" etid="956">
+					<bet outcome_name="C.S. Oltchim RM Valcea/C.S. Oltchim RM Valcea" id="70821578" odd="2.60" status="Open"/>
+					<bet outcome_name="C.S. Oltchim RM Valcea/Györi Audi ETO" id="70821579" odd="8.50" status="Open"/>
+					<bet outcome_name="C.S. Oltchim RM Valcea/Tie" id="70821580" odd="17.00" status="Open"/>
+					<bet outcome_name="Györi Audi ETO/Györi Audi ETO" id="70821581" odd="2.60" status="Open"/>
+					<bet outcome_name="Györi Audi ETO/C.S. Oltchim RM Valcea" id="70821582" odd="8.50" status="Open"/>
+					<bet outcome_name="Györi Audi ETO/Tie" id="70821583" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/C.S. Oltchim RM Valcea" id="70821584" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Györi Audi ETO" id="70821585" odd="12.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70821586" odd="34.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="C.S. Oltchim RM Valcea v Györi Audi ETO [Half Time]" eventid="14197664" closetime="01/04/2012 17:00">
+				<bettype name="Half Time" eventid="14197664" etid="726">
+					<bet outcome_name="C.S. Oltchim RM Valcea" id="70821575" odd="2.10" status="Open"/>
+					<bet outcome_name="Draw" id="70821576" odd="5.50" status="Open"/>
+					<bet outcome_name="Györi Audi ETO" id="70821577" odd="2.10" status="Open"/>
+				</bettype>
+			</event>
+			<event name="C.S. Oltchim RM Valcea v Györi Audi ETO [Highest Scoring Half]" eventid="14197666" closetime="01/04/2012 17:00">
+				<bettype name="Highest Scoring Half" eventid="14197666" etid="957">
+					<bet outcome_name="1st half" id="70821587" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70821588" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile" eventid="14197659" closetime="31/03/2012 16:45">
+				<bettype name="Versus (with Draw)" eventid="14197659" etid="10">
+					<bet outcome_name="Larvik HK" id="70821555" odd="1.75" status="Open"/>
+					<bet outcome_name="X" id="70821556" odd="9.00" status="Open"/>
+					<bet outcome_name="Buducnost T-Mobile" id="70821557" odd="2.40" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14212271" etid="170">
+					<bet outcome_name="&lt;49.5" id="70897204" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;49.5" id="70897206" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile 0:1" eventid="14212268" closetime="31/03/2012 16:45">
+				<bettype name="Handicap" eventid="14212268" etid="60">
+					<bet outcome_name="1" id="70897199" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70897200" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile [Double Result]" eventid="14197661" closetime="31/03/2012 16:45">
+				<bettype name="Double Result" eventid="14197661" etid="956">
+					<bet outcome_name="Larvik HK/Larvik HK" id="70821561" odd="2.25" status="Open"/>
+					<bet outcome_name="Larvik HK/Buducnost T-Mobile" id="70821562" odd="10.00" status="Open"/>
+					<bet outcome_name="Larvik HK/Tie" id="70821563" odd="19.00" status="Open"/>
+					<bet outcome_name="Buducnost T-Mobile/Buducnost T-Mobile" id="70821564" odd="3.00" status="Open"/>
+					<bet outcome_name="Buducnost T-Mobile/Larvik HK" id="70821565" odd="8.00" status="Open"/>
+					<bet outcome_name="Buducnost T-Mobile/Tie" id="70821566" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/Larvik HK" id="70821567" odd="11.00" status="Open"/>
+					<bet outcome_name="Tie/Buducnost T-Mobile" id="70821568" odd="13.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70821569" odd="38.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile [Half Time]" eventid="14197660" closetime="31/03/2012 16:45">
+				<bettype name="Half Time" eventid="14197660" etid="726">
+					<bet outcome_name="Larvik HK" id="70821558" odd="1.87" status="Open"/>
+					<bet outcome_name="Draw" id="70821559" odd="6.00" status="Open"/>
+					<bet outcome_name="Buducnost T-Mobile" id="70821560" odd="2.35" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile [Highest Scoring Half]" eventid="14197662" closetime="31/03/2012 16:45">
+				<bettype name="Highest Scoring Half" eventid="14197662" etid="957">
+					<bet outcome_name="1st half" id="70821570" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70821571" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile [Half Time Handicap] 0:1" eventid="14212269" closetime="31/03/2012 16:45">
+				<bettype name="Half Time Handicap" eventid="14212269" etid="727">
+					<bet outcome_name="1" id="70897201" odd="1.95" status="Open"/>
+					<bet outcome_name="2" id="70897202" odd="1.75" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Larvik HK v Buducnost T-Mobile [Half Time Under/Over]" eventid="14212274" closetime="31/03/2012 16:45">
+				<bettype name="Half Time Under/Over" eventid="14212274" etid="728">
+					<bet outcome_name="&lt;24.5" id="70897228" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;24.5" id="70897229" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="~Cup Winners Cup (ladies)~" groupid="41517">
+			<event name="FTC v Dinamo Volgograd" eventid="14211620" closetime="31/03/2012 20:00">
+				<bettype name="Versus (with Draw)" eventid="14211620" etid="10">
+					<bet outcome_name="FTC" id="70894285" odd="1.50" status="Open"/>
+					<bet outcome_name="X" id="70894286" odd="10.00" status="Open"/>
+					<bet outcome_name="Dinamo Volgograd" id="70894287" odd="2.90" status="Open"/>
+				</bettype>
+			</event>
+			<event name="FTC v Dinamo Volgograd 0:2.5" eventid="14212735" closetime="31/03/2012 20:00">
+				<bettype name="Handicap" eventid="14212735" etid="60">
+					<bet outcome_name="1" id="70899620" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70899621" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="FTC v Dinamo Volgograd [Double Result]" eventid="14211622" closetime="31/03/2012 20:00">
+				<bettype name="Double Result" eventid="14211622" etid="956">
+					<bet outcome_name="FTC/FTC" id="70894291" odd="1.75" status="Open"/>
+					<bet outcome_name="FTC/Dinamo Volgograd" id="70894292" odd="13.00" status="Open"/>
+					<bet outcome_name="FTC/Tie" id="70894293" odd="23.00" status="Open"/>
+					<bet outcome_name="Dinamo Volgograd/Dinamo Volgograd" id="70894294" odd="4.25" status="Open"/>
+					<bet outcome_name="Dinamo Volgograd/FTC" id="70894295" odd="7.00" status="Open"/>
+					<bet outcome_name="Dinamo Volgograd/Tie" id="70894296" odd="23.00" status="Open"/>
+					<bet outcome_name="Tie/FTC" id="70894297" odd="9.00" status="Open"/>
+					<bet outcome_name="Tie/Dinamo Volgograd" id="70894298" odd="17.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70894299" odd="45.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="FTC v Dinamo Volgograd [Half Time]" eventid="14211621" closetime="31/03/2012 20:00">
+				<bettype name="Half Time" eventid="14211621" etid="726">
+					<bet outcome_name="FTC" id="70894288" odd="1.55" status="Open"/>
+					<bet outcome_name="Draw" id="70894289" odd="6.50" status="Open"/>
+					<bet outcome_name="Dinamo Volgograd" id="70894290" odd="3.10" status="Open"/>
+				</bettype>
+			</event>
+			<event name="FTC v Dinamo Volgograd [Highest Scoring Half]" eventid="14211623" closetime="31/03/2012 20:00">
+				<bettype name="Highest Scoring Half" eventid="14211623" etid="957">
+					<bet outcome_name="1st half" id="70894300" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70894301" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Leipzig  v Viborg HK" eventid="14212289" closetime="01/04/2012 15:30">
+				<bettype name="Versus (with Draw)" eventid="14212289" etid="10">
+					<bet outcome_name="HC Leipzig " id="70897308" odd="5.25" status="Open"/>
+					<bet outcome_name="X" id="70897309" odd="12.00" status="Open"/>
+					<bet outcome_name="Viborg HK" id="70897310" odd="1.20" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Leipzig  v Viborg HK [Double Result]" eventid="14212291" closetime="01/04/2012 15:30">
+				<bettype name="Double Result" eventid="14212291" etid="956">
+					<bet outcome_name="HC Leipzig /HC Leipzig " id="70897314" odd="5.75" status="Open"/>
+					<bet outcome_name="HC Leipzig /Viborg HK" id="70897315" odd="5.00" status="Open"/>
+					<bet outcome_name="HC Leipzig /Tie" id="70897316" odd="29.00" status="Open"/>
+					<bet outcome_name="Viborg HK/Viborg HK" id="70897317" odd="1.45" status="Open"/>
+					<bet outcome_name="Viborg HK/HC Leipzig " id="70897318" odd="17.00" status="Open"/>
+					<bet outcome_name="Viborg HK/Tie" id="70897319" odd="29.00" status="Open"/>
+					<bet outcome_name="Tie/HC Leipzig " id="70897320" odd="21.00" status="Open"/>
+					<bet outcome_name="Tie/Viborg HK" id="70897321" odd="7.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70897322" odd="60.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Leipzig  v Viborg HK [Half Time]" eventid="14212290" closetime="01/04/2012 15:30">
+				<bettype name="Half Time" eventid="14212290" etid="726">
+					<bet outcome_name="HC Leipzig " id="70897311" odd="5.25" status="Open"/>
+					<bet outcome_name="Draw" id="70897312" odd="7.50" status="Open"/>
+					<bet outcome_name="Viborg HK" id="70897313" odd="1.25" status="Open"/>
+				</bettype>
+			</event>
+			<event name="HC Leipzig  v Viborg HK [Highest Scoring Half]" eventid="14212292" closetime="01/04/2012 15:30">
+				<bettype name="Highest Scoring Half" eventid="14212292" etid="957">
+					<bet outcome_name="1st half" id="70897323" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70897324" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+		<group name="France - Handball Top 14 (men)" groupid="43790">
+			<event name="Chamberry v OC Cesson" eventid="14203263" closetime="31/03/2012 20:00">
+				<bettype name="Versus (with Draw)" eventid="14203263" etid="10">
+					<bet outcome_name="Chamberry" id="70853321" odd="1.05" status="Open"/>
+					<bet outcome_name="X" id="70853322" odd="15.00" status="Open"/>
+					<bet outcome_name="OC Cesson" id="70853323" odd="11.00" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211564" etid="170">
+					<bet outcome_name="&lt;52.5" id="70894056" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;52.5" id="70894057" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Chamberry v OC Cesson 0:6.5" eventid="14211563" closetime="31/03/2012 20:00">
+				<bettype name="Handicap" eventid="14211563" etid="60">
+					<bet outcome_name="1" id="70894054" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894055" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Chamberry v OC Cesson [Double Result]" eventid="14203265" closetime="31/03/2012 20:00">
+				<bettype name="Double Result" eventid="14203265" etid="956">
+					<bet outcome_name="Chamberry/Chamberry" id="70853327" odd="1.15" status="Open"/>
+					<bet outcome_name="Chamberry/OC Cesson" id="70853328" odd="23.00" status="Open"/>
+					<bet outcome_name="Chamberry/Tie" id="70853329" odd="34.00" status="Open"/>
+					<bet outcome_name="OC Cesson/OC Cesson" id="70853330" odd="9.00" status="Open"/>
+					<bet outcome_name="OC Cesson/Chamberry" id="70853331" odd="3.50" status="Open"/>
+					<bet outcome_name="OC Cesson/Tie" id="70853332" odd="34.00" status="Open"/>
+					<bet outcome_name="Tie/Chamberry" id="70853333" odd="5.50" status="Open"/>
+					<bet outcome_name="Tie/OC Cesson" id="70853334" odd="29.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853335" odd="67.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Chamberry v OC Cesson [Half Time]" eventid="14203264" closetime="31/03/2012 20:00">
+				<bettype name="Half Time" eventid="14203264" etid="726">
+					<bet outcome_name="Chamberry" id="70853324" odd="1.09" status="Open"/>
+					<bet outcome_name="Draw" id="70853325" odd="10.50" status="Open"/>
+					<bet outcome_name="OC Cesson" id="70853326" odd="9.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Chamberry v OC Cesson [Highest Scoring Half]" eventid="14203266" closetime="31/03/2012 20:00">
+				<bettype name="Highest Scoring Half" eventid="14203266" etid="957">
+					<bet outcome_name="1st half" id="70853336" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853337" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Creteil v Dunkerque HB" eventid="14203275" closetime="01/04/2012 16:15">
+				<bettype name="Versus (with Draw)" eventid="14203275" etid="10">
+					<bet outcome_name="Creteil" id="70853372" odd="2.90" status="Open"/>
+					<bet outcome_name="X" id="70853373" odd="8.50" status="Open"/>
+					<bet outcome_name="Dunkerque HB" id="70853374" odd="1.55" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Creteil v Dunkerque HB [Double Result]" eventid="14203277" closetime="01/04/2012 16:15">
+				<bettype name="Double Result" eventid="14203277" etid="956">
+					<bet outcome_name="Creteil/Creteil" id="70853378" odd="3.80" status="Open"/>
+					<bet outcome_name="Creteil/Dunkerque HB" id="70853379" odd="7.50" status="Open"/>
+					<bet outcome_name="Creteil/Tie" id="70853380" odd="23.00" status="Open"/>
+					<bet outcome_name="Dunkerque HB/Dunkerque HB" id="70853381" odd="1.85" status="Open"/>
+					<bet outcome_name="Dunkerque HB/Creteil" id="70853382" odd="12.00" status="Open"/>
+					<bet outcome_name="Dunkerque HB/Tie" id="70853383" odd="23.00" status="Open"/>
+					<bet outcome_name="Tie/Creteil" id="70853384" odd="16.00" status="Open"/>
+					<bet outcome_name="Tie/Dunkerque HB" id="70853385" odd="9.50" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853386" odd="45.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Creteil v Dunkerque HB [Half Time]" eventid="14203276" closetime="01/04/2012 16:15">
+				<bettype name="Half Time" eventid="14203276" etid="726">
+					<bet outcome_name="Creteil" id="70853375" odd="2.80" status="Open"/>
+					<bet outcome_name="Draw" id="70853376" odd="6.50" status="Open"/>
+					<bet outcome_name="Dunkerque HB" id="70853377" odd="1.63" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Creteil v Dunkerque HB [Highest Scoring Half]" eventid="14203278" closetime="01/04/2012 16:15">
+				<bettype name="Highest Scoring Half" eventid="14203278" etid="957">
+					<bet outcome_name="1st half" id="70853387" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853388" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Istres v Toulouse" eventid="14203267" closetime="31/03/2012 20:00">
+				<bettype name="Versus (with Draw)" eventid="14203267" etid="10">
+					<bet outcome_name="Istres" id="70853338" odd="1.70" status="Open"/>
+					<bet outcome_name="X" id="70853339" odd="9.00" status="Open"/>
+					<bet outcome_name="Toulouse" id="70853340" odd="2.50" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14211566" etid="170">
+					<bet outcome_name="&lt;56" id="70894060" odd="1.90" status="Open"/>
+					<bet outcome_name="&gt;56" id="70894061" odd="1.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Istres v Toulouse 0:1" eventid="14212872" closetime="31/03/2012 20:00">
+				<bettype name="Handicap" eventid="14212872" etid="60">
+					<bet outcome_name="1" id="70900204" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70900205" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Istres v Toulouse [Double Result]" eventid="14203269" closetime="31/03/2012 20:00">
+				<bettype name="Double Result" eventid="14203269" etid="956">
+					<bet outcome_name="Istres/Istres" id="70853344" odd="2.15" status="Open"/>
+					<bet outcome_name="Istres/Toulouse" id="70853345" odd="10.50" status="Open"/>
+					<bet outcome_name="Istres/Tie" id="70853346" odd="20.00" status="Open"/>
+					<bet outcome_name="Toulouse/Toulouse" id="70853347" odd="3.20" status="Open"/>
+					<bet outcome_name="Toulouse/Istres" id="70853348" odd="7.75" status="Open"/>
+					<bet outcome_name="Toulouse/Tie" id="70853349" odd="20.00" status="Open"/>
+					<bet outcome_name="Tie/Istres" id="70853350" odd="10.50" status="Open"/>
+					<bet outcome_name="Tie/Toulouse" id="70853351" odd="13.50" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853352" odd="40.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Istres v Toulouse [Half Time]" eventid="14203268" closetime="31/03/2012 20:00">
+				<bettype name="Half Time" eventid="14203268" etid="726">
+					<bet outcome_name="Istres" id="70853341" odd="1.80" status="Open"/>
+					<bet outcome_name="Draw" id="70853342" odd="6.00" status="Open"/>
+					<bet outcome_name="Toulouse" id="70853343" odd="2.50" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Istres v Toulouse [Highest Scoring Half]" eventid="14203270" closetime="31/03/2012 20:00">
+				<bettype name="Highest Scoring Half" eventid="14203270" etid="957">
+					<bet outcome_name="1st half" id="70853353" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853354" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sélestat Alsace v Paris Handball" eventid="14203271" closetime="31/03/2012 20:30">
+				<bettype name="Versus (with Draw)" eventid="14203271" etid="10">
+					<bet outcome_name="Sélestat Alsace" id="70853355" odd="1.60" status="Open"/>
+					<bet outcome_name="X" id="70853356" odd="8.50" status="Open"/>
+					<bet outcome_name="Paris Handball" id="70853357" odd="2.75" status="Open"/>
+				</bettype>
+				<bettype name="Under/Over" eventid="14212097" etid="170">
+					<bet outcome_name="&lt;53.5" id="70896381" odd="1.85" status="Open"/>
+					<bet outcome_name="&gt;53.5" id="70896382" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sélestat Alsace v Paris Handball 0:1.5" eventid="14211568" closetime="31/03/2012 20:30">
+				<bettype name="Handicap" eventid="14211568" etid="60">
+					<bet outcome_name="1" id="70894074" odd="1.85" status="Open"/>
+					<bet outcome_name="2" id="70894075" odd="1.85" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sélestat Alsace v Paris Handball [Double Result]" eventid="14203273" closetime="31/03/2012 20:30">
+				<bettype name="Double Result" eventid="14203273" etid="956">
+					<bet outcome_name="Sélestat Alsace/Sélestat Alsace" id="70853361" odd="1.90" status="Open"/>
+					<bet outcome_name="Sélestat Alsace/Paris Handball" id="70853362" odd="11.50" status="Open"/>
+					<bet outcome_name="Sélestat Alsace/Tie" id="70853363" odd="21.00" status="Open"/>
+					<bet outcome_name="Paris Handball/Paris Handball" id="70853364" odd="3.60" status="Open"/>
+					<bet outcome_name="Paris Handball/Sélestat Alsace" id="70853365" odd="7.75" status="Open"/>
+					<bet outcome_name="Paris Handball/Tie" id="70853366" odd="21.00" status="Open"/>
+					<bet outcome_name="Tie/Sélestat Alsace" id="70853367" odd="10.00" status="Open"/>
+					<bet outcome_name="Tie/Paris Handball" id="70853368" odd="15.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853369" odd="41.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sélestat Alsace v Paris Handball [Half Time]" eventid="14203272" closetime="31/03/2012 20:30">
+				<bettype name="Half Time" eventid="14203272" etid="726">
+					<bet outcome_name="Sélestat Alsace" id="70853358" odd="1.67" status="Open"/>
+					<bet outcome_name="Draw" id="70853359" odd="6.50" status="Open"/>
+					<bet outcome_name="Paris Handball" id="70853360" odd="2.70" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Sélestat Alsace v Paris Handball [Highest Scoring Half]" eventid="14203274" closetime="31/03/2012 20:30">
+				<bettype name="Highest Scoring Half" eventid="14203274" etid="957">
+					<bet outcome_name="1st half" id="70853370" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853371" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Tremblay v Ivry" eventid="14203279" closetime="01/04/2012 17:00">
+				<bettype name="Versus (with Draw)" eventid="14203279" etid="10">
+					<bet outcome_name="Tremblay" id="70853389" odd="1.35" status="Open"/>
+					<bet outcome_name="X" id="70853390" odd="9.50" status="Open"/>
+					<bet outcome_name="Ivry" id="70853391" odd="3.80" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Tremblay v Ivry [Double Result]" eventid="14203281" closetime="01/04/2012 17:00">
+				<bettype name="Double Result" eventid="14203281" etid="956">
+					<bet outcome_name="Tremblay/Tremblay" id="70853395" odd="1.55" status="Open"/>
+					<bet outcome_name="Tremblay/Ivry" id="70853396" odd="15.00" status="Open"/>
+					<bet outcome_name="Tremblay/Tie" id="70853397" odd="26.00" status="Open"/>
+					<bet outcome_name="Ivry/Ivry" id="70853398" odd="5.25" status="Open"/>
+					<bet outcome_name="Ivry/Tremblay" id="70853399" odd="6.00" status="Open"/>
+					<bet outcome_name="Ivry/Tie" id="70853400" odd="26.00" status="Open"/>
+					<bet outcome_name="Tie/Tremblay" id="70853401" odd="8.00" status="Open"/>
+					<bet outcome_name="Tie/Ivry" id="70853402" odd="19.00" status="Open"/>
+					<bet outcome_name="Tie/Tie" id="70853403" odd="50.00" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Tremblay v Ivry [Half Time]" eventid="14203280" closetime="01/04/2012 17:00">
+				<bettype name="Half Time" eventid="14203280" etid="726">
+					<bet outcome_name="Tremblay" id="70853392" odd="1.42" status="Open"/>
+					<bet outcome_name="Draw" id="70853393" odd="7.00" status="Open"/>
+					<bet outcome_name="Ivry" id="70853394" odd="3.60" status="Open"/>
+				</bettype>
+			</event>
+			<event name="Tremblay v Ivry [Highest Scoring Half]" eventid="14203282" closetime="01/04/2012 17:00">
+				<bettype name="Highest Scoring Half" eventid="14203282" etid="957">
+					<bet outcome_name="1st half" id="70853404" odd="2.20" status="Open"/>
+					<bet outcome_name="2nd half" id="70853405" odd="1.60" status="Open"/>
+				</bettype>
+			</event>
+		</group>
+	</sport>
+</partybets>
